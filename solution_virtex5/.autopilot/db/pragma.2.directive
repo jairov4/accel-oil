@@ -1,0 +1,286 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="nfa_get_initials" label="">
+<pragma name="INLINE">
+<option name="region" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_get_finals" label="">
+<pragma name="INLINE">
+<option name="region" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_get_symbols" label="">
+<pragma name="INLINE">
+<option name="region" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_get_sucessors" label="">
+<pragma name="INLINE">
+<option name="region" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sample_iterator_begin" label="">
+<pragma name="INLINE">
+<option name="region" positionalBoolean="1" value=""/>
+<option name="recursive" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sample_iterator_end" label="">
+<pragma name="INLINE">
+<option name="region" positionalBoolean="1" value=""/>
+<option name="recursive" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sample_iterator_next" label="">
+<pragma name="INLINE">
+<option name="region" positionalBoolean="1" value=""/>
+<option name="recursive" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sample_iterator_equals" label="">
+<pragma name="INLINE">
+<option name="region" positionalBoolean="1" value=""/>
+<option name="recursive" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="sample_iterator_get_offset" label="">
+<pragma name="INLINE">
+<option name="region" positionalBoolean="1" value=""/>
+<option name="recursive" positionalBoolean="1" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="0"/>
+<option name="max" value="1024"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="0"/>
+<option name="max" value="64"/>
+<option name="avg" value="5"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="indices"/>
+<option name="struct_level" positionalBoolean="byte_pad" value=""/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="INTERFACE">
+<option name="ap_bus" positionalBoolean="mode" value=""/>
+<option name="depth" value="10"/>
+<option name="port" positionalBoolean="4" value="nfa-&gt;initials"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="INTERFACE">
+<option name="ap_bus" positionalBoolean="mode" value=""/>
+<option name="depth" value="10"/>
+<option name="port" positionalBoolean="4" value="nfa-&gt;finals"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="INTERFACE">
+<option name="ap_bus" positionalBoolean="mode" value=""/>
+<option name="depth" value="10"/>
+<option name="port" positionalBoolean="4" value="nfa-&gt;forward"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="nfa-&gt;symbols"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="INTERFACE">
+<option name="ap_bus" positionalBoolean="mode" value=""/>
+<option name="depth" value="10"/>
+<option name="port" positionalBoolean="4" value="sample_buffer"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="sample_buffer_length"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="sample_length"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="INTERFACE">
+<option name="ap_bus" positionalBoolean="mode" value=""/>
+<option name="depth" value="10"/>
+<option name="port" positionalBoolean="4" value="indices"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="i_size"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="begin"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="end"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="stop_on_first"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="INTERFACE">
+<option name="ap_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="accept"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="INTERFACE">
+<option name="ap_ctrl_hs" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="nfa-&gt;initials"/>
+<option name="core" value="NPI64M"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="nfa-&gt;finals"/>
+<option name="core" value="NPI64M"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="nfa-&gt;forward"/>
+<option name="core" value="NPI64M"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="nfa-&gt;symbols"/>
+<option name="core" value="PLB46S"/>
+<option name="metadata" value="&quot;-bus_bundle slv0&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="sample_buffer"/>
+<option name="core" value="PLB46M"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="sample_buffer_length"/>
+<option name="core" value="PLB46S"/>
+<option name="metadata" value="&quot;-bus_bundle slv0&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="sample_length"/>
+<option name="core" value="PLB46S"/>
+<option name="metadata" value="&quot;-bus_bundle slv0&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="indices"/>
+<option name="core" value="PLB46M"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="i_size"/>
+<option name="core" value="PLB46S"/>
+<option name="metadata" value="&quot;-bus_bundle slv0&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="begin"/>
+<option name="core" value="PLB46S"/>
+<option name="metadata" value="&quot;-bus_bundle slv0&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="end"/>
+<option name="core" value="PLB46S"/>
+<option name="metadata" value="&quot;-bus_bundle slv0&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="stop_on_first"/>
+<option name="core" value="PLB46S"/>
+<option name="metadata" value="&quot;-bus_bundle slv0&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="accept"/>
+<option name="core" value="PLB46S"/>
+<option name="metadata" value="&quot;-bus_bundle slv0&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="RESOURCE">
+<option name="variable" positionalBoolean="4" value="return"/>
+<option name="core" value="PLB46S"/>
+<option name="metadata" value="&quot;-bus_bundle slv0&quot;"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="0"/>
+<option name="max" value="65535"/>
+<option name="avg" value="2000"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

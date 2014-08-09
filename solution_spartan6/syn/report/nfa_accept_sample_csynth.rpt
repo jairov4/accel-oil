@@ -1,0 +1,257 @@
+
+
+================================================================
+== Vivado HLS Report for 'nfa_accept_sample'
+================================================================
+* Date:           Thu Apr 17 08:59:35 2014
+
+* Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
+* Project:        oil_plainc_hls
+* Solution:       solution_spartan6
+* Product family: spartan6 spartan6_fpv6 
+* Target device:  xc6slx9ftg256-3
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |   1.00|      3.00|        0.13|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+--------+-----+--------+---------+
+    |    Latency   |   Interval   | Pipeline|
+    | min |   max  | min |   max  |   Type  |
+    +-----+--------+-----+--------+---------+
+    |   12|  939039|   12|  939039|   none  |
+    +-----+--------+-----+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------+------------------+-----+-----+-----+-----+----------+
+        |                             |                  |  Latency  |  Interval | Pipeline |
+        |           Instance          |      Module      | min | max | min | max |   Type   |
+        +-----------------------------+------------------+-----+-----+-----+-----+----------+
+        |grp_bitset_next_fu_344       |bitset_next       |   11|   11|    1|    1| function |
+        |grp_nfa_get_initials_fu_356  |nfa_get_initials  |    2|    2|    2|    2| function |
+        |grp_nfa_get_finals_fu_362    |nfa_get_finals    |    2|    2|    2|    2| function |
+        |grp_p_bsf32_hw_fu_368        |p_bsf32_hw        |    1|    1|    1|    1| function |
+        +-----------------------------+------------------+-----+-----+-----+-----+----------+
+
+        * Loop: 
+        +-------------+-----+--------+----------+-----------+-----------+----------+----------+
+        |             |    Latency   | Iteration|  Initiation Interval  |   Trip   |          |
+        |  Loop Name  | min |   max  |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +-------------+-----+--------+----------+-----------+-----------+----------+----------+
+        |- Loop 1     |    7|  939028| 18 ~ 917 |          -|          -| 0 ~ 1024 |    no    |
+        | + Loop 1.1  |    0|     896|        14|          -|          -|  0 ~ 64  |    no    |
+        +-------------+-----+--------+----------+-----------+-----------+----------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+------+
+|       Name      | BRAM_18K| DSP48A|   FF  |  LUT |
++-----------------+---------+-------+-------+------+
+|Expression       |        -|      -|      0|   299|
+|FIFO             |        -|      -|      -|     -|
+|Instance         |        -|      1|   1661|   719|
+|Memory           |        -|      -|      -|     -|
+|Multiplexer      |        -|      -|      -|   322|
+|Register         |        -|      -|    784|     -|
+|ShiftMemory      |        -|      -|      -|     -|
++-----------------+---------+-------+-------+------+
+|Total            |        0|      1|   2445|  1340|
++-----------------+---------+-------+-------+------+
+|Available        |       32|     16|  11440|  5720|
++-----------------+---------+-------+-------+------+
+|Utilization (%)  |        0|      6|     21|    23|
++-----------------+---------+-------+-------+------+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------------------------+--------------------------------------------------+---------+-------+-----+-----+
+    |                       Instance                       |                      Module                      | BRAM_18K| DSP48A|  FF | LUT |
+    +------------------------------------------------------+--------------------------------------------------+---------+-------+-----+-----+
+    |grp_bitset_next_fu_344                                |bitset_next                                       |        0|      0|  606|  459|
+    |nfa_accept_samples_generic_hw_add_14ns_14ns_14_4_U22  |nfa_accept_samples_generic_hw_add_14ns_14ns_14_4  |        0|      0|   83|   14|
+    |nfa_accept_samples_generic_hw_add_16ns_16ns_16_4_U18  |nfa_accept_samples_generic_hw_add_16ns_16ns_16_4  |        0|      0|   94|   16|
+    |nfa_accept_samples_generic_hw_add_32ns_32ns_32_8_U17  |nfa_accept_samples_generic_hw_add_32ns_32ns_32_8  |        0|      0|  375|   32|
+    |nfa_accept_samples_generic_hw_add_32ns_32ns_32_8_U19  |nfa_accept_samples_generic_hw_add_32ns_32ns_32_8  |        0|      0|  375|   32|
+    |nfa_accept_samples_generic_hw_add_6ns_6ns_6_2_U20     |nfa_accept_samples_generic_hw_add_6ns_6ns_6_2     |        0|      0|   18|    6|
+    |nfa_accept_samples_generic_hw_mul_8ns_6ns_14_4_U21    |nfa_accept_samples_generic_hw_mul_8ns_6ns_14_4    |        0|      1|    0|    0|
+    |grp_nfa_get_finals_fu_362                             |nfa_get_finals                                    |        0|      0|   35|   35|
+    |grp_nfa_get_initials_fu_356                           |nfa_get_initials                                  |        0|      0|   35|   35|
+    |grp_p_bsf32_hw_fu_368                                 |p_bsf32_hw                                        |        0|      0|   40|   90|
+    +------------------------------------------------------+--------------------------------------------------+---------+-------+-----+-----+
+    |Total                                                 |                                                  |        0|      1| 1661|  719|
+    +------------------------------------------------------+--------------------------------------------------+---------+-------+-----+-----+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Shift register: 
+    N/A
+
+    * Expression: 
+    +-------------------------------+----------+-------+---+----+------------+------------+
+    |         Variable Name         | Operation| DSP48A| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------------+----------+-------+---+----+------------+------------+
+    |current_buckets_0_1_fu_558_p2  |    and   |      0|  0|  33|          32|          32|
+    |current_buckets_1_1_fu_563_p2  |    and   |      0|  0|  33|          32|          32|
+    |tmp_2_1_i_fu_426_p2            |   icmp   |      0|  0|  39|          32|           1|
+    |tmp_2_fu_572_p2                |   icmp   |      0|  0|  39|          32|           1|
+    |tmp_2_i_fu_420_p2              |   icmp   |      0|  0|  39|          32|           1|
+    |tmp_s_fu_397_p2                |   icmp   |      0|  0|  17|          16|          16|
+    |next_buckets_0_1_fu_538_p2     |    or    |      0|  0|  33|          32|          32|
+    |next_buckets_1_1_fu_544_p2     |    or    |      0|  0|  33|          32|          32|
+    |tmp_1_fu_568_p2                |    or    |      0|  0|  33|          32|          32|
+    +-------------------------------+----------+-------+---+----+------------+------------+
+    |Total                          |          |      0|  0| 299|         272|         179|
+    +-------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------+----+-----------+-----+-----------+
+    |             Name            | LUT| Input Size| Bits| Total Bits|
+    +-----------------------------+----+-----------+-----+-----------+
+    |bus_assign_reg_178           |  32|          2|   32|         64|
+    |i_reg_134                    |  16|          2|   16|         32|
+    |j_bit1_reg_299               |   8|          2|    8|         16|
+    |j_bucket1_ph_reg_203         |  32|          2|   32|         64|
+    |j_bucket1_reg_278            |  32|          2|   32|         64|
+    |j_bucket_index1_ph_reg_216   |   2|          2|    2|          4|
+    |j_bucket_index1_reg_289      |   8|          2|    8|         16|
+    |next_buckets_0_reg_168       |  32|          2|   32|         64|
+    |next_buckets_1_reg_158       |  32|          2|   32|         64|
+    |nfa_forward_buckets_address  |  32|          3|   32|         96|
+    |p_01_rec_reg_146             |  32|          2|   32|         64|
+    |tmp_buckets_0_3_reg_265      |  32|          2|   32|         64|
+    |tmp_buckets_1_3_reg_252      |  32|          2|   32|         64|
+    +-----------------------------+----+-----------+-----+-----------+
+    |Total                        | 322|         27|  322|        676|
+    +-----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------+----+-----+-----------+
+    |                       Name                      | FF | Bits| Const Bits|
+    +-------------------------------------------------+----+-----+-----------+
+    |agg_result_bucket_index_0_lcssa4_i_reg_190       |   1|    1|          0|
+    |any_reg_319                                      |   1|    1|          0|
+    |ap_CS_fsm                                        |   6|    6|          0|
+    |ap_return_preg                                   |   1|    1|          0|
+    |bus_assign_reg_178                               |  32|   32|          0|
+    |current_buckets_0_1_reg_741                      |  32|   32|          0|
+    |current_buckets_0_reg_577                        |  32|   32|          0|
+    |current_buckets_1_1_reg_746                      |  32|   32|          0|
+    |current_buckets_1_reg_582                        |  32|   32|          0|
+    |grp_nfa_get_finals_fu_362_ap_start_ap_start_reg  |   1|    1|          0|
+    |i_1_reg_601                                      |  16|   16|          0|
+    |i_reg_134                                        |  16|   16|          0|
+    |j_bit1_ph_reg_227                                |   5|    5|          0|
+    |j_bit1_reg_299                                   |   8|    8|          0|
+    |j_bit_reg_701                                    |   8|    8|          0|
+    |j_bucket1_ph_reg_203                             |  32|   32|          0|
+    |j_bucket1_reg_278                                |  32|   32|          0|
+    |j_bucket_index1_ph_reg_216                       |   2|    2|          0|
+    |j_bucket_index1_reg_289                          |   8|    8|          0|
+    |j_bucket_index_reg_706                           |   8|    8|          0|
+    |j_bucket_reg_711                                 |  32|   32|          0|
+    |j_end_ph_reg_238                                 |   1|    1|          0|
+    |j_end_reg_309                                    |   1|    1|          0|
+    |next_buckets_0_1_reg_721                         |  32|   32|          0|
+    |next_buckets_0_reg_168                           |  32|   32|          0|
+    |next_buckets_1_reg_158                           |  32|   32|          0|
+    |offset_i_reg_685                                 |  14|   14|          0|
+    |p_01_rec_reg_146                                 |  32|   32|          0|
+    |p_0_reg_332                                      |   1|    1|          0|
+    |p_rec_reg_616                                    |  32|   32|          0|
+    |p_s_reg_716                                      |   1|    1|          0|
+    |r_bit_reg_630                                    |   5|    5|          0|
+    |reg_374                                          |  32|   32|          0|
+    |sample_addr_1_reg_606                            |  32|   32|          0|
+    |state_reg_665                                    |   6|    6|          0|
+    |sym_reg_621                                      |   8|    8|          0|
+    |tmp_17_i_reg_680                                 |  14|   14|          0|
+    |tmp_18_i_cast_reg_650                            |   8|   14|          6|
+    |tmp_1_reg_751                                    |  32|   32|          0|
+    |tmp_2_1_i_reg_626                                |   1|    1|          0|
+    |tmp_2_i_reg_612                                  |   1|    1|          0|
+    |tmp_2_reg_756                                    |   1|    1|          0|
+    |tmp_buckets_0_3_reg_265                          |  32|   32|          0|
+    |tmp_buckets_0_reg_731                            |  32|   32|          0|
+    |tmp_buckets_1_3_reg_252                          |  32|   32|          0|
+    |tmp_buckets_1_reg_736                            |  32|   32|          0|
+    |tmp_s_reg_597                                    |   1|    1|          0|
+    +-------------------------------------------------+----+-----+-----------+
+    |Total                                            | 784|  790|          6|
+    +-------------------------------------------------+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------------+-----+-----+------------+----------------------+--------------+
+|             RTL Ports            | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++----------------------------------+-----+-----+------------+----------------------+--------------+
+|ap_clk                            |  in |    1| ap_ctrl_hs |   nfa_accept_sample  | return value |
+|ap_rst                            |  in |    1| ap_ctrl_hs |   nfa_accept_sample  | return value |
+|ap_start                          |  in |    1| ap_ctrl_hs |   nfa_accept_sample  | return value |
+|ap_done                           | out |    1| ap_ctrl_hs |   nfa_accept_sample  | return value |
+|ap_idle                           | out |    1| ap_ctrl_hs |   nfa_accept_sample  | return value |
+|ap_ready                          | out |    1| ap_ctrl_hs |   nfa_accept_sample  | return value |
+|ap_return                         | out |    1| ap_ctrl_hs |   nfa_accept_sample  | return value |
+|nfa_initials_buckets_req_din      | out |    1|   ap_bus   | nfa_initials_buckets |    pointer   |
+|nfa_initials_buckets_req_full_n   |  in |    1|   ap_bus   | nfa_initials_buckets |    pointer   |
+|nfa_initials_buckets_req_write    | out |    1|   ap_bus   | nfa_initials_buckets |    pointer   |
+|nfa_initials_buckets_rsp_empty_n  |  in |    1|   ap_bus   | nfa_initials_buckets |    pointer   |
+|nfa_initials_buckets_rsp_read     | out |    1|   ap_bus   | nfa_initials_buckets |    pointer   |
+|nfa_initials_buckets_address      | out |   32|   ap_bus   | nfa_initials_buckets |    pointer   |
+|nfa_initials_buckets_datain       |  in |   32|   ap_bus   | nfa_initials_buckets |    pointer   |
+|nfa_initials_buckets_dataout      | out |   32|   ap_bus   | nfa_initials_buckets |    pointer   |
+|nfa_initials_buckets_size         | out |   32|   ap_bus   | nfa_initials_buckets |    pointer   |
+|nfa_finals_buckets_req_din        | out |    1|   ap_bus   |  nfa_finals_buckets  |    pointer   |
+|nfa_finals_buckets_req_full_n     |  in |    1|   ap_bus   |  nfa_finals_buckets  |    pointer   |
+|nfa_finals_buckets_req_write      | out |    1|   ap_bus   |  nfa_finals_buckets  |    pointer   |
+|nfa_finals_buckets_rsp_empty_n    |  in |    1|   ap_bus   |  nfa_finals_buckets  |    pointer   |
+|nfa_finals_buckets_rsp_read       | out |    1|   ap_bus   |  nfa_finals_buckets  |    pointer   |
+|nfa_finals_buckets_address        | out |   32|   ap_bus   |  nfa_finals_buckets  |    pointer   |
+|nfa_finals_buckets_datain         |  in |   32|   ap_bus   |  nfa_finals_buckets  |    pointer   |
+|nfa_finals_buckets_dataout        | out |   32|   ap_bus   |  nfa_finals_buckets  |    pointer   |
+|nfa_finals_buckets_size           | out |   32|   ap_bus   |  nfa_finals_buckets  |    pointer   |
+|nfa_forward_buckets_req_din       | out |    1|   ap_bus   |  nfa_forward_buckets |    pointer   |
+|nfa_forward_buckets_req_full_n    |  in |    1|   ap_bus   |  nfa_forward_buckets |    pointer   |
+|nfa_forward_buckets_req_write     | out |    1|   ap_bus   |  nfa_forward_buckets |    pointer   |
+|nfa_forward_buckets_rsp_empty_n   |  in |    1|   ap_bus   |  nfa_forward_buckets |    pointer   |
+|nfa_forward_buckets_rsp_read      | out |    1|   ap_bus   |  nfa_forward_buckets |    pointer   |
+|nfa_forward_buckets_address       | out |   32|   ap_bus   |  nfa_forward_buckets |    pointer   |
+|nfa_forward_buckets_datain        |  in |   32|   ap_bus   |  nfa_forward_buckets |    pointer   |
+|nfa_forward_buckets_dataout       | out |   32|   ap_bus   |  nfa_forward_buckets |    pointer   |
+|nfa_forward_buckets_size          | out |   32|   ap_bus   |  nfa_forward_buckets |    pointer   |
+|nfa_symbols                       |  in |    8|   ap_none  |      nfa_symbols     |    pointer   |
+|sample_req_din                    | out |    1|   ap_bus   |        sample        |    pointer   |
+|sample_req_full_n                 |  in |    1|   ap_bus   |        sample        |    pointer   |
+|sample_req_write                  | out |    1|   ap_bus   |        sample        |    pointer   |
+|sample_rsp_empty_n                |  in |    1|   ap_bus   |        sample        |    pointer   |
+|sample_rsp_read                   | out |    1|   ap_bus   |        sample        |    pointer   |
+|sample_address                    | out |   32|   ap_bus   |        sample        |    pointer   |
+|sample_datain                     |  in |    8|   ap_bus   |        sample        |    pointer   |
+|sample_dataout                    | out |    8|   ap_bus   |        sample        |    pointer   |
+|sample_size                       | out |   32|   ap_bus   |        sample        |    pointer   |
+|empty                             |  in |   32|   ap_none  |         empty        |    scalar    |
+|length_r                          |  in |   16|   ap_none  |       length_r       |    scalar    |
++----------------------------------+-----+-----+------------+----------------------+--------------+
+

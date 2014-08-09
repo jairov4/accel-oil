@@ -1,0 +1,165 @@
+@I [SIM-14] Instrumenting C test bench ...
+@W [SIM-350] The depth specified for 'nfa_initials_buckets' using the interface directive is bigger than the array size 2. Actual array size will be used in simulation.
+@W [SIM-350] The depth specified for 'nfa_finals_buckets' using the interface directive is bigger than the array size 2. Actual array size will be used in simulation.
+@W [SIM-349] The depth specified for 'nfa_forward_buckets' using the interface directive is smaller than the array size. Insufficient depth may result in simulation mismatch or hanging.
+@W [SIM-349] The depth specified for 'sample_buffer' using the interface directive is smaller than the array size. Insufficient depth may result in simulation mismatch or hanging.
+@W [SIM-349] The depth specified for 'indices_begin' using the interface directive is smaller than the array size. Insufficient depth may result in simulation mismatch or hanging.
+@W [SIM-349] The depth specified for 'indices_samples' using the interface directive is smaller than the array size. Insufficient depth may result in simulation mismatch or hanging.
+@W [SIM-349] The depth specified for 'indices_stride' using the interface directive is smaller than the array size. Insufficient depth may result in simulation mismatch or hanging.
+   Build using "C:/Programas/Xilinx/Vivado_HLS/2013.4/msys/bin/g++.exe"
+   Compiling apatb_nfa_accept_samples_generic_hw.cpp
+   Compiling(apcc) bitset.c_pre.c.tb.c
+@I [LIC-101] Checked out feature [VIVADO_HLS]
+@I [HLS-10] Running 'c:/Programas/Xilinx/Vivado_HLS/2013.4/bin/unwrapped/win64.o/apcc.exe'
+            for user 'JairoAndres' on host 'askur' (Windows NT_amd64 version 6.2) on Wed Apr 16 20:44:13 -0500 2014
+            in directory 'C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/wrapc'
+clang: warning: c:/Programas/Xilinx/Vivado_HLS/2013.4/bin/unwrapped/win64.o/apcc.exe: 'linker' input unused when '-c' is present
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/src/bitset.c:56:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.
+gcc.exe: warning: c:/Programas/Xilinx/Vivado_HLS/2013.4/bin/unwrapped/win64.o/apcc.exe: linker input file unused because linking not done
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [VIVADO_HLS]
+   Compiling(apcc) nfa.c_pre.c.tb.c
+@I [LIC-101] Checked out feature [VIVADO_HLS]
+@I [HLS-10] Running 'c:/Programas/Xilinx/Vivado_HLS/2013.4/bin/unwrapped/win64.o/apcc.exe'
+            for user 'JairoAndres' on host 'askur' (Windows NT_amd64 version 6.2) on Wed Apr 16 20:44:18 -0500 2014
+            in directory 'C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/wrapc'
+clang: warning: c:/Programas/Xilinx/Vivado_HLS/2013.4/bin/unwrapped/win64.o/apcc.exe: 'linker' input unused when '-c' is present
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+gcc.exe: warning: c:/Programas/Xilinx/Vivado_HLS/2013.4/bin/unwrapped/win64.o/apcc.exe: linker input file unused because linking not done
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [VIVADO_HLS]
+   Compiling(apcc) nfa_file.c_pre.c.tb.c
+@I [LIC-101] Checked out feature [VIVADO_HLS]
+@I [HLS-10] Running 'c:/Programas/Xilinx/Vivado_HLS/2013.4/bin/unwrapped/win64.o/apcc.exe'
+            for user 'JairoAndres' on host 'askur' (Windows NT_amd64 version 6.2) on Wed Apr 16 20:44:20 -0500 2014
+            in directory 'C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/wrapc'
+clang: warning: c:/Programas/Xilinx/Vivado_HLS/2013.4/bin/unwrapped/win64.o/apcc.exe: 'linker' input unused when '-c' is present
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+gcc.exe: warning: c:/Programas/Xilinx/Vivado_HLS/2013.4/bin/unwrapped/win64.o/apcc.exe: linker input file unused because linking not done
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [VIVADO_HLS]
+   Compiling(apcc) oil.c_pre.c.tb.c
+@I [LIC-101] Checked out feature [VIVADO_HLS]
+@I [HLS-10] Running 'c:/Programas/Xilinx/Vivado_HLS/2013.4/bin/unwrapped/win64.o/apcc.exe'
+            for user 'JairoAndres' on host 'askur' (Windows NT_amd64 version 6.2) on Wed Apr 16 20:44:23 -0500 2014
+            in directory 'C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/wrapc'
+clang: warning: c:/Programas/Xilinx/Vivado_HLS/2013.4/bin/unwrapped/win64.o/apcc.exe: 'linker' input unused when '-c' is present
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+gcc.exe: warning: c:/Programas/Xilinx/Vivado_HLS/2013.4/bin/unwrapped/win64.o/apcc.exe: linker input file unused because linking not done
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [VIVADO_HLS]
+   Compiling(apcc) test.c_pre.c.tb.c
+@I [LIC-101] Checked out feature [VIVADO_HLS]
+@I [HLS-10] Running 'c:/Programas/Xilinx/Vivado_HLS/2013.4/bin/unwrapped/win64.o/apcc.exe'
+            for user 'JairoAndres' on host 'askur' (Windows NT_amd64 version 6.2) on Wed Apr 16 20:44:25 -0500 2014
+            in directory 'C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/wrapc'
+clang: warning: c:/Programas/Xilinx/Vivado_HLS/2013.4/bin/unwrapped/win64.o/apcc.exe: 'linker' input unused when '-c' is present
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+gcc.exe: warning: c:/Programas/Xilinx/Vivado_HLS/2013.4/bin/unwrapped/win64.o/apcc.exe: linker input file unused because linking not done
+@I [APCC-1] APCC is done.
+@I [LIC-101] Checked in feature [VIVADO_HLS]
+   Generating cosim.tv.exe
+@I [SIM-302] Generating test vectors ... 
+@I [SIM-333] Generating C post check test bench ...
+@I [SIM-12] Generating RTL test bench ...
+   Build using "C:/Programas/Xilinx/Vivado_HLS/2013.4/msys/bin/g++.exe"
+   Compiling bitset_next.cpp
+   Compiling nfa_accept_sample.cpp
+   Compiling nfa_accept_samples_generic_hw.autotb.cpp
+   Compiling nfa_accept_samples_generic_hw.cpp
+   Compiling nfa_get_finals.cpp
+   Compiling nfa_get_initials.cpp
+   Compiling p_bsf32_hw.cpp
+   Compiling sample_iterator_get_offset.cpp
+   Compiling sample_iterator_next.cpp
+   Generating cosim.sc.exe
+@I [SIM-11] Starting SystemC simulation ...
+@I [SIM-316] Starting C post checking ...
+@E [SIM-361] C TB post check failed, nonzero return value '3'.
+Begin test OIL
+2 total positive samples
+oil start. sample_length: 3. ip_size: 1, in_size: 1, symbols: 13
+merge alternative: 1 0 (states: 0 3) [score: 1]
+merge: 1 0 (states 0 0) [score: 1]
+merge alternative: 1 0 (states: 1 3) [score: 1]
+merge: 1 0 (states 1 1) [score: 1]
+merge alternative: 1 0 (states: 2 3) [score: 1]
+merge: 1 0 (states 2 2) [score: 1]
+progress: 50.0% sample: 1/2 [states: 1]
+merge alternative: 1 0 (states: 1 3) [score: 0]
+merge: 1 0 (states 1 1) [score: 0]
+merge alternative: 1 0 (states: 0 3) [score: 0]
+merge: 1 0 (states 0 0) [score: 0]
+merge alternative: 1 0 (states: 2 3) [score: 0]
+merge: 1 0 (states 2 2) [score: 0]
+merge alternative: 1 0 (states: 4 3) [score: 0]
+merge: 1 0 (states 4 4) [score: 0]
+progress: 100.0% sample: 2/2 [states: 1]
+3IF |0> |1> |2> |3> |4> |5> |6> |7> |8> |9>3 |10>3 |11>3 |12>3
+Test OIL... PASSED
+Test NFA file I/O
+test_nfa.txt written .. ok
+test_nfa.txt read .. ok
+test_nfa2.txt written .. ok
+Test NFA file I/O .. PASSED
+Test NFA accept samples
+Test NFA accept samples... PASSED
+Test NFA accept samples generic HW
+Test NFA accept samples generic HW... PASSED
+Note: VCD trace timescale unit is set by user to 1.000000e-012 sec.
+Note: VCD trace timescale unit is set by user to 1.000000e-012 sec.
+Note: VCD trace timescale unit is set by user to 1.000000e-012 sec.
+Note: VCD trace timescale unit is set by user to 1.000000e-012 sec.
+Note: VCD trace timescale unit is set by user to 1.000000e-012 sec.
+Note: VCD trace timescale unit is set by user to 1.000000e-012 sec.
+Note: VCD trace timescale unit is set by user to 1.000000e-012 sec.
+Note: VCD trace timescale unit is set by user to 1.000000e-012 sec.
+Note: VCD trace timescale unit is set by user to 1.000000e-012 sec.
+Note: VCD trace timescale unit is set by user to 1.000000e-009 sec.
+Note: VCD trace timescale unit is set by user to 1.000000e-009 sec.
+Note: VCD trace timescale unit is set by user to 1.000000e-009 sec.
+Note: VCD trace timescale unit is set by user to 1.000000e-009 sec.
+Note: VCD trace timescale unit is set by user to 1.000000e-009 sec.
+Note: VCD trace timescale unit is set by user to 1.000000e-009 sec.
+Note: VCD trace timescale unit is set by user to 1.000000e-009 sec.
+
+Info: /OSCI/SystemC: Simulation stopped by user.
+Begin test OIL
+2 total positive samples
+oil start. sample_length: 3. ip_size: 1, in_size: 1, symbols: 13
+merge alternative: 1 0 (states: 0 3) [score: 1]
+merge: 1 0 (states 0 0) [score: 1]
+merge alternative: 1 0 (states: 1 3) [score: 1]
+merge: 1 0 (states 1 1) [score: 1]
+merge alternative: 1 0 (states: 2 3) [score: 1]
+merge: 1 0 (states 2 2) [score: 1]
+progress: 50.0% sample: 1/2 [states: 1]
+merge alternative: 1 0 (states: 1 3) [score: 0]
+merge: 1 0 (states 1 1) [score: 0]
+merge alternative: 1 0 (states: 0 3) [score: 0]
+merge: 1 0 (states 0 0) [score: 0]
+merge alternative: 1 0 (states: 2 3) [score: 0]
+merge: 1 0 (states 2 2) [score: 0]
+merge alternative: 1 0 (states: 4 3) [score: 0]
+merge: 1 0 (states 4 4) [score: 0]
+progress: 100.0% sample: 2/2 [states: 1]
+3IF |0> |1> |2> |3> |4> |5> |6> |7> |8> |9>3 |10>3 |11>3 |12>3
+Test OIL... PASSED
+Test NFA file I/O
+test_nfa.txt written .. ok
+test_nfa.txt read .. ok
+test_nfa2.txt written .. ok
+Test NFA file I/O .. PASSED
+Test NFA accept samples
+Test NFA accept samples... PASSED
+Test NFA accept samples generic HW
+@E [SIM-4] *** C/RTL co-simulation finished: FAIL ***

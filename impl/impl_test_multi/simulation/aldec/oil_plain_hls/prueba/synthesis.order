@@ -1,0 +1,16 @@
+i<>.\src\system_ddr2_sdram_wrapper.v
+i<>.\src\system_nfa_accept_samples_generic_hw_top_0_wrapper.v
+i<>.\src\system.vhd
+i<>.\src\system_clock_generator_0_wrapper.vhd
+i<>.\src\system_dlmb_cntlr_wrapper.vhd
+i<>.\src\system_dlmb_wrapper.vhd
+i<>.\src\system_ilmb_cntlr_wrapper.vhd
+i<>.\src\system_ilmb_wrapper.vhd
+i<>.\src\system_lmb_bram_wrapper.vhd
+i<>.\src\system_mb_plb_wrapper.vhd
+i<>.\src\system_mdm_0_wrapper.vhd
+i<>.\src\system_microblaze_0_wrapper.vhd
+i<>.\src\system_plb_v46_0_wrapper.vhd
+i<>.\src\system_plb_v46_1_wrapper.vhd
+i<>.\src\system_proc_sys_reset_0_wrapper.vhd
+i<>.\src\system_sram_wrapper.vhd

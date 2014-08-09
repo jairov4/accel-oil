@@ -1,0 +1,162 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'sample_iterator_get_offset'" level="0">
+<item name = "Date">Thu Apr 17 08:59:34 2014
+</item>
+<item name = "Version">2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)</item>
+<item name = "Project">oil_plainc_hls</item>
+<item name = "Solution">solution_spartan6</item>
+<item name = "Product family">spartan6 spartan6_fpv6 </item>
+<item name = "Target device">xc6slx9ftg256-3</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="default">1.00, 3.00, 0.13</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">13, 13, 1, 1, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48A, FF, LUT</keys>
+<column name="Expression">-, -, -, -</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, 1, 375, 32</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, -</column>
+<column name="Register">-, -, 126, -</column>
+<column name="ShiftMemory">-, -, 0, 16</column>
+<specialColumn name="Available">32, 16, 11440, 5720</specialColumn>
+<specialColumn name="Utilization (%)">0, 6, 4, ~0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48A, FF, LUT</keys>
+<column name="nfa_accept_samples_generic_hw_add_32ns_32ns_32_8_U1">nfa_accept_samples_generic_hw_add_32ns_32ns_32_8, 0, 0, 375, 32</column>
+<column name="nfa_accept_samples_generic_hw_mul_16ns_8ns_24_4_U0">nfa_accept_samples_generic_hw_mul_16ns_8ns_24_4, 0, 1, 0, 0</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="7">Memory, Module, BRAM_18K, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Shift register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="tmp_reg_135">0, 16, 32, 16</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48A, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="4">Name, FF, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it1">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it10">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it11">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it12">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it13">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it2">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it3">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it4">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it5">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it6">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it7">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it8">1, 1, 0</column>
+<column name="ap_reg_ppiten_pp0_it9">1, 1, 0</column>
+<column name="ap_reg_ppstg_i_sample_read_reg_130_pp0_it1">16, 16, 0</column>
+<column name="i_sample_read_reg_130">16, 16, 0</column>
+<column name="indices_begin_addr_read_reg_165">32, 32, 0</column>
+<column name="indices_stride_addr_read_reg_145">8, 8, 0</column>
+<column name="tmp_1_reg_170">24, 24, 0</column>
+<column name="tmp_reg_135">16, 32, 16</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, sample_iterator_get_offset, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, sample_iterator_get_offset, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, sample_iterator_get_offset, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, sample_iterator_get_offset, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, sample_iterator_get_offset, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, sample_iterator_get_offset, return value</column>
+<column name="ap_ce">in, 1, ap_ctrl_hs, sample_iterator_get_offset, return value</column>
+<column name="ap_return">out, 32, ap_ctrl_hs, sample_iterator_get_offset, return value</column>
+<column name="indices_stride_req_din">out, 1, ap_bus, indices_stride, pointer</column>
+<column name="indices_stride_req_full_n">in, 1, ap_bus, indices_stride, pointer</column>
+<column name="indices_stride_req_write">out, 1, ap_bus, indices_stride, pointer</column>
+<column name="indices_stride_rsp_empty_n">in, 1, ap_bus, indices_stride, pointer</column>
+<column name="indices_stride_rsp_read">out, 1, ap_bus, indices_stride, pointer</column>
+<column name="indices_stride_address">out, 32, ap_bus, indices_stride, pointer</column>
+<column name="indices_stride_datain">in, 8, ap_bus, indices_stride, pointer</column>
+<column name="indices_stride_dataout">out, 8, ap_bus, indices_stride, pointer</column>
+<column name="indices_stride_size">out, 32, ap_bus, indices_stride, pointer</column>
+<column name="indices_begin_req_din">out, 1, ap_bus, indices_begin, pointer</column>
+<column name="indices_begin_req_full_n">in, 1, ap_bus, indices_begin, pointer</column>
+<column name="indices_begin_req_write">out, 1, ap_bus, indices_begin, pointer</column>
+<column name="indices_begin_rsp_empty_n">in, 1, ap_bus, indices_begin, pointer</column>
+<column name="indices_begin_rsp_read">out, 1, ap_bus, indices_begin, pointer</column>
+<column name="indices_begin_address">out, 32, ap_bus, indices_begin, pointer</column>
+<column name="indices_begin_datain">in, 32, ap_bus, indices_begin, pointer</column>
+<column name="indices_begin_dataout">out, 32, ap_bus, indices_begin, pointer</column>
+<column name="indices_begin_size">out, 32, ap_bus, indices_begin, pointer</column>
+<column name="i_index">in, 16, ap_none, i_index, scalar</column>
+<column name="i_sample">in, 16, ap_none, i_sample, scalar</column>
+<column name="indices_samples_req_din">out, 1, ap_bus, indices_samples, pointer</column>
+<column name="indices_samples_req_full_n">in, 1, ap_bus, indices_samples, pointer</column>
+<column name="indices_samples_req_write">out, 1, ap_bus, indices_samples, pointer</column>
+<column name="indices_samples_rsp_empty_n">in, 1, ap_bus, indices_samples, pointer</column>
+<column name="indices_samples_rsp_read">out, 1, ap_bus, indices_samples, pointer</column>
+<column name="indices_samples_address">out, 32, ap_bus, indices_samples, pointer</column>
+<column name="indices_samples_datain">in, 16, ap_bus, indices_samples, pointer</column>
+<column name="indices_samples_dataout">out, 16, ap_bus, indices_samples, pointer</column>
+<column name="indices_samples_size">out, 32, ap_bus, indices_samples, pointer</column>
+<column name="sample_buffer_size">in, 32, ap_none, sample_buffer_size, scalar</column>
+<column name="sample_length">in, 16, ap_none, sample_length, scalar</column>
+</table>
+</item>
+</section>
+</profile>

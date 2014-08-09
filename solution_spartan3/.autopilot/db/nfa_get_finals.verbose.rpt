@@ -1,0 +1,536 @@
+
+
+================================================================
+== Vivado HLS Report for 'nfa_get_finals'
+================================================================
+* Date:           Thu Apr 17 08:58:52 2014
+
+* Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
+* Project:        oil_plainc_hls
+* Solution:       solution_spartan3
+* Product family: spartan3a spartan3a_fpv5 
+* Target device:  xc3s200avq100-5
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |   1.00|      0.88|        0.13|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    2|    2|    2|    2| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+------+----------+
+|       Name      | BRAM_18K|  FF  |  LUT | MULT18x18|
++-----------------+---------+------+------+----------+
+|Expression       |        -|     0|     3|         -|
+|FIFO             |        -|     -|     -|         -|
+|Instance         |        -|     -|     -|         -|
+|Memory           |        -|     -|     -|         -|
+|Multiplexer      |        -|     -|    32|         -|
+|Register         |        -|    35|     -|         -|
+|ShiftMemory      |        -|     -|     -|         -|
++-----------------+---------+------+------+----------+
+|Total            |        0|    35|    35|         0|
++-----------------+---------+------+------+----------+
+|Available        |       16|  3584|  3584|        16|
++-----------------+---------+------+------+----------+
+|Utilization (%)  |        0|  ~0  |  ~0  |         0|
++-----------------+---------+------+------+----------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Shift register: 
+    N/A
+
+    * Expression: 
+    +----------------+----------+-------+---+----+------------+------------+
+    |  Variable Name | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------+----------+-------+---+----+------------+------------+
+    |ap_sig_bdd_116  |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_117  |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_119  |    and   |      0|  0|   1|           1|           1|
+    +----------------+----------+-------+---+----+------------+------------+
+    |Total           |          |      0|  0|   3|           3|           3|
+    +----------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------+----+-----------+-----+-----------+
+    |            Name            | LUT| Input Size| Bits| Total Bits|
+    +----------------------------+----+-----------+-----+-----------+
+    |nfa_finals_buckets_address  |  32|          3|   32|         96|
+    +----------------------------+----+-----------+-----+-----------+
+    |Total                       |  32|          3|   32|         96|
+    +----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------+----+-----+-----------+
+    |              Name              | FF | Bits| Const Bits|
+    +--------------------------------+----+-----+-----------+
+    |ap_CS_fsm                       |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it0_preg      |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it1           |   1|    1|          0|
+    |nfa_finals_buckets_read_reg_55  |  32|   32|          0|
+    +--------------------------------+----+-----+-----------+
+    |Total                           |  35|   35|          0|
+    +--------------------------------+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------+-----+-----+------------+--------------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  |    Source Object   |    C Type    |
++--------------------------------+-----+-----+------------+--------------------+--------------+
+|ap_clk                          |  in |    1| ap_ctrl_hs |   nfa_get_finals   | return value |
+|ap_rst                          |  in |    1| ap_ctrl_hs |   nfa_get_finals   | return value |
+|ap_start                        |  in |    1| ap_ctrl_hs |   nfa_get_finals   | return value |
+|ap_done                         | out |    1| ap_ctrl_hs |   nfa_get_finals   | return value |
+|ap_idle                         | out |    1| ap_ctrl_hs |   nfa_get_finals   | return value |
+|ap_ready                        | out |    1| ap_ctrl_hs |   nfa_get_finals   | return value |
+|ap_ce                           |  in |    1| ap_ctrl_hs |   nfa_get_finals   | return value |
+|ap_return_0                     | out |   32| ap_ctrl_hs |   nfa_get_finals   | return value |
+|ap_return_1                     | out |   32| ap_ctrl_hs |   nfa_get_finals   | return value |
+|nfa_finals_buckets_req_din      | out |    1|   ap_bus   | nfa_finals_buckets |    pointer   |
+|nfa_finals_buckets_req_full_n   |  in |    1|   ap_bus   | nfa_finals_buckets |    pointer   |
+|nfa_finals_buckets_req_write    | out |    1|   ap_bus   | nfa_finals_buckets |    pointer   |
+|nfa_finals_buckets_rsp_empty_n  |  in |    1|   ap_bus   | nfa_finals_buckets |    pointer   |
+|nfa_finals_buckets_rsp_read     | out |    1|   ap_bus   | nfa_finals_buckets |    pointer   |
+|nfa_finals_buckets_address      | out |   32|   ap_bus   | nfa_finals_buckets |    pointer   |
+|nfa_finals_buckets_datain       |  in |   32|   ap_bus   | nfa_finals_buckets |    pointer   |
+|nfa_finals_buckets_dataout      | out |   32|   ap_bus   | nfa_finals_buckets |    pointer   |
+|nfa_finals_buckets_size         | out |   32|   ap_bus   | nfa_finals_buckets |    pointer   |
++--------------------------------+-----+-----+------------+--------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 2, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 3
+* Pipeline: 1
+  Pipeline-0: II = 2, D = 3, States = { 1 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+* FSM state operations: 
+
+ <State 1>: 0.88ns
+ST_1: nfa_finals_buckets_load_req [1/1] 0.88ns
+:2  %nfa_finals_buckets_load_req = call i1 @_ssdm_op_ReadReq.ap_bus.i32P(i32* %nfa_finals_buckets, i32 1)
+
+
+ <State 2>: 0.88ns
+ST_2: nfa_finals_buckets_read [1/1] 0.88ns
+:3  %nfa_finals_buckets_read = call i32 @_ssdm_op_Read.ap_bus.i32P(i32* %nfa_finals_buckets)
+
+ST_2: nfa_finals_buckets_addr [1/1] 0.00ns
+:4  %nfa_finals_buckets_addr = getelementptr i32* %nfa_finals_buckets, i32 1
+
+ST_2: nfa_finals_buckets_load_1_req [1/1] 0.88ns
+:5  %nfa_finals_buckets_load_1_req = call i1 @_ssdm_op_ReadReq.ap_bus.i32P(i32* %nfa_finals_buckets_addr, i32 1)
+
+
+ <State 3>: 0.88ns
+ST_3: stg_8 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecIFCore(i32* %nfa_finals_buckets, [1 x i8]* @p_str1132, [7 x i8]* @p_str38, [1 x i8]* @p_str1132, [1 x i8]* @p_str1132, [1 x i8]* @p_str1132, [1 x i8]* @p_str1132)
+
+ST_3: stg_9 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBus(i32* %nfa_finals_buckets, [7 x i8]* @p_str35, i32 0, i32 0, i32 0, [1 x i8]* @p_str1132)
+
+ST_3: nfa_finals_buckets_addr_read [1/1] 0.88ns
+:6  %nfa_finals_buckets_addr_read = call i32 @_ssdm_op_Read.ap_bus.i32P(i32* %nfa_finals_buckets_addr)
+
+ST_3: mrv [1/1] 0.00ns
+:7  %mrv = insertvalue { i32, i32 } undef, i32 %nfa_finals_buckets_read, 0
+
+ST_3: mrv_1 [1/1] 0.00ns
+:8  %mrv_1 = insertvalue { i32, i32 } %mrv, i32 %nfa_finals_buckets_addr_read, 1
+
+ST_3: stg_13 [1/1] 0.00ns
+:9  ret { i32, i32 } %mrv_1
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is clock enabled: 1
+- Is pipelined: 1
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ nfa_finals_buckets]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=4; mode=0x40efa18; pingpong=0; private_global=0; IO mode=ap_bus:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+nfa_finals_buckets_load_req   (readreq      ) [ 0000]
+nfa_finals_buckets_read       (read         ) [ 0101]
+nfa_finals_buckets_addr       (getelementptr) [ 0101]
+nfa_finals_buckets_load_1_req (readreq      ) [ 0000]
+stg_8                         (specifcore   ) [ 0000]
+stg_9                         (specbus      ) [ 0000]
+nfa_finals_buckets_addr_read  (read         ) [ 0000]
+mrv                           (insertvalue  ) [ 0000]
+mrv_1                         (insertvalue  ) [ 0000]
+stg_13                        (ret          ) [ 0000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="nfa_finals_buckets">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="nfa_finals_buckets"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1001" name="const_2">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_ReadReq.ap_bus.i32P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1001" name="const_4">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_bus.i32P"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecIFCore"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str1132"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str38"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBus"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str35"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1004" name="grp_readreq_fu_22">
+<pin_list>
+<pin id="23" dir="0" index="0" bw="1" slack="0"/>
+<pin id="24" dir="0" index="1" bw="32" slack="0"/>
+<pin id="25" dir="0" index="2" bw="1" slack="0"/>
+<pin id="26" dir="1" index="3" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="readreq(1154) " fcode="readreq"/>
+<opset="nfa_finals_buckets_load_req/1 nfa_finals_buckets_load_1_req/2 "/>
+</bind>
+</comp>
+
+<comp id="30" class="1004" name="grp_read_fu_30">
+<pin_list>
+<pin id="31" dir="0" index="0" bw="32" slack="0"/>
+<pin id="32" dir="0" index="1" bw="32" slack="0"/>
+<pin id="33" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="nfa_finals_buckets_read/2 nfa_finals_buckets_addr_read/3 "/>
+</bind>
+</comp>
+
+<comp id="37" class="1004" name="nfa_finals_buckets_addr_fu_37">
+<pin_list>
+<pin id="38" dir="0" index="0" bw="32" slack="0"/>
+<pin id="39" dir="0" index="1" bw="32" slack="0"/>
+<pin id="40" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="getelementptr(29) " fcode="getelementptr"/>
+<opset="nfa_finals_buckets_addr/2 "/>
+</bind>
+</comp>
+
+<comp id="44" class="1004" name="mrv_fu_44">
+<pin_list>
+<pin id="45" dir="0" index="0" bw="64" slack="0"/>
+<pin id="46" dir="0" index="1" bw="32" slack="1"/>
+<pin id="47" dir="1" index="2" bw="64" slack="0"/>
+</pin_list>
+<bind>
+<opcode="insertvalue(57) " fcode="insertvalue"/>
+<opset="mrv/3 "/>
+</bind>
+</comp>
+
+<comp id="49" class="1004" name="mrv_1_fu_49">
+<pin_list>
+<pin id="50" dir="0" index="0" bw="64" slack="0"/>
+<pin id="51" dir="0" index="1" bw="32" slack="0"/>
+<pin id="52" dir="1" index="2" bw="64" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="insertvalue(57) " fcode="insertvalue"/>
+<opset="mrv_1/3 "/>
+</bind>
+</comp>
+
+<comp id="55" class="1005" name="nfa_finals_buckets_read_reg_55">
+<pin_list>
+<pin id="56" dir="0" index="0" bw="32" slack="1"/>
+<pin id="57" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="nfa_finals_buckets_read "/>
+</bind>
+</comp>
+
+<comp id="60" class="1005" name="nfa_finals_buckets_addr_reg_60">
+<pin_list>
+<pin id="61" dir="0" index="0" bw="32" slack="1"/>
+<pin id="62" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="nfa_finals_buckets_addr "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="27"><net_src comp="2" pin="0"/><net_sink comp="22" pin=0"/></net>
+
+<net id="28"><net_src comp="0" pin="0"/><net_sink comp="22" pin=1"/></net>
+
+<net id="29"><net_src comp="4" pin="0"/><net_sink comp="22" pin=2"/></net>
+
+<net id="34"><net_src comp="6" pin="0"/><net_sink comp="30" pin=0"/></net>
+
+<net id="35"><net_src comp="0" pin="0"/><net_sink comp="30" pin=1"/></net>
+
+<net id="41"><net_src comp="0" pin="0"/><net_sink comp="37" pin=0"/></net>
+
+<net id="42"><net_src comp="4" pin="0"/><net_sink comp="37" pin=1"/></net>
+
+<net id="43"><net_src comp="37" pin="2"/><net_sink comp="22" pin=1"/></net>
+
+<net id="48"><net_src comp="20" pin="0"/><net_sink comp="44" pin=0"/></net>
+
+<net id="53"><net_src comp="44" pin="2"/><net_sink comp="49" pin=0"/></net>
+
+<net id="54"><net_src comp="30" pin="2"/><net_sink comp="49" pin=1"/></net>
+
+<net id="58"><net_src comp="30" pin="2"/><net_sink comp="55" pin=0"/></net>
+
+<net id="59"><net_src comp="55" pin="1"/><net_sink comp="44" pin=1"/></net>
+
+<net id="63"><net_src comp="37" pin="2"/><net_sink comp="60" pin=0"/></net>
+
+<net id="64"><net_src comp="60" pin="1"/><net_sink comp="30" pin=1"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: nfa_finals_buckets | {}
+  - Chain level:
+	State 1
+	State 2
+		nfa_finals_buckets_load_1_req : 1
+	State 3
+		mrv_1 : 1
+		stg_13 : 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-------------------|
+| Operation|  Functional Unit  |
+|----------|-------------------|
+|  readreq | grp_readreq_fu_22 |
+|----------|-------------------|
+|   read   |   grp_read_fu_30  |
+|----------|-------------------|
+|insertvalue|     mrv_fu_44     |
+|          |    mrv_1_fu_49    |
+|----------|-------------------|
+|   Total  |                   |
+|----------|-------------------|
+
+Memories:
+N/A
+
+* Register list:
++------------------------------+--------+
+|                              |   FF   |
++------------------------------+--------+
+|nfa_finals_buckets_addr_reg_60|   32   |
+|nfa_finals_buckets_read_reg_55|   32   |
++------------------------------+--------+
+|             Total            |   64   |
++------------------------------+--------+
+
+* Multiplexer (MUX) list: 
+|-------------------|------|------|------|--------||---------||---------|
+|        Comp       |  Pin | Size |  BW  | S x BW ||  Delay  ||   LUT   |
+|-------------------|------|------|------|--------||---------||---------|
+| grp_readreq_fu_22 |  p1  |   2  |  32  |   64   ||    32   |
+|   grp_read_fu_30  |  p1  |   2  |  32  |   64   ||    32   |
+|-------------------|------|------|------|--------||---------||---------|
+|       Total       |      |      |      |   128  ||  4.098  ||    64   |
+|-------------------|------|------|------|--------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+
+|           |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+
+|  Function |    -   |    -   |    -   |
+|   Memory  |    -   |    -   |    -   |
+|Multiplexer|    4   |    -   |   64   |
+|  Register |    -   |   64   |    -   |
++-----------+--------+--------+--------+
+|   Total   |    4   |   64   |   64   |
++-----------+--------+--------+--------+

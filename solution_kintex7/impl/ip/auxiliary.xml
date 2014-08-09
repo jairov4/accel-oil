@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xd" xd:functionName="nfa_accept_samples_generic_hw" xd:componentRef="nfa_accept_samples_generic_hw" xd:initiationInterval="x" xd:clockPeriod="1.000000" xd:sequential="true" xd:hostMachine="64">
+  <xd:returnValue xd:interfaceRef="S_AXI_SLV0" xd:busTypeRef="axilite" xd:offset="0x60"/>
+  <xd:controlReg xd:name="control" xd:interfaceRef="S_AXI_SLV0" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="nfa-&gt;initials.buckets[]" xd:originalName="nfa" xd:direction="in" xd:interfaceRef="M_AXI_NFA_INITIALS_BUCKETS" xd:busTypeRef="aximm" xd:arraySize="2" xd:dataWidth="32"/>
+  <xd:arg xd:name="nfa-&gt;finals.buckets[]" xd:originalName="nfa" xd:direction="in" xd:interfaceRef="M_AXI_NFA_FINALS_BUCKETS" xd:busTypeRef="aximm" xd:arraySize="2" xd:dataWidth="32"/>
+  <xd:arg xd:name="nfa-&gt;forward.buckets[]" xd:originalName="nfa" xd:direction="in" xd:interfaceRef="M_AXI_NFA_FORWARD_BUCKETS" xd:busTypeRef="aximm" xd:arraySize="32130" xd:dataWidth="32"/>
+  <xd:arg xd:name="sample_buffer[]" xd:originalName="sample_buffer" xd:direction="in" xd:interfaceRef="M_AXI_SAMPLE_BUFFER" xd:busTypeRef="aximm" xd:arraySize="5120" xd:dataWidth="8"/>
+  <xd:arg xd:name="indices[].begin" xd:originalName="indices" xd:direction="in" xd:interfaceRef="M_AXI_INDICES_BEGIN" xd:busTypeRef="aximm" xd:arraySize="1024" xd:dataWidth="32"/>
+  <xd:arg xd:name="indices[].samples" xd:originalName="indices" xd:direction="in" xd:interfaceRef="M_AXI_INDICES_SAMPLES" xd:busTypeRef="aximm" xd:arraySize="1024" xd:dataWidth="16"/>
+  <xd:arg xd:name="indices[].stride" xd:originalName="indices" xd:direction="in" xd:interfaceRef="M_AXI_INDICES_STRIDE" xd:busTypeRef="aximm" xd:arraySize="1024" xd:dataWidth="8"/>
+  <xd:arg xd:name="nfa-&gt;symbols" xd:originalName="nfa" xd:direction="in" xd:interfaceRef="S_AXI_SLV0" xd:busTypeRef="axilite" xd:offset="0x14" xd:handshakeRef="ap_none" xd:dataWidth="8"/>
+  <xd:arg xd:name="sample_buffer_length" xd:originalName="sample_buffer_length" xd:direction="in" xd:interfaceRef="S_AXI_SLV0" xd:busTypeRef="axilite" xd:offset="0x1C" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="sample_length" xd:originalName="sample_length" xd:direction="in" xd:interfaceRef="S_AXI_SLV0" xd:busTypeRef="axilite" xd:offset="0x24" xd:handshakeRef="ap_none" xd:dataWidth="16"/>
+  <xd:arg xd:name="i_size" xd:originalName="i_size" xd:direction="in" xd:interfaceRef="S_AXI_SLV0" xd:busTypeRef="axilite" xd:offset="0x2C" xd:handshakeRef="ap_none" xd:dataWidth="16"/>
+  <xd:arg xd:name="begin.index" xd:originalName="begin" xd:direction="in" xd:interfaceRef="S_AXI_SLV0" xd:busTypeRef="axilite" xd:offset="0x34" xd:handshakeRef="ap_none" xd:dataWidth="16"/>
+  <xd:arg xd:name="begin.sample" xd:originalName="begin" xd:direction="in" xd:interfaceRef="S_AXI_SLV0" xd:busTypeRef="axilite" xd:offset="0x3C" xd:handshakeRef="ap_none" xd:dataWidth="16"/>
+  <xd:arg xd:name="end.index" xd:originalName="end" xd:direction="in" xd:interfaceRef="S_AXI_SLV0" xd:busTypeRef="axilite" xd:offset="0x44" xd:handshakeRef="ap_none" xd:dataWidth="16"/>
+  <xd:arg xd:name="end.sample" xd:originalName="end" xd:direction="in" xd:interfaceRef="S_AXI_SLV0" xd:busTypeRef="axilite" xd:offset="0x4C" xd:handshakeRef="ap_none" xd:dataWidth="16"/>
+  <xd:arg xd:name="stop_on_first" xd:originalName="stop_on_first" xd:direction="in" xd:interfaceRef="S_AXI_SLV0" xd:busTypeRef="axilite" xd:offset="0x54" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:arg xd:name="accept" xd:originalName="accept" xd:direction="in" xd:interfaceRef="S_AXI_SLV0" xd:busTypeRef="axilite" xd:offset="0x5C" xd:handshakeRef="ap_none" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="4" xd:worst-case="79797447607" xd:average-case="129178013"/>
+  <xd:resourceEstimates xd:LUT="2024" xd:FF="6175" xd:BRAM="0" xd:DSP="2"/>
+</xd:acceleratorMap>

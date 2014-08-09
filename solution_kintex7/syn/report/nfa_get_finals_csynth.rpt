@@ -1,0 +1,139 @@
+
+
+================================================================
+== Vivado HLS Report for 'nfa_get_finals'
+================================================================
+* Date:           Thu Apr 17 09:00:23 2014
+
+* Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
+* Project:        oil_plainc_hls
+* Solution:       solution_kintex7
+* Product family: kintex7 kintex7_fpv6 
+* Target device:  xc7k325tffg676-3
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |   1.00|      0.88|        0.13|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    2|    2|    2|    2| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|Expression       |        -|      -|       0|       3|
+|FIFO             |        -|      -|       -|       -|
+|Instance         |        -|      -|       -|       -|
+|Memory           |        -|      -|       -|       -|
+|Multiplexer      |        -|      -|       -|      32|
+|Register         |        -|      -|      35|       -|
+|ShiftMemory      |        -|      -|       -|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |        0|      0|      35|      35|
++-----------------+---------+-------+--------+--------+
+|Available        |      890|    840|  407600|  203800|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0   |
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Shift register: 
+    N/A
+
+    * Expression: 
+    +----------------+----------+-------+---+----+------------+------------+
+    |  Variable Name | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------+----------+-------+---+----+------------+------------+
+    |ap_sig_bdd_116  |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_117  |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_119  |    and   |      0|  0|   1|           1|           1|
+    +----------------+----------+-------+---+----+------------+------------+
+    |Total           |          |      0|  0|   3|           3|           3|
+    +----------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------+----+-----------+-----+-----------+
+    |            Name            | LUT| Input Size| Bits| Total Bits|
+    +----------------------------+----+-----------+-----+-----------+
+    |nfa_finals_buckets_address  |  32|          3|   32|         96|
+    +----------------------------+----+-----------+-----+-----------+
+    |Total                       |  32|          3|   32|         96|
+    +----------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------+----+-----+-----------+
+    |              Name              | FF | Bits| Const Bits|
+    +--------------------------------+----+-----+-----------+
+    |ap_CS_fsm                       |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it0_preg      |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it1           |   1|    1|          0|
+    |nfa_finals_buckets_read_reg_55  |  32|   32|          0|
+    +--------------------------------+----+-----+-----------+
+    |Total                           |  35|   35|          0|
+    +--------------------------------+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------+-----+-----+------------+--------------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  |    Source Object   |    C Type    |
++--------------------------------+-----+-----+------------+--------------------+--------------+
+|ap_clk                          |  in |    1| ap_ctrl_hs |   nfa_get_finals   | return value |
+|ap_rst                          |  in |    1| ap_ctrl_hs |   nfa_get_finals   | return value |
+|ap_start                        |  in |    1| ap_ctrl_hs |   nfa_get_finals   | return value |
+|ap_done                         | out |    1| ap_ctrl_hs |   nfa_get_finals   | return value |
+|ap_idle                         | out |    1| ap_ctrl_hs |   nfa_get_finals   | return value |
+|ap_ready                        | out |    1| ap_ctrl_hs |   nfa_get_finals   | return value |
+|ap_ce                           |  in |    1| ap_ctrl_hs |   nfa_get_finals   | return value |
+|ap_return_0                     | out |   32| ap_ctrl_hs |   nfa_get_finals   | return value |
+|ap_return_1                     | out |   32| ap_ctrl_hs |   nfa_get_finals   | return value |
+|nfa_finals_buckets_req_din      | out |    1|   ap_bus   | nfa_finals_buckets |    pointer   |
+|nfa_finals_buckets_req_full_n   |  in |    1|   ap_bus   | nfa_finals_buckets |    pointer   |
+|nfa_finals_buckets_req_write    | out |    1|   ap_bus   | nfa_finals_buckets |    pointer   |
+|nfa_finals_buckets_rsp_empty_n  |  in |    1|   ap_bus   | nfa_finals_buckets |    pointer   |
+|nfa_finals_buckets_rsp_read     | out |    1|   ap_bus   | nfa_finals_buckets |    pointer   |
+|nfa_finals_buckets_address      | out |   32|   ap_bus   | nfa_finals_buckets |    pointer   |
+|nfa_finals_buckets_datain       |  in |   32|   ap_bus   | nfa_finals_buckets |    pointer   |
+|nfa_finals_buckets_dataout      | out |   32|   ap_bus   | nfa_finals_buckets |    pointer   |
+|nfa_finals_buckets_size         | out |   32|   ap_bus   | nfa_finals_buckets |    pointer   |
++--------------------------------+-----+-----+------------+--------------------+--------------+
+

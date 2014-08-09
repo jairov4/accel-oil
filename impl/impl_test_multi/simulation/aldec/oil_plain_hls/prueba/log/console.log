@@ -1,0 +1,512 @@
+# Error: invalid command name "scripter"
+#     while executing
+# "scripter"
+#     (file "C:/Users/JAIROA~1/AppData/Local/Temp/tmp95C0.tmp" line 1)
+#     invoked from within
+# "source {C:/Users/JAIROA~1/AppData/Local/Temp/tmp95C0.tmp}"
+#     invoked from within
+# "interp eval $slave "source $source_file""
+help 
+# Error: help: not enough parameters
+# Error: Usage:
+# Error: help -help
+# Error: help <command_name>
+help 
+# Error: help: not enough parameters
+# Error: Usage:
+# Error: help -help
+# Error: help <command_name>
+# Error: invalid command name "-help"
+#     while executing
+# "-help"
+#     (file "C:/Users/JAIROA~1/AppData/Local/Temp/tmpC993.tmp" line 2)
+#     invoked from within
+# "source {C:/Users/JAIROA~1/AppData/Local/Temp/tmpC993.tmp}"
+#     invoked from within
+# "interp eval $slave "source $source_file""
+# Error: invalid command name "scripter"
+#     while executing
+# "scripter -tcl"
+#     (file "C:/Users/JAIROA~1/AppData/Local/Temp/tmpF2A8.tmp" line 1)
+#     invoked from within
+# "source {C:/Users/JAIROA~1/AppData/Local/Temp/tmpF2A8.tmp}"
+#     invoked from within
+# "interp eval $slave "source $source_file""
+# C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/impl/impl_test_multi/simulation/aldec/oil_plain_hls/prueba/src
+# Error: invalid command name "ls"
+#     while executing
+# "ls"
+#     (file "C:/Users/JAIROA~1/AppData/Local/Temp/tmp17B6.tmp" line 1)
+#     invoked from within
+# "source {C:/Users/JAIROA~1/AppData/Local/Temp/tmp17B6.tmp}"
+#     invoked from within
+# "interp eval $slave "source $source_file""
+# Error: invalid command name "cwd"
+#     while executing
+# "cwd"
+#     (file "C:/Users/JAIROA~1/AppData/Local/Temp/tmp2AA3.tmp" line 1)
+#     invoked from within
+# "source {C:/Users/JAIROA~1/AppData/Local/Temp/tmp2AA3.tmp}"
+#     invoked from within
+# "interp eval $slave "source $source_file""
+# C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/impl/impl_test_multi/simulation/aldec/oil_plain_hls/prueba/src
+# Error: invalid command name "scripter"
+#     while executing
+# "scripter"
+#     (file "C:/Users/JAIROA~1/AppData/Local/Temp/tmp4590.tmp" line 1)
+#     invoked from within
+# "source {C:/Users/JAIROA~1/AppData/Local/Temp/tmp4590.tmp}"
+#     invoked from within
+# "interp eval $slave "source $source_file""
+alog -O2 -sve   -work prueba $dsn/src/system_ddr2_sdram_wrapper.v $dsn/src/system_nfa_accept_samples_generic_hw_top_0_wrapper.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Warning: VCP2515 system_ddr2_sdram_wrapper.v : (6102, 7): Undefined module: mpmc was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 system_nfa_accept_samples_generic_hw_top_0_wrapper.v : (553, 7): Undefined module: nfa_accept_samples_generic_hw_top was used. Port connection rules will not be checked at such instantiations.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Unit top modules: system_ddr2_sdram_wrapper system_nfa_accept_samples_generic_hw_top_0_wrapper.
+# $root top modules: system_ddr2_sdram_wrapper system_nfa_accept_samples_generic_hw_top_0_wrapper.
+# Compile success 0 Errors 2 Warnings  Analysis time: 2[s].
+# done
+acom -reorder -O3 -work prueba -2002  $dsn/src/system.vhd $dsn/src/system_clock_generator_0_wrapper.vhd $dsn/src/system_dlmb_cntlr_wrapper.vhd $dsn/src/system_dlmb_wrapper.vhd $dsn/src/system_ilmb_cntlr_wrapper.vhd $dsn/src/system_ilmb_wrapper.vhd $dsn/src/system_lmb_bram_wrapper.vhd $dsn/src/system_mb_plb_wrapper.vhd $dsn/src/system_mdm_0_wrapper.vhd $dsn/src/system_microblaze_0_wrapper.vhd $dsn/src/system_plb_v46_0_wrapper.vhd $dsn/src/system_plb_v46_1_wrapper.vhd $dsn/src/system_proc_sys_reset_0_wrapper.vhd $dsn/src/system_sram_wrapper.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system.vhd
+# Compile Entity "system"
+# Compile Architecture "STRUCTURE" of Entity "system"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_clock_generator_0_wrapper.vhd
+# Compile Entity "system_clock_generator_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_clock_generator_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_dlmb_cntlr_wrapper.vhd
+# Compile Entity "system_dlmb_cntlr_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_dlmb_cntlr_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_dlmb_wrapper.vhd
+# Compile Entity "system_dlmb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_dlmb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_ilmb_cntlr_wrapper.vhd
+# Compile Entity "system_ilmb_cntlr_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_ilmb_cntlr_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_ilmb_wrapper.vhd
+# Compile Entity "system_ilmb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_ilmb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_lmb_bram_wrapper.vhd
+# Compile Entity "system_lmb_bram_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_lmb_bram_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_mb_plb_wrapper.vhd
+# Compile Entity "system_mb_plb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_mb_plb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_mdm_0_wrapper.vhd
+# Compile Entity "system_mdm_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_mdm_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_microblaze_0_wrapper.vhd
+# Compile Entity "system_microblaze_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_microblaze_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_plb_v46_0_wrapper.vhd
+# Compile Entity "system_plb_v46_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_plb_v46_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_plb_v46_1_wrapper.vhd
+# Compile Entity "system_plb_v46_1_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_plb_v46_1_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_proc_sys_reset_0_wrapper.vhd
+# Compile Entity "system_proc_sys_reset_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_proc_sys_reset_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_sram_wrapper.vhd
+# Compile Entity "system_sram_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_sram_wrapper"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_mb_plb_wrapper.vhd
+# Compile Entity "system_mb_plb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_mb_plb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_plb_v46_1_wrapper.vhd
+# Compile Entity "system_plb_v46_1_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_plb_v46_1_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_proc_sys_reset_0_wrapper.vhd
+# Compile Entity "system_proc_sys_reset_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_proc_sys_reset_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_sram_wrapper.vhd
+# Compile Entity "system_sram_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_sram_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_microblaze_0_wrapper.vhd
+# Compile Entity "system_microblaze_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_microblaze_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_plb_v46_0_wrapper.vhd
+# Compile Entity "system_plb_v46_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_plb_v46_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_mdm_0_wrapper.vhd
+# Compile Entity "system_mdm_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_mdm_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_dlmb_wrapper.vhd
+# Compile Entity "system_dlmb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_dlmb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_ilmb_wrapper.vhd
+# Compile Entity "system_ilmb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_ilmb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_ilmb_cntlr_wrapper.vhd
+# Compile Entity "system_ilmb_cntlr_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_ilmb_cntlr_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_clock_generator_0_wrapper.vhd
+# Compile Entity "system_clock_generator_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_clock_generator_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_dlmb_cntlr_wrapper.vhd
+# Compile Entity "system_dlmb_cntlr_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_dlmb_cntlr_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system.vhd
+# Compile Architecture "STRUCTURE" of Entity "system"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_mb_plb_wrapper.vhd
+# Compile Entity "system_mb_plb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_mb_plb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_plb_v46_1_wrapper.vhd
+# Compile Entity "system_plb_v46_1_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_plb_v46_1_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_proc_sys_reset_0_wrapper.vhd
+# Compile Entity "system_proc_sys_reset_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_proc_sys_reset_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_sram_wrapper.vhd
+# Compile Entity "system_sram_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_sram_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_microblaze_0_wrapper.vhd
+# Compile Entity "system_microblaze_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_microblaze_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_plb_v46_0_wrapper.vhd
+# Compile Entity "system_plb_v46_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_plb_v46_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_mdm_0_wrapper.vhd
+# Compile Entity "system_mdm_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_mdm_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_dlmb_wrapper.vhd
+# Compile Entity "system_dlmb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_dlmb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_ilmb_wrapper.vhd
+# Compile Entity "system_ilmb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_ilmb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_ilmb_cntlr_wrapper.vhd
+# Compile Entity "system_ilmb_cntlr_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_ilmb_cntlr_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_clock_generator_0_wrapper.vhd
+# Compile Entity "system_clock_generator_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_clock_generator_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_dlmb_cntlr_wrapper.vhd
+# Compile Entity "system_dlmb_cntlr_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_dlmb_cntlr_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system.vhd
+# Compile Architecture "STRUCTURE" of Entity "system"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_mb_plb_wrapper.vhd
+# Compile Entity "system_mb_plb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_mb_plb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_plb_v46_1_wrapper.vhd
+# Compile Entity "system_plb_v46_1_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_plb_v46_1_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_proc_sys_reset_0_wrapper.vhd
+# Compile Entity "system_proc_sys_reset_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_proc_sys_reset_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_sram_wrapper.vhd
+# Compile Entity "system_sram_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_sram_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_microblaze_0_wrapper.vhd
+# Compile Entity "system_microblaze_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_microblaze_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_plb_v46_0_wrapper.vhd
+# Compile Entity "system_plb_v46_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_plb_v46_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_mdm_0_wrapper.vhd
+# Compile Entity "system_mdm_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_mdm_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_dlmb_wrapper.vhd
+# Compile Entity "system_dlmb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_dlmb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_ilmb_wrapper.vhd
+# Compile Entity "system_ilmb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_ilmb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_ilmb_cntlr_wrapper.vhd
+# Compile Entity "system_ilmb_cntlr_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_ilmb_cntlr_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_clock_generator_0_wrapper.vhd
+# Compile Entity "system_clock_generator_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_clock_generator_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_dlmb_cntlr_wrapper.vhd
+# Compile Entity "system_dlmb_cntlr_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_dlmb_cntlr_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system.vhd
+# Compile Architecture "STRUCTURE" of Entity "system"
+# Error: COMP96_0059: system_mb_plb_wrapper.vhd : (10, 1): Library "plb_v46_v1_05_a" not found.
+# Error: COMP96_0078: system_mb_plb_wrapper.vhd : (11, 5): Unknown identifier "plb_v46_v1_05_a".
+# Error: COMP96_0056: system_mb_plb_wrapper.vhd : (115, 1): Cannot find referenced entity declaration "system_mb_plb_wrapper".
+# Error: COMP96_0059: system_plb_v46_1_wrapper.vhd : (10, 1): Library "plb_v46_v1_05_a" not found.
+# Error: COMP96_0078: system_plb_v46_1_wrapper.vhd : (11, 5): Unknown identifier "plb_v46_v1_05_a".
+# Error: COMP96_0056: system_plb_v46_1_wrapper.vhd : (115, 1): Cannot find referenced entity declaration "system_plb_v46_1_wrapper".
+# Error: COMP96_0059: system_proc_sys_reset_0_wrapper.vhd : (10, 1): Library "proc_sys_reset_v3_00_a" not found.
+# Error: COMP96_0078: system_proc_sys_reset_0_wrapper.vhd : (11, 5): Unknown identifier "proc_sys_reset_v3_00_a".
+# Error: COMP96_0056: system_proc_sys_reset_0_wrapper.vhd : (40, 1): Cannot find referenced entity declaration "system_proc_sys_reset_0_wrapper".
+# Error: COMP96_0059: system_sram_wrapper.vhd : (10, 1): Library "xps_mch_emc_v3_01_a" not found.
+# Error: COMP96_0078: system_sram_wrapper.vhd : (11, 5): Unknown identifier "xps_mch_emc_v3_01_a".
+# Error: COMP96_0056: system_sram_wrapper.vhd : (108, 1): Cannot find referenced entity declaration "system_sram_wrapper".
+# Error: COMP96_0059: system_microblaze_0_wrapper.vhd : (10, 1): Library "microblaze_v8_50_c" not found.
+# Error: COMP96_0078: system_microblaze_0_wrapper.vhd : (11, 5): Unknown identifier "microblaze_v8_50_c".
+# Error: COMP96_0056: system_microblaze_0_wrapper.vhd : (658, 1): Cannot find referenced entity declaration "system_microblaze_0_wrapper".
+# Error: COMP96_0059: system_plb_v46_0_wrapper.vhd : (10, 1): Library "plb_v46_v1_05_a" not found.
+# Error: COMP96_0078: system_plb_v46_0_wrapper.vhd : (11, 5): Unknown identifier "plb_v46_v1_05_a".
+# Error: COMP96_0056: system_plb_v46_0_wrapper.vhd : (115, 1): Cannot find referenced entity declaration "system_plb_v46_0_wrapper".
+# Error: COMP96_0059: system_mdm_0_wrapper.vhd : (10, 1): Library "mdm_v2_10_a" not found.
+# Error: COMP96_0078: system_mdm_0_wrapper.vhd : (11, 5): Unknown identifier "mdm_v2_10_a".
+# Error: COMP96_0056: system_mdm_0_wrapper.vhd : (363, 1): Cannot find referenced entity declaration "system_mdm_0_wrapper".
+# Error: COMP96_0059: system_dlmb_wrapper.vhd : (10, 1): Library "lmb_v10_v2_00_b" not found.
+# Error: COMP96_0078: system_dlmb_wrapper.vhd : (11, 5): Unknown identifier "lmb_v10_v2_00_b".
+# Error: COMP96_0056: system_dlmb_wrapper.vhd : (43, 1): Cannot find referenced entity declaration "system_dlmb_wrapper".
+# Error: COMP96_0059: system_ilmb_wrapper.vhd : (10, 1): Library "lmb_v10_v2_00_b" not found.
+# Error: COMP96_0078: system_ilmb_wrapper.vhd : (11, 5): Unknown identifier "lmb_v10_v2_00_b".
+# Error: COMP96_0056: system_ilmb_wrapper.vhd : (43, 1): Cannot find referenced entity declaration "system_ilmb_wrapper".
+# Error: COMP96_0059: system_ilmb_cntlr_wrapper.vhd : (10, 1): Library "lmb_bram_if_cntlr_v3_10_c" not found.
+# Error: COMP96_0078: system_ilmb_cntlr_wrapper.vhd : (11, 5): Unknown identifier "lmb_bram_if_cntlr_v3_10_c".
+# Error: COMP96_0056: system_ilmb_cntlr_wrapper.vhd : (133, 1): Cannot find referenced entity declaration "system_ilmb_cntlr_wrapper".
+# Error: COMP96_0059: system_clock_generator_0_wrapper.vhd : (13, 1): Library "clock_generator_v4_03_a" not found.
+# Error: COMP96_0078: system_clock_generator_0_wrapper.vhd : (14, 5): Unknown identifier "clock_generator_v4_03_a".
+# Error: COMP96_0056: system_clock_generator_0_wrapper.vhd : (46, 1): Cannot find referenced entity declaration "system_clock_generator_0_wrapper".
+# Error: COMP96_0059: system_dlmb_cntlr_wrapper.vhd : (10, 1): Library "lmb_bram_if_cntlr_v3_10_c" not found.
+# Error: COMP96_0078: system_dlmb_cntlr_wrapper.vhd : (11, 5): Unknown identifier "lmb_bram_if_cntlr_v3_10_c".
+# Error: COMP96_0056: system_dlmb_cntlr_wrapper.vhd : (133, 1): Cannot find referenced entity declaration "system_dlmb_cntlr_wrapper".
+# Warning: ELAB1_0026: system.vhd : (4194, 0): There is no default binding for component "system_microblaze_0_wrapper". (No entity named "system_microblaze_0_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (4838, 0): There is no default binding for component "system_mb_plb_wrapper". (No entity named "system_mb_plb_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (4939, 0): There is no default binding for component "system_ilmb_wrapper". (No entity named "system_ilmb_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (4968, 0): There is no default binding for component "system_dlmb_wrapper". (No entity named "system_dlmb_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (4997, 0): There is no default binding for component "system_dlmb_cntlr_wrapper". (No entity named "system_dlmb_cntlr_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (5116, 0): There is no default binding for component "system_ilmb_cntlr_wrapper". (No entity named "system_ilmb_cntlr_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (5253, 0): There is no default binding for component "system_sram_wrapper". (No entity named "system_sram_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (7127, 0): There is no default binding for component "system_clock_generator_0_wrapper". (No entity named "system_clock_generator_0_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (7156, 0): There is no default binding for component "system_mdm_0_wrapper". (No entity named "system_mdm_0_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (7505, 0): There is no default binding for component "system_proc_sys_reset_0_wrapper". (No entity named "system_proc_sys_reset_0_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (7706, 0): There is no default binding for component "system_plb_v46_0_wrapper". (No entity named "system_plb_v46_0_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (7807, 0): There is no default binding for component "system_plb_v46_1_wrapper". (No entity named "system_plb_v46_1_wrapper" was found).
+# Compile failure 36 Errors 12 Warnings  Analysis time :  10.0 [s]
+alog -O2 -sve   -work prueba $dsn/src/system_ddr2_sdram_wrapper.v $dsn/src/system_nfa_accept_samples_generic_hw_top_0_wrapper.v
+# Warning: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# Compile...
+# Pass 1. Scanning modules hierarchy.
+# Info: VCP2113 Module \$root found in current working library.
+# Warning: VCP2515 system_ddr2_sdram_wrapper.v : (6102, 7): Undefined module: mpmc was used. Port connection rules will not be checked at such instantiations.
+# Warning: VCP2515 system_nfa_accept_samples_generic_hw_top_0_wrapper.v : (553, 7): Undefined module: nfa_accept_samples_generic_hw_top was used. Port connection rules will not be checked at such instantiations.
+# Pass 2. Processing instantiations.
+# Pass 3. Processing behavioral statements.
+# Running Optimizer.
+# ELB/DAG code generating.
+# Info: VCP2113 Module \$root found in current working library.
+# Unit top modules: system_ddr2_sdram_wrapper system_nfa_accept_samples_generic_hw_top_0_wrapper.
+# $root top modules: system_ddr2_sdram_wrapper system_nfa_accept_samples_generic_hw_top_0_wrapper.
+# Compile success 0 Errors 2 Warnings  Analysis time: 1[s].
+# done
+acom -reorder -O3 -work prueba -2002  $dsn/src/system.vhd $dsn/src/system_clock_generator_0_wrapper.vhd $dsn/src/system_dlmb_cntlr_wrapper.vhd $dsn/src/system_dlmb_wrapper.vhd $dsn/src/system_ilmb_cntlr_wrapper.vhd $dsn/src/system_ilmb_wrapper.vhd $dsn/src/system_lmb_bram_wrapper.vhd $dsn/src/system_mb_plb_wrapper.vhd $dsn/src/system_mdm_0_wrapper.vhd $dsn/src/system_microblaze_0_wrapper.vhd $dsn/src/system_plb_v46_0_wrapper.vhd $dsn/src/system_plb_v46_1_wrapper.vhd $dsn/src/system_proc_sys_reset_0_wrapper.vhd $dsn/src/system_sram_wrapper.vhd
+# Compile with File Reorder...
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system.vhd
+# Compile Entity "system"
+# Compile Architecture "STRUCTURE" of Entity "system"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_clock_generator_0_wrapper.vhd
+# Compile Entity "system_clock_generator_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_clock_generator_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_dlmb_cntlr_wrapper.vhd
+# Compile Entity "system_dlmb_cntlr_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_dlmb_cntlr_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_dlmb_wrapper.vhd
+# Compile Entity "system_dlmb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_dlmb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_ilmb_cntlr_wrapper.vhd
+# Compile Entity "system_ilmb_cntlr_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_ilmb_cntlr_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_ilmb_wrapper.vhd
+# Compile Entity "system_ilmb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_ilmb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_lmb_bram_wrapper.vhd
+# Compile Entity "system_lmb_bram_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_lmb_bram_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_mb_plb_wrapper.vhd
+# Compile Entity "system_mb_plb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_mb_plb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_mdm_0_wrapper.vhd
+# Compile Entity "system_mdm_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_mdm_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_microblaze_0_wrapper.vhd
+# Compile Entity "system_microblaze_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_microblaze_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_plb_v46_0_wrapper.vhd
+# Compile Entity "system_plb_v46_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_plb_v46_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_plb_v46_1_wrapper.vhd
+# Compile Entity "system_plb_v46_1_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_plb_v46_1_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_proc_sys_reset_0_wrapper.vhd
+# Compile Entity "system_proc_sys_reset_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_proc_sys_reset_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_sram_wrapper.vhd
+# Compile Entity "system_sram_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_sram_wrapper"
+# Incorrect order of units detected.
+# Automatic reorder and incremental recompilation of required units in progress.
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_mb_plb_wrapper.vhd
+# Compile Entity "system_mb_plb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_mb_plb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_plb_v46_1_wrapper.vhd
+# Compile Entity "system_plb_v46_1_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_plb_v46_1_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_proc_sys_reset_0_wrapper.vhd
+# Compile Entity "system_proc_sys_reset_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_proc_sys_reset_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_sram_wrapper.vhd
+# Compile Entity "system_sram_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_sram_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_microblaze_0_wrapper.vhd
+# Compile Entity "system_microblaze_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_microblaze_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_plb_v46_0_wrapper.vhd
+# Compile Entity "system_plb_v46_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_plb_v46_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_mdm_0_wrapper.vhd
+# Compile Entity "system_mdm_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_mdm_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_dlmb_wrapper.vhd
+# Compile Entity "system_dlmb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_dlmb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_ilmb_wrapper.vhd
+# Compile Entity "system_ilmb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_ilmb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_ilmb_cntlr_wrapper.vhd
+# Compile Entity "system_ilmb_cntlr_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_ilmb_cntlr_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_clock_generator_0_wrapper.vhd
+# Compile Entity "system_clock_generator_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_clock_generator_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_dlmb_cntlr_wrapper.vhd
+# Compile Entity "system_dlmb_cntlr_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_dlmb_cntlr_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system.vhd
+# Compile Architecture "STRUCTURE" of Entity "system"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_mb_plb_wrapper.vhd
+# Compile Entity "system_mb_plb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_mb_plb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_plb_v46_1_wrapper.vhd
+# Compile Entity "system_plb_v46_1_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_plb_v46_1_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_proc_sys_reset_0_wrapper.vhd
+# Compile Entity "system_proc_sys_reset_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_proc_sys_reset_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_sram_wrapper.vhd
+# Compile Entity "system_sram_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_sram_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_microblaze_0_wrapper.vhd
+# Compile Entity "system_microblaze_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_microblaze_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_plb_v46_0_wrapper.vhd
+# Compile Entity "system_plb_v46_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_plb_v46_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_mdm_0_wrapper.vhd
+# Compile Entity "system_mdm_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_mdm_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_dlmb_wrapper.vhd
+# Compile Entity "system_dlmb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_dlmb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_ilmb_wrapper.vhd
+# Compile Entity "system_ilmb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_ilmb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_ilmb_cntlr_wrapper.vhd
+# Compile Entity "system_ilmb_cntlr_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_ilmb_cntlr_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_clock_generator_0_wrapper.vhd
+# Compile Entity "system_clock_generator_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_clock_generator_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_dlmb_cntlr_wrapper.vhd
+# Compile Entity "system_dlmb_cntlr_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_dlmb_cntlr_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system.vhd
+# Compile Architecture "STRUCTURE" of Entity "system"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_mb_plb_wrapper.vhd
+# Compile Entity "system_mb_plb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_mb_plb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_plb_v46_1_wrapper.vhd
+# Compile Entity "system_plb_v46_1_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_plb_v46_1_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_proc_sys_reset_0_wrapper.vhd
+# Compile Entity "system_proc_sys_reset_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_proc_sys_reset_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_sram_wrapper.vhd
+# Compile Entity "system_sram_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_sram_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_microblaze_0_wrapper.vhd
+# Compile Entity "system_microblaze_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_microblaze_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_plb_v46_0_wrapper.vhd
+# Compile Entity "system_plb_v46_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_plb_v46_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_mdm_0_wrapper.vhd
+# Compile Entity "system_mdm_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_mdm_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_dlmb_wrapper.vhd
+# Compile Entity "system_dlmb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_dlmb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_ilmb_wrapper.vhd
+# Compile Entity "system_ilmb_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_ilmb_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_ilmb_cntlr_wrapper.vhd
+# Compile Entity "system_ilmb_cntlr_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_ilmb_cntlr_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_clock_generator_0_wrapper.vhd
+# Compile Entity "system_clock_generator_0_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_clock_generator_0_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system_dlmb_cntlr_wrapper.vhd
+# Compile Entity "system_dlmb_cntlr_wrapper"
+# Compile Architecture "STRUCTURE" of Entity "system_dlmb_cntlr_wrapper"
+# File: C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\aldec\oil_plain_hls\prueba\src\system.vhd
+# Compile Architecture "STRUCTURE" of Entity "system"
+# Error: COMP96_0059: system_mb_plb_wrapper.vhd : (10, 1): Library "plb_v46_v1_05_a" not found.
+# Error: COMP96_0078: system_mb_plb_wrapper.vhd : (11, 5): Unknown identifier "plb_v46_v1_05_a".
+# Error: COMP96_0056: system_mb_plb_wrapper.vhd : (115, 1): Cannot find referenced entity declaration "system_mb_plb_wrapper".
+# Error: COMP96_0059: system_plb_v46_1_wrapper.vhd : (10, 1): Library "plb_v46_v1_05_a" not found.
+# Error: COMP96_0078: system_plb_v46_1_wrapper.vhd : (11, 5): Unknown identifier "plb_v46_v1_05_a".
+# Error: COMP96_0056: system_plb_v46_1_wrapper.vhd : (115, 1): Cannot find referenced entity declaration "system_plb_v46_1_wrapper".
+# Error: COMP96_0059: system_proc_sys_reset_0_wrapper.vhd : (10, 1): Library "proc_sys_reset_v3_00_a" not found.
+# Error: COMP96_0078: system_proc_sys_reset_0_wrapper.vhd : (11, 5): Unknown identifier "proc_sys_reset_v3_00_a".
+# Error: COMP96_0056: system_proc_sys_reset_0_wrapper.vhd : (40, 1): Cannot find referenced entity declaration "system_proc_sys_reset_0_wrapper".
+# Error: COMP96_0059: system_sram_wrapper.vhd : (10, 1): Library "xps_mch_emc_v3_01_a" not found.
+# Error: COMP96_0078: system_sram_wrapper.vhd : (11, 5): Unknown identifier "xps_mch_emc_v3_01_a".
+# Error: COMP96_0056: system_sram_wrapper.vhd : (108, 1): Cannot find referenced entity declaration "system_sram_wrapper".
+# Error: COMP96_0059: system_microblaze_0_wrapper.vhd : (10, 1): Library "microblaze_v8_50_c" not found.
+# Error: COMP96_0078: system_microblaze_0_wrapper.vhd : (11, 5): Unknown identifier "microblaze_v8_50_c".
+# Error: COMP96_0056: system_microblaze_0_wrapper.vhd : (658, 1): Cannot find referenced entity declaration "system_microblaze_0_wrapper".
+# Error: COMP96_0059: system_plb_v46_0_wrapper.vhd : (10, 1): Library "plb_v46_v1_05_a" not found.
+# Error: COMP96_0078: system_plb_v46_0_wrapper.vhd : (11, 5): Unknown identifier "plb_v46_v1_05_a".
+# Error: COMP96_0056: system_plb_v46_0_wrapper.vhd : (115, 1): Cannot find referenced entity declaration "system_plb_v46_0_wrapper".
+# Error: COMP96_0059: system_mdm_0_wrapper.vhd : (10, 1): Library "mdm_v2_10_a" not found.
+# Error: COMP96_0078: system_mdm_0_wrapper.vhd : (11, 5): Unknown identifier "mdm_v2_10_a".
+# Error: COMP96_0056: system_mdm_0_wrapper.vhd : (363, 1): Cannot find referenced entity declaration "system_mdm_0_wrapper".
+# Error: COMP96_0059: system_dlmb_wrapper.vhd : (10, 1): Library "lmb_v10_v2_00_b" not found.
+# Error: COMP96_0078: system_dlmb_wrapper.vhd : (11, 5): Unknown identifier "lmb_v10_v2_00_b".
+# Error: COMP96_0056: system_dlmb_wrapper.vhd : (43, 1): Cannot find referenced entity declaration "system_dlmb_wrapper".
+# Error: COMP96_0059: system_ilmb_wrapper.vhd : (10, 1): Library "lmb_v10_v2_00_b" not found.
+# Error: COMP96_0078: system_ilmb_wrapper.vhd : (11, 5): Unknown identifier "lmb_v10_v2_00_b".
+# Error: COMP96_0056: system_ilmb_wrapper.vhd : (43, 1): Cannot find referenced entity declaration "system_ilmb_wrapper".
+# Error: COMP96_0059: system_ilmb_cntlr_wrapper.vhd : (10, 1): Library "lmb_bram_if_cntlr_v3_10_c" not found.
+# Error: COMP96_0078: system_ilmb_cntlr_wrapper.vhd : (11, 5): Unknown identifier "lmb_bram_if_cntlr_v3_10_c".
+# Error: COMP96_0056: system_ilmb_cntlr_wrapper.vhd : (133, 1): Cannot find referenced entity declaration "system_ilmb_cntlr_wrapper".
+# Error: COMP96_0059: system_clock_generator_0_wrapper.vhd : (13, 1): Library "clock_generator_v4_03_a" not found.
+# Error: COMP96_0078: system_clock_generator_0_wrapper.vhd : (14, 5): Unknown identifier "clock_generator_v4_03_a".
+# Error: COMP96_0056: system_clock_generator_0_wrapper.vhd : (46, 1): Cannot find referenced entity declaration "system_clock_generator_0_wrapper".
+# Error: COMP96_0059: system_dlmb_cntlr_wrapper.vhd : (10, 1): Library "lmb_bram_if_cntlr_v3_10_c" not found.
+# Error: COMP96_0078: system_dlmb_cntlr_wrapper.vhd : (11, 5): Unknown identifier "lmb_bram_if_cntlr_v3_10_c".
+# Error: COMP96_0056: system_dlmb_cntlr_wrapper.vhd : (133, 1): Cannot find referenced entity declaration "system_dlmb_cntlr_wrapper".
+# Warning: ELAB1_0026: system.vhd : (4194, 0): There is no default binding for component "system_microblaze_0_wrapper". (No entity named "system_microblaze_0_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (4838, 0): There is no default binding for component "system_mb_plb_wrapper". (No entity named "system_mb_plb_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (4939, 0): There is no default binding for component "system_ilmb_wrapper". (No entity named "system_ilmb_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (4968, 0): There is no default binding for component "system_dlmb_wrapper". (No entity named "system_dlmb_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (4997, 0): There is no default binding for component "system_dlmb_cntlr_wrapper". (No entity named "system_dlmb_cntlr_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (5116, 0): There is no default binding for component "system_ilmb_cntlr_wrapper". (No entity named "system_ilmb_cntlr_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (5253, 0): There is no default binding for component "system_sram_wrapper". (No entity named "system_sram_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (7127, 0): There is no default binding for component "system_clock_generator_0_wrapper". (No entity named "system_clock_generator_0_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (7156, 0): There is no default binding for component "system_mdm_0_wrapper". (No entity named "system_mdm_0_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (7505, 0): There is no default binding for component "system_proc_sys_reset_0_wrapper". (No entity named "system_proc_sys_reset_0_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (7706, 0): There is no default binding for component "system_plb_v46_0_wrapper". (No entity named "system_plb_v46_0_wrapper" was found).
+# Warning: ELAB1_0026: system.vhd : (7807, 0): There is no default binding for component "system_plb_v46_1_wrapper". (No entity named "system_plb_v46_1_wrapper" was found).
+# Compile failure 36 Errors 12 Warnings  Analysis time :  10.0 [s]
+# Design: Warning: Library VIRTEX5 required for the selected device family has not been installed.
+# Error: You do not have valid licenses to VHPI, PLI and DPI-C wizards. Contact Aldec for ordering information sales@aldec.com

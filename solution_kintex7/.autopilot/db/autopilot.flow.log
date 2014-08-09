@@ -1,0 +1,1553 @@
+@I [HLS-0] Workspace C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7 opened at Thu Apr 17 08:59:51 -0500 2014
+@I [HLS-100] Command "config_clock -quiet -name default -period 1 -default=false "
+@I [SYN-201] Setting up clock 'default' with a period of 1ns.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 0Total elapsed time: 2.372 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 2.779 sec.
+@I [HLS-100] Command "import_lib C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/kintex7/kintex7 "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.lib "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/xilinx_interface.lib "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/plb46.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.798 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/fsl.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.798 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/axi4.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.798 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.019Total elapsed time: 2.798 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.798 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfft.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.816 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfir.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.816 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.037Total elapsed time: 2.816 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_old.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.816 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_vivado.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.038Total elapsed time: 2.853 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.hlp "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/target_info.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.20 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.20 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.018Total elapsed time: 3.20 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/kintex7/dsp48e1.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.019Total elapsed time: 3.39 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 3.39 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 50950} {LUT 203800}    {FF 407600} {DSP48E 840}    {BRAM 890}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 3.39 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed medium "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 3.39 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.278Total elapsed time: 3.57 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/kintex7/kintex7.gen "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.019Total elapsed time: 3.76 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.76 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.76 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.037Total elapsed time: 3.113 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.019Total elapsed time: 3.131 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.131 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.24Total elapsed time: 3.372 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/tps/tcl/tcllib1.11.1/struct/list.tcl "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.446 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.019Total elapsed time: 3.446 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/tps/tcl/tcllib1.11.1/math/bignum.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.018Total elapsed time: 3.465 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.093Total elapsed time: 3.465 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.408Total elapsed time: 3.465 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.465 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.408Total elapsed time: 3.465 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.408Total elapsed time: 3.465 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 3.483 sec.
+@I [HLS-100] Command "import_lib C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/kintex7/kintex7_fpv6 "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv7.lib "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv6.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.483 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.018Total elapsed time: 3.502 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.074Total elapsed time: 3.558 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/kintex7/kintex7_fpv6.gen "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.595 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.595 sec.
+@I [HLS-100] Command "set_part xc7k325tffg676-3 "
+@I [HLS-100] Command "add_library xilinx/kintex7/kintex7:xc7k325t:ffg676:-3 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 3.595 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 3.595 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 3.632 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 50950} {LUT 203800}    {FF 407600} {DSP48E 840}    {BRAM 890}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 3.632 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed fast "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 3.632 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.037Total elapsed time: 3.632 sec.
+@I [HLS-100] Command "add_library xilinx/kintex7/kintex7_fpv6 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 3.632 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 3.632 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0Total elapsed time: 3.632 sec.
+@I [HLS-10] Setting target device to 'xc7k325tffg676-3'
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.037Total elapsed time: 3.632 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 3.632 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 50950} {LUT 203800}    {FF 407600} {DSP48E 840}    {BRAM 890}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 3.632 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed fast "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 3.632 sec.
+@I [HLS-100] Command "config_schedule -effort=high -verbose=1 "
+@I [HLS-100] Command 'config_schedule' returned 0; elapsed 0.018Total elapsed time: 3.650 sec.
+@I [HLS-100] Command 'open_solution' returned 0; elapsed 1.315Total elapsed time: 3.650 sec.
+@I [HLS-100] Command "set_part xc7k325tffg676-3 "
+@I [HLS-100] Command "add_library xilinx/kintex7/kintex7:xc7k325t:ffg676:-3 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 3.650 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 3.650 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 3.650 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 50950} {LUT 203800}    {FF 407600} {DSP48E 840}    {BRAM 890}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 3.650 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed fast "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 3.650 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0Total elapsed time: 3.650 sec.
+@I [HLS-100] Command "add_library xilinx/kintex7/kintex7_fpv6 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 3.650 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 3.650 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0Total elapsed time: 3.650 sec.
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0Total elapsed time: 3.650 sec.
+@I [HLS-100] Command "create_clock -period 1 -name default "
+@I [HLS-100] Command "config_clock -quiet -name default -period 1 -default=false "
+@I [SYN-201] Setting up clock 'default' with a period of 1ns.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 0Total elapsed time: 3.669 sec.
+@I [HLS-100] Command 'create_clock' returned 0; elapsed 0.019Total elapsed time: 3.669 sec.
+@I [HLS-100] Command "config_schedule -effort high -verbose "
+@I [HLS-100] Command 'config_schedule' returned 0; elapsed 0Total elapsed time: 3.669 sec.
+@I [HLS-100] Command "source ./oil_plainc_hls/solution_kintex7/directives.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.669 sec.
+@I [HLS-100] Command "csynth_design "
+@I [HLS-100] Command "elaborate -effort=medium -skip_syncheck=0 -lm=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 "
+@I [HLS-10] Importing test bench file 'oil_plainc_hls/src/test.c' ... 
+@0 [HLS-0] Importing test bench file 'oil_plainc_hls/src/test.c' ... 
+@I [HLS-10] Analyzing design file 'oil_plainc_hls/src/oil.c' ... 
+@0 [HLS-0] Analyzing design file 'oil_plainc_hls/src/oil.c' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2013.4/msys" -hls    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl=  "oil_plainc_hls/src/oil.c"  -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/oil.pp.00.o"
+
+@I [HLS-0] Syntax Checker time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2013.4/msys" -hls -fno-exceptions  -D__llvm__  -CC -E "oil_plainc_hls/src/oil.c"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl= -D "__asm__(...)="  -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/oil.pp.0.c"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-100] Command "list_core -type functional_unit "
+@I [HLS-100] Command 'list_core' returned 0; elapsed 0Total elapsed time: 4.669 sec.
+@I [HLS-0] Marker-Pragma convertor: C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/oil.pp.0.c C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/oil.pp.0.c.ap-line.c C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/oil.pp.0.c.ap-line.c.CXX 1
+@I [HLS-0] 
+Source processor: exec C:/Programas/Xilinx/Vivado_HLS/2013.4/tps/win32/jre/bin/java -Xmx512m -classpath   "C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/autopilot.sourceprocessor.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/org.eclipse.core.runtime_3.7.0.v20110110.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/org.eclipse.equinox.common_3.6.0.v20110523.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/com.ibm.icu_4.4.2.v20110208.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/jargs.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/org.eclipse.emf.common_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/org.eclipse.emf.ecore_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/oil.pp.0.c.ap-line.c"  -m "nfa_accept_samples_generic_hw" -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/oil.pp.0.c.ap-cdt.c" -c --ad --pc --pp --directive C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/solution_kintex7.directive --source C:/Design/XilinxHLS_ws/oil_plainc_hls/src/oil.c --error C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db --funcunit "AddSub AddSubnS Mul MulnS Mul2S Mul3S Mul4S Mul5S Mul6S DivnS AddSub_DSP FDiv FSqrt DDiv DSqrt DRecip DRSqrt FAddSub_nodsp FAddSub_fulldsp FMul_nodsp FMul_meddsp FMul_fulldsp FMul_maxdsp FRSqrt_nodsp FRSqrt_fulldsp FRecip_nodsp FRecip_fulldsp FLog_nodsp FLog_meddsp FLog_fulldsp FExp_nodsp FExp_meddsp FExp_fulldsp DAddSub_nodsp DAddSub_fulldsp DMul_nodsp DMul_meddsp DMul_fulldsp DMul_maxdsp DLog_nodsp DLog_meddsp DLog_fulldsp DExp_nodsp DExp_meddsp DExp_fulldsp" --ce --tcl C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db --lp --ca --gf --nk --df --pd --p2d C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db --sd --scff C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/.systemc_flag
+
+@I [HLS-0] Marker-Pragma convertor: C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/oil.pp.0.c.ap-cdt.c C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/oil.pragma.0.c C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/oil.pragma.0.c.ap-line.CXX 0
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 6.726 sec.
+@I [HLS-0] CDT processor time: 2 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2013.4/msys" -hls -fno-exceptions  -D__llvm__  -CC -E "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/oil.pragma.1.c"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl= -D "__asm__(...)="  -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/oil.pragma.2.c"
+
+@I [HLS-0] exec clang -gcc-toolchain C:/Programas/Xilinx/Vivado_HLS/2013.4/msys -hls -fno-exceptions  -D__llvm__  -w  "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/oil.pragma.2.c"    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/oil.g.bc"
+@I [HLS-10] Analyzing design file 'oil_plainc_hls/src/nfa_file.c' ... 
+@0 [HLS-0] Analyzing design file 'oil_plainc_hls/src/nfa_file.c' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2013.4/msys" -hls    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl=  "oil_plainc_hls/src/nfa_file.c"  -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_file.pp.00.o"
+
+@I [HLS-0] Syntax Checker time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2013.4/msys" -hls -fno-exceptions  -D__llvm__  -CC -E "oil_plainc_hls/src/nfa_file.c"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl= -D "__asm__(...)="  -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_file.pp.0.c"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-100] Command "list_core -type functional_unit "
+@I [HLS-100] Command 'list_core' returned 0; elapsed 0Total elapsed time: 8.412 sec.
+@I [HLS-0] Marker-Pragma convertor: C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_file.pp.0.c C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_file.pp.0.c.ap-line.c C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_file.pp.0.c.ap-line.c.CXX 1
+@I [HLS-0] 
+Source processor: exec C:/Programas/Xilinx/Vivado_HLS/2013.4/tps/win32/jre/bin/java -Xmx512m -classpath   "C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/autopilot.sourceprocessor.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/org.eclipse.core.runtime_3.7.0.v20110110.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/org.eclipse.equinox.common_3.6.0.v20110523.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/com.ibm.icu_4.4.2.v20110208.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/jargs.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/org.eclipse.emf.common_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/org.eclipse.emf.ecore_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_file.pp.0.c.ap-line.c"  -m "nfa_accept_samples_generic_hw" -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_file.pp.0.c.ap-cdt.c" -c --ad --pc --pp --directive C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/solution_kintex7.directive --source C:/Design/XilinxHLS_ws/oil_plainc_hls/src/nfa_file.c --error C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db --funcunit "AddSub AddSubnS Mul MulnS Mul2S Mul3S Mul4S Mul5S Mul6S DivnS AddSub_DSP FDiv FSqrt DDiv DSqrt DRecip DRSqrt FAddSub_nodsp FAddSub_fulldsp FMul_nodsp FMul_meddsp FMul_fulldsp FMul_maxdsp FRSqrt_nodsp FRSqrt_fulldsp FRecip_nodsp FRecip_fulldsp FLog_nodsp FLog_meddsp FLog_fulldsp FExp_nodsp FExp_meddsp FExp_fulldsp DAddSub_nodsp DAddSub_fulldsp DMul_nodsp DMul_meddsp DMul_fulldsp DMul_maxdsp DLog_nodsp DLog_meddsp DLog_fulldsp DExp_nodsp DExp_meddsp DExp_fulldsp" --ce --tcl C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db --lp --ca --gf --nk --df --pd --p2d C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db --sd --scff C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/.systemc_flag
+
+@I [HLS-0] Marker-Pragma convertor: C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_file.pp.0.c.ap-cdt.c C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_file.pragma.0.c C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_file.pragma.0.c.ap-line.CXX 0
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 10.451 sec.
+@I [HLS-0] CDT processor time: 2 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2013.4/msys" -hls -fno-exceptions  -D__llvm__  -CC -E "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_file.pragma.1.c"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl= -D "__asm__(...)="  -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_file.pragma.2.c"
+
+@I [HLS-0] exec clang -gcc-toolchain C:/Programas/Xilinx/Vivado_HLS/2013.4/msys -hls -fno-exceptions  -D__llvm__  -w  "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_file.pragma.2.c"    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_file.g.bc"
+@I [HLS-10] Analyzing design file 'oil_plainc_hls/src/nfa.c' ... 
+@0 [HLS-0] Analyzing design file 'oil_plainc_hls/src/nfa.c' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2013.4/msys" -hls    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl=  "oil_plainc_hls/src/nfa.c"  -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa.pp.00.o"
+
+@I [HLS-0] Syntax Checker time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2013.4/msys" -hls -fno-exceptions  -D__llvm__  -CC -E "oil_plainc_hls/src/nfa.c"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl= -D "__asm__(...)="  -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa.pp.0.c"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-100] Command "list_core -type functional_unit "
+@I [HLS-100] Command 'list_core' returned 0; elapsed 0Total elapsed time: 12.213 sec.
+@I [HLS-0] Marker-Pragma convertor: C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa.pp.0.c C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa.pp.0.c.ap-line.c C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa.pp.0.c.ap-line.c.CXX 1
+@I [HLS-0] 
+Source processor: exec C:/Programas/Xilinx/Vivado_HLS/2013.4/tps/win32/jre/bin/java -Xmx512m -classpath   "C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/autopilot.sourceprocessor.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/org.eclipse.core.runtime_3.7.0.v20110110.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/org.eclipse.equinox.common_3.6.0.v20110523.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/com.ibm.icu_4.4.2.v20110208.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/jargs.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/org.eclipse.emf.common_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/org.eclipse.emf.ecore_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa.pp.0.c.ap-line.c"  -m "nfa_accept_samples_generic_hw" -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa.pp.0.c.ap-cdt.c" -c --ad --pc --pp --directive C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/solution_kintex7.directive --source C:/Design/XilinxHLS_ws/oil_plainc_hls/src/nfa.c --error C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db --funcunit "AddSub AddSubnS Mul MulnS Mul2S Mul3S Mul4S Mul5S Mul6S DivnS AddSub_DSP FDiv FSqrt DDiv DSqrt DRecip DRSqrt FAddSub_nodsp FAddSub_fulldsp FMul_nodsp FMul_meddsp FMul_fulldsp FMul_maxdsp FRSqrt_nodsp FRSqrt_fulldsp FRecip_nodsp FRecip_fulldsp FLog_nodsp FLog_meddsp FLog_fulldsp FExp_nodsp FExp_meddsp FExp_fulldsp DAddSub_nodsp DAddSub_fulldsp DMul_nodsp DMul_meddsp DMul_fulldsp DMul_maxdsp DLog_nodsp DLog_meddsp DLog_fulldsp DExp_nodsp DExp_meddsp DExp_fulldsp" --ce --tcl C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db --lp --ca --gf --nk --df --pd --p2d C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db --sd --scff C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/.systemc_flag
+
+@I [HLS-0] Marker-Pragma convertor: C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa.pp.0.c.ap-cdt.c C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa.pragma.0.c C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa.pragma.0.c.ap-line.CXX 0
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.017Total elapsed time: 14.198 sec.
+@I [HLS-0] CDT processor time: 1 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2013.4/msys" -hls -fno-exceptions  -D__llvm__  -CC -E "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa.pragma.1.c"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl= -D "__asm__(...)="  -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa.pragma.2.c"
+
+@I [HLS-0] exec clang -gcc-toolchain C:/Programas/Xilinx/Vivado_HLS/2013.4/msys -hls -fno-exceptions  -D__llvm__  -w  "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa.pragma.2.c"    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa.g.bc"
+@I [HLS-10] Analyzing design file 'oil_plainc_hls/src/bitset.c' ... 
+@0 [HLS-0] Analyzing design file 'oil_plainc_hls/src/bitset.c' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2013.4/msys" -hls    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl=  "oil_plainc_hls/src/bitset.c"  -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset.pp.00.o"
+
+oil_plainc_hls/src/bitset.c:56:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.
+oil_plainc_hls/src/bitset.c:56:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.
+
+@I [HLS-0] Syntax Checker time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2013.4/msys" -hls -fno-exceptions  -D__llvm__  -CC -E "oil_plainc_hls/src/bitset.c"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl= -D "__asm__(...)="  -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset.pp.0.c"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-100] Command "list_core -type functional_unit "
+@I [HLS-100] Command 'list_core' returned 0; elapsed 0Total elapsed time: 15.999 sec.
+@I [HLS-0] Marker-Pragma convertor: C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset.pp.0.c C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset.pp.0.c.ap-line.c C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset.pp.0.c.ap-line.c.CXX 1
+@I [HLS-0] 
+Source processor: exec C:/Programas/Xilinx/Vivado_HLS/2013.4/tps/win32/jre/bin/java -Xmx512m -classpath   "C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/autopilot.sourceprocessor.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/org.eclipse.core.runtime_3.7.0.v20110110.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/org.eclipse.equinox.common_3.6.0.v20110523.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/com.ibm.icu_4.4.2.v20110208.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/lib/classes/jargs.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/org.eclipse.emf.common_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/org.eclipse.emf.ecore_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar;C:/Programas/Xilinx/Vivado_HLS/2013.4/win32/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset.pp.0.c.ap-line.c"  -m "nfa_accept_samples_generic_hw" -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset.pp.0.c.ap-cdt.c" -c --ad --pc --pp --directive C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/solution_kintex7.directive --source C:/Design/XilinxHLS_ws/oil_plainc_hls/src/bitset.c --error C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db --funcunit "AddSub AddSubnS Mul MulnS Mul2S Mul3S Mul4S Mul5S Mul6S DivnS AddSub_DSP FDiv FSqrt DDiv DSqrt DRecip DRSqrt FAddSub_nodsp FAddSub_fulldsp FMul_nodsp FMul_meddsp FMul_fulldsp FMul_maxdsp FRSqrt_nodsp FRSqrt_fulldsp FRecip_nodsp FRecip_fulldsp FLog_nodsp FLog_meddsp FLog_fulldsp FExp_nodsp FExp_meddsp FExp_fulldsp DAddSub_nodsp DAddSub_fulldsp DMul_nodsp DMul_meddsp DMul_fulldsp DMul_maxdsp DLog_nodsp DLog_meddsp DLog_fulldsp DExp_nodsp DExp_meddsp DExp_fulldsp" --ce --tcl C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db --lp --ca --gf --nk --df --pd --p2d C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db --sd --scff C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/.systemc_flag
+
+@I [HLS-0] Marker-Pragma convertor: C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset.pp.0.c.ap-cdt.c C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset.pragma.0.c C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset.pragma.0.c.ap-line.CXX 0
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.017Total elapsed time: 17.666 sec.
+@I [HLS-0] CDT processor time: 1 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2013.4/msys" -hls -fno-exceptions  -D__llvm__  -CC -E "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset.pragma.1.c"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl= -D "__asm__(...)="  -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset.pragma.2.c"
+
+@I [HLS-0] exec clang -gcc-toolchain C:/Programas/Xilinx/Vivado_HLS/2013.4/msys -hls -fno-exceptions  -D__llvm__  -w  "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset.pragma.2.c"    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset.g.bc"
+@I [HLS-10] Validating synthesis directives ...
+@0 [HLS-0] Validating synthesis directives ...
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 18.567 sec.
+@I [HLS-0] Linking all ...
+@I [HLS-0] exec llvm-ld  "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/oil.bc" "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_file.bc" "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa.bc" "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset.bc"  -disable-opt  -LC:/Programas/Xilinx/Vivado_HLS/2013.4/win32/lib -lm_basic -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/a.o.pre"
+@I [HLS-0] Link time: 0 seconds per iteration
+@I [HLS-0] Linking all ...
+@I [HLS-0] exec llvm-ld  "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/oil.g.bc" "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_file.g.bc" "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa.g.bc" "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset.g.bc"  -disable-opt  -LC:/Programas/Xilinx/Vivado_HLS/2013.4/win32/lib -lm_basic -o "C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/a.g.pre"
+@I [HLS-0] Link time: 0 seconds per iteration
+@I [HLS-100] Command "opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 "
+@I [HLS-100] Command "cleanup_all_models "
+@I [HLS-100] Command 'cleanup_all_models' returned 0; elapsed 0Total elapsed time: 19.334 sec.
+@I [HLS-10] Starting code transformations ...
+@0 [HLS-0] Starting code transformations ...
+@I [HLS-0] std xform: transform -hls -share-std-xform -always-inline -promote-dbg-pointer  -interface-preproc  -scalarrepl -mem2reg -keep-read-access -instcombine -dce  -promote-dbg-pointer  -bitop-raise  -indvars -loop-simplify -xunroll  -constprop -instcombine -simplifycfg -indvars  -simplifycfg -dce -globaldce  -basicaa  -simplifycfg -mem2reg -globalopt  -global-constprop -deadargelim -instcombine -simplifycfg  -prune-eh -simplifycfg  -scalarrepl -instcombine -reassociate -licm  -simplifycfg -loop-simplify -indvars -instcombine  -simplifycfg -mem2reg -loop-simplify -indvars -instcombine  -gvn -gvn -instcombine -adce  -break-crit-edges  -simplifycfg -loop-delete  -global-array-opt -dce -dse -adce  -find-syn-modules -top nfa_accept_samples_generic_hw  -deadargelim  -mem2reg -instcombine -dce  -presyn-prepare -auto-rom-infer  -syn-check -check-rec-only  -find-region -simplifycfg -func-extr -function-inline  -mem2reg -instcombine -dce   -gvn -adce -adse  -constprop -instcombine -bit-constprop  -instcombine -dce -simplifycfg -bitop-raise  -simplifycfg -dce -loop-delete  -globalopt -global-privatize -mem2reg -dce  -global-constprop -pointer-simplify -constprop -dce  -promote-dbg-pointer  -norm-name   C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/a.g.0.bc -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/a.g.1.bc -f  -phase std-opt
+@I [HLS-0] Std xform time: 0 seconds per iteration
+@I [HLS-10] Checking synthesizability ...
+@0 [HLS-0] Checking synthesizability ...
+@I [HLS-0] syn check 1/2: transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce  -mem2reg -instcombine  -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce  -array-normalize -instcombine -dce  -array-seg-normalize -instcombine -dce  -array-flatten -instcombine -dce  -array-burst -dce  -deadargelim -promote-global-argument  -doublePtrSimplify -doublePtrElim -dce  -doublePtrSimplify -promote-dbg-pointer  -dce -scalarrepl -dse -adse -instcombine  -ptrLegalization  -simplifycfg -dce -instcombine  -pointer-simplify -ptrArgReplace -dce -instcombine   -disaggr -scalarrepl -norm-name -dce  -mem2reg -instcombine -ptrLegalization   -simplifycfg  -instcombine -dce -inst-simplify  -directive-preproc -mem2reg -dse -dce  -globaldce    C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/a.g.1.bc -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/a.g.2.prechk.bc -f
+@I [HLS-0] Syn check 1/2 time: 2 seconds per iteration
+@I [HLS-0] syn check 2/2: transform -syn-check   -interface-gen -constprop -dse -dce  C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/a.g.2.prechk.bc -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/a.g.2.bc -f  -phase syn-check
+@I [HLS-0] Syn check 2/2 time: 0 seconds per iteration
+@I [HLS-0] Compiler optimizing ...
+@I [HLS-0] Share syncheck's 1.bc for syn flow: copy C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/a.g.1.bc to C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/a.o.1.bc
+@I [HLS-0] presyn 1: transform -hls  -directive-preproc -mem2reg -dse -dce  -disaggr -scalarrepl -norm-name -deadargelim  -mem2reg -instcombine -dce -auto-rom-infer -dce  -directive-preproc -mem2reg -dse -dce  -func-buffer -dce -array-normalize  -func-legal -instcombine -gvn -constprop -dce   -ptrArgReplace -mem2reg -instcombine -dce  -array-seg-normalize -deadargelim  -instcombine -dce  -pointer-simplify -dce  -port-alignment -dce  -data-pack -instcombine -dce   -loop-simplify -indvars -instcombine  -gvn -loop-simplify -mem2reg -dce -simplifycfg  -find-region -instcombine  -array-burst -dce  -inst-simplify  -interface-preproc  -indvars -auto-loop-unroll -loop-simplify -xunroll  -constprop -instcombine -simplifycfg -indvars  -simplifycfg -dce -globaldce  -gvn -disable-agg-range -inst-simplify  -constprop -simplifycfg -dce  -pointer-simplify -dce  -array-transform-check  -globalopt -constprop -dce  -array-promote -constprop -instcombine -dce -auto-par -array-partition -instcombine -dce  -ptrArgReplace -global-constprop -deadargelim -mem2reg  -func-legal -instcombine -dce  -array-reshape -instcombine -simplifycfg -dce   -mem-intrinsic-preproc -dce  -global-privatize  -mem2reg -globaldce  -promote-global-argument  -ptrArgReplace -mem2reg -instcombine -dce  -globalopt -mergereturn -simplify-global-access -mem2reg -dce  -pointer-simplify -dce  -functionattrs  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -inst-simplify -dce -norm-name  -function-inline  -func-inst -constprop -instcombine -simplifycfg -dce  -func-legal -dce   -directive-preproc -mem2reg -dse -dce  -loop-bound  -arraycheck -bitwidthmin -on-by-dataflow  -instcombine -simplifycfg -dce -loop-simplify -simplifycfg -loop-stream -instcombine -simplifycfg -dce -globaldce  -funstream-prep -function-stream -dce -globaldce  -array-streaming -instcombine -simplifycfg -dce      -group-axi-access  -simplifycfg -dce -loop-delete  -norm-name  C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/a.o.1.bc -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/a.o.1.tmp.bc -f
+@I [XFORM-502] Unrolling all loops for pipelining in function '_bsf32_hw' (oil_plainc_hls/src/bitset.c:48).
+@I [XFORM-502] Unrolling all loops for pipelining in function 'bitset_clear' (oil_plainc_hls/src/bitset.c:72).
+@I [XFORM-502] Unrolling all loops for pipelining in function 'bitset_union' (oil_plainc_hls/src/bitset.c:150).
+@I [XFORM-502] Unrolling all loops for pipelining in function 'bitset_intersect' (oil_plainc_hls/src/bitset.c:160).
+@I [XFORM-502] Unrolling all loops for pipelining in function 'bitset_any' (oil_plainc_hls/src/bitset.c:170).
+@I [XFORM-502] Unrolling all loops for pipelining in function 'bitset_first' (oil_plainc_hls/src/bitset.c:189).
+@I [XFORM-502] Unrolling all loops for pipelining in function 'bitset_next' (oil_plainc_hls/src/bitset.c:208).
+@I [XFORM-502] Unrolling all loops for pipelining in function 'nfa_accept_samples_generic_hw' (oil_plainc_hls/src/nfa.c:333).
+@I [XFORM-502] Unrolling all loops for pipelining in function 'nfa_accept_sample' (oil_plainc_hls/src/nfa.c:267).
+@I [XFORM-501] Unrolling loop 'Loop-1' (oil_plainc_hls/src/bitset.c:52) in function '_bsf32_hw' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1' (oil_plainc_hls/src/bitset.c:75) in function 'bitset_clear' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1' (oil_plainc_hls/src/bitset.c:153) in function 'bitset_union' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1' (oil_plainc_hls/src/bitset.c:163) in function 'bitset_intersect' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1' (oil_plainc_hls/src/bitset.c:173) in function 'bitset_any' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1' (oil_plainc_hls/src/bitset.c:194) in function 'bitset_first' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1' (oil_plainc_hls/src/bitset.c:222) in function 'bitset_next' completely.
+@W [XFORM-503] Cannot unroll loop 'Loop-1' (oil_plainc_hls/src/nfa.c:375) in function 'nfa_accept_samples_generic_hw' completely: variable loop bound.
+@W [XFORM-503] Cannot unroll loop 'Loop-1' (oil_plainc_hls/src/nfa.c:281) in function 'nfa_accept_sample': cannot completely unroll a loop with a variable trip count.
+@W [XFORM-503] Cannot unroll loop 'Loop-1.1' (oil_plainc_hls/src/nfa.c:291) in function 'nfa_accept_sample' completely: variable loop bound.
+@I [XFORM-102] Partitioning array 'next.buckets' (oil_plainc_hls/src/nfa.c:273) automatically.
+@I [XFORM-102] Partitioning array 'current.buckets' (oil_plainc_hls/src/nfa.c:274) automatically.
+@I [XFORM-102] Partitioning array 'tmp.buckets' (oil_plainc_hls/src/nfa.c:275) automatically.
+@I [XFORM-602] Inlining function 'bitset_clear' into 'bitset_init' (oil_plainc_hls/src/bitset.c:84) automatically.
+@I [XFORM-602] Inlining function 'bsf32' into 'bitset_first' (oil_plainc_hls/src/bitset.c:199) automatically.
+@I [XFORM-602] Inlining function 'nfa_get_symbols' into 'nfa_get_sucessors' (oil_plainc_hls/src/nfa.c:97) automatically.
+@I [XFORM-602] Inlining function 'bsf32' into 'bitset_next' (oil_plainc_hls/src/bitset.c:218) automatically.
+@I [XFORM-602] Inlining function 'bitset_init' into 'nfa_accept_sample' (oil_plainc_hls/src/nfa.c:277) automatically.
+@I [XFORM-602] Inlining function 'bitset_clear' into 'nfa_accept_sample' (oil_plainc_hls/src/nfa.c:286) automatically.
+@I [XFORM-602] Inlining function 'bitset_first' into 'nfa_accept_sample' (oil_plainc_hls/src/nfa.c:291) automatically.
+@I [XFORM-602] Inlining function 'bitset_end' into 'nfa_accept_sample' (oil_plainc_hls/src/nfa.c:291) automatically.
+@I [XFORM-602] Inlining function 'bitset_element' into 'nfa_accept_sample' (oil_plainc_hls/src/nfa.c:295) automatically.
+@I [XFORM-602] Inlining function 'nfa_get_sucessors' into 'nfa_accept_sample' (oil_plainc_hls/src/nfa.c:296) automatically.
+@I [XFORM-602] Inlining function 'bitset_union' into 'nfa_accept_sample' (oil_plainc_hls/src/nfa.c:297) automatically.
+@I [XFORM-602] Inlining function 'bitset_intersect' into 'nfa_accept_sample' (oil_plainc_hls/src/nfa.c:309) automatically.
+@I [XFORM-602] Inlining function 'bitset_any' into 'nfa_accept_sample' (oil_plainc_hls/src/nfa.c:310) automatically.
+@I [XFORM-602] Inlining function 'sample_iterator_equals' into 'nfa_accept_samples_generic_hw' (oil_plainc_hls/src/nfa.c:375) automatically.
+@I [HLS-0] Presyn 1 time: 2 seconds per iteration
+@I [HLS-0] presyn 2: transform -hls -keep-callgraph -scalarrepl -mem2reg  -indvars -loop-bound  -instcombine -dce  -merge-array-access -mem2reg -dce  -clean-region -mergereturn -if-conv  -instcombine -dce -constprop  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -scalarrepl -mem2reg  -global-constprop -deadargelim -deadargelim  -instcombine -dce -simplifycfg    -ptrArgReplace -mem2reg -function-inline  -mem2reg -instcombine -dce -expr-balance  -instcombine -dce  -bitwidthmin  -directive-preproc  -inst-rectify -instcombine -dce  -functionattrs  -constprop -instcombine -bit-constprop  -globalopt -globaldce  -inst-simplify -instcombine -elimdeaddata -dce  -loop-delete -simplifycfg   -norm-name C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/a.o.1.tmp.bc -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/a.o.2.bc -f  -phase presyn
+@I [HLS-0] Presyn 2 time: 1 seconds per iteration
+@I [HLS-0] build ssdm: transform -hls -function-uniquify -auto-function-inline  -loop-simplify -indvars -licm -loop-dep  -loop-bound -licm -loop-simplify -flattenloopnest  -array-flatten -gvn -instcombine -dce  -promote-global-argument  -array-map -dce -func-legal  -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify   -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce  -inst-simplify -dce  -globaldce -array-streaming -instcombine  -dce   -deadargelim -doublePtrSimplify -doublePtrElim  -dce -doublePtrSimplify -promote-dbg-pointer -dce  -scalarrepl -mem2reg -disaggr -norm-name -mem2reg  -instcombine  -dse -adse -adce -ptrLegalization -dce -instcombine  -loop-rot -constprop -cfgopt -simplifycfg -indvars -pointer-simplify -dce -loop-bound  -loop-simplify -loop-preproc  -constprop -gvn -mem2reg -instcombine -dce  -loop-merge -dce  -bitwidthmin  -directive-preproc -inst-simplify -dce  -interface-gen -gvn -mem2reg -instcombine -dce -adse  -loop-bound  -instcombine -cfgopt -simplifycfg -loop-simplify  -clean-region -io-protocol  -find-region -mem2reg  -loop-simplify -phi-opt -bitop-raise  -inst-simplify -inst-rectify -instcombine -adce  -cfgopt -simplifycfg -strip-dead-prototypes  -interface-lower -bitop-lower -intrinsic-lower  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa  -inst-simplify -simplifycfg   -mergereturn -inst-simplify -inst-rectify  -dce -bitop-lower  -loop-rewind -pointer-simplify -dce -cfgopt  -norm-name -legalize -read-loop-dep -dce -bitwidth   -cdfg-build  C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/a.o.2.bc -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/a.o.3.bc -f  -phase build-ssdm
+@I [HLS-0] Build ssdm time: 2 seconds per iteration
+@I [HLS-0] Finish building internal data model.
+@I [HLS-100] Command 'opt_and_import_c' returned 0; elapsed 11.034Total elapsed time: 30.368 sec.
+@I [HLS-111] Elapsed time: 30.432 seconds; current memory usage: 64 MB.
+@I [HLS-100] Command 'elaborate' returned 0; elapsed 26.744Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "autosyn "
+@I [HLS-10] Starting hardware synthesis ...
+@0 [HLS-0] Starting hardware synthesis ...
+@I [HLS-0] Synthesizing C/C++ design ...
+@I [HLS-10] Synthesizing 'nfa_accept_samples_generic_hw' ...
+@0 [HLS-0] Synthesizing 'nfa_accept_samples_generic_hw' ...
+@I [HLS-100] Command "ap_set_top_model nfa_accept_samples_generic_hw "
+@W [SYN-103] Legalizing function name '_bsf32_hw' to 'p_bsf32_hw'.
+@I [HLS-100] Command 'ap_set_top_model' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "get_model_list nfa_accept_samples_generic_hw -filter all-wo-channel -topdown "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "preproc_iomode -model nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "preproc_iomode -model sample_iterator_next "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "preproc_iomode -model nfa_accept_sample "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "preproc_iomode -model nfa_get_finals "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "preproc_iomode -model bitset_next "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "preproc_iomode -model _bsf32_hw "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "preproc_iomode -model nfa_get_initials "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "preproc_iomode -model sample_iterator_get_offset "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "get_model_list nfa_accept_samples_generic_hw -filter all-wo-channel "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-0] Model list for configure: sample_iterator_get_offset nfa_get_initials _bsf32_hw bitset_next nfa_get_finals nfa_accept_sample sample_iterator_next nfa_accept_samples_generic_hw
+@I [HLS-0] Configuring Module : sample_iterator_get_offset ...
+@I [HLS-100] Command "set_default_model sample_iterator_get_offset "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "apply_spec_resource_limit sample_iterator_get_offset "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-0] Configuring Module : nfa_get_initials ...
+@I [HLS-100] Command "set_default_model nfa_get_initials "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "apply_spec_resource_limit nfa_get_initials "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-0] Configuring Module : _bsf32_hw ...
+@I [HLS-100] Command "set_default_model _bsf32_hw "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "apply_spec_resource_limit _bsf32_hw "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-0] Configuring Module : bitset_next ...
+@I [HLS-100] Command "set_default_model bitset_next "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "apply_spec_resource_limit bitset_next "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-0] Configuring Module : nfa_get_finals ...
+@I [HLS-100] Command "set_default_model nfa_get_finals "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "apply_spec_resource_limit nfa_get_finals "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-0] Configuring Module : nfa_accept_sample ...
+@I [HLS-100] Command "set_default_model nfa_accept_sample "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "apply_spec_resource_limit nfa_accept_sample "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-0] Configuring Module : sample_iterator_next ...
+@I [HLS-100] Command "set_default_model sample_iterator_next "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "apply_spec_resource_limit sample_iterator_next "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-0] Configuring Module : nfa_accept_samples_generic_hw ...
+@I [HLS-100] Command "set_default_model nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "apply_spec_resource_limit nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-0] Model list for preprocess: sample_iterator_get_offset nfa_get_initials _bsf32_hw bitset_next nfa_get_finals nfa_accept_sample sample_iterator_next nfa_accept_samples_generic_hw
+@I [HLS-0] Preprocessing Module: sample_iterator_get_offset ...
+@I [HLS-100] Command "set_default_model sample_iterator_get_offset "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.413 sec.
+@I [HLS-100] Command "cdfg_preprocess -model sample_iterator_get_offset "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0.015Total elapsed time: 30.428 sec.
+@I [HLS-100] Command "rtl_gen_preprocess sample_iterator_get_offset "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-0] Preprocessing Module: nfa_get_initials ...
+@I [HLS-100] Command "set_default_model nfa_get_initials "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-100] Command "cdfg_preprocess -model nfa_get_initials "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-100] Command "rtl_gen_preprocess nfa_get_initials "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-0] Preprocessing Module: _bsf32_hw ...
+@I [HLS-100] Command "set_default_model _bsf32_hw "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-100] Command "cdfg_preprocess -model _bsf32_hw "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-100] Command "rtl_gen_preprocess _bsf32_hw "
+@W [RTGEN-101] Legalizing port name '_bsf32_hw/bus' to '_bsf32_hw/bus_r'.
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-0] Preprocessing Module: bitset_next ...
+@I [HLS-100] Command "set_default_model bitset_next "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-100] Command "cdfg_preprocess -model bitset_next "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-100] Command "rtl_gen_preprocess bitset_next "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-0] Preprocessing Module: nfa_get_finals ...
+@I [HLS-100] Command "set_default_model nfa_get_finals "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-100] Command "cdfg_preprocess -model nfa_get_finals "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-100] Command "rtl_gen_preprocess nfa_get_finals "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-0] Preprocessing Module: nfa_accept_sample ...
+@I [HLS-100] Command "set_default_model nfa_accept_sample "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-100] Command "cdfg_preprocess -model nfa_accept_sample "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-100] Command "rtl_gen_preprocess nfa_accept_sample "
+@W [RTGEN-101] Legalizing port name 'nfa_accept_sample/length' to 'nfa_accept_sample/length_r'.
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-0] Preprocessing Module: sample_iterator_next ...
+@I [HLS-100] Command "set_default_model sample_iterator_next "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-100] Command "cdfg_preprocess -model sample_iterator_next "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-100] Command "rtl_gen_preprocess sample_iterator_next "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-0] Preprocessing Module: nfa_accept_samples_generic_hw ...
+@I [HLS-100] Command "set_default_model nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-100] Command "cdfg_preprocess -model nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-100] Command "rtl_gen_preprocess nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-0] Model list for synthesis: sample_iterator_get_offset nfa_get_initials _bsf32_hw bitset_next nfa_get_finals nfa_accept_sample sample_iterator_next nfa_accept_samples_generic_hw
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'sample_iterator_get_offset' 
+@0 [HLS-0] -- Scheduling module 'sample_iterator_get_offset' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model sample_iterator_get_offset "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.428 sec.
+@I [HLS-100] Command "schedule -model sample_iterator_get_offset "
+@I [SCHED-11] Starting scheduling ...
+@W [SCHED-21] Estimated delay (1.35ns) of 'mul' operation ('tmp_7', oil_plainc_hls/src/nfa.c:261) exceeds the target cycle time (target cycle time: 1ns, clock uncertainty: 0.125ns, effective cycle time: 0.875ns).
+@I [SCHED-61] Pipelining function 'sample_iterator_get_offset'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 14.
+@W [SCHED-21] Estimated clock period (1.35ns) exceeds the target (target clock period: 1ns, clock uncertainty: 0.125ns, effective delay budget: 0.875ns).
+@W [SCHED-21] The critical path consists of the following:
+	'mul' operation ('tmp_7', oil_plainc_hls/src/nfa.c:261) (1.35 ns)
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.09Total elapsed time: 30.518 sec.
+@I [HLS-111] Elapsed time: 0.135 seconds; current memory usage: 63.8 MB.
+@I [HLS-100] Command "report -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_get_offset.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.015Total elapsed time: 30.563 sec.
+@I [HLS-100] Command "db_write -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_get_offset.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.03Total elapsed time: 30.593 sec.
+@I [HLS-0] Finish scheduling sample_iterator_get_offset.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'sample_iterator_get_offset' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'sample_iterator_get_offset' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model sample_iterator_get_offset "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.593 sec.
+@I [HLS-100] Command "bind -model sample_iterator_get_offset "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=sample_iterator_get_offset
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.015Total elapsed time: 30.608 sec.
+@I [HLS-111] Elapsed time: 0.09 seconds; current memory usage: 63.8 MB.
+@I [HLS-100] Command "report -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_get_offset.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.03Total elapsed time: 30.668 sec.
+@I [HLS-100] Command "db_write -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_get_offset.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.03Total elapsed time: 30.698 sec.
+@I [HLS-0] Finish binding sample_iterator_get_offset.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'nfa_get_initials' 
+@0 [HLS-0] -- Scheduling module 'nfa_get_initials' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model nfa_get_initials "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.698 sec.
+@I [HLS-100] Command "schedule -model nfa_get_initials "
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining function 'nfa_get_initials'.
+@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 1, distance = 1)
+   between bus request on port 'nfa_initials_buckets' (oil_plainc_hls/src/nfa.c:58) and bus request on port 'nfa_initials_buckets' (oil_plainc_hls/src/nfa.c:58).
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 2, Depth: 3.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.015Total elapsed time: 30.713 sec.
+@I [HLS-111] Elapsed time: 0.105 seconds; current memory usage: 64.4 MB.
+@I [HLS-100] Command "report -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_initials.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.015Total elapsed time: 30.758 sec.
+@I [HLS-100] Command "db_write -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_initials.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.015Total elapsed time: 30.773 sec.
+@I [HLS-0] Finish scheduling nfa_get_initials.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'nfa_get_initials' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'nfa_get_initials' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model nfa_get_initials "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.773 sec.
+@I [HLS-100] Command "bind -model nfa_get_initials "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=nfa_get_initials
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0Total elapsed time: 30.773 sec.
+@I [HLS-111] Elapsed time: 0.06 seconds; current memory usage: 63.8 MB.
+@I [HLS-100] Command "report -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_initials.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 30.818 sec.
+@I [HLS-100] Command "db_write -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_initials.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0Total elapsed time: 30.833 sec.
+@I [HLS-0] Finish binding nfa_get_initials.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'p_bsf32_hw' 
+@0 [HLS-0] -- Scheduling module 'p_bsf32_hw' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model _bsf32_hw "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.833 sec.
+@I [HLS-100] Command "schedule -model _bsf32_hw "
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining function '_bsf32_hw'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 2.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.15Total elapsed time: 30.983 sec.
+@I [HLS-111] Elapsed time: 0.21 seconds; current memory usage: 64.5 MB.
+@I [HLS-100] Command "report -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/p_bsf32_hw.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.015Total elapsed time: 31.43 sec.
+@I [HLS-100] Command "db_write -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/p_bsf32_hw.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.06Total elapsed time: 31.103 sec.
+@I [HLS-0] Finish scheduling _bsf32_hw.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'p_bsf32_hw' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'p_bsf32_hw' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model _bsf32_hw "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 31.103 sec.
+@I [HLS-100] Command "bind -model _bsf32_hw "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=_bsf32_hw
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.03Total elapsed time: 31.133 sec.
+@I [HLS-111] Elapsed time: 0.15 seconds; current memory usage: 64.5 MB.
+@I [HLS-100] Command "report -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/p_bsf32_hw.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.03Total elapsed time: 31.208 sec.
+@I [HLS-100] Command "db_write -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/p_bsf32_hw.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.075Total elapsed time: 31.283 sec.
+@I [HLS-0] Finish binding _bsf32_hw.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'bitset_next' 
+@0 [HLS-0] -- Scheduling module 'bitset_next' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model bitset_next "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 31.283 sec.
+@I [HLS-100] Command "schedule -model bitset_next "
+@I [SCHED-11] Starting scheduling ...
+@W [SCHED-21] Estimated delay (1.3ns) of 'icmp' operation ('tmp_3', oil_plainc_hls/src/bitset.c:216) exceeds the target cycle time (target cycle time: 1ns, clock uncertainty: 0.125ns, effective cycle time: 0.875ns).
+@I [SCHED-61] Pipelining function 'bitset_next'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 12.
+@W [SCHED-21] Estimated clock period (1.3ns) exceeds the target (target clock period: 1ns, clock uncertainty: 0.125ns, effective delay budget: 0.875ns).
+@W [SCHED-21] The critical path consists of the following:
+	'icmp' operation ('tmp_3', oil_plainc_hls/src/bitset.c:216) (1.3 ns)
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.045Total elapsed time: 31.328 sec.
+@I [HLS-111] Elapsed time: 0.195 seconds; current memory usage: 64.6 MB.
+@I [HLS-100] Command "report -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset_next.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.015Total elapsed time: 31.388 sec.
+@I [HLS-100] Command "db_write -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset_next.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.03Total elapsed time: 31.418 sec.
+@I [HLS-0] Finish scheduling bitset_next.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'bitset_next' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'bitset_next' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model bitset_next "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 31.418 sec.
+@I [HLS-100] Command "bind -model bitset_next "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=bitset_next
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.015Total elapsed time: 31.433 sec.
+@I [HLS-111] Elapsed time: 0.09 seconds; current memory usage: 64.6 MB.
+@I [HLS-100] Command "report -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset_next.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.046Total elapsed time: 31.508 sec.
+@I [HLS-100] Command "db_write -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset_next.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.027Total elapsed time: 31.535 sec.
+@I [HLS-0] Finish binding bitset_next.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'nfa_get_finals' 
+@0 [HLS-0] -- Scheduling module 'nfa_get_finals' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model nfa_get_finals "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 31.535 sec.
+@I [HLS-100] Command "schedule -model nfa_get_finals "
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining function 'nfa_get_finals'.
+@W [SCHED-68] Unable to enforce a carried dependency constraint (II = 1, distance = 1)
+   between bus request on port 'nfa_finals_buckets' (oil_plainc_hls/src/nfa.c:84) and bus request on port 'nfa_finals_buckets' (oil_plainc_hls/src/nfa.c:84).
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 2, Depth: 3.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.013Total elapsed time: 31.549 sec.
+@I [HLS-111] Elapsed time: 0.127 seconds; current memory usage: 64.7 MB.
+@I [HLS-100] Command "report -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_finals.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.013Total elapsed time: 31.603 sec.
+@I [HLS-100] Command "db_write -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_finals.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.014Total elapsed time: 31.616 sec.
+@I [HLS-0] Finish scheduling nfa_get_finals.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'nfa_get_finals' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'nfa_get_finals' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model nfa_get_finals "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 31.616 sec.
+@I [HLS-100] Command "bind -model nfa_get_finals "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=nfa_get_finals
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0Total elapsed time: 31.616 sec.
+@I [HLS-111] Elapsed time: 0.054 seconds; current memory usage: 64.7 MB.
+@I [HLS-100] Command "report -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_finals.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.014Total elapsed time: 31.670 sec.
+@I [HLS-100] Command "db_write -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_finals.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.013Total elapsed time: 31.684 sec.
+@I [HLS-0] Finish binding nfa_get_finals.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'nfa_accept_sample' 
+@0 [HLS-0] -- Scheduling module 'nfa_accept_sample' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model nfa_accept_sample "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 31.684 sec.
+@I [HLS-100] Command "schedule -model nfa_accept_sample "
+@I [SCHED-11] Starting scheduling ...
+@W [SCHED-21] Estimated delay (1.35ns) of 'mul' operation ('tmp_6_i', oil_plainc_hls/src/nfa.c:90->oil_plainc_hls/src/nfa.c:97->oil_plainc_hls/src/nfa.c:296) exceeds the target cycle time (target cycle time: 1ns, clock uncertainty: 0.125ns, effective cycle time: 0.875ns).
+@W [SCHED-65] Unable to satisfy pipeline directive: Function contains subloop(s) not being unrolled.
+@W [SCHED-21] Estimated clock period (1.35ns) exceeds the target (target clock period: 1ns, clock uncertainty: 0.125ns, effective delay budget: 0.875ns).
+@W [SCHED-21] The critical path consists of the following:
+	wire read on port 'nfa_symbols' (oil_plainc_hls/src/nfa.c:90->oil_plainc_hls/src/nfa.c:97->oil_plainc_hls/src/nfa.c:296) (0 ns)
+	'mul' operation ('tmp_6_i', oil_plainc_hls/src/nfa.c:90->oil_plainc_hls/src/nfa.c:97->oil_plainc_hls/src/nfa.c:296) (1.35 ns)
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.122Total elapsed time: 31.806 sec.
+@I [HLS-111] Elapsed time: 0.202 seconds; current memory usage: 65.1 MB.
+@I [HLS-100] Command "report -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_sample.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.027Total elapsed time: 31.873 sec.
+@I [HLS-100] Command "db_write -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_sample.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.054Total elapsed time: 31.927 sec.
+@I [HLS-0] Finish scheduling nfa_accept_sample.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'nfa_accept_sample' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'nfa_accept_sample' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model nfa_accept_sample "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 31.941 sec.
+@I [HLS-100] Command "bind -model nfa_accept_sample "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=nfa_accept_sample
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.04Total elapsed time: 31.981 sec.
+@I [HLS-111] Elapsed time: 0.162 seconds; current memory usage: 65.2 MB.
+@I [HLS-100] Command "report -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_sample.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.095Total elapsed time: 32.103 sec.
+@I [HLS-100] Command "db_write -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_sample.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.081Total elapsed time: 32.184 sec.
+@I [HLS-0] Finish binding nfa_accept_sample.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'sample_iterator_next' 
+@0 [HLS-0] -- Scheduling module 'sample_iterator_next' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model sample_iterator_next "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0.013Total elapsed time: 32.197 sec.
+@I [HLS-100] Command "schedule -model sample_iterator_next "
+@I [SCHED-11] Starting scheduling ...
+@W [SCHED-21] Estimated delay (1.19ns) of 'icmp' operation ('tmp_1', oil_plainc_hls/src/nfa.c:242) exceeds the target cycle time (target cycle time: 1ns, clock uncertainty: 0.125ns, effective cycle time: 0.875ns).
+@I [SCHED-61] Pipelining function 'sample_iterator_next'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 8.
+@W [SCHED-21] Estimated clock period (1.19ns) exceeds the target (target clock period: 1ns, clock uncertainty: 0.125ns, effective delay budget: 0.875ns).
+@W [SCHED-21] The critical path consists of the following:
+	'icmp' operation ('tmp_1', oil_plainc_hls/src/nfa.c:242) (1.19 ns)
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.027Total elapsed time: 32.224 sec.
+@I [HLS-111] Elapsed time: 0.257 seconds; current memory usage: 65.4 MB.
+@I [HLS-100] Command "report -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_next.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.014Total elapsed time: 32.278 sec.
+@I [HLS-100] Command "db_write -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_next.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.013Total elapsed time: 32.292 sec.
+@I [HLS-0] Finish scheduling sample_iterator_next.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'sample_iterator_next' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'sample_iterator_next' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model sample_iterator_next "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 32.292 sec.
+@I [HLS-100] Command "bind -model sample_iterator_next "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=sample_iterator_next
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.014Total elapsed time: 32.305 sec.
+@I [HLS-111] Elapsed time: 0.081 seconds; current memory usage: 65.3 MB.
+@I [HLS-100] Command "report -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_next.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.027Total elapsed time: 32.373 sec.
+@I [HLS-100] Command "db_write -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_next.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.027Total elapsed time: 32.400 sec.
+@I [HLS-0] Finish binding sample_iterator_next.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'nfa_accept_samples_generic_hw' 
+@0 [HLS-0] -- Scheduling module 'nfa_accept_samples_generic_hw' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 32.400 sec.
+@I [HLS-100] Command "schedule -model nfa_accept_samples_generic_hw "
+@I [SCHED-11] Starting scheduling ...
+@W [SCHED-21] Estimated delay (1.35ns) of 'call' operation ('offset', oil_plainc_hls/src/nfa.c:378) to 'sample_iterator_get_offset' exceeds the target cycle time (target cycle time: 1ns, clock uncertainty: 0.125ns, effective cycle time: 0.875ns).
+@W [SCHED-65] Unable to satisfy pipeline directive: Function contains subloop(s) not being unrolled.
+@W [SCHED-21] Estimated clock period (1.35ns) exceeds the target (target clock period: 1ns, clock uncertainty: 0.125ns, effective delay budget: 0.875ns).
+@W [SCHED-21] The critical path consists of the following:
+	'call' operation ('offset', oil_plainc_hls/src/nfa.c:378) to 'sample_iterator_get_offset' (1.35 ns)
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.027Total elapsed time: 32.427 sec.
+@I [HLS-111] Elapsed time: 0.122 seconds; current memory usage: 65.6 MB.
+@I [HLS-100] Command "report -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.027Total elapsed time: 32.508 sec.
+@I [HLS-100] Command "db_write -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.041Total elapsed time: 32.549 sec.
+@I [HLS-0] Finish scheduling nfa_accept_samples_generic_hw.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'nfa_accept_samples_generic_hw' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'nfa_accept_samples_generic_hw' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 32.549 sec.
+@I [HLS-100] Command "bind -model nfa_accept_samples_generic_hw "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=nfa_accept_samples_generic_hw
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.081Total elapsed time: 32.630 sec.
+@I [HLS-111] Elapsed time: 0.202 seconds; current memory usage: 65.7 MB.
+@I [HLS-100] Command "report -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.108Total elapsed time: 32.778 sec.
+@I [HLS-100] Command "db_write -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.054Total elapsed time: 32.832 sec.
+@I [HLS-0] Finish binding nfa_accept_samples_generic_hw.
+@I [HLS-100] Command "get_model_list nfa_accept_samples_generic_hw -filter all-wo-channel "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0Total elapsed time: 32.832 sec.
+@I [HLS-0] Preprocessing for RTLGen ...
+@I [HLS-100] Command "rtl_gen_preprocess sample_iterator_get_offset "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 32.832 sec.
+@I [HLS-100] Command "rtl_gen_preprocess nfa_get_initials "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 32.832 sec.
+@I [HLS-100] Command "rtl_gen_preprocess _bsf32_hw "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 32.832 sec.
+@I [HLS-100] Command "rtl_gen_preprocess bitset_next "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 32.832 sec.
+@I [HLS-100] Command "rtl_gen_preprocess nfa_get_finals "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 32.832 sec.
+@I [HLS-100] Command "rtl_gen_preprocess nfa_accept_sample "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 32.832 sec.
+@I [HLS-100] Command "rtl_gen_preprocess sample_iterator_next "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 32.832 sec.
+@I [HLS-100] Command "rtl_gen_preprocess nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 32.832 sec.
+@I [HLS-0] Model list for RTL generation: sample_iterator_get_offset nfa_get_initials _bsf32_hw bitset_next nfa_get_finals nfa_accept_sample sample_iterator_next nfa_accept_samples_generic_hw
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'sample_iterator_get_offset' 
+@0 [HLS-0] -- Generating RTL for module 'sample_iterator_get_offset' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model sample_iterator_get_offset -vendor xilinx -mg_file C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_get_offset.compgen.tcl "
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_get_offset/indices_stride_dataout' to 0.
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_get_offset/indices_begin_dataout' to 0.
+@W [RTGEN-101] Port 'sample_iterator_get_offset/indices_samples_req_din' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_get_offset/indices_samples_req_din' to 0.
+@W [RTGEN-101] Port 'sample_iterator_get_offset/indices_samples_req_full_n' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Port 'sample_iterator_get_offset/indices_samples_req_write' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_get_offset/indices_samples_req_write' to 0.
+@W [RTGEN-101] Port 'sample_iterator_get_offset/indices_samples_rsp_empty_n' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Port 'sample_iterator_get_offset/indices_samples_rsp_read' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_get_offset/indices_samples_rsp_read' to 0.
+@W [RTGEN-101] Port 'sample_iterator_get_offset/indices_samples_address' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_get_offset/indices_samples_address' to 0.
+@W [RTGEN-101] Port 'sample_iterator_get_offset/indices_samples_datain' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Port 'sample_iterator_get_offset/indices_samples_dataout' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_get_offset/indices_samples_dataout' to 0.
+@W [RTGEN-101] Port 'sample_iterator_get_offset/indices_samples_size' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_get_offset/indices_samples_size' to 0.
+@I [RTGEN-100] Generating core module 'nfa_accept_samples_generic_hw_add_32ns_32ns_32_8': 1 instance(s).
+@I [RTGEN-100] Generating core module 'nfa_accept_samples_generic_hw_mul_16ns_8ns_24_4': 1 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'sample_iterator_get_offset'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.027Total elapsed time: 32.873 sec.
+@I [HLS-111] Elapsed time: 0.243 seconds; current memory usage: 66.1 MB.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 32.927 sec.
+@I [HLS-100] Command "gen_rtl sample_iterator_get_offset -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/systemc/sample_iterator_get_offset -synmodules sample_iterator_get_offset nfa_get_initials _bsf32_hw bitset_next nfa_get_finals nfa_accept_sample sample_iterator_next nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.013Total elapsed time: 32.940 sec.
+@I [HLS-100] Command "gen_rtl sample_iterator_get_offset -style xilinx -f -lang vhdl -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/vhdl/sample_iterator_get_offset "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.014Total elapsed time: 32.954 sec.
+@I [HLS-100] Command "gen_rtl sample_iterator_get_offset -style xilinx -f -lang vlog -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/verilog/sample_iterator_get_offset "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.013Total elapsed time: 32.967 sec.
+@I [HLS-100] Command "gen_tb_info sample_iterator_get_offset -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_get_offset -p C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0.014Total elapsed time: 32.981 sec.
+@I [HLS-100] Command "report -model sample_iterator_get_offset -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/report/sample_iterator_get_offset_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.013Total elapsed time: 32.994 sec.
+@I [HLS-100] Command "report -model sample_iterator_get_offset -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/report/sample_iterator_get_offset_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.014Total elapsed time: 33.8 sec.
+@I [HLS-100] Command "report -model sample_iterator_get_offset -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_get_offset.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.04Total elapsed time: 33.48 sec.
+@I [HLS-100] Command "db_write -model sample_iterator_get_offset -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_get_offset.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.041Total elapsed time: 33.89 sec.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'nfa_get_initials' 
+@0 [HLS-0] -- Generating RTL for module 'nfa_get_initials' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model nfa_get_initials -vendor xilinx -mg_file C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_initials.compgen.tcl "
+@W [RTGEN-101] Setting dangling out port 'nfa_get_initials/nfa_initials_buckets_dataout' to 0.
+@I [RTGEN-100] Finished creating RTL model for 'nfa_get_initials'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.014Total elapsed time: 33.156 sec.
+@I [HLS-111] Elapsed time: 0.284 seconds; current memory usage: 66.3 MB.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 33.197 sec.
+@I [HLS-100] Command "gen_rtl nfa_get_initials -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/systemc/nfa_get_initials -synmodules sample_iterator_get_offset nfa_get_initials _bsf32_hw bitset_next nfa_get_finals nfa_accept_sample sample_iterator_next nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.014Total elapsed time: 33.210 sec.
+@I [HLS-100] Command "gen_rtl nfa_get_initials -style xilinx -f -lang vhdl -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/vhdl/nfa_get_initials "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.013Total elapsed time: 33.224 sec.
+@I [HLS-100] Command "gen_rtl nfa_get_initials -style xilinx -f -lang vlog -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/verilog/nfa_get_initials "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 33.224 sec.
+@I [HLS-100] Command "gen_tb_info nfa_get_initials -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_initials -p C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0.014Total elapsed time: 33.237 sec.
+@I [HLS-100] Command "report -model nfa_get_initials -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/report/nfa_get_initials_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 33.237 sec.
+@I [HLS-100] Command "report -model nfa_get_initials -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/report/nfa_get_initials_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.013Total elapsed time: 33.251 sec.
+@I [HLS-100] Command "report -model nfa_get_initials -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_initials.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.014Total elapsed time: 33.264 sec.
+@I [HLS-100] Command "db_write -model nfa_get_initials -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_initials.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.013Total elapsed time: 33.278 sec.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'p_bsf32_hw' 
+@0 [HLS-0] -- Generating RTL for module 'p_bsf32_hw' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model _bsf32_hw -vendor xilinx -mg_file C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/p_bsf32_hw.compgen.tcl "
+@I [RTGEN-100] Finished creating RTL model for 'p_bsf32_hw'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.094Total elapsed time: 33.413 sec.
+@I [HLS-111] Elapsed time: 0.257 seconds; current memory usage: 67.1 MB.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 33.454 sec.
+@I [HLS-100] Command "gen_rtl _bsf32_hw -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/systemc/p_bsf32_hw -synmodules sample_iterator_get_offset nfa_get_initials _bsf32_hw bitset_next nfa_get_finals nfa_accept_sample sample_iterator_next nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.027Total elapsed time: 33.481 sec.
+@I [HLS-100] Command "gen_rtl _bsf32_hw -style xilinx -f -lang vhdl -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/vhdl/p_bsf32_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.013Total elapsed time: 33.494 sec.
+@I [HLS-100] Command "gen_rtl _bsf32_hw -style xilinx -f -lang vlog -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/verilog/p_bsf32_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.027Total elapsed time: 33.521 sec.
+@I [HLS-100] Command "gen_tb_info _bsf32_hw -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/p_bsf32_hw -p C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0Total elapsed time: 33.521 sec.
+@I [HLS-100] Command "report -model _bsf32_hw -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/report/p_bsf32_hw_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.027Total elapsed time: 33.548 sec.
+@I [HLS-100] Command "report -model _bsf32_hw -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/report/p_bsf32_hw_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.014Total elapsed time: 33.562 sec.
+@I [HLS-100] Command "report -model _bsf32_hw -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/p_bsf32_hw.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.04Total elapsed time: 33.602 sec.
+@I [HLS-100] Command "db_write -model _bsf32_hw -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/p_bsf32_hw.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.095Total elapsed time: 33.697 sec.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'bitset_next' 
+@0 [HLS-0] -- Generating RTL for module 'bitset_next' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model bitset_next -vendor xilinx -mg_file C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset_next.compgen.tcl "
+@I [RTGEN-100] Generating core module 'nfa_accept_samples_generic_hw_add_32ns_32s_32_8': 1 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'bitset_next'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.027Total elapsed time: 33.940 sec.
+@I [HLS-111] Elapsed time: 0.527 seconds; current memory usage: 67.9 MB.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 33.994 sec.
+@I [HLS-100] Command "gen_rtl bitset_next -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/systemc/bitset_next -synmodules sample_iterator_get_offset nfa_get_initials _bsf32_hw bitset_next nfa_get_finals nfa_accept_sample sample_iterator_next nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.014Total elapsed time: 34.7 sec.
+@I [HLS-100] Command "gen_rtl bitset_next -style xilinx -f -lang vhdl -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/vhdl/bitset_next "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 34.7 sec.
+@I [HLS-100] Command "gen_rtl bitset_next -style xilinx -f -lang vlog -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/verilog/bitset_next "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.013Total elapsed time: 34.21 sec.
+@I [HLS-100] Command "gen_tb_info bitset_next -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset_next -p C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0Total elapsed time: 34.21 sec.
+@I [HLS-100] Command "report -model bitset_next -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/report/bitset_next_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.014Total elapsed time: 34.34 sec.
+@I [HLS-100] Command "report -model bitset_next -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/report/bitset_next_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.013Total elapsed time: 34.48 sec.
+@I [HLS-100] Command "report -model bitset_next -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset_next.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.041Total elapsed time: 34.88 sec.
+@I [HLS-100] Command "db_write -model bitset_next -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset_next.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.04Total elapsed time: 34.129 sec.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'nfa_get_finals' 
+@0 [HLS-0] -- Generating RTL for module 'nfa_get_finals' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model nfa_get_finals -vendor xilinx -mg_file C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_finals.compgen.tcl "
+@W [RTGEN-101] Setting dangling out port 'nfa_get_finals/nfa_finals_buckets_dataout' to 0.
+@I [RTGEN-100] Finished creating RTL model for 'nfa_get_finals'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.013Total elapsed time: 34.237 sec.
+@I [HLS-111] Elapsed time: 0.297 seconds; current memory usage: 68.2 MB.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 34.278 sec.
+@I [HLS-100] Command "gen_rtl nfa_get_finals -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/systemc/nfa_get_finals -synmodules sample_iterator_get_offset nfa_get_initials _bsf32_hw bitset_next nfa_get_finals nfa_accept_sample sample_iterator_next nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.013Total elapsed time: 34.291 sec.
+@I [HLS-100] Command "gen_rtl nfa_get_finals -style xilinx -f -lang vhdl -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/vhdl/nfa_get_finals "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 34.291 sec.
+@I [HLS-100] Command "gen_rtl nfa_get_finals -style xilinx -f -lang vlog -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/verilog/nfa_get_finals "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.014Total elapsed time: 34.305 sec.
+@I [HLS-100] Command "gen_tb_info nfa_get_finals -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_finals -p C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0Total elapsed time: 34.305 sec.
+@I [HLS-100] Command "report -model nfa_get_finals -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/report/nfa_get_finals_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.013Total elapsed time: 34.318 sec.
+@I [HLS-100] Command "report -model nfa_get_finals -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/report/nfa_get_finals_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 34.318 sec.
+@I [HLS-100] Command "report -model nfa_get_finals -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_finals.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.014Total elapsed time: 34.332 sec.
+@I [HLS-100] Command "db_write -model nfa_get_finals -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_finals.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.013Total elapsed time: 34.345 sec.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'nfa_accept_sample' 
+@0 [HLS-0] -- Generating RTL for module 'nfa_accept_sample' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model nfa_accept_sample -vendor xilinx -mg_file C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_sample.compgen.tcl "
+@W [RTGEN-101] Setting dangling out port 'nfa_accept_sample/nfa_forward_buckets_dataout' to 0.
+@W [RTGEN-101] Setting dangling out port 'nfa_accept_sample/sample_dataout' to 0.
+@I [RTGEN-100] Generating core module 'nfa_accept_samples_generic_hw_add_14ns_14ns_14_4': 1 instance(s).
+@I [RTGEN-100] Generating core module 'nfa_accept_samples_generic_hw_add_16ns_16ns_16_4': 1 instance(s).
+@I [RTGEN-100] Generating core module 'nfa_accept_samples_generic_hw_add_32ns_32ns_32_8': 2 instance(s).
+@I [RTGEN-100] Generating core module 'nfa_accept_samples_generic_hw_add_6ns_6ns_6_2': 1 instance(s).
+@I [RTGEN-100] Generating core module 'nfa_accept_samples_generic_hw_mul_8ns_6ns_14_4': 1 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'nfa_accept_sample'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.081Total elapsed time: 34.467 sec.
+@I [HLS-111] Elapsed time: 0.243 seconds; current memory usage: 68.9 MB.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 34.521 sec.
+@I [HLS-100] Command "gen_rtl nfa_accept_sample -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/systemc/nfa_accept_sample -synmodules sample_iterator_get_offset nfa_get_initials _bsf32_hw bitset_next nfa_get_finals nfa_accept_sample sample_iterator_next nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.013Total elapsed time: 34.534 sec.
+@I [HLS-100] Command "gen_rtl nfa_accept_sample -style xilinx -f -lang vhdl -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/vhdl/nfa_accept_sample "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.014Total elapsed time: 34.548 sec.
+@I [HLS-100] Command "gen_rtl nfa_accept_sample -style xilinx -f -lang vlog -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/verilog/nfa_accept_sample "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.013Total elapsed time: 34.561 sec.
+@I [HLS-100] Command "gen_tb_info nfa_accept_sample -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_sample -p C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0.014Total elapsed time: 34.575 sec.
+@I [HLS-100] Command "report -model nfa_accept_sample -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/report/nfa_accept_sample_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.027Total elapsed time: 34.602 sec.
+@I [HLS-100] Command "report -model nfa_accept_sample -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/report/nfa_accept_sample_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.013Total elapsed time: 34.615 sec.
+@I [HLS-100] Command "report -model nfa_accept_sample -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_sample.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.122Total elapsed time: 34.737 sec.
+@I [HLS-100] Command "db_write -model nfa_accept_sample -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_sample.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.108Total elapsed time: 34.845 sec.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'sample_iterator_next' 
+@0 [HLS-0] -- Generating RTL for module 'sample_iterator_next' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model sample_iterator_next -vendor xilinx -mg_file C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_next.compgen.tcl "
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_next/indices_samples_dataout' to 0.
+@W [RTGEN-101] Port 'sample_iterator_next/indices_begin_req_din' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_next/indices_begin_req_din' to 0.
+@W [RTGEN-101] Port 'sample_iterator_next/indices_begin_req_full_n' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Port 'sample_iterator_next/indices_begin_req_write' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_next/indices_begin_req_write' to 0.
+@W [RTGEN-101] Port 'sample_iterator_next/indices_begin_rsp_empty_n' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Port 'sample_iterator_next/indices_begin_rsp_read' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_next/indices_begin_rsp_read' to 0.
+@W [RTGEN-101] Port 'sample_iterator_next/indices_begin_address' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_next/indices_begin_address' to 0.
+@W [RTGEN-101] Port 'sample_iterator_next/indices_begin_datain' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Port 'sample_iterator_next/indices_begin_dataout' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_next/indices_begin_dataout' to 0.
+@W [RTGEN-101] Port 'sample_iterator_next/indices_begin_size' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_next/indices_begin_size' to 0.
+@W [RTGEN-101] Port 'sample_iterator_next/indices_stride_req_din' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_next/indices_stride_req_din' to 0.
+@W [RTGEN-101] Port 'sample_iterator_next/indices_stride_req_full_n' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Port 'sample_iterator_next/indices_stride_req_write' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_next/indices_stride_req_write' to 0.
+@W [RTGEN-101] Port 'sample_iterator_next/indices_stride_rsp_empty_n' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Port 'sample_iterator_next/indices_stride_rsp_read' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_next/indices_stride_rsp_read' to 0.
+@W [RTGEN-101] Port 'sample_iterator_next/indices_stride_address' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_next/indices_stride_address' to 0.
+@W [RTGEN-101] Port 'sample_iterator_next/indices_stride_datain' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Port 'sample_iterator_next/indices_stride_dataout' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_next/indices_stride_dataout' to 0.
+@W [RTGEN-101] Port 'sample_iterator_next/indices_stride_size' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_next/indices_stride_size' to 0.
+@I [RTGEN-100] Generating core module 'nfa_accept_samples_generic_hw_add_16ns_16ns_16_4': 2 instance(s).
+@I [RTGEN-100] Generating core module 'nfa_accept_samples_generic_hw_add_17ns_17s_17_4': 1 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'sample_iterator_next'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.041Total elapsed time: 35.102 sec.
+@I [HLS-111] Elapsed time: 0.621 seconds; current memory usage: 69.8 MB.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.014Total elapsed time: 35.156 sec.
+@I [HLS-100] Command "gen_rtl sample_iterator_next -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/systemc/sample_iterator_next -synmodules sample_iterator_get_offset nfa_get_initials _bsf32_hw bitset_next nfa_get_finals nfa_accept_sample sample_iterator_next nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.013Total elapsed time: 35.169 sec.
+@I [HLS-100] Command "gen_rtl sample_iterator_next -style xilinx -f -lang vhdl -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/vhdl/sample_iterator_next "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.014Total elapsed time: 35.183 sec.
+@I [HLS-100] Command "gen_rtl sample_iterator_next -style xilinx -f -lang vlog -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/verilog/sample_iterator_next "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 35.183 sec.
+@I [HLS-100] Command "gen_tb_info sample_iterator_next -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_next -p C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0.013Total elapsed time: 35.196 sec.
+@I [HLS-100] Command "report -model sample_iterator_next -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/report/sample_iterator_next_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.014Total elapsed time: 35.210 sec.
+@I [HLS-100] Command "report -model sample_iterator_next -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/report/sample_iterator_next_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 35.210 sec.
+@I [HLS-100] Command "report -model sample_iterator_next -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_next.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.027Total elapsed time: 35.250 sec.
+@I [HLS-100] Command "db_write -model sample_iterator_next -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_next.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.041Total elapsed time: 35.291 sec.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'nfa_accept_samples_generic_hw' 
+@0 [HLS-0] -- Generating RTL for module 'nfa_accept_samples_generic_hw' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model nfa_accept_samples_generic_hw -vendor xilinx -mg_file C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw.compgen.tcl "
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/nfa_initials_buckets' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/nfa_finals_buckets' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/nfa_forward_buckets' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/nfa_backward_buckets' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/nfa_symbols' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/sample_buffer' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/sample_buffer_length' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/sample_length' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/indices_begin' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/indices_samples' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/indices_stride' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/i_size' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/begin_index' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/begin_sample' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/end_index' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/end_sample' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/stop_on_first' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/accept' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on function 'nfa_accept_samples_generic_hw' to 'ap_ctrl_hs'.
+@W [RTGEN-101] Port 'nfa_accept_samples_generic_hw/i_size' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@I [RTGEN-100] Generating core module 'nfa_accept_samples_generic_hw_add_32ns_32ns_32_8': 1 instance(s).
+@I [RTGEN-100] Finished creating RTL model for 'nfa_accept_samples_generic_hw'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.163Total elapsed time: 35.520 sec.
+@I [HLS-111] Elapsed time: 0.433 seconds; current memory usage: 70.6 MB.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 35.574 sec.
+@I [HLS-100] Command "gen_rtl nfa_accept_samples_generic_hw -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/systemc/nfa_accept_samples_generic_hw -synmodules sample_iterator_get_offset nfa_get_initials _bsf32_hw bitset_next nfa_get_finals nfa_accept_sample sample_iterator_next nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.04Total elapsed time: 35.615 sec.
+@I [HLS-100] Command "gen_rtl nfa_accept_samples_generic_hw -istop -style xilinx -f -lang vhdl -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/vhdl/nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.027Total elapsed time: 35.642 sec.
+@I [HLS-100] Command "gen_rtl nfa_accept_samples_generic_hw -istop -style xilinx -f -lang vlog -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/verilog/nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.027Total elapsed time: 35.669 sec.
+@I [HLS-100] Command "export_constraint_db -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw.constraint.tcl -f -tool general "
+@I [HLS-100] Command 'export_constraint_db' returned 0; elapsed 0Total elapsed time: 35.696 sec.
+@I [HLS-100] Command "report -model nfa_accept_samples_generic_hw -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw.design.xml -verbose -f -dv "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.108Total elapsed time: 35.804 sec.
+@I [HLS-100] Command "gen_tb_info nfa_accept_samples_generic_hw -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw -p C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0.014Total elapsed time: 35.818 sec.
+@I [HLS-100] Command "report -model nfa_accept_samples_generic_hw -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/report/nfa_accept_samples_generic_hw_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.027Total elapsed time: 35.845 sec.
+@I [HLS-100] Command "report -model nfa_accept_samples_generic_hw -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/syn/report/nfa_accept_samples_generic_hw_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.013Total elapsed time: 35.858 sec.
+@I [HLS-100] Command "report -model nfa_accept_samples_generic_hw -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.122Total elapsed time: 35.980 sec.
+@I [HLS-100] Command "db_write -model nfa_accept_samples_generic_hw -o C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.081Total elapsed time: 36.61 sec.
+@I [HLS-100] Command "sc_get_clocks nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'sc_get_clocks' returned 0; elapsed 0Total elapsed time: 36.142 sec.
+@I [HLS-100] Command "sc_get_portdomain nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'sc_get_portdomain' returned 0; elapsed 0Total elapsed time: 36.142 sec.
+@I [HLS-0] Model list for RTL component generation: sample_iterator_get_offset nfa_get_initials _bsf32_hw bitset_next nfa_get_finals nfa_accept_sample sample_iterator_next nfa_accept_samples_generic_hw
+@I [HLS-0] Handling components in module [sample_iterator_get_offset] ... 
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_get_offset.compgen.tcl "
+@I [HLS-0] Found component nfa_accept_samples_generic_hw_mul_16ns_8ns_24_4.
+@I [HLS-0] Append model nfa_accept_samples_generic_hw_mul_16ns_8ns_24_4
+@I [HLS-0] Found component nfa_accept_samples_generic_hw_add_32ns_32ns_32_8.
+@I [HLS-0] Append model nfa_accept_samples_generic_hw_add_32ns_32ns_32_8
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.155 sec.
+@I [HLS-0] Handling components in module [nfa_get_initials] ... 
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_initials.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.014Total elapsed time: 36.169 sec.
+@I [HLS-0] Handling components in module [p_bsf32_hw] ... 
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/p_bsf32_hw.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.169 sec.
+@I [HLS-0] Handling components in module [bitset_next] ... 
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset_next.compgen.tcl "
+@I [HLS-0] Found component nfa_accept_samples_generic_hw_add_32ns_32s_32_8.
+@I [HLS-0] Append model nfa_accept_samples_generic_hw_add_32ns_32s_32_8
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.169 sec.
+@I [HLS-0] Handling components in module [nfa_get_finals] ... 
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_finals.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.013Total elapsed time: 36.182 sec.
+@I [HLS-0] Handling components in module [nfa_accept_sample] ... 
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_sample.compgen.tcl "
+@I [HLS-0] Found component nfa_accept_samples_generic_hw_add_16ns_16ns_16_4.
+@I [HLS-0] Append model nfa_accept_samples_generic_hw_add_16ns_16ns_16_4
+@I [HLS-0] Found component nfa_accept_samples_generic_hw_add_6ns_6ns_6_2.
+@I [HLS-0] Append model nfa_accept_samples_generic_hw_add_6ns_6ns_6_2
+@I [HLS-0] Found component nfa_accept_samples_generic_hw_mul_8ns_6ns_14_4.
+@I [HLS-0] Append model nfa_accept_samples_generic_hw_mul_8ns_6ns_14_4
+@I [HLS-0] Found component nfa_accept_samples_generic_hw_add_14ns_14ns_14_4.
+@I [HLS-0] Append model nfa_accept_samples_generic_hw_add_14ns_14ns_14_4
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.182 sec.
+@I [HLS-0] Handling components in module [sample_iterator_next] ... 
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_next.compgen.tcl "
+@I [HLS-0] Found component nfa_accept_samples_generic_hw_add_17ns_17s_17_4.
+@I [HLS-0] Append model nfa_accept_samples_generic_hw_add_17ns_17s_17_4
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.014Total elapsed time: 36.196 sec.
+@I [HLS-0] Handling components in module [nfa_accept_samples_generic_hw] ... 
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.196 sec.
+@I [HLS-0] Append model sample_iterator_get_offset
+@I [HLS-0] Append model nfa_get_initials
+@I [HLS-0] Append model p_bsf32_hw
+@I [HLS-0] Append model bitset_next
+@I [HLS-0] Append model nfa_get_finals
+@I [HLS-0] Append model nfa_accept_sample
+@I [HLS-0] Append model sample_iterator_next
+@I [HLS-0] Append model nfa_accept_samples_generic_hw
+@I [HLS-0] Generating RTL model list ...
+@I [HLS-0] All models in this session: nfa_accept_samples_generic_hw_mul_16ns_8ns_24_4 nfa_accept_samples_generic_hw_add_32ns_32ns_32_8 nfa_accept_samples_generic_hw_add_32ns_32s_32_8 nfa_accept_samples_generic_hw_add_16ns_16ns_16_4 nfa_accept_samples_generic_hw_add_6ns_6ns_6_2 nfa_accept_samples_generic_hw_mul_8ns_6ns_14_4 nfa_accept_samples_generic_hw_add_14ns_14ns_14_4 nfa_accept_samples_generic_hw_add_17ns_17s_17_4 sample_iterator_get_offset nfa_get_initials p_bsf32_hw bitset_next nfa_get_finals nfa_accept_sample sample_iterator_next nfa_accept_samples_generic_hw
+@I [HLS-0] To file: write model nfa_accept_samples_generic_hw_mul_16ns_8ns_24_4
+@I [HLS-0] To file: write model nfa_accept_samples_generic_hw_add_32ns_32ns_32_8
+@I [HLS-0] To file: write model nfa_accept_samples_generic_hw_add_32ns_32s_32_8
+@I [HLS-0] To file: write model nfa_accept_samples_generic_hw_add_16ns_16ns_16_4
+@I [HLS-0] To file: write model nfa_accept_samples_generic_hw_add_6ns_6ns_6_2
+@I [HLS-0] To file: write model nfa_accept_samples_generic_hw_mul_8ns_6ns_14_4
+@I [HLS-0] To file: write model nfa_accept_samples_generic_hw_add_14ns_14ns_14_4
+@I [HLS-0] To file: write model nfa_accept_samples_generic_hw_add_17ns_17s_17_4
+@I [HLS-0] To file: write model sample_iterator_get_offset
+@I [HLS-0] To file: write model nfa_get_initials
+@I [HLS-0] To file: write model p_bsf32_hw
+@I [HLS-0] To file: write model bitset_next
+@I [HLS-0] To file: write model nfa_get_finals
+@I [HLS-0] To file: write model nfa_accept_sample
+@I [HLS-0] To file: write model sample_iterator_next
+@I [HLS-0] To file: write model nfa_accept_samples_generic_hw
+@I [HLS-0] Finished generating RTL model list.
+
+
+@I [HLS-0] RTL Generation done.
+@I [HLS-0] CAS Generation done.
+@I [HLS-0] CBC Generation done.
+@I [HLS-100] Command "export_ssdm C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/a.export.ll "
+@I [HLS-100] Command 'export_ssdm' returned 0; elapsed 0.014Total elapsed time: 36.223 sec.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.223 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.385 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.385 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.385 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.385 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.385 sec.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.014Total elapsed time: 36.398 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/kintex7/kintex7.gen "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.398 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.398 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.398 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.054Total elapsed time: 36.466 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.041Total elapsed time: 36.507 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.507 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.135Total elapsed time: 36.642 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.054Total elapsed time: 36.696 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.297Total elapsed time: 36.696 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.013Total elapsed time: 36.709 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.31Total elapsed time: 36.709 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.31Total elapsed time: 36.709 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/kintex7/kintex7_fpv6.gen "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2013.4/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.709 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.709 sec.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.709 sec.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.014Total elapsed time: 36.723 sec.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_get_offset.compgen.tcl "
+@I [RTMG-282] Generating pipelined core: 'nfa_accept_samples_generic_hw_mul_16ns_8ns_24_4_MulnS_0'
+@I [RTMG-283] Generating pipelined adder/subtractor : 'nfa_accept_samples_generic_hw_add_32ns_32ns_32_8_AddSubnS_0'
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.135Total elapsed time: 36.858 sec.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_initials.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.013Total elapsed time: 36.871 sec.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/p_bsf32_hw.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.871 sec.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/bitset_next.compgen.tcl "
+@I [RTMG-283] Generating pipelined adder/subtractor : 'nfa_accept_samples_generic_hw_add_32ns_32s_32_8_AddSubnS_1'
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.054Total elapsed time: 36.925 sec.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_get_finals.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 36.925 sec.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_sample.compgen.tcl "
+@I [RTMG-283] Generating pipelined adder/subtractor : 'nfa_accept_samples_generic_hw_add_16ns_16ns_16_4_AddSubnS_2'
+@I [RTMG-283] Generating pipelined adder/subtractor : 'nfa_accept_samples_generic_hw_add_6ns_6ns_6_2_AddSubnS_3'
+@I [RTMG-282] Generating pipelined core: 'nfa_accept_samples_generic_hw_mul_8ns_6ns_14_4_MulnS_1'
+@I [RTMG-283] Generating pipelined adder/subtractor : 'nfa_accept_samples_generic_hw_add_14ns_14ns_14_4_AddSubnS_4'
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.203Total elapsed time: 37.128 sec.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/sample_iterator_next.compgen.tcl "
+@I [RTMG-283] Generating pipelined adder/subtractor : 'nfa_accept_samples_generic_hw_add_17ns_17s_17_4_AddSubnS_5'
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.054Total elapsed time: 37.182 sec.
+@I [HLS-100] Command "source C:/Design/XilinxHLS_ws/oil_plainc_hls/solution_kintex7/.autopilot/db/nfa_accept_samples_generic_hw.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 37.182 sec.
+@I [HLS-10] Finished generating all RTL models.
+@0 [HLS-0] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'nfa_accept_samples_generic_hw'.
+@I [WVHDL-304] Generating RTL VHDL for 'nfa_accept_samples_generic_hw'.
+@I [WVLOG-307] Generating RTL Verilog for 'nfa_accept_samples_generic_hw'.
+@I [HLS-100] Command 'autosyn' returned 0; elapsed 7.431Total elapsed time: 37.844 sec.
+@I [HLS-100] Command 'csynth_design' returned 0; elapsed 34.175Total elapsed time: 37.844 sec.
+@I [HLS-100] Command "cleanup_all "
+@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0.041Total elapsed time: 37.884 sec.

@@ -1,0 +1,54 @@
+﻿Compilación iniciada a las 16/04/2014 11:38:48 a. m..
+     1>Proyecto "C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\sim\test\test.vcxproj" en el nodo 2 (Rebuild destinos).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _CRT_SECURE_NO_WARNINGS /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\src\bitset.c ..\..\src\nfa.c ..\..\src\nfa_file.c ..\..\src\oil.c ..\..\src\test.c
+         test.c
+         oil.c
+         nfa_file.c
+         nfa.c
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(260): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(274): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(284): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(333): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(335): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(336): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(337): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(338): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(339): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(340): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(341): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(342): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(343): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(344): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(345): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(346): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(348): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(349): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(351): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(352): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(353): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(354): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(355): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(356): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(357): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(358): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(359): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(360): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(361): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(362): warning C4068: pragma desconocida
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\nfa.c(367): warning C4068: pragma desconocida
+         bitset.c
+         Generando código...
+     1>c:\users\jairoandres\documents\vivado\oil_plainc_hls\src\bitset.c(56): warning C4715: '_bsf32_hw' : no todas las rutas de acceso de control devuelven un valor
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\sim\test\Debug\test.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\sim\test\Debug\test.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\sim\test\Debug\test.lib" /MACHINE:X86 Debug\bitset.obj
+         Debug\nfa.obj
+         Debug\nfa_file.obj
+         Debug\oil.obj
+         Debug\test.obj
+         test.vcxproj -> C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\sim\test\Debug\test.exe
+     1>Compilación del proyecto terminada "C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\sim\test\test.vcxproj" (Rebuild destinos).
+
+Compilación correcta.
+
+Tiempo transcurrido 00:00:00.51

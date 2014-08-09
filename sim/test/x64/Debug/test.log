@@ -1,0 +1,54 @@
+﻿Compilación iniciada a las 16/04/2014 9:27:51 p. m..
+     1>Proyecto "C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\sim\test\test.vcxproj" en el nodo 2 (Build destinos).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D _CRT_SECURE_NO_WARNINGS /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TC /errorReport:prompt ..\..\src\nfa.c ..\..\src\nfa_file.c ..\..\src\oil.c ..\..\src\test.c
+         test.c
+         oil.c
+         nfa_file.c
+         nfa.c
+     1>..\..\src\nfa.c(271): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(284): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(294): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(341): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(343): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(344): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(345): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(346): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(347): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(348): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(349): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(350): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(351): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(352): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(353): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(354): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(355): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(356): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(358): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(359): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(360): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(361): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(362): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(363): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(364): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(365): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(366): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(367): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(368): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(369): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(370): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(371): warning C4068: pragma desconocida
+     1>..\..\src\nfa.c(377): warning C4068: pragma desconocida
+         Generando código...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\sim\test\x64\Debug\test.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\sim\test\x64\Debug\test.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\sim\test\x64\Debug\test.lib" /MACHINE:X64 x64\Debug\bitset.obj
+         x64\Debug\nfa.obj
+         x64\Debug\nfa_file.obj
+         x64\Debug\oil.obj
+         x64\Debug\test.obj
+         test.vcxproj -> C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\sim\test\x64\Debug\test.exe
+     1>Compilación del proyecto terminada "C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\sim\test\test.vcxproj" (Build destinos).
+
+Compilación correcta.
+
+Tiempo transcurrido 00:00:01.38

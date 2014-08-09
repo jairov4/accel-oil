@@ -1,0 +1,179 @@
+
+
+================================================================
+== Vivado HLS Report for 'sample_iterator_next'
+================================================================
+* Date:           Thu Apr 17 08:58:53 2014
+
+* Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
+* Project:        oil_plainc_hls
+* Solution:       solution_spartan3
+* Product family: spartan3a spartan3a_fpv5 
+* Target device:  xc3s200avq100-5
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |   1.00|      3.18|        0.13|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    7|    7|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+------+----------+
+|       Name      | BRAM_18K|  FF  |  LUT | MULT18x18|
++-----------------+---------+------+------+----------+
+|Expression       |        -|     0|    42|         -|
+|FIFO             |        -|     -|     -|         -|
+|Instance         |        -|   282|    48|         -|
+|Memory           |        -|     -|     -|         -|
+|Multiplexer      |        -|     -|     -|         -|
+|Register         |        -|   106|     -|         -|
+|ShiftMemory      |        -|     0|    32|         -|
++-----------------+---------+------+------+----------+
+|Total            |        0|   388|   122|         0|
++-----------------+---------+------+------+----------+
+|Available        |       16|  3584|  3584|        16|
++-----------------+---------+------+------+----------+
+|Utilization (%)  |        0|    10|     3|         0|
++-----------------+---------+------+------+----------+
+
++ Detail: 
+    * Instance: 
+    +------------------------------------------------------+--------------------------------------------------+---------+-------+----+----+
+    |                       Instance                       |                      Module                      | BRAM_18K| DSP48E| FF | LUT|
+    +------------------------------------------------------+--------------------------------------------------+---------+-------+----+----+
+    |nfa_accept_samples_generic_hw_add_16ns_16ns_16_4_U31  |nfa_accept_samples_generic_hw_add_16ns_16ns_16_4  |        0|      0|  94|  16|
+    |nfa_accept_samples_generic_hw_add_16ns_16ns_16_4_U32  |nfa_accept_samples_generic_hw_add_16ns_16ns_16_4  |        0|      0|  94|  16|
+    |nfa_accept_samples_generic_hw_add_17ns_17s_17_4_U30   |nfa_accept_samples_generic_hw_add_17ns_17s_17_4   |        0|      0|  94|  16|
+    +------------------------------------------------------+--------------------------------------------------+---------+-------+----+----+
+    |Total                                                 |                                                  |        0|      0| 282|  48|
+    +------------------------------------------------------+--------------------------------------------------+---------+-------+----+----+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Shift register: 
+    +-----------------------+---+----+-----+-----------+
+    |          Name         | FF| LUT| Bits| Const Bits|
+    +-----------------------+---+----+-----+-----------+
+    |i_index_read_reg_134   |  0|  16|   16|          0|
+    |i_sample_read_reg_128  |  0|  16|   16|          0|
+    +-----------------------+---+----+-----+-----------+
+    |Total                  |  0|  32|   32|          0|
+    +-----------------------+---+----+-----+-----------+
+
+    * Expression: 
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+    |               Variable Name              | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+    |agg_result_index_write_assign_fu_111_p3   |  Select  |      0|  0|  16|           1|          16|
+    |agg_result_sample_write_assign_fu_105_p3  |  Select  |      0|  0|  16|           1|          16|
+    |tmp_1_fu_99_p2                            |   icmp   |      0|  0|  10|          18|          18|
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                     |          |      0|  0|  42|          20|          50|
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    +-----------------------------------+----+-----+-----------+
+    |                Name               | FF | Bits| Const Bits|
+    +-----------------------------------+----+-----+-----------+
+    |ap_CS_fsm                          |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it1              |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it2              |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it3              |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it4              |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it5              |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it6              |   1|    1|          0|
+    |ap_reg_ppiten_pp0_it7              |   1|    1|          0|
+    |i_index_read_reg_134               |  16|   16|          0|
+    |i_sample_read_reg_128              |  16|   16|          0|
+    |indices_samples_addr_read_reg_145  |  16|   16|          0|
+    |tmp_1_reg_160                      |   1|    1|          0|
+    |tmp_2_reg_171                      |  16|   16|          0|
+    |tmp_3_reg_166                      |  16|   16|          0|
+    |tmp_s_reg_155                      |  17|   17|          0|
+    +-----------------------------------+----+-----+-----------+
+    |Total                              | 106|  106|          0|
+    +-----------------------------------+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------+-----+-----+------------+----------------------+--------------+
+|          RTL Ports          | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++-----------------------------+-----+-----+------------+----------------------+--------------+
+|ap_clk                       |  in |    1| ap_ctrl_hs | sample_iterator_next | return value |
+|ap_rst                       |  in |    1| ap_ctrl_hs | sample_iterator_next | return value |
+|ap_start                     |  in |    1| ap_ctrl_hs | sample_iterator_next | return value |
+|ap_done                      | out |    1| ap_ctrl_hs | sample_iterator_next | return value |
+|ap_idle                      | out |    1| ap_ctrl_hs | sample_iterator_next | return value |
+|ap_ready                     | out |    1| ap_ctrl_hs | sample_iterator_next | return value |
+|ap_ce                        |  in |    1| ap_ctrl_hs | sample_iterator_next | return value |
+|ap_return_0                  | out |   16| ap_ctrl_hs | sample_iterator_next | return value |
+|ap_return_1                  | out |   16| ap_ctrl_hs | sample_iterator_next | return value |
+|indices_samples_req_din      | out |    1|   ap_bus   |    indices_samples   |    pointer   |
+|indices_samples_req_full_n   |  in |    1|   ap_bus   |    indices_samples   |    pointer   |
+|indices_samples_req_write    | out |    1|   ap_bus   |    indices_samples   |    pointer   |
+|indices_samples_rsp_empty_n  |  in |    1|   ap_bus   |    indices_samples   |    pointer   |
+|indices_samples_rsp_read     | out |    1|   ap_bus   |    indices_samples   |    pointer   |
+|indices_samples_address      | out |   32|   ap_bus   |    indices_samples   |    pointer   |
+|indices_samples_datain       |  in |   16|   ap_bus   |    indices_samples   |    pointer   |
+|indices_samples_dataout      | out |   16|   ap_bus   |    indices_samples   |    pointer   |
+|indices_samples_size         | out |   32|   ap_bus   |    indices_samples   |    pointer   |
+|indices_begin_req_din        | out |    1|   ap_bus   |     indices_begin    |    pointer   |
+|indices_begin_req_full_n     |  in |    1|   ap_bus   |     indices_begin    |    pointer   |
+|indices_begin_req_write      | out |    1|   ap_bus   |     indices_begin    |    pointer   |
+|indices_begin_rsp_empty_n    |  in |    1|   ap_bus   |     indices_begin    |    pointer   |
+|indices_begin_rsp_read       | out |    1|   ap_bus   |     indices_begin    |    pointer   |
+|indices_begin_address        | out |   32|   ap_bus   |     indices_begin    |    pointer   |
+|indices_begin_datain         |  in |   32|   ap_bus   |     indices_begin    |    pointer   |
+|indices_begin_dataout        | out |   32|   ap_bus   |     indices_begin    |    pointer   |
+|indices_begin_size           | out |   32|   ap_bus   |     indices_begin    |    pointer   |
+|indices_stride_req_din       | out |    1|   ap_bus   |    indices_stride    |    pointer   |
+|indices_stride_req_full_n    |  in |    1|   ap_bus   |    indices_stride    |    pointer   |
+|indices_stride_req_write     | out |    1|   ap_bus   |    indices_stride    |    pointer   |
+|indices_stride_rsp_empty_n   |  in |    1|   ap_bus   |    indices_stride    |    pointer   |
+|indices_stride_rsp_read      | out |    1|   ap_bus   |    indices_stride    |    pointer   |
+|indices_stride_address       | out |   32|   ap_bus   |    indices_stride    |    pointer   |
+|indices_stride_datain        |  in |    8|   ap_bus   |    indices_stride    |    pointer   |
+|indices_stride_dataout       | out |    8|   ap_bus   |    indices_stride    |    pointer   |
+|indices_stride_size          | out |   32|   ap_bus   |    indices_stride    |    pointer   |
+|i_index                      |  in |   16|   ap_none  |        i_index       |    scalar    |
+|i_sample                     |  in |   16|   ap_none  |       i_sample       |    scalar    |
++-----------------------------+-----+-----+------------+----------------------+--------------+
+

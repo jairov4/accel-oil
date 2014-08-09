@@ -1,0 +1,260 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'nfa_accept_samples_generic_hw'" level="0">
+<item name = "Date">Mon Jul 14 21:51:16 2014
+</item>
+<item name = "Version">2014.1 (build date: Fri Apr 04 13:20:25 PM 2014)</item>
+<item name = "Project">oil_plainc_hls</item>
+<item name = "Solution">solution_virtex5</item>
+<item name = "Product family">virtex5 virtex5_fpv5 </item>
+<item name = "Target device">xc5vlx50tff1136-3</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="default">8.00, 5.00, 3.00</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">2, 39125640183, 3, 39125640184, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_sample_iterator_next_fu_463">sample_iterator_next, 3, 3, 1, 1, function</column>
+<column name="grp_bitset_next_fu_473">bitset_next, 1, 1, 1, 1, function</column>
+<column name="grp_sample_iterator_get_offset_fu_485">sample_iterator_get_offset, 3, 3, 1, 1, function</column>
+<column name="grp_nfa_get_initials_fu_497">nfa_get_initials, 5, 5, 4, 4, function</column>
+<column name="grp_nfa_get_finals_fu_503">nfa_get_finals, 5, 5, 4, 4, function</column>
+<column name="r_bit_p_bsf32_hw_fu_509">p_bsf32_hw, 0, 0, 1, 1, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">0, 39125640181, 14 ~ 597019, -, -, 0 ~ 65535, no</column>
+<column name=" + Loop 1.1">0, 596998, 6 ~ 583, -, -, 0 ~ 1024, no</column>
+<column name="  ++ Loop 1.1.1">0, 576, 9, -, -, 0 ~ 64, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="Expression">-, 1, 0, 397</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, 1, 264, 540</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 570</column>
+<column name="Register">-, -, 892, -</column>
+<specialColumn name="Available">120, 48, 28800, 28800</specialColumn>
+<specialColumn name="Utilization (%)">0, 4, 4, 5</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="grp_bitset_next_fu_473">bitset_next, 0, 0, 80, 281</column>
+<column name="grp_nfa_get_finals_fu_503">nfa_get_finals, 0, 0, 36, 34</column>
+<column name="grp_nfa_get_initials_fu_497">nfa_get_initials, 0, 0, 36, 34</column>
+<column name="r_bit_p_bsf32_hw_fu_509">p_bsf32_hw, 0, 0, 0, 55</column>
+<column name="grp_sample_iterator_get_offset_fu_485">sample_iterator_get_offset, 0, 1, 60, 16</column>
+<column name="grp_sample_iterator_next_fu_463">sample_iterator_next, 0, 0, 52, 120</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="7">Memory, Module, BRAM_18K, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="tmp_4_i_fu_639_p2">*, 1, 0, 0, 8, 6</column>
+<column name="c_1_fu_749_p2">+, 0, 0, 32, 32, 1</column>
+<column name="i_fu_571_p2">+, 0, 0, 16, 16, 1</column>
+<column name="p_rec_i_fu_577_p2">+, 0, 0, 64, 64, 1</column>
+<column name="state_fu_626_p2">+, 0, 0, 6, 6, 6</column>
+<column name="sum_fu_555_p2">+, 0, 0, 64, 64, 64</column>
+<column name="ap_sig_bdd_187">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_366">and, 0, 0, 1, 1, 1</column>
+<column name="current_buckets_0_1_fu_722_p2">and, 0, 0, 32, 32, 32</column>
+<column name="current_buckets_1_1_fu_727_p2">and, 0, 0, 32, 32, 32</column>
+<column name="tmp_i_13_fu_537_p2">and, 0, 0, 1, 1, 1</column>
+<column name="tmp_18_1_i_fu_589_p2">icmp, 0, 0, 11, 32, 1</column>
+<column name="tmp_18_i_fu_583_p2">icmp, 0, 0, 11, 32, 1</column>
+<column name="tmp_4_fu_738_p2">icmp, 0, 0, 11, 32, 1</column>
+<column name="tmp_7_fu_566_p2">icmp, 0, 0, 6, 16, 16</column>
+<column name="tmp_i_12_fu_532_p2">icmp, 0, 0, 6, 16, 16</column>
+<column name="tmp_i_fu_527_p2">icmp, 0, 0, 6, 16, 16</column>
+<column name="next_buckets_0_1_fu_702_p2">or, 0, 0, 32, 32, 32</column>
+<column name="next_buckets_1_1_fu_708_p2">or, 0, 0, 32, 32, 32</column>
+<column name="tmp_1_fu_732_p2">or, 0, 0, 32, 32, 32</column>
+<column name="or_cond_fu_744_p2">xor, 0, 0, 1, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="bus_assign_reg_286">32, 2, 32, 64</column>
+<column name="c_fu_142">32, 2, 32, 64</column>
+<column name="i_0_i_reg_264">16, 2, 16, 32</column>
+<column name="i_index_reg_224">16, 2, 16, 32</column>
+<column name="i_sample_reg_234">16, 2, 16, 32</column>
+<column name="indices_address">32, 3, 32, 96</column>
+<column name="indices_dataout">56, 3, 56, 168</column>
+<column name="indices_size">32, 3, 32, 96</column>
+<column name="j_bit1_reg_407">8, 2, 8, 16</column>
+<column name="j_bucket1_ph_reg_311">32, 2, 32, 64</column>
+<column name="j_bucket1_reg_386">32, 2, 32, 64</column>
+<column name="j_bucket_index1_ph_reg_324">2, 2, 2, 4</column>
+<column name="j_bucket_index1_reg_397">8, 2, 8, 16</column>
+<column name="next_buckets_0_reg_254">32, 2, 32, 64</column>
+<column name="next_buckets_1_reg_244">32, 2, 32, 64</column>
+<column name="nfa_forward_buckets_address">32, 3, 32, 96</column>
+<column name="p_01_rec_i_reg_275">64, 2, 64, 128</column>
+<column name="p_0_reg_451">32, 2, 32, 64</column>
+<column name="tmp_buckets_0_3_reg_373">32, 2, 32, 64</column>
+<column name="tmp_buckets_1_3_reg_360">32, 2, 32, 64</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="agg_result_bucket_index_0_lcssa4_i_reg_298">1, 0, 1, 0</column>
+<column name="any_0_i_reg_427">1, 0, 1, 0</column>
+<column name="ap_CS_fsm">6, 0, 6, 0</column>
+<column name="bus_assign_reg_286">32, 0, 32, 0</column>
+<column name="c_fu_142">32, 0, 32, 0</column>
+<column name="c_load_reg_814">32, 0, 32, 0</column>
+<column name="current_buckets_0_reg_823">32, 0, 32, 0</column>
+<column name="current_buckets_1_reg_828">32, 0, 32, 0</column>
+<column name="grp_bitset_next_fu_473_ap_start_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_nfa_get_finals_fu_503_ap_start_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_nfa_get_initials_fu_497_ap_start_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_sample_iterator_get_offset_fu_485_ap_start_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_sample_iterator_next_fu_463_ap_start_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_0_i_reg_264">16, 0, 16, 0</column>
+<column name="i_index_reg_224">16, 0, 16, 0</column>
+<column name="i_reg_847">16, 0, 16, 0</column>
+<column name="i_sample_reg_234">16, 0, 16, 0</column>
+<column name="j_bit1_ph_reg_335">5, 0, 5, 0</column>
+<column name="j_bit1_reg_407">8, 0, 8, 0</column>
+<column name="j_bit_reg_910">8, 0, 8, 0</column>
+<column name="j_bucket1_ph_reg_311">32, 0, 32, 0</column>
+<column name="j_bucket1_reg_386">32, 0, 32, 0</column>
+<column name="j_bucket_index1_ph_reg_324">2, 0, 2, 0</column>
+<column name="j_bucket_index1_reg_397">8, 0, 8, 0</column>
+<column name="j_bucket_index_reg_915">8, 0, 8, 0</column>
+<column name="j_bucket_reg_920">32, 0, 32, 0</column>
+<column name="j_end_ph_reg_346">1, 0, 1, 0</column>
+<column name="j_end_reg_417">1, 0, 1, 0</column>
+<column name="next_buckets_0_1_reg_936">32, 0, 32, 0</column>
+<column name="next_buckets_0_reg_254">32, 0, 32, 0</column>
+<column name="next_buckets_1_reg_244">32, 0, 32, 0</column>
+<column name="p_01_rec_i_reg_275">64, 0, 64, 0</column>
+<column name="p_0_reg_451">32, 0, 32, 0</column>
+<column name="p_rec_i_reg_852">64, 0, 64, 0</column>
+<column name="p_s_reg_925">1, 0, 1, 0</column>
+<column name="r_reg_440">1, 0, 1, 0</column>
+<column name="reg_515">32, 0, 32, 0</column>
+<column name="sample_buffer_addr_reg_838">32, 0, 32, 0</column>
+<column name="state_reg_893">6, 0, 6, 0</column>
+<column name="sym_reg_857">8, 0, 8, 0</column>
+<column name="tmp_5_i_cast_reg_888">8, 0, 14, 6</column>
+<column name="tmp_6_i_reg_898">14, 0, 14, 0</column>
+<column name="tmp_6_reg_833">32, 0, 64, 32</column>
+<column name="tmp_buckets_0_3_reg_373">32, 0, 32, 0</column>
+<column name="tmp_buckets_0_reg_946">32, 0, 32, 0</column>
+<column name="tmp_buckets_1_3_reg_360">32, 0, 32, 0</column>
+<column name="tmp_buckets_1_reg_951">32, 0, 32, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, nfa_accept_samples_generic_hw, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, nfa_accept_samples_generic_hw, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, nfa_accept_samples_generic_hw, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, nfa_accept_samples_generic_hw, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, nfa_accept_samples_generic_hw, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, nfa_accept_samples_generic_hw, return value</column>
+<column name="ap_return">out, 32, ap_ctrl_hs, nfa_accept_samples_generic_hw, return value</column>
+<column name="nfa_initials_buckets_req_din">out, 1, ap_bus, nfa_initials_buckets, pointer</column>
+<column name="nfa_initials_buckets_req_full_n">in, 1, ap_bus, nfa_initials_buckets, pointer</column>
+<column name="nfa_initials_buckets_req_write">out, 1, ap_bus, nfa_initials_buckets, pointer</column>
+<column name="nfa_initials_buckets_rsp_empty_n">in, 1, ap_bus, nfa_initials_buckets, pointer</column>
+<column name="nfa_initials_buckets_rsp_read">out, 1, ap_bus, nfa_initials_buckets, pointer</column>
+<column name="nfa_initials_buckets_address">out, 32, ap_bus, nfa_initials_buckets, pointer</column>
+<column name="nfa_initials_buckets_datain">in, 32, ap_bus, nfa_initials_buckets, pointer</column>
+<column name="nfa_initials_buckets_dataout">out, 32, ap_bus, nfa_initials_buckets, pointer</column>
+<column name="nfa_initials_buckets_size">out, 32, ap_bus, nfa_initials_buckets, pointer</column>
+<column name="nfa_finals_buckets_req_din">out, 1, ap_bus, nfa_finals_buckets, pointer</column>
+<column name="nfa_finals_buckets_req_full_n">in, 1, ap_bus, nfa_finals_buckets, pointer</column>
+<column name="nfa_finals_buckets_req_write">out, 1, ap_bus, nfa_finals_buckets, pointer</column>
+<column name="nfa_finals_buckets_rsp_empty_n">in, 1, ap_bus, nfa_finals_buckets, pointer</column>
+<column name="nfa_finals_buckets_rsp_read">out, 1, ap_bus, nfa_finals_buckets, pointer</column>
+<column name="nfa_finals_buckets_address">out, 32, ap_bus, nfa_finals_buckets, pointer</column>
+<column name="nfa_finals_buckets_datain">in, 32, ap_bus, nfa_finals_buckets, pointer</column>
+<column name="nfa_finals_buckets_dataout">out, 32, ap_bus, nfa_finals_buckets, pointer</column>
+<column name="nfa_finals_buckets_size">out, 32, ap_bus, nfa_finals_buckets, pointer</column>
+<column name="nfa_forward_buckets_req_din">out, 1, ap_bus, nfa_forward_buckets, pointer</column>
+<column name="nfa_forward_buckets_req_full_n">in, 1, ap_bus, nfa_forward_buckets, pointer</column>
+<column name="nfa_forward_buckets_req_write">out, 1, ap_bus, nfa_forward_buckets, pointer</column>
+<column name="nfa_forward_buckets_rsp_empty_n">in, 1, ap_bus, nfa_forward_buckets, pointer</column>
+<column name="nfa_forward_buckets_rsp_read">out, 1, ap_bus, nfa_forward_buckets, pointer</column>
+<column name="nfa_forward_buckets_address">out, 32, ap_bus, nfa_forward_buckets, pointer</column>
+<column name="nfa_forward_buckets_datain">in, 32, ap_bus, nfa_forward_buckets, pointer</column>
+<column name="nfa_forward_buckets_dataout">out, 32, ap_bus, nfa_forward_buckets, pointer</column>
+<column name="nfa_forward_buckets_size">out, 32, ap_bus, nfa_forward_buckets, pointer</column>
+<column name="nfa_symbols">in, 8, ap_none, nfa_symbols, pointer</column>
+<column name="sample_buffer_req_din">out, 1, ap_bus, sample_buffer, pointer</column>
+<column name="sample_buffer_req_full_n">in, 1, ap_bus, sample_buffer, pointer</column>
+<column name="sample_buffer_req_write">out, 1, ap_bus, sample_buffer, pointer</column>
+<column name="sample_buffer_rsp_empty_n">in, 1, ap_bus, sample_buffer, pointer</column>
+<column name="sample_buffer_rsp_read">out, 1, ap_bus, sample_buffer, pointer</column>
+<column name="sample_buffer_address">out, 32, ap_bus, sample_buffer, pointer</column>
+<column name="sample_buffer_datain">in, 8, ap_bus, sample_buffer, pointer</column>
+<column name="sample_buffer_dataout">out, 8, ap_bus, sample_buffer, pointer</column>
+<column name="sample_buffer_size">out, 32, ap_bus, sample_buffer, pointer</column>
+<column name="sample_buffer_length">in, 32, ap_none, sample_buffer_length, scalar</column>
+<column name="sample_length">in, 16, ap_none, sample_length, scalar</column>
+<column name="indices_req_din">out, 1, ap_bus, indices, pointer</column>
+<column name="indices_req_full_n">in, 1, ap_bus, indices, pointer</column>
+<column name="indices_req_write">out, 1, ap_bus, indices, pointer</column>
+<column name="indices_rsp_empty_n">in, 1, ap_bus, indices, pointer</column>
+<column name="indices_rsp_read">out, 1, ap_bus, indices, pointer</column>
+<column name="indices_address">out, 32, ap_bus, indices, pointer</column>
+<column name="indices_datain">in, 56, ap_bus, indices, pointer</column>
+<column name="indices_dataout">out, 56, ap_bus, indices, pointer</column>
+<column name="indices_size">out, 32, ap_bus, indices, pointer</column>
+<column name="i_size">in, 16, ap_none, i_size, scalar</column>
+<column name="begin_index">in, 16, ap_none, begin_index, scalar</column>
+<column name="begin_sample">in, 16, ap_none, begin_sample, scalar</column>
+<column name="end_index">in, 16, ap_none, end_index, scalar</column>
+<column name="end_sample">in, 16, ap_none, end_sample, scalar</column>
+<column name="stop_on_first">in, 1, ap_none, stop_on_first, scalar</column>
+<column name="accept">in, 1, ap_none, accept, scalar</column>
+</table>
+</item>
+</section>
+</profile>

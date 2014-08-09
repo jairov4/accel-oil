@@ -1,0 +1,7 @@
+INFILE=Z:\oil_plainc_hls\impl\impl_test_multi\implementation\system.ncd
+OUTFILE=Z:\oil_plainc_hls\impl\impl_test_multi\implementation\system.bit
+FAMILY=Virtex5
+PART=xc5vlx50t-1ff1136
+WORKINGDIR=Z:\oil_plainc_hls\impl\impl_test_multi\implementation
+LICENSE=ISE
+USER_INFO=_

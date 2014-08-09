@@ -1,0 +1,149 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'bitset_next'" level="0">
+<item name = "Date">Thu Apr 17 09:00:23 2014
+</item>
+<item name = "Version">2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)</item>
+<item name = "Project">oil_plainc_hls</item>
+<item name = "Solution">solution_kintex7</item>
+<item name = "Product family">kintex7 kintex7_fpv6 </item>
+<item name = "Target device">xc7k325tffg676-3</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="default">1.00, 1.30, 0.13</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">11, 11, 1, 1, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_p_bsf32_hw_fu_118">p_bsf32_hw, 1, 1, 1, 1, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="Expression">-, -, 0, 110</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">-, -, 415, 122</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 116</column>
+<column name="Register">-, -, 191, -</column>
+<column name="ShiftMemory">-, -, 0, 106</column>
+<specialColumn name="Available">890, 840, 407600, 203800</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="nfa_accept_samples_generic_hw_add_32ns_32s_32_8_U11">nfa_accept_samples_generic_hw_add_32ns_32s_32_8, 0, 0, 375, 32</column>
+<column name="grp_p_bsf32_hw_fu_118">p_bsf32_hw, 0, 0, 40, 90</column>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="7">Memory, Module, BRAM_18K, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Shift register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="bus_assign_reg_225">0, 32, 32, 0</column>
+<column name="p_read_1_reg_206">0, 32, 32, 0</column>
+<column name="r_bit_read_reg_200">0, 8, 8, 0</column>
+<column name="r_bucket_read_reg_194">0, 32, 32, 0</column>
+<column name="tmp_reg_214">0, 2, 2, 0</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_sig_bdd_139">and, 0, 0, 1, 1, 1</column>
+<column name="ap_sig_bdd_143">and, 0, 0, 1, 1, 1</column>
+<column name="bus_assign_fu_137_p2">and, 0, 0, 32, 32, 32</column>
+<column name="tmp_24_1_fu_146_p2">icmp, 0, 0, 2, 2, 1</column>
+<column name="tmp_26_1_fu_151_p2">icmp, 0, 0, 37, 32, 1</column>
+<column name="tmp_3_fu_141_p2">icmp, 0, 0, 37, 32, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="agg_result_bit_write_assign_phi_fu_107_p8">8, 3, 8, 24</column>
+<column name="agg_result_bucket_index_write_assign_phi_fu_91_p8">2, 3, 2, 6</column>
+<column name="agg_result_bucket_write_assign_phi_fu_58_p8">32, 3, 32, 96</column>
+<column name="ap_reg_phiprechg_agg_result_bit_write_assign_reg_104pp0_it11">8, 2, 8, 16</column>
+<column name="ap_reg_phiprechg_agg_result_bucket_index_write_assign_reg_87pp0_it11">2, 2, 2, 4</column>
+<column name="ap_reg_phiprechg_agg_result_bucket_write_assign_reg_54pp0_it11">32, 3, 32, 96</column>
+<column name="grp_p_bsf32_hw_fu_118_bus_r">32, 3, 32, 96</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="4">Name, FF, Bits, Const Bits</keys>
+<column name="ap_reg_phiprechg_agg_result_bit_write_assign_reg_104pp0_it11">8, 8, 0</column>
+<column name="ap_reg_phiprechg_agg_result_bucket_index_write_assign_reg_87pp0_it11">2, 2, 0</column>
+<column name="ap_reg_phiprechg_agg_result_bucket_write_assign_reg_54pp0_it11">32, 32, 0</column>
+<column name="ap_reg_phiprechg_agg_result_end_write_assign_reg_69pp0_it11">0, 1, 1</column>
+<column name="ap_reg_ppstg_tmp_24_1_reg_236_pp0_it10">1, 1, 0</column>
+<column name="ap_reg_ppstg_tmp_26_1_reg_240_pp0_it10">1, 1, 0</column>
+<column name="ap_reg_ppstg_tmp_3_reg_232_pp0_it10">1, 1, 0</column>
+<column name="bus_assign_reg_225">32, 32, 0</column>
+<column name="p_read_1_reg_206">32, 32, 0</column>
+<column name="r_bit_read_reg_200">8, 8, 0</column>
+<column name="r_bucket_read_reg_194">32, 32, 0</column>
+<column name="reg_123">5, 5, 0</column>
+<column name="tmp_1_reg_220">32, 32, 0</column>
+<column name="tmp_24_1_reg_236">1, 1, 0</column>
+<column name="tmp_26_1_reg_240">1, 1, 0</column>
+<column name="tmp_3_reg_232">1, 1, 0</column>
+<column name="tmp_reg_214">2, 2, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, bitset_next, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, bitset_next, return value</column>
+<column name="ap_return_0">out, 8, ap_ctrl_hs, bitset_next, return value</column>
+<column name="ap_return_1">out, 8, ap_ctrl_hs, bitset_next, return value</column>
+<column name="ap_return_2">out, 32, ap_ctrl_hs, bitset_next, return value</column>
+<column name="ap_return_3">out, 1, ap_ctrl_hs, bitset_next, return value</column>
+<column name="ap_ce">in, 1, ap_ctrl_hs, bitset_next, return value</column>
+<column name="p_read">in, 32, ap_none, p_read, scalar</column>
+<column name="r_bit">in, 8, ap_none, r_bit, scalar</column>
+<column name="r_bucket_index">in, 8, ap_none, r_bucket_index, scalar</column>
+<column name="r_bucket">in, 32, ap_none, r_bucket, scalar</column>
+</table>
+</item>
+</section>
+</profile>

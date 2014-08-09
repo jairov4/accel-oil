@@ -1,0 +1,7 @@
+sample_iterator_get_offset
+nfa_get_initials
+p_bsf32_hw
+bitset_next
+nfa_get_finals
+sample_iterator_next
+nfa_accept_samples_generic_hw

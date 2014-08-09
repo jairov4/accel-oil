@@ -1,0 +1,10 @@
+set status(tv_done) 0
+set status(tvin) "nfa_accept_samples_generic_hw.autotvin.dat"
+set status(wrapc_done) 1
+set status(bc_done) 0
+set status(bc_tb_done) 0
+set status(tvout) "nfa_accept_samples_generic_hw.autotvout.dat"
+set status(sc_done) 1
+set status(cas_done) 0
+set status(hdl_tvin) "nfa_accept_samples_generic_hw.hdltvin.dat"
+set status(hdl_tvout) "nfa_accept_samples_generic_hw.hdltvout.dat"

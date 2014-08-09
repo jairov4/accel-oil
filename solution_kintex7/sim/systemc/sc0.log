@@ -1,0 +1,11 @@
+   Build using "C:/Programas/Xilinx/Vivado_HLS/2013.4/msys/bin/g++.exe"
+   Compiling bitset_next.cpp
+   Compiling nfa_accept_sample.cpp
+   Compiling nfa_accept_samples_generic_hw.autotb.cpp
+   Compiling nfa_accept_samples_generic_hw.cpp
+   Compiling nfa_get_finals.cpp
+   Compiling nfa_get_initials.cpp
+   Compiling p_bsf32_hw.cpp
+   Compiling sample_iterator_get_offset.cpp
+   Compiling sample_iterator_next.cpp
+   Generating cosim.sc.exe

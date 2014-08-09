@@ -1,0 +1,392 @@
+# do cosim.modelsim.scr 
+# 
+#     set fl [open ".exit.err" w]
+#     puts $fl "Elaboration errors in executing modelsim simulator"
+#     close $fl
+#     quit
+# 
+# C:/clibs
+# nt
+# 1
+# C:/clibs/questa/10.1c/nt/lib
+# Modifying c:\Programas\modeltech64_10.1c\win64/../modelsim.ini
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package NUMERIC_STD
+# -- Compiling package AESL_sim_components
+# -- Compiling package body AESL_sim_components
+# -- Loading package AESL_sim_components
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Compiling entity AESL_autobus_indices_begin
+# -- Compiling architecture behav of AESL_autobus_indices_begin
+# ** Warning: AESL_autobus_indices_begin.vhd(64): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_indices_begin.vhd(65): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_indices_begin.vhd(66): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_indices_begin.vhd(67): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_indices_begin.vhd(68): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_indices_begin.vhd(69): (vcom-1236) Shared variables must be of a protected type.
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Compiling entity AESL_autobus_indices_samples
+# -- Compiling architecture behav of AESL_autobus_indices_samples
+# ** Warning: AESL_autobus_indices_samples.vhd(64): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_indices_samples.vhd(65): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_indices_samples.vhd(66): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_indices_samples.vhd(67): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_indices_samples.vhd(68): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_indices_samples.vhd(69): (vcom-1236) Shared variables must be of a protected type.
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Compiling entity AESL_autobus_indices_stride
+# -- Compiling architecture behav of AESL_autobus_indices_stride
+# ** Warning: AESL_autobus_indices_stride.vhd(64): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_indices_stride.vhd(65): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_indices_stride.vhd(66): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_indices_stride.vhd(67): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_indices_stride.vhd(68): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_indices_stride.vhd(69): (vcom-1236) Shared variables must be of a protected type.
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Compiling entity AESL_autobus_nfa_finals_buckets
+# -- Compiling architecture behav of AESL_autobus_nfa_finals_buckets
+# ** Warning: AESL_autobus_nfa_finals_buckets.vhd(64): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_nfa_finals_buckets.vhd(65): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_nfa_finals_buckets.vhd(66): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_nfa_finals_buckets.vhd(67): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_nfa_finals_buckets.vhd(68): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_nfa_finals_buckets.vhd(69): (vcom-1236) Shared variables must be of a protected type.
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Compiling entity AESL_autobus_nfa_forward_buckets
+# -- Compiling architecture behav of AESL_autobus_nfa_forward_buckets
+# ** Warning: AESL_autobus_nfa_forward_buckets.vhd(64): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_nfa_forward_buckets.vhd(65): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_nfa_forward_buckets.vhd(66): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_nfa_forward_buckets.vhd(67): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_nfa_forward_buckets.vhd(68): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_nfa_forward_buckets.vhd(69): (vcom-1236) Shared variables must be of a protected type.
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Compiling entity AESL_autobus_nfa_initials_buckets
+# -- Compiling architecture behav of AESL_autobus_nfa_initials_buckets
+# ** Warning: AESL_autobus_nfa_initials_buckets.vhd(64): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_nfa_initials_buckets.vhd(65): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_nfa_initials_buckets.vhd(66): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_nfa_initials_buckets.vhd(67): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_nfa_initials_buckets.vhd(68): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_nfa_initials_buckets.vhd(69): (vcom-1236) Shared variables must be of a protected type.
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Compiling entity AESL_autobus_sample_buffer
+# -- Compiling architecture behav of AESL_autobus_sample_buffer
+# ** Warning: AESL_autobus_sample_buffer.vhd(64): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_sample_buffer.vhd(65): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_sample_buffer.vhd(66): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_sample_buffer.vhd(67): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_sample_buffer.vhd(68): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: AESL_autobus_sample_buffer.vhd(69): (vcom-1236) Shared variables must be of a protected type.
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity bitset_next
+# -- Compiling architecture behav of bitset_next
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity nfa_accept_sample
+# -- Compiling architecture behav of nfa_accept_sample
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_textio
+# -- Compiling entity apatb_nfa_accept_samples_generic_hw_top
+# -- Compiling architecture behav of apatb_nfa_accept_samples_generic_hw_top
+# ** Warning: nfa_accept_samples_generic_hw.autotb.vhd(179): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: nfa_accept_samples_generic_hw.autotb.vhd(180): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: nfa_accept_samples_generic_hw.autotb.vhd(181): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: nfa_accept_samples_generic_hw.autotb.vhd(193): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: nfa_accept_samples_generic_hw.autotb.vhd(194): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: nfa_accept_samples_generic_hw.autotb.vhd(195): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: nfa_accept_samples_generic_hw.autotb.vhd(196): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: nfa_accept_samples_generic_hw.autotb.vhd(197): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: nfa_accept_samples_generic_hw.autotb.vhd(406): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: nfa_accept_samples_generic_hw.autotb.vhd(440): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: nfa_accept_samples_generic_hw.autotb.vhd(442): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: nfa_accept_samples_generic_hw.autotb.vhd(540): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: nfa_accept_samples_generic_hw.autotb.vhd(542): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: nfa_accept_samples_generic_hw.autotb.vhd(544): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: nfa_accept_samples_generic_hw.autotb.vhd(546): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: nfa_accept_samples_generic_hw.autotb.vhd(548): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: nfa_accept_samples_generic_hw.autotb.vhd(550): (vcom-1236) Shared variables must be of a protected type.
+# 
+# ** Warning: nfa_accept_samples_generic_hw.autotb.vhd(552): (vcom-1236) Shared variables must be of a protected type.
+# 
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity nfa_accept_samples_generic_hw
+# -- Compiling architecture behav of nfa_accept_samples_generic_hw
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Compiling entity nfa_accept_samples_generic_hw_add_64ns_64ns_64_2_AddSubnS_0
+# -- Compiling architecture behav of nfa_accept_samples_generic_hw_add_64ns_64ns_64_2_AddSubnS_0
+# -- Loading package NUMERIC_STD
+# -- Compiling entity nfa_accept_samples_generic_hw_add_64ns_64ns_64_2_AddSubnS_0_fadder
+# -- Compiling architecture behav of nfa_accept_samples_generic_hw_add_64ns_64ns_64_2_AddSubnS_0_fadder
+# -- Compiling entity nfa_accept_samples_generic_hw_add_64ns_64ns_64_2_AddSubnS_0_fadder_f
+# -- Compiling architecture behav of nfa_accept_samples_generic_hw_add_64ns_64ns_64_2_AddSubnS_0_fadder_f
+# -- Compiling entity nfa_accept_samples_generic_hw_add_64ns_64ns_64_2
+# -- Compiling architecture arch of nfa_accept_samples_generic_hw_add_64ns_64ns_64_2
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity nfa_accept_samples_generic_hw_mul_16ns_8ns_24_4_MAC4S_0
+# -- Compiling architecture behav of nfa_accept_samples_generic_hw_mul_16ns_8ns_24_4_MAC4S_0
+# -- Compiling entity nfa_accept_samples_generic_hw_mul_16ns_8ns_24_4
+# -- Compiling architecture arch of nfa_accept_samples_generic_hw_mul_16ns_8ns_24_4
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity nfa_accept_samples_generic_hw_mul_8ns_6ns_14_4_MAC4S_1
+# -- Compiling architecture behav of nfa_accept_samples_generic_hw_mul_8ns_6ns_14_4_MAC4S_1
+# -- Compiling entity nfa_accept_samples_generic_hw_mul_8ns_6ns_14_4
+# -- Compiling architecture arch of nfa_accept_samples_generic_hw_mul_8ns_6ns_14_4
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity nfa_get_finals
+# -- Compiling architecture behav of nfa_get_finals
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity nfa_get_initials
+# -- Compiling architecture behav of nfa_get_initials
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity p_bsf32_hw
+# -- Compiling architecture behav of p_bsf32_hw
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sample_iterator_get_offset
+# -- Compiling architecture behav of sample_iterator_get_offset
+# Model Technology ModelSim SE-64 vcom 10.1c Compiler 2012.07 Jul 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sample_iterator_next
+# -- Compiling architecture behav of sample_iterator_next
+# vsim -L work -suppress 6630 -t 10ps -novopt apatb_nfa_accept_samples_generic_hw_top 
+# //  ModelSim SE-64 10.1c Jul 28 2012 
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading std.standard
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.apatb_nfa_accept_samples_generic_hw_top(behav)
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.apatb_nfa_accept_samples_generic_hw_top(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.nfa_accept_samples_generic_hw(behav)
+# Loading work.nfa_accept_samples_generic_hw(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.nfa_accept_sample(behav)
+# Loading work.nfa_accept_sample(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.bitset_next(behav)
+# Loading work.bitset_next(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.p_bsf32_hw(behav)
+# Loading work.p_bsf32_hw(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.nfa_get_initials(behav)
+# Loading work.nfa_get_initials(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.nfa_get_finals(behav)
+# Loading work.nfa_get_finals(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.nfa_accept_samples_generic_hw_add_64ns_64ns_64_2(arch)
+# Loading work.nfa_accept_samples_generic_hw_add_64ns_64ns_64_2(arch)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.nfa_accept_samples_generic_hw_add_64ns_64ns_64_2_addsubns_0(behav)
+# Loading work.nfa_accept_samples_generic_hw_add_64ns_64ns_64_2_addsubns_0(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.nfa_accept_samples_generic_hw_add_64ns_64ns_64_2_addsubns_0_fadder(behav)
+# Loading work.nfa_accept_samples_generic_hw_add_64ns_64ns_64_2_addsubns_0_fadder(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.nfa_accept_samples_generic_hw_add_64ns_64ns_64_2_addsubns_0_fadder_f(behav)
+# Loading work.nfa_accept_samples_generic_hw_add_64ns_64ns_64_2_addsubns_0_fadder_f(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.nfa_accept_samples_generic_hw_mul_8ns_6ns_14_4(arch)
+# Loading work.nfa_accept_samples_generic_hw_mul_8ns_6ns_14_4(arch)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.nfa_accept_samples_generic_hw_mul_8ns_6ns_14_4_mac4s_1(behav)
+# Loading work.nfa_accept_samples_generic_hw_mul_8ns_6ns_14_4_mac4s_1(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.sample_iterator_next(behav)
+# Loading work.sample_iterator_next(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.sample_iterator_get_offset(behav)
+# Loading work.sample_iterator_get_offset(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.nfa_accept_samples_generic_hw_mul_16ns_8ns_24_4(arch)
+# Loading work.nfa_accept_samples_generic_hw_mul_16ns_8ns_24_4(arch)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.nfa_accept_samples_generic_hw_mul_16ns_8ns_24_4_mac4s_0(behav)
+# Loading work.nfa_accept_samples_generic_hw_mul_16ns_8ns_24_4_mac4s_0(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.aesl_autobus_nfa_initials_buckets(behav)
+# Loading work.aesl_autobus_nfa_initials_buckets(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.aesl_autobus_nfa_finals_buckets(behav)
+# Loading work.aesl_autobus_nfa_finals_buckets(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.aesl_autobus_nfa_forward_buckets(behav)
+# Loading work.aesl_autobus_nfa_forward_buckets(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.aesl_autobus_sample_buffer(behav)
+# Loading work.aesl_autobus_sample_buffer(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.aesl_autobus_indices_begin(behav)
+# Loading work.aesl_autobus_indices_begin(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.aesl_autobus_indices_samples(behav)
+# Loading work.aesl_autobus_indices_samples(behav)
+# Refreshing C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_kintex7/sim/vhdl/work.aesl_autobus_indices_stride(behav)
+# Loading work.aesl_autobus_indices_stride(behav)
+# 1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /apatb_nfa_accept_samples_generic_hw_top/AESL_inst_nfa_accept_samples_generic_hw/grp_sample_iterator_next_fu_194
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /apatb_nfa_accept_samples_generic_hw_top/AESL_inst_nfa_accept_samples_generic_hw/grp_nfa_accept_sample_fu_178
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /apatb_nfa_accept_samples_generic_hw_top/AESL_inst_nfa_accept_samples_generic_hw/grp_sample_iterator_next_fu_194
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 1450 ps  Iteration: 2  Instance: /apatb_nfa_accept_samples_generic_hw_top/AESL_inst_nfa_accept_samples_generic_hw/grp_nfa_accept_sample_fu_178
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 107450 ps  Iteration: 2  Instance: /apatb_nfa_accept_samples_generic_hw_top/AESL_inst_nfa_accept_samples_generic_hw/grp_nfa_accept_sample_fu_178
+# ** Fatal: (vsim-3421) Value 128 is out of range 0 to 9.
+#    Time: 287 ns  Iteration: 1  Process: /apatb_nfa_accept_samples_generic_hw_top/AESL_inst_nfa_forward_buckets/#MERGED#FIFO_rsp_ptr_r_proc,FIFO_req_read_proc,FIFO_req_write_proc File: AESL_autobus_nfa_forward_buckets.vhd
+# Fatal error in Architecture behav at AESL_autobus_nfa_forward_buckets.vhd line 415
+# 
+# HDL call sequence:
+# Stopped at AESL_autobus_nfa_forward_buckets.vhd 415 Architecture behav
+# 

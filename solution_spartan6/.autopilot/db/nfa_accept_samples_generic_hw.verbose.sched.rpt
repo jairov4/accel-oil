@@ -1,0 +1,663 @@
+
+
+================================================================
+== Vivado HLS Report for 'nfa_accept_samples_generic_hw'
+================================================================
+* Date:           Thu Apr 17 08:59:33 2014
+
+* Version:        2013.4 (build date: Mon Dec 09 17:07:59 PM 2013)
+* Project:        oil_plainc_hls
+* Solution:       solution_spartan6
+* Product family: spartan6 spartan6_fpv6 
+* Target device:  xc6slx9ftg256-3
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |   1.00|      3.00|        0.13|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-------------+-----+-------------+---------+
+    |      Latency      |      Interval     | Pipeline|
+    | min |     max     | min |     max     |   Type  |
+    +-----+-------------+-----+-------------+---------+
+    |    4|  61542083539|    5|  61542083540|   none  |
+    +-----+-------------+-----+-------------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-------------+-------------+-----------+-----------+-----------+----------+
+        |          |      Latency      |  Iteration  |  Initiation Interval  |    Trip   |          |
+        | Loop Name| min |     max     |   Latency   |  achieved |   target  |   Count   | Pipelined|
+        +----------+-----+-------------+-------------+-----------+-----------+-----------+----------+
+        |- Loop 1  |    2|  61542083537| 38 ~ 939072 |          -|          -| 0 ~ 65535 |    no    |
+        +----------+-----+-------------+-------------+-----------+-----------+-----------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+------+
+|       Name      | BRAM_18K| DSP48A|   FF  |  LUT |
++-----------------+---------+-------+-------+------+
+|Expression       |        -|      -|      -|     -|
+|FIFO             |        -|      -|      -|     -|
+|Instance         |        -|      -|      -|     -|
+|Memory           |        -|      -|      -|     -|
+|Multiplexer      |        -|      -|      -|     -|
+|Register         |        -|      -|      -|     -|
+|ShiftMemory      |        -|      -|      -|     -|
++-----------------+---------+-------+-------+------+
+|Total            |        0|      0|      0|     0|
++-----------------+---------+-------+-------+------+
+|Available        |       32|     16|  11440|  5720|
++-----------------+---------+-------+-------+------+
+|Utilization (%)  |        0|      0|      0|     0|
++-----------------+---------+-------+-------+------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Shift register: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 35
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / (!tmp_i_11)
+	35  / (tmp_i_11)
+5 --> 
+	6  / true
+6 --> 
+	7  / true
+7 --> 
+	8  / true
+8 --> 
+	9  / true
+9 --> 
+	10  / true
+10 --> 
+	11  / true
+11 --> 
+	12  / true
+12 --> 
+	13  / true
+13 --> 
+	14  / true
+14 --> 
+	15  / true
+15 --> 
+	16  / true
+16 --> 
+	17  / true
+17 --> 
+	18  / true
+18 --> 
+	19  / true
+19 --> 
+	27  / (or_cond)
+	20  / (!or_cond & !stop_on_first_read)
+	35  / (!or_cond & stop_on_first_read)
+20 --> 
+	21  / true
+21 --> 
+	22  / true
+22 --> 
+	23  / true
+23 --> 
+	24  / true
+24 --> 
+	25  / true
+25 --> 
+	26  / true
+26 --> 
+	27  / true
+27 --> 
+	28  / true
+28 --> 
+	29  / true
+29 --> 
+	30  / true
+30 --> 
+	31  / true
+31 --> 
+	32  / true
+32 --> 
+	33  / true
+33 --> 
+	34  / true
+34 --> 
+	2  / true
+35 --> 
+* FSM state operations: 
+
+ <State 1>: 0.88ns
+ST_1: c [1/1] 0.00ns
+:0  %c = alloca i32, align 4
+
+ST_1: stg_37 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i32* %nfa_initials_buckets), !map !27
+
+ST_1: stg_38 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i32* %nfa_finals_buckets), !map !33
+
+ST_1: stg_39 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecBitsMap(i32* %nfa_forward_buckets), !map !37
+
+ST_1: stg_40 [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecBitsMap([32130 x i32]* %nfa_backward_buckets), !map !43
+
+ST_1: stg_41 [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecBitsMap(i8* %nfa_symbols), !map !47
+
+ST_1: stg_42 [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecBitsMap(i8* %sample_buffer), !map !53
+
+ST_1: stg_43 [1/1] 0.00ns
+:7  call void (...)* @_ssdm_op_SpecBitsMap(i32 %sample_buffer_length), !map !59
+
+ST_1: stg_44 [1/1] 0.00ns
+:8  call void (...)* @_ssdm_op_SpecBitsMap(i16 %sample_length), !map !65
+
+ST_1: stg_45 [1/1] 0.00ns
+:9  call void (...)* @_ssdm_op_SpecBitsMap(i32* %indices_begin), !map !69
+
+ST_1: stg_46 [1/1] 0.00ns
+:10  call void (...)* @_ssdm_op_SpecBitsMap(i16* %indices_samples), !map !75
+
+ST_1: stg_47 [1/1] 0.00ns
+:11  call void (...)* @_ssdm_op_SpecBitsMap(i8* %indices_stride), !map !79
+
+ST_1: stg_48 [1/1] 0.00ns
+:12  call void (...)* @_ssdm_op_SpecBitsMap(i16 %i_size), !map !83
+
+ST_1: stg_49 [1/1] 0.00ns
+:13  call void (...)* @_ssdm_op_SpecBitsMap(i16 %begin_index), !map !87
+
+ST_1: stg_50 [1/1] 0.00ns
+:14  call void (...)* @_ssdm_op_SpecBitsMap(i16 %begin_sample), !map !91
+
+ST_1: stg_51 [1/1] 0.00ns
+:15  call void (...)* @_ssdm_op_SpecBitsMap(i16 %end_index), !map !95
+
+ST_1: stg_52 [1/1] 0.00ns
+:16  call void (...)* @_ssdm_op_SpecBitsMap(i16 %end_sample), !map !99
+
+ST_1: stg_53 [1/1] 0.00ns
+:17  call void (...)* @_ssdm_op_SpecBitsMap(i1 %stop_on_first), !map !103
+
+ST_1: stg_54 [1/1] 0.00ns
+:18  call void (...)* @_ssdm_op_SpecBitsMap(i1 %accept), !map !107
+
+ST_1: stg_55 [1/1] 0.00ns
+:19  call void (...)* @_ssdm_op_SpecBitsMap(i32 0) nounwind, !map !111
+
+ST_1: stg_56 [1/1] 0.00ns
+:20  call void (...)* @_ssdm_op_SpecTopModule([30 x i8]* @str) nounwind
+
+ST_1: accept_read [1/1] 0.00ns
+:21  %accept_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %accept)
+
+ST_1: stop_on_first_read [1/1] 0.00ns
+:22  %stop_on_first_read = call i1 @_ssdm_op_Read.ap_none.i1(i1 %stop_on_first)
+
+ST_1: end_sample_read [1/1] 0.00ns
+:23  %end_sample_read = call i16 @_ssdm_op_Read.ap_none.i16(i16 %end_sample)
+
+ST_1: end_index_read [1/1] 0.00ns
+:24  %end_index_read = call i16 @_ssdm_op_Read.ap_none.i16(i16 %end_index)
+
+ST_1: begin_sample_read [1/1] 0.00ns
+:25  %begin_sample_read = call i16 @_ssdm_op_Read.ap_none.i16(i16 %begin_sample)
+
+ST_1: begin_index_read [1/1] 0.00ns
+:26  %begin_index_read = call i16 @_ssdm_op_Read.ap_none.i16(i16 %begin_index)
+
+ST_1: sample_length_read [1/1] 0.00ns
+:27  %sample_length_read = call i16 @_ssdm_op_Read.ap_none.i16(i16 %sample_length)
+
+ST_1: sample_buffer_length_read [1/1] 0.00ns
+:28  %sample_buffer_length_read = call i32 @_ssdm_op_Read.ap_none.i32(i32 %sample_buffer_length)
+
+ST_1: stg_65 [1/1] 0.00ns
+:29  call void (...)* @_ssdm_op_SpecPipeline(i32 1, i32 1, i32 1, [1 x i8]* @p_str11) nounwind
+
+ST_1: stg_66 [1/1] 0.00ns
+:30  call void (...)* @_ssdm_op_SpecBus(i32* %nfa_initials_buckets, [7 x i8]* @p_str35, i32 0, i32 0, i32 0, [1 x i8]* @p_str11)
+
+ST_1: stg_67 [1/1] 0.00ns
+:31  call void (...)* @_ssdm_op_SpecBus(i32* %nfa_finals_buckets, [7 x i8]* @p_str35, i32 0, i32 0, i32 0, [1 x i8]* @p_str11)
+
+ST_1: stg_68 [1/1] 0.00ns
+:32  call void (...)* @_ssdm_op_SpecBus(i32* %nfa_forward_buckets, [7 x i8]* @p_str35, i32 0, i32 0, i32 0, [1 x i8]* @p_str11)
+
+ST_1: stg_69 [1/1] 0.00ns
+:33  call void (...)* @_ssdm_op_SpecWire(i8* %nfa_symbols, [8 x i8]* @p_str36, i32 0, i32 0, i32 0, [1 x i8]* @p_str11) nounwind
+
+ST_1: stg_70 [1/1] 0.00ns
+:34  call void (...)* @_ssdm_op_SpecBus(i8* %sample_buffer, [7 x i8]* @p_str35, i32 0, i32 0, i32 0, [1 x i8]* @p_str11)
+
+ST_1: stg_71 [1/1] 0.00ns
+:35  call void (...)* @_ssdm_op_SpecWire(i32 %sample_buffer_length, [8 x i8]* @p_str36, i32 0, i32 0, i32 0, [1 x i8]* @p_str11) nounwind
+
+ST_1: stg_72 [1/1] 0.00ns
+:36  call void (...)* @_ssdm_op_SpecWire(i16 %sample_length, [8 x i8]* @p_str36, i32 0, i32 0, i32 0, [1 x i8]* @p_str11) nounwind
+
+ST_1: stg_73 [1/1] 0.00ns
+:37  call void (...)* @_ssdm_op_SpecBus(i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, [7 x i8]* @p_str35, i32 0, i32 0, i32 0, [1 x i8]* @p_str11)
+
+ST_1: stg_74 [1/1] 0.00ns
+:38  call void (...)* @_ssdm_op_SpecWire(i16 %i_size, [8 x i8]* @p_str36, i32 0, i32 0, i32 0, [1 x i8]* @p_str11) nounwind
+
+ST_1: stg_75 [1/1] 0.00ns
+:39  call void (...)* @_ssdm_op_SpecWire(i16 %begin_index, i16 %begin_sample, [8 x i8]* @p_str36, i32 0, i32 0, i32 0, [1 x i8]* @p_str11) nounwind
+
+ST_1: stg_76 [1/1] 0.00ns
+:40  call void (...)* @_ssdm_op_SpecWire(i16 %end_index, i16 %end_sample, [8 x i8]* @p_str36, i32 0, i32 0, i32 0, [1 x i8]* @p_str11) nounwind
+
+ST_1: stg_77 [1/1] 0.00ns
+:41  call void (...)* @_ssdm_op_SpecWire(i1 %stop_on_first, [8 x i8]* @p_str36, i32 0, i32 0, i32 0, [1 x i8]* @p_str11) nounwind
+
+ST_1: stg_78 [1/1] 0.00ns
+:42  call void (...)* @_ssdm_op_SpecWire(i1 %accept, [8 x i8]* @p_str36, i32 0, i32 0, i32 0, [1 x i8]* @p_str11) nounwind
+
+ST_1: stg_79 [1/1] 0.00ns
+:43  call void (...)* @_ssdm_op_SpecWire(i32 0, [11 x i8]* @p_str37, i32 0, i32 0, i32 0, [1 x i8]* @p_str11) nounwind
+
+ST_1: stg_80 [1/1] 0.00ns
+:44  call void (...)* @_ssdm_op_SpecIFCore(i32* %nfa_initials_buckets, [1 x i8]* @p_str11, [7 x i8]* @p_str38, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11)
+
+ST_1: stg_81 [1/1] 0.00ns
+:45  call void (...)* @_ssdm_op_SpecIFCore(i32* %nfa_finals_buckets, [1 x i8]* @p_str11, [7 x i8]* @p_str38, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11)
+
+ST_1: stg_82 [1/1] 0.00ns
+:46  call void (...)* @_ssdm_op_SpecIFCore(i32* %nfa_forward_buckets, [1 x i8]* @p_str11, [7 x i8]* @p_str38, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11)
+
+ST_1: stg_83 [1/1] 0.00ns
+:47  call void (...)* @_ssdm_op_SpecIFCore(i8* %nfa_symbols, [1 x i8]* @p_str11, [7 x i8]* @p_str39, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [17 x i8]* @p_str40)
+
+ST_1: stg_84 [1/1] 0.00ns
+:48  call void (...)* @_ssdm_op_SpecIFCore(i8* %sample_buffer, [1 x i8]* @p_str11, [7 x i8]* @p_str38, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11)
+
+ST_1: stg_85 [1/1] 0.00ns
+:49  call void (...)* @_ssdm_op_SpecIFCore(i32 %sample_buffer_length, [1 x i8]* @p_str11, [7 x i8]* @p_str39, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [17 x i8]* @p_str40)
+
+ST_1: stg_86 [1/1] 0.00ns
+:50  call void (...)* @_ssdm_op_SpecIFCore(i16 %sample_length, [1 x i8]* @p_str11, [7 x i8]* @p_str39, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [17 x i8]* @p_str40)
+
+ST_1: stg_87 [1/1] 0.00ns
+:51  call void (...)* @_ssdm_op_SpecIFCore(i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, [1 x i8]* @p_str11, [7 x i8]* @p_str38, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11)
+
+ST_1: stg_88 [1/1] 0.00ns
+:52  call void (...)* @_ssdm_op_SpecIFCore(i16 %i_size, [1 x i8]* @p_str11, [7 x i8]* @p_str39, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [17 x i8]* @p_str40)
+
+ST_1: stg_89 [1/1] 0.00ns
+:53  call void (...)* @_ssdm_op_SpecIFCore(i16 %begin_index, i16 %begin_sample, [1 x i8]* @p_str11, [7 x i8]* @p_str39, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [17 x i8]* @p_str40)
+
+ST_1: stg_90 [1/1] 0.00ns
+:54  call void (...)* @_ssdm_op_SpecIFCore(i16 %end_index, i16 %end_sample, [1 x i8]* @p_str11, [7 x i8]* @p_str39, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [17 x i8]* @p_str40)
+
+ST_1: stg_91 [1/1] 0.00ns
+:55  call void (...)* @_ssdm_op_SpecIFCore(i1 %stop_on_first, [1 x i8]* @p_str11, [7 x i8]* @p_str39, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [17 x i8]* @p_str40)
+
+ST_1: stg_92 [1/1] 0.00ns
+:56  call void (...)* @_ssdm_op_SpecIFCore(i1 %accept, [1 x i8]* @p_str11, [7 x i8]* @p_str39, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [17 x i8]* @p_str40)
+
+ST_1: stg_93 [1/1] 0.00ns
+:57  call void (...)* @_ssdm_op_SpecIFCore(i32 0, [1 x i8]* @p_str11, [7 x i8]* @p_str39, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [17 x i8]* @p_str40)
+
+ST_1: stg_94 [1/1] 0.88ns
+:58  store i32 0, i32* %c, align 4
+
+ST_1: stg_95 [1/1] 0.88ns
+:59  br label %1
+
+
+ <State 2>: 2.14ns
+ST_2: i_index [1/1] 0.00ns
+:0  %i_index = phi i16 [ %begin_index_read, %0 ], [ %i_index_1, %._crit_edge3 ]
+
+ST_2: i_sample [1/1] 0.00ns
+:1  %i_sample = phi i16 [ %begin_sample_read, %0 ], [ %i_sample_1, %._crit_edge3 ]
+
+ST_2: tmp_i [1/1] 2.14ns
+:4  %tmp_i = icmp eq i16 %i_sample, %end_sample_read
+
+ST_2: tmp_i_10 [1/1] 2.14ns
+:5  %tmp_i_10 = icmp eq i16 %i_index, %end_index_read
+
+
+ <State 3>: 0.92ns
+ST_3: tmp_i_11 [1/1] 0.92ns
+:6  %tmp_i_11 = and i1 %tmp_i, %tmp_i_10
+
+
+ <State 4>: 0.88ns
+ST_4: c_load [1/1] 0.00ns
+:2  %c_load = load i32* %c, align 4
+
+ST_4: stg_102 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecIFCore(i16 %end_index, i16 %end_sample, [1 x i8]* @p_str11, [7 x i8]* @p_str39, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [1 x i8]* @p_str11, [17 x i8]* @p_str40)
+
+ST_4: stg_103 [1/1] 0.88ns
+:7  br i1 %tmp_i_11, label %._crit_edge, label %2
+
+ST_4: offset [14/14] 0.88ns
+:2  %offset = call fastcc i32 @sample_iterator_get_offset(i16 %i_index, i16 %i_sample, i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i32 %sample_buffer_length_read, i16 %sample_length_read)
+
+
+ <State 5>: 3.00ns
+ST_5: offset [13/14] 3.00ns
+:2  %offset = call fastcc i32 @sample_iterator_get_offset(i16 %i_index, i16 %i_sample, i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i32 %sample_buffer_length_read, i16 %sample_length_read)
+
+
+ <State 6>: 3.00ns
+ST_6: offset [12/14] 3.00ns
+:2  %offset = call fastcc i32 @sample_iterator_get_offset(i16 %i_index, i16 %i_sample, i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i32 %sample_buffer_length_read, i16 %sample_length_read)
+
+
+ <State 7>: 3.00ns
+ST_7: offset [11/14] 3.00ns
+:2  %offset = call fastcc i32 @sample_iterator_get_offset(i16 %i_index, i16 %i_sample, i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i32 %sample_buffer_length_read, i16 %sample_length_read)
+
+
+ <State 8>: 3.00ns
+ST_8: offset [10/14] 3.00ns
+:2  %offset = call fastcc i32 @sample_iterator_get_offset(i16 %i_index, i16 %i_sample, i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i32 %sample_buffer_length_read, i16 %sample_length_read)
+
+
+ <State 9>: 3.00ns
+ST_9: offset [9/14] 3.00ns
+:2  %offset = call fastcc i32 @sample_iterator_get_offset(i16 %i_index, i16 %i_sample, i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i32 %sample_buffer_length_read, i16 %sample_length_read)
+
+
+ <State 10>: 3.00ns
+ST_10: offset [8/14] 3.00ns
+:2  %offset = call fastcc i32 @sample_iterator_get_offset(i16 %i_index, i16 %i_sample, i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i32 %sample_buffer_length_read, i16 %sample_length_read)
+
+
+ <State 11>: 3.00ns
+ST_11: offset [7/14] 3.00ns
+:2  %offset = call fastcc i32 @sample_iterator_get_offset(i16 %i_index, i16 %i_sample, i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i32 %sample_buffer_length_read, i16 %sample_length_read)
+
+
+ <State 12>: 3.00ns
+ST_12: offset [6/14] 3.00ns
+:2  %offset = call fastcc i32 @sample_iterator_get_offset(i16 %i_index, i16 %i_sample, i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i32 %sample_buffer_length_read, i16 %sample_length_read)
+
+
+ <State 13>: 3.00ns
+ST_13: offset [5/14] 3.00ns
+:2  %offset = call fastcc i32 @sample_iterator_get_offset(i16 %i_index, i16 %i_sample, i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i32 %sample_buffer_length_read, i16 %sample_length_read)
+
+
+ <State 14>: 3.00ns
+ST_14: offset [4/14] 3.00ns
+:2  %offset = call fastcc i32 @sample_iterator_get_offset(i16 %i_index, i16 %i_sample, i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i32 %sample_buffer_length_read, i16 %sample_length_read)
+
+
+ <State 15>: 3.00ns
+ST_15: offset [3/14] 3.00ns
+:2  %offset = call fastcc i32 @sample_iterator_get_offset(i16 %i_index, i16 %i_sample, i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i32 %sample_buffer_length_read, i16 %sample_length_read)
+
+
+ <State 16>: 3.00ns
+ST_16: offset [2/14] 3.00ns
+:2  %offset = call fastcc i32 @sample_iterator_get_offset(i16 %i_index, i16 %i_sample, i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i32 %sample_buffer_length_read, i16 %sample_length_read)
+
+
+ <State 17>: 0.88ns
+ST_17: offset [1/14] 0.88ns
+:2  %offset = call fastcc i32 @sample_iterator_get_offset(i16 %i_index, i16 %i_sample, i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i32 %sample_buffer_length_read, i16 %sample_length_read)
+
+ST_17: r [2/2] 0.00ns
+:3  %r = call fastcc i1 @nfa_accept_sample(i32* %nfa_initials_buckets, i32* %nfa_finals_buckets, i32* %nfa_forward_buckets, i8* %nfa_symbols, i8* %sample_buffer, i32 %offset, i16 %sample_length_read)
+
+
+ <State 18>: 0.00ns
+ST_18: r [1/2] 0.00ns
+:3  %r = call fastcc i1 @nfa_accept_sample(i32* %nfa_initials_buckets, i32* %nfa_finals_buckets, i32* %nfa_forward_buckets, i8* %nfa_symbols, i8* %sample_buffer, i32 %offset, i16 %sample_length_read)
+
+
+ <State 19>: 0.92ns
+ST_19: tmp [1/1] 0.00ns
+:0  %tmp = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str41)
+
+ST_19: stg_121 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecLoopTripCount(i32 0, i32 65535, i32 2000, [1 x i8]* @p_str11) nounwind
+
+ST_19: or_cond [1/1] 0.92ns
+:4  %or_cond = xor i1 %r, %accept_read
+
+ST_19: stg_123 [1/1] 0.00ns
+:5  br i1 %or_cond, label %._crit_edge3, label %3
+
+ST_19: stg_124 [1/1] 0.88ns
+:0  br i1 %stop_on_first_read, label %._crit_edge, label %4
+
+ST_19: c_1 [8/8] 0.57ns
+:0  %c_1 = add nsw i32 %c_load, 1
+
+
+ <State 20>: 0.57ns
+ST_20: c_1 [7/8] 0.57ns
+:0  %c_1 = add nsw i32 %c_load, 1
+
+
+ <State 21>: 0.57ns
+ST_21: c_1 [6/8] 0.57ns
+:0  %c_1 = add nsw i32 %c_load, 1
+
+
+ <State 22>: 0.57ns
+ST_22: c_1 [5/8] 0.57ns
+:0  %c_1 = add nsw i32 %c_load, 1
+
+
+ <State 23>: 0.57ns
+ST_23: c_1 [4/8] 0.57ns
+:0  %c_1 = add nsw i32 %c_load, 1
+
+
+ <State 24>: 0.57ns
+ST_24: c_1 [3/8] 0.57ns
+:0  %c_1 = add nsw i32 %c_load, 1
+
+
+ <State 25>: 0.57ns
+ST_25: c_1 [2/8] 0.57ns
+:0  %c_1 = add nsw i32 %c_load, 1
+
+
+ <State 26>: 0.57ns
+ST_26: c_1 [1/8] 0.57ns
+:0  %c_1 = add nsw i32 %c_load, 1
+
+
+ <State 27>: 0.88ns
+ST_27: stg_133 [1/1] 0.88ns
+:1  store i32 %c_1, i32* %c, align 4
+
+ST_27: stg_134 [1/1] 0.00ns
+:2  br label %._crit_edge3
+
+ST_27: call_ret [8/8] 0.88ns
+._crit_edge3:1  %call_ret = call fastcc { i16, i16 } @sample_iterator_next(i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i16 %i_index, i16 %i_sample)
+
+
+ <State 28>: 2.13ns
+ST_28: call_ret [7/8] 2.13ns
+._crit_edge3:1  %call_ret = call fastcc { i16, i16 } @sample_iterator_next(i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i16 %i_index, i16 %i_sample)
+
+
+ <State 29>: 2.13ns
+ST_29: call_ret [6/8] 2.13ns
+._crit_edge3:1  %call_ret = call fastcc { i16, i16 } @sample_iterator_next(i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i16 %i_index, i16 %i_sample)
+
+
+ <State 30>: 2.13ns
+ST_30: call_ret [5/8] 2.13ns
+._crit_edge3:1  %call_ret = call fastcc { i16, i16 } @sample_iterator_next(i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i16 %i_index, i16 %i_sample)
+
+
+ <State 31>: 2.13ns
+ST_31: call_ret [4/8] 2.13ns
+._crit_edge3:1  %call_ret = call fastcc { i16, i16 } @sample_iterator_next(i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i16 %i_index, i16 %i_sample)
+
+
+ <State 32>: 2.13ns
+ST_32: call_ret [3/8] 2.13ns
+._crit_edge3:1  %call_ret = call fastcc { i16, i16 } @sample_iterator_next(i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i16 %i_index, i16 %i_sample)
+
+
+ <State 33>: 2.13ns
+ST_33: call_ret [2/8] 2.13ns
+._crit_edge3:1  %call_ret = call fastcc { i16, i16 } @sample_iterator_next(i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i16 %i_index, i16 %i_sample)
+
+
+ <State 34>: 0.92ns
+ST_34: empty [1/1] 0.00ns
+._crit_edge3:0  %empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str41, i32 %tmp)
+
+ST_34: call_ret [1/8] 0.92ns
+._crit_edge3:1  %call_ret = call fastcc { i16, i16 } @sample_iterator_next(i32* %indices_begin, i16* %indices_samples, i8* %indices_stride, i16 %i_index, i16 %i_sample)
+
+ST_34: i_index_1 [1/1] 0.00ns
+._crit_edge3:2  %i_index_1 = extractvalue { i16, i16 } %call_ret, 0
+
+ST_34: i_sample_1 [1/1] 0.00ns
+._crit_edge3:3  %i_sample_1 = extractvalue { i16, i16 } %call_ret, 1
+
+ST_34: stg_146 [1/1] 0.00ns
+._crit_edge3:4  br label %1
+
+
+ <State 35>: 0.00ns
+ST_35: p_0 [1/1] 0.00ns
+._crit_edge:0  %p_0 = phi i32 [ %c_load, %1 ], [ 1, %3 ]
+
+ST_35: stg_148 [1/1] 0.00ns
+._crit_edge:1  ret i32 %p_0
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

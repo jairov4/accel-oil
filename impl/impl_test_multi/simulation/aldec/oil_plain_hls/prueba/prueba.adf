@@ -1,0 +1,148 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=prueba
+
+[Library]
+prueba=.\prueba\prueba.lib
+lmb_bram_elaborate_v1_00_a=.\src\lmb_bram_elaborate_v1_00_a\lmb_bram_elaborate_v1_00_a.lib
+clock_generator_0_v4_03_a=.\src\clock_generator_0_v4_03_a\clock_generator_0_v4_03_a.lib
+work=.\src\work\work.lib
+nfa_accept_samples_generic_hw_top_v1_00_a=.\src\nfa_accept_samples_generic_hw_top_v1_00_a\nfa_accept_samples_generic_hw_top_v1_00_a.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=Xilinx VIRTEX5
+fileopenfolder=C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_multi\simulation\behavioral
+NoTimingChecks=0
+NoTchkMsg=0
+EnableXtrace=0
+SplitNetVectors=0
+RetvalMemorySize=32
+StackMemorySize=32
+resolution=Auto
+VsimAdditionalOptions=
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+VerilogLanguage=4
+WarningPrnLevel=1
+OptimizationLevel=2
+ProtectLevel=0
+Strict=0
+VerilogNoSpecify=0
+AdditionalOptions=
+ErrorOutputLimit=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+NetlistCompilation=1
+EnableVHDL93Key=0
+EnableVHDL2002Key=1
+EnableVHDL2008Key=0
+DisableVHDL87Key=0
+Syntax RelaxLRM=0
+MaxErrorsKey=100
+OptimizationLevel=3
+DisableRangeChecks=0
+ProtectLevel=0
+IncrementalCompilation=0
+AdditionalOptions=
+ReorderOnFirstRebuild=1
+ElaborationAfterCompilation=0
+PrintErrWarnOnly=0
+GenMultiplatformLib=0
+VhdlChangeEvalAsynchronous=0
+VhdlDisableAssertionsProcessing=0
+
+[$LibMap$]
+prueba=.
+Active_lib=VIRTEX5
+xilinxun=VIRTEX5
+UnlinkedDesignLibrary=VIRTEX5
+DESIGNS=VIRTEX5
+lmb_bram_elaborate_v1_00_a=.
+clock_generator_0_v4_03_a=.
+work=.
+nfa_accept_samples_generic_hw_top_v1_00_a=.
+
+[Files]
+/system.do=-1
+/system_ddr2_sdram_wrapper.v=-1
+/system_nfa_accept_samples_generic_hw_top_0_wrapper.v=-1
+/system.vhd=-1
+/system_clock_generator_0_wrapper.vhd=-1
+/system_dlmb_cntlr_wrapper.vhd=-1
+/system_dlmb_wrapper.vhd=-1
+/system_ilmb_cntlr_wrapper.vhd=-1
+/system_ilmb_wrapper.vhd=-1
+/system_lmb_bram_wrapper.vhd=-1
+/system_mb_plb_wrapper.vhd=-1
+/system_mdm_0_wrapper.vhd=-1
+/system_microblaze_0_wrapper.vhd=-1
+/system_plb_v46_0_wrapper.vhd=-1
+/system_plb_v46_1_wrapper.vhd=-1
+/system_proc_sys_reset_0_wrapper.vhd=-1
+/system_sram_wrapper.vhd=-1
+
+[Files.Data]
+.\src\system.do=Macro
+.\src\system_ddr2_sdram_wrapper.v=Verilog Source Code
+.\src\system_nfa_accept_samples_generic_hw_top_0_wrapper.v=Verilog Source Code
+.\src\system.vhd=VHDL Source Code
+.\src\system_clock_generator_0_wrapper.vhd=VHDL Source Code
+.\src\system_dlmb_cntlr_wrapper.vhd=VHDL Source Code
+.\src\system_dlmb_wrapper.vhd=VHDL Source Code
+.\src\system_ilmb_cntlr_wrapper.vhd=VHDL Source Code
+.\src\system_ilmb_wrapper.vhd=VHDL Source Code
+.\src\system_lmb_bram_wrapper.vhd=VHDL Source Code
+.\src\system_mb_plb_wrapper.vhd=VHDL Source Code
+.\src\system_mdm_0_wrapper.vhd=VHDL Source Code
+.\src\system_microblaze_0_wrapper.vhd=VHDL Source Code
+.\src\system_plb_v46_0_wrapper.vhd=VHDL Source Code
+.\src\system_plb_v46_1_wrapper.vhd=VHDL Source Code
+.\src\system_proc_sys_reset_0_wrapper.vhd=VHDL Source Code
+.\src\system_sram_wrapper.vhd=VHDL Source Code
+
+[DefineMacro]
+Global=
+[LocalVerilogDirs]
+Count=0
+[AlintSettings]
+MacroBehavior=Generate
+EnableCustomLibraryCfg=0
+CustomLibraryCfg=
+StartDefaultRules=1
+CustomScript=
+[ExternalSimulatorSettings]
+ExternalSimulator=RivieraProGui
+MacroBehavior=Generate
+EnableCustomLibraryCfg=0
+CustomLibraryCfg=
+EnableSimulation=1
+EnableSignalsLogging=1
+RunCommandParameters=-all
+LogCommandParameters=-rec *
+CustomScript=
+[SpecTracer]
+WindowVisible=0
+[HierarchyViewer]
+HierarchyInformation=
+ShowHide=ShowTopLevel
+Selected=
