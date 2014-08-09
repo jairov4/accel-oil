@@ -4,7 +4,7 @@ VerMgmt: 14.7
 IntStyle: default
 Flow: ise
 ModuleSearchPath: C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/../../../
-ModuleSearchPath: Z:/oil_plainc_hls/solution_virtex5
+ModuleSearchPath: C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/
 MHS File: system.mhs
 Architecture: virtex5
 Device: xc5vlx50t
@@ -14,7 +14,7 @@ UserCmd1:
 UserCmd1Type: 0
 UserCmd2: 
 UserCmd2Type: 0
-GenSimTB: 0
+GenSimTB: 1
 SdkExportBmmBit: 1
 SdkExportDir: SDK/SDK_Export
 InsertNoPads: 0

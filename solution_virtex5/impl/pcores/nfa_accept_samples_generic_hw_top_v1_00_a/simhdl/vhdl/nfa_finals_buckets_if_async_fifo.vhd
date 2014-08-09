@@ -13,11 +13,11 @@ entity nfa_finals_buckets_if_async_fifo is
         reset      : in  std_logic;
         if_din     : in  std_logic_vector(DATA_WIDTH - 1 downto 0);
         if_full_n  : out std_logic;
-        if_write_ce: in  std_logic;
+        if_write_ce: in  std_logic := '1';
         if_write   : in  std_logic;
         if_dout    : out std_logic_vector(DATA_WIDTH - 1 downto 0);
         if_empty_n : out std_logic;
-        if_read_ce : in  std_logic;
+        if_read_ce : in  std_logic := '1';
         if_read    : in  std_logic);
 
     function calc_addr_width(x : integer) return integer is

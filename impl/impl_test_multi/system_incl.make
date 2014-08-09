@@ -23,7 +23,7 @@ INTSTYLE = default
 
 XPS_HDL_LANG = vhdl
 GLOBAL_SEARCHPATHOPT = 
-PROJECT_SEARCHPATHOPT =  -lp C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/
+PROJECT_SEARCHPATHOPT =  -lp C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/ -lp C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/
 
 SEARCHPATHOPT = $(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT)
 
@@ -57,7 +57,7 @@ TIMING_SIM_SCRIPT = simulation/timing/$(SYSTEM)_setup.tcl
 
 DEFAULT_SIM_SCRIPT = $(BEHAVIORAL_SIM_SCRIPT)
 
-SIMGEN_OPTIONS = -p $(DEVICE) -lang $(XPS_HDL_LANG) -intstyle $(INTSTYLE) $(SEARCHPATHOPT) $(BRAMINIT_ELF_SIM_FILE_ARGS) -msg __xps/ise/xmsgprops.lst -s isim -X C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/impl/impl_test_multi/
+SIMGEN_OPTIONS = -p $(DEVICE) -lang $(XPS_HDL_LANG) -intstyle $(INTSTYLE) $(SEARCHPATHOPT) $(BRAMINIT_ELF_SIM_FILE_ARGS) -msg __xps/ise/xmsgprops.lst -s isim -tb -X C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/impl/impl_test_multi/
 
 
 CORE_STATE_DEVELOPMENT_FILES = C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd \

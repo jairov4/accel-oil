@@ -2,15 +2,12 @@
 #  Xilinx EDK 14.7 EDK_P.20131013
 #  Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 #
-#  File     SRAM_wave.tcl (Tue Jul 15 00:23:58 2014)
+#  File     SRAM_wave.tcl (Sat Aug 09 12:35:57 2014)
 #
 #  Module   system_sram_wrapper
 #  Instance SRAM
-#  Because EDK did not create the testbench, the user
-#  specifies the path to the device under test, $tbpath.
-#
 if { [info exists PathSeparator] } { set ps $PathSeparator } else { set ps "/" }
-if { ![info exists tbpath] } { set tbpath "${ps}system" }
+if { ![info exists tbpath] } { set tbpath "${ps}system_tb${ps}dut" }
 
 # wave add $tbpath${ps}SRAM${ps}MCH_SPLB_Clk -into $id
   wave add $tbpath${ps}SRAM${ps}RdClk -into $id

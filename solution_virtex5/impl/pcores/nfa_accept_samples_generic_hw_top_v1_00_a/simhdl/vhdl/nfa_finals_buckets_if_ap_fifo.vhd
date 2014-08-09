@@ -18,11 +18,11 @@ entity nfa_finals_buckets_if_ap_fifo is
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
         if_empty_n : OUT STD_LOGIC;
-        if_read_ce : IN STD_LOGIC;
+        if_read_ce : IN STD_LOGIC := '1';
         if_read : IN STD_LOGIC;
         if_dout : OUT STD_LOGIC_VECTOR(DATA_WIDTH - 1 downto 0);
         if_full_n : OUT STD_LOGIC;
-        if_write_ce : IN STD_LOGIC;
+        if_write_ce : IN STD_LOGIC := '1';
         if_write : IN STD_LOGIC;
         if_din : IN STD_LOGIC_VECTOR(DATA_WIDTH - 1 downto 0));
 end entity;

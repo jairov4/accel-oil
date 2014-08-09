@@ -122,13 +122,115 @@
 <msg type="warning" file="HDLCompiler" num="220" delta="unknown" >"N:/P.20131013/rtf/vhdl/src/ieee/numeric_std.vhd" Line 3314: Assignment ignored
 </msg>
 
-<msg type="error" file="HDLCompiler" num="432" delta="unknown" >"C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/simhdl/vhdl/nfa_initials_buckets_if_async_fifo.vhd" Line 16: Formal &lt;<arg fmt="%s" index="1">if_write_ce</arg>&gt; has no actual or default value.
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 968: Element index <arg fmt="%d" index="1">4</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
 </msg>
 
-<msg type="error" file="HDLCompiler" num="432" delta="unknown" >"C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/simhdl/vhdl/nfa_initials_buckets_if_async_fifo.vhd" Line 20: Formal &lt;<arg fmt="%s" index="1">if_read_ce</arg>&gt; has no actual or default value.
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 972: Element index <arg fmt="%d" index="1">5</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
 </msg>
 
-<msg type="error" file="Simulator" num="777" delta="unknown" >Static elaboration of top level VHDL design unit <arg fmt="%s" index="1">system</arg> in library <arg fmt="%s" index="2">work</arg> failed
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 976: Element index <arg fmt="%d" index="1">6</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 980: Element index <arg fmt="%d" index="1">7</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1047: Element index <arg fmt="%d" index="1">4</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1048: Element index <arg fmt="%d" index="1">5</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1049: Element index <arg fmt="%d" index="1">6</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1050: Element index <arg fmt="%d" index="1">7</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1112: Element index <arg fmt="%d" index="1">4</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1113: Element index <arg fmt="%d" index="1">5</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1114: Element index <arg fmt="%d" index="1">6</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1115: Element index <arg fmt="%d" index="1">7</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1250: Element index <arg fmt="%d" index="1">39</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1251: Element index <arg fmt="%d" index="1">4</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1256: Element index <arg fmt="%d" index="1">47</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1257: Element index <arg fmt="%d" index="1">5</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1262: Element index <arg fmt="%d" index="1">55</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1263: Element index <arg fmt="%d" index="1">6</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1268: Element index <arg fmt="%d" index="1">63</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1269: Element index <arg fmt="%d" index="1">7</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1410: Element index <arg fmt="%d" index="1">39</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1411: Element index <arg fmt="%d" index="1">4</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1416: Element index <arg fmt="%d" index="1">47</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1417: Element index <arg fmt="%d" index="1">5</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1422: Element index <arg fmt="%d" index="1">55</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1423: Element index <arg fmt="%d" index="1">6</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1428: Element index <arg fmt="%d" index="1">63</arg> into <arg fmt="%s" index="2">mem</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1007" delta="unknown" >"N:/P.20131013/rtf/verilog/src/unisims/ARAMB36_INTERNAL.v" Line 1429: Element index <arg fmt="%d" index="1">7</arg> into <arg fmt="%s" index="2">memp</arg> is out of bounds
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 948: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 950: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 951: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 952: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 954: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 956: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 957: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 958: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="Simulator" num="0" delta="unknown" >Unable to copy libPortabilityNOSH.dll to the simulation executable directory: <arg fmt="%s" index="1">boost::filesystem::copy_file: El sistema no puede encontrar la ruta especificada, &quot;isim\isim_system.exe.sim\libPortability.dll&quot;</arg>.
 </msg>
 
 </messages>

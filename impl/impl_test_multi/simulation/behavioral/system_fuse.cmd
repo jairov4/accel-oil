@@ -3,7 +3,7 @@ REM  Simulation Model Generator
 REM  Xilinx EDK 14.7 EDK_P.20131013
 REM  Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 REM
-REM  File     system_fuse.cmd (Tue Jul 15 00:23:58 2014)
+REM  File     system_fuse.cmd (Sat Aug 09 12:35:57 2014)
 REM
 REM  ISE Simulator Fuse Script File
 REM
@@ -19,4 +19,4 @@ REM     which have the file name <module>_wave.tcl
 REM  3. Launch the simulator using the following command:
 REM     isim_system.exe -gui -tclbatch system_setup.tcl
 REM
-fuse -incremental work.system work.glbl  -prj system.prj -L xilinxcorelib_ver -L secureip -L unisims_ver -L unimacro_ver  -o isim_system.exe
+fuse -incremental work.system_tb work.glbl  -prj system.prj -L xilinxcorelib_ver -L secureip -L unisims_ver -L unimacro_ver  -o isim_system.exe

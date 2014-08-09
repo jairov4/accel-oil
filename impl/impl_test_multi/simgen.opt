@@ -6,6 +6,8 @@ vhdl
 default
 -lp
 C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/
+-lp
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/
 -pe
 microblaze_0
 bootloops/microblaze_0.elf
@@ -13,6 +15,7 @@ bootloops/microblaze_0.elf
 __xps/ise/xmsgprops.lst
 -s
 isim
+-tb
 -X
 C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/impl/impl_test_multi/
 -m

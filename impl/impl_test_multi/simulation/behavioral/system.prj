@@ -2,7 +2,7 @@
 --  Xilinx EDK 14.7 EDK_P.20131013
 --  Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 --
---  File     system.prj (Tue Jul 15 00:23:57 2014)
+--  File     system.prj (Sat Aug 09 12:35:57 2014)
 --
 vhdl microblaze_v8_50_c "C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/microblaze_types_pkg.vhd"
 vhdl microblaze_v8_50_c "C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/microblaze_types_pkg_body.vhd"
@@ -514,5 +514,6 @@ verilog work "system_nfa_accept_samples_generic_hw_top_0_wrapper.v"
 vhdl work "system_plb_v46_0_wrapper.vhd"
 vhdl work "system_plb_v46_1_wrapper.vhd"
 vhdl work "system.vhd"
+vhdl work "system_tb.vhd"
 verilog work "C:/Programas/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v" -i "C:/Programas/Xilinx/14.7/ISE_DS/ISE/verilog/src/"
 nosort

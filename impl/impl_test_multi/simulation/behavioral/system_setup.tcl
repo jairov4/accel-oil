@@ -2,7 +2,7 @@
 #  Xilinx EDK 14.7 EDK_P.20131013
 #  Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 #
-#  File     system_setup.tcl (Tue Jul 15 00:23:58 2014)
+#  File     system_setup.tcl (Sat Aug 09 12:35:57 2014)
 #
 #  ISE Simulator Setup Script File
 #
@@ -17,9 +17,6 @@
 #
 #  Comment or uncomment commands in wave trace TCL files
 #  to change the set of signals saved.
-#
-#  Because EDK did not create the testbench, the user
-#  specifies the path to the device under test, $tbpath.
 #
 # =====================================================
 
@@ -49,35 +46,6 @@ proc w_instance {{design_instance_name }} {
   wave add $design_instance_name
 }
 # =====================================================
-# Set up clock waveforms
-# =====================================================
-
-proc ClockSetup {} {
-  global  tbpath
-  global  PathSeparator
-  puts -nonewline "Setting up clock ... "
-  if { [info exists PathSeparator] } { set ps $PathSeparator } else { set ps "/" }
-  if { ![info exists tbpath] } { set tbpath "${ps}system" }
-  isim force add $tbpath${ps}fpga_0_SRAM_ZBT_CLK_FB_pin 0 -time 0 ns -value 1 -time 4 ns -repeat 8 ns
-  isim force add $tbpath${ps}fpga_0_clk_1_sys_clk_pin 0 -time 0 ns -value 1 -time 5 ns -repeat 10 ns
-  puts "done"
-}
-# =====================================================
-# Set up reset waveforms
-# =====================================================
-
-proc ResetSetup {} {
-  global  tbpath
-  global  PathSeparator
-  puts -nonewline "Setting up reset and simulating ... "
-  if { [info exists PathSeparator] } { set ps $PathSeparator } else { set ps "/" }
-  if { ![info exists tbpath] } { set tbpath "${ps}system" }
-  isim force add $tbpath${ps}fpga_0_rst_1_sys_rst_pin 0 -time 0 ns -value 1 -time 160 ns
-  puts "done"
-}
-proc reset {} { restart; ClockSetup; ResetSetup; }
-
-# =====================================================
 # Set up help menu
 # =====================================================
 
@@ -86,8 +54,6 @@ proc PrintHelpInformation {} {
   puts "**********************************************************************"
   puts "***"
   puts "***   Simulation Setup Macros (system_setup.tcl)"
-  puts "***"
-  puts "***   reset =>  Generate clock, toggle reset ports and reset simulation to time 0"
   puts "***"
   puts "***   w   =>  set up signal tracing for the ISE Simulator waveform"
   puts "***           viewer (edit signal lists in system_wave.tcl)"
@@ -99,7 +65,7 @@ proc PrintHelpInformation {} {
   puts "***"
   puts "***   h   =>  print this help menu"
   puts "***"
-  puts "***   Default flow is: w_top; run 1000ns or w; run 1000ns"
+  puts "***   Default flow is: reset; w_top; run 1000ns or reset; w; run 1000ns"
   puts "***"
   puts "**********************************************************************"
   puts "**********************************************************************"

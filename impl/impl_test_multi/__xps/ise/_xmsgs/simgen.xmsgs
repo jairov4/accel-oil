@@ -5,6 +5,8 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="EDK" num="2343" delta="old" >Search path <arg fmt="%s" index="1">C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\solution_virtex5\impl\</arg> directly contains pcores directory. Search path should point to a directory two levels above pcores.</msg>
+
 <msg type="info" file="EDK" num="4130" delta="old" >IPNAME: <arg fmt="%s" index="1">mpmc</arg>, INSTANCE:<arg fmt="%s" index="2">DDR2_SDRAM</arg> - <arg fmt="%s" index="3">tcl</arg> is overriding <arg fmt="%s" index="4">PARAMETER</arg> <arg fmt="%s" index="5">C_IODELAY_GRP</arg> value to <arg fmt="%s" index="6">DDR2_SDRAM</arg> - <arg fmt="%s" index="7">C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mpmc_v6_06_a\data\mpmc_v2_1_0.mpd line 182</arg> 
 </msg>
 
