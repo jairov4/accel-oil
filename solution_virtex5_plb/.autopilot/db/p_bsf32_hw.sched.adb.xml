@@ -1,0 +1,2021 @@
+<stg><name>_bsf32_hw</name>
+
+
+<trans_list>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="2" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="2" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+._crit_edge.0:0  %bus_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %bus_r)
+
+]]></node>
+<StgValue><ssdm name="bus_read"/></StgValue>
+</operation>
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="3" bw="1" op_0_bw="32">
+<![CDATA[
+._crit_edge.0:1  %tmp = trunc i32 %bus_read to i1
+
+]]></node>
+<StgValue><ssdm name="tmp"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="4" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.0:2  br i1 %tmp, label %.loopexit, label %._crit_edge.1
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="6" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.1:0  %tmp_10 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 1)
+
+]]></node>
+<StgValue><ssdm name="tmp_10"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="0">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="7" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.1:1  br i1 %tmp_10, label %.loopexit, label %._crit_edge.2
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="125">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="9" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.2:0  %tmp_11 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 2)
+
+]]></node>
+<StgValue><ssdm name="tmp_11"/></StgValue>
+</operation>
+
+<operation id="8" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="125">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="10" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.2:1  br i1 %tmp_11, label %.loopexit, label %._crit_edge.3
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="9" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="126">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="12" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.3:0  %tmp_12 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 3)
+
+]]></node>
+<StgValue><ssdm name="tmp_12"/></StgValue>
+</operation>
+
+<operation id="10" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="126">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="13" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.3:1  br i1 %tmp_12, label %.loopexit, label %._crit_edge.4
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="11" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="127">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="15" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.4:0  %tmp_13 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 4)
+
+]]></node>
+<StgValue><ssdm name="tmp_13"/></StgValue>
+</operation>
+
+<operation id="12" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="127">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="16" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.4:1  br i1 %tmp_13, label %.loopexit, label %._crit_edge.5
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="13" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="128">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="18" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.5:0  %tmp_14 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 5)
+
+]]></node>
+<StgValue><ssdm name="tmp_14"/></StgValue>
+</operation>
+
+<operation id="14" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="128">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="19" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.5:1  br i1 %tmp_14, label %.loopexit, label %._crit_edge.6
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="15" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="129">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="21" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.6:0  %tmp_15 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 6)
+
+]]></node>
+<StgValue><ssdm name="tmp_15"/></StgValue>
+</operation>
+
+<operation id="16" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="129">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="22" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.6:1  br i1 %tmp_15, label %.loopexit, label %._crit_edge.7
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="17" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="130">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="24" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.7:0  %tmp_16 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 7)
+
+]]></node>
+<StgValue><ssdm name="tmp_16"/></StgValue>
+</operation>
+
+<operation id="18" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="130">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="25" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.7:1  br i1 %tmp_16, label %.loopexit, label %._crit_edge.8
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="19" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="131">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="27" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.8:0  %tmp_17 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 8)
+
+]]></node>
+<StgValue><ssdm name="tmp_17"/></StgValue>
+</operation>
+
+<operation id="20" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="131">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="28" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.8:1  br i1 %tmp_17, label %.loopexit, label %._crit_edge.9
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="21" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="132">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="30" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.9:0  %tmp_18 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 9)
+
+]]></node>
+<StgValue><ssdm name="tmp_18"/></StgValue>
+</operation>
+
+<operation id="22" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="132">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="31" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.9:1  br i1 %tmp_18, label %.loopexit, label %._crit_edge.10
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="23" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="133">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="33" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.10:0  %tmp_19 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 10)
+
+]]></node>
+<StgValue><ssdm name="tmp_19"/></StgValue>
+</operation>
+
+<operation id="24" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="133">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="34" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.10:1  br i1 %tmp_19, label %.loopexit, label %._crit_edge.11
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="25" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="134">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="36" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.11:0  %tmp_20 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 11)
+
+]]></node>
+<StgValue><ssdm name="tmp_20"/></StgValue>
+</operation>
+
+<operation id="26" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="134">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="37" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.11:1  br i1 %tmp_20, label %.loopexit, label %._crit_edge.12
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="27" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="135">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="39" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.12:0  %tmp_21 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 12)
+
+]]></node>
+<StgValue><ssdm name="tmp_21"/></StgValue>
+</operation>
+
+<operation id="28" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="135">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="40" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.12:1  br i1 %tmp_21, label %.loopexit, label %._crit_edge.13
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="29" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="136">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="42" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.13:0  %tmp_22 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 13)
+
+]]></node>
+<StgValue><ssdm name="tmp_22"/></StgValue>
+</operation>
+
+<operation id="30" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="136">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="43" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.13:1  br i1 %tmp_22, label %.loopexit, label %._crit_edge.14
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="31" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="137">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="45" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.14:0  %tmp_23 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 14)
+
+]]></node>
+<StgValue><ssdm name="tmp_23"/></StgValue>
+</operation>
+
+<operation id="32" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="137">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="46" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.14:1  br i1 %tmp_23, label %.loopexit, label %._crit_edge.15
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="33" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="138">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="48" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.15:0  %tmp_24 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 15)
+
+]]></node>
+<StgValue><ssdm name="tmp_24"/></StgValue>
+</operation>
+
+<operation id="34" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="138">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="49" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.15:1  br i1 %tmp_24, label %.loopexit, label %._crit_edge.16
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="35" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="139">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="51" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.16:0  %tmp_25 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 16)
+
+]]></node>
+<StgValue><ssdm name="tmp_25"/></StgValue>
+</operation>
+
+<operation id="36" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="139">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="52" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.16:1  br i1 %tmp_25, label %.loopexit, label %._crit_edge.17
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="37" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="140">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="54" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.17:0  %tmp_26 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 17)
+
+]]></node>
+<StgValue><ssdm name="tmp_26"/></StgValue>
+</operation>
+
+<operation id="38" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="140">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="55" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.17:1  br i1 %tmp_26, label %.loopexit, label %._crit_edge.18
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="39" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="141">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="57" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.18:0  %tmp_27 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 18)
+
+]]></node>
+<StgValue><ssdm name="tmp_27"/></StgValue>
+</operation>
+
+<operation id="40" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="141">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="58" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.18:1  br i1 %tmp_27, label %.loopexit, label %._crit_edge.19
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="41" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="142">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="60" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.19:0  %tmp_28 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 19)
+
+]]></node>
+<StgValue><ssdm name="tmp_28"/></StgValue>
+</operation>
+
+<operation id="42" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="142">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="61" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.19:1  br i1 %tmp_28, label %.loopexit, label %._crit_edge.20
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="43" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="143">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="63" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.20:0  %tmp_29 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 20)
+
+]]></node>
+<StgValue><ssdm name="tmp_29"/></StgValue>
+</operation>
+
+<operation id="44" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="143">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="64" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.20:1  br i1 %tmp_29, label %.loopexit, label %._crit_edge.21
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="45" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="144">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="66" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.21:0  %tmp_30 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 21)
+
+]]></node>
+<StgValue><ssdm name="tmp_30"/></StgValue>
+</operation>
+
+<operation id="46" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="144">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="67" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.21:1  br i1 %tmp_30, label %.loopexit, label %._crit_edge.22
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="47" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="145">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+<literal name="tmp_30" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="69" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.22:0  %tmp_31 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 22)
+
+]]></node>
+<StgValue><ssdm name="tmp_31"/></StgValue>
+</operation>
+
+<operation id="48" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="145">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+<literal name="tmp_30" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="70" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.22:1  br i1 %tmp_31, label %.loopexit, label %._crit_edge.23
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="49" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="146">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+<literal name="tmp_30" val="0"/>
+<literal name="tmp_31" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="72" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.23:0  %tmp_32 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 23)
+
+]]></node>
+<StgValue><ssdm name="tmp_32"/></StgValue>
+</operation>
+
+<operation id="50" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="146">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+<literal name="tmp_30" val="0"/>
+<literal name="tmp_31" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="73" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.23:1  br i1 %tmp_32, label %.loopexit, label %._crit_edge.24
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="51" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="147">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+<literal name="tmp_30" val="0"/>
+<literal name="tmp_31" val="0"/>
+<literal name="tmp_32" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="75" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.24:0  %tmp_33 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 24)
+
+]]></node>
+<StgValue><ssdm name="tmp_33"/></StgValue>
+</operation>
+
+<operation id="52" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="147">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+<literal name="tmp_30" val="0"/>
+<literal name="tmp_31" val="0"/>
+<literal name="tmp_32" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="76" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.24:1  br i1 %tmp_33, label %.loopexit, label %._crit_edge.25
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="53" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="148">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+<literal name="tmp_30" val="0"/>
+<literal name="tmp_31" val="0"/>
+<literal name="tmp_32" val="0"/>
+<literal name="tmp_33" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="78" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.25:0  %tmp_34 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 25)
+
+]]></node>
+<StgValue><ssdm name="tmp_34"/></StgValue>
+</operation>
+
+<operation id="54" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="148">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+<literal name="tmp_30" val="0"/>
+<literal name="tmp_31" val="0"/>
+<literal name="tmp_32" val="0"/>
+<literal name="tmp_33" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="79" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.25:1  br i1 %tmp_34, label %.loopexit, label %._crit_edge.26
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="55" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="149">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+<literal name="tmp_30" val="0"/>
+<literal name="tmp_31" val="0"/>
+<literal name="tmp_32" val="0"/>
+<literal name="tmp_33" val="0"/>
+<literal name="tmp_34" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="81" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.26:0  %tmp_35 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 26)
+
+]]></node>
+<StgValue><ssdm name="tmp_35"/></StgValue>
+</operation>
+
+<operation id="56" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="149">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+<literal name="tmp_30" val="0"/>
+<literal name="tmp_31" val="0"/>
+<literal name="tmp_32" val="0"/>
+<literal name="tmp_33" val="0"/>
+<literal name="tmp_34" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="82" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.26:1  br i1 %tmp_35, label %.loopexit, label %._crit_edge.27
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="57" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="150">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+<literal name="tmp_30" val="0"/>
+<literal name="tmp_31" val="0"/>
+<literal name="tmp_32" val="0"/>
+<literal name="tmp_33" val="0"/>
+<literal name="tmp_34" val="0"/>
+<literal name="tmp_35" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="84" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.27:0  %tmp_36 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 27)
+
+]]></node>
+<StgValue><ssdm name="tmp_36"/></StgValue>
+</operation>
+
+<operation id="58" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="150">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+<literal name="tmp_30" val="0"/>
+<literal name="tmp_31" val="0"/>
+<literal name="tmp_32" val="0"/>
+<literal name="tmp_33" val="0"/>
+<literal name="tmp_34" val="0"/>
+<literal name="tmp_35" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="85" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.27:1  br i1 %tmp_36, label %.loopexit, label %._crit_edge.28
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="59" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="151">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+<literal name="tmp_30" val="0"/>
+<literal name="tmp_31" val="0"/>
+<literal name="tmp_32" val="0"/>
+<literal name="tmp_33" val="0"/>
+<literal name="tmp_34" val="0"/>
+<literal name="tmp_35" val="0"/>
+<literal name="tmp_36" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="87" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.28:0  %tmp_37 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 28)
+
+]]></node>
+<StgValue><ssdm name="tmp_37"/></StgValue>
+</operation>
+
+<operation id="60" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="151">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+<literal name="tmp_30" val="0"/>
+<literal name="tmp_31" val="0"/>
+<literal name="tmp_32" val="0"/>
+<literal name="tmp_33" val="0"/>
+<literal name="tmp_34" val="0"/>
+<literal name="tmp_35" val="0"/>
+<literal name="tmp_36" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="88" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.28:1  br i1 %tmp_37, label %.loopexit, label %._crit_edge.29
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="61" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="152">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+<literal name="tmp_30" val="0"/>
+<literal name="tmp_31" val="0"/>
+<literal name="tmp_32" val="0"/>
+<literal name="tmp_33" val="0"/>
+<literal name="tmp_34" val="0"/>
+<literal name="tmp_35" val="0"/>
+<literal name="tmp_36" val="0"/>
+<literal name="tmp_37" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="90" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.29:0  %tmp_38 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 29)
+
+]]></node>
+<StgValue><ssdm name="tmp_38"/></StgValue>
+</operation>
+
+<operation id="62" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="152">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+<literal name="tmp_30" val="0"/>
+<literal name="tmp_31" val="0"/>
+<literal name="tmp_32" val="0"/>
+<literal name="tmp_33" val="0"/>
+<literal name="tmp_34" val="0"/>
+<literal name="tmp_35" val="0"/>
+<literal name="tmp_36" val="0"/>
+<literal name="tmp_37" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="91" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.29:1  br i1 %tmp_38, label %.loopexit, label %._crit_edge.30
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="63" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="153">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+<literal name="tmp_30" val="0"/>
+<literal name="tmp_31" val="0"/>
+<literal name="tmp_32" val="0"/>
+<literal name="tmp_33" val="0"/>
+<literal name="tmp_34" val="0"/>
+<literal name="tmp_35" val="0"/>
+<literal name="tmp_36" val="0"/>
+<literal name="tmp_37" val="0"/>
+<literal name="tmp_38" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="93" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
+<![CDATA[
+._crit_edge.30:0  %tmp_39 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %bus_read, i32 30)
+
+]]></node>
+<StgValue><ssdm name="tmp_39"/></StgValue>
+</operation>
+
+<operation id="64" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="153">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+<literal name="tmp_10" val="0"/>
+<literal name="tmp_11" val="0"/>
+<literal name="tmp_12" val="0"/>
+<literal name="tmp_13" val="0"/>
+<literal name="tmp_14" val="0"/>
+<literal name="tmp_15" val="0"/>
+<literal name="tmp_16" val="0"/>
+<literal name="tmp_17" val="0"/>
+<literal name="tmp_18" val="0"/>
+<literal name="tmp_19" val="0"/>
+<literal name="tmp_20" val="0"/>
+<literal name="tmp_21" val="0"/>
+<literal name="tmp_22" val="0"/>
+<literal name="tmp_23" val="0"/>
+<literal name="tmp_24" val="0"/>
+<literal name="tmp_25" val="0"/>
+<literal name="tmp_26" val="0"/>
+<literal name="tmp_27" val="0"/>
+<literal name="tmp_28" val="0"/>
+<literal name="tmp_29" val="0"/>
+<literal name="tmp_30" val="0"/>
+<literal name="tmp_31" val="0"/>
+<literal name="tmp_32" val="0"/>
+<literal name="tmp_33" val="0"/>
+<literal name="tmp_34" val="0"/>
+<literal name="tmp_35" val="0"/>
+<literal name="tmp_36" val="0"/>
+<literal name="tmp_37" val="0"/>
+<literal name="tmp_38" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="94" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+._crit_edge.30:1  br i1 %tmp_39, label %.loopexit, label %._crit_edge.31
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="65" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="90">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp><and_exp><literal name="tmp_10" val="1"/>
+</and_exp><and_exp><literal name="tmp_11" val="1"/>
+</and_exp><and_exp><literal name="tmp_12" val="1"/>
+</and_exp><and_exp><literal name="tmp_13" val="1"/>
+</and_exp><and_exp><literal name="tmp_14" val="1"/>
+</and_exp><and_exp><literal name="tmp_15" val="1"/>
+</and_exp><and_exp><literal name="tmp_16" val="1"/>
+</and_exp><and_exp><literal name="tmp_17" val="1"/>
+</and_exp><and_exp><literal name="tmp_18" val="1"/>
+</and_exp><and_exp><literal name="tmp_19" val="1"/>
+</and_exp><and_exp><literal name="tmp_20" val="1"/>
+</and_exp><and_exp><literal name="tmp_21" val="1"/>
+</and_exp><and_exp><literal name="tmp_22" val="1"/>
+</and_exp><and_exp><literal name="tmp_23" val="1"/>
+</and_exp><and_exp><literal name="tmp_24" val="1"/>
+</and_exp><and_exp><literal name="tmp_25" val="1"/>
+</and_exp><and_exp><literal name="tmp_26" val="1"/>
+</and_exp><and_exp><literal name="tmp_27" val="1"/>
+</and_exp><and_exp><literal name="tmp_28" val="1"/>
+</and_exp><and_exp><literal name="tmp_29" val="1"/>
+</and_exp><and_exp><literal name="tmp_30" val="1"/>
+</and_exp><and_exp><literal name="tmp_31" val="1"/>
+</and_exp><and_exp><literal name="tmp_32" val="1"/>
+</and_exp><and_exp><literal name="tmp_33" val="1"/>
+</and_exp><and_exp><literal name="tmp_34" val="1"/>
+</and_exp><and_exp><literal name="tmp_35" val="1"/>
+</and_exp><and_exp><literal name="tmp_36" val="1"/>
+</and_exp><and_exp><literal name="tmp_37" val="1"/>
+</and_exp><and_exp><literal name="tmp_38" val="1"/>
+</and_exp><and_exp><literal name="tmp_39" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="96" bw="5" op_0_bw="5" op_1_bw="0" op_2_bw="5" op_3_bw="0" op_4_bw="5" op_5_bw="0" op_6_bw="5" op_7_bw="0" op_8_bw="5" op_9_bw="0" op_10_bw="5" op_11_bw="0" op_12_bw="5" op_13_bw="0" op_14_bw="5" op_15_bw="0" op_16_bw="5" op_17_bw="0" op_18_bw="5" op_19_bw="0" op_20_bw="5" op_21_bw="0" op_22_bw="5" op_23_bw="0" op_24_bw="5" op_25_bw="0" op_26_bw="5" op_27_bw="0" op_28_bw="5" op_29_bw="0" op_30_bw="5">
+<![CDATA[
+.loopexit:0  %p_s = phi i5 [ 0, %._crit_edge.0 ], [ 1, %._crit_edge.1 ], [ 2, %._crit_edge.2 ], [ 3, %._crit_edge.3 ], [ 4, %._crit_edge.4 ], [ 5, %._crit_edge.5 ], [ 6, %._crit_edge.6 ], [ 7, %._crit_edge.7 ], [ 8, %._crit_edge.8 ], [ 9, %._crit_edge.9 ], [ 10, %._crit_edge.10 ], [ 11, %._crit_edge.11 ], [ 12, %._crit_edge.12 ], [ 13, %._crit_edge.13 ], [ 14, %._crit_edge.14 ], [ 15, %._crit_edge.15 ], [ -16, %._crit_edge.16 ], [ -15, %._crit_edge.17 ], [ -14, %._crit_edge.18 ], [ -13, %._crit_edge.19 ], [ -12, %._crit_edge.20 ], [ -11, %._crit_edge.21 ], [ -10, %._crit_edge.22 ], [ -9, %._crit_edge.23 ], [ -8, %._crit_edge.24 ], [ -7, %._crit_edge.25 ], [ -6, %._crit_edge.26 ], [ -5, %._crit_edge.27 ], [ -4, %._crit_edge.28 ], [ -3, %._crit_edge.29 ], [ -2, %._crit_edge.30 ]
+
+]]></node>
+<StgValue><ssdm name="p_s"/></StgValue>
+</operation>
+
+<operation id="66" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="90">
+<or_exp><and_exp><literal name="tmp" val="1"/>
+</and_exp><and_exp><literal name="tmp_10" val="1"/>
+</and_exp><and_exp><literal name="tmp_11" val="1"/>
+</and_exp><and_exp><literal name="tmp_12" val="1"/>
+</and_exp><and_exp><literal name="tmp_13" val="1"/>
+</and_exp><and_exp><literal name="tmp_14" val="1"/>
+</and_exp><and_exp><literal name="tmp_15" val="1"/>
+</and_exp><and_exp><literal name="tmp_16" val="1"/>
+</and_exp><and_exp><literal name="tmp_17" val="1"/>
+</and_exp><and_exp><literal name="tmp_18" val="1"/>
+</and_exp><and_exp><literal name="tmp_19" val="1"/>
+</and_exp><and_exp><literal name="tmp_20" val="1"/>
+</and_exp><and_exp><literal name="tmp_21" val="1"/>
+</and_exp><and_exp><literal name="tmp_22" val="1"/>
+</and_exp><and_exp><literal name="tmp_23" val="1"/>
+</and_exp><and_exp><literal name="tmp_24" val="1"/>
+</and_exp><and_exp><literal name="tmp_25" val="1"/>
+</and_exp><and_exp><literal name="tmp_26" val="1"/>
+</and_exp><and_exp><literal name="tmp_27" val="1"/>
+</and_exp><and_exp><literal name="tmp_28" val="1"/>
+</and_exp><and_exp><literal name="tmp_29" val="1"/>
+</and_exp><and_exp><literal name="tmp_30" val="1"/>
+</and_exp><and_exp><literal name="tmp_31" val="1"/>
+</and_exp><and_exp><literal name="tmp_32" val="1"/>
+</and_exp><and_exp><literal name="tmp_33" val="1"/>
+</and_exp><and_exp><literal name="tmp_34" val="1"/>
+</and_exp><and_exp><literal name="tmp_35" val="1"/>
+</and_exp><and_exp><literal name="tmp_36" val="1"/>
+</and_exp><and_exp><literal name="tmp_37" val="1"/>
+</and_exp><and_exp><literal name="tmp_38" val="1"/>
+</and_exp><and_exp><literal name="tmp_39" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<node id="97" bw="0" op_0_bw="0">
+<![CDATA[
+.loopexit:1  br label %._crit_edge.31
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="67" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="123">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="99" bw="5" op_0_bw="5" op_1_bw="0">
+<![CDATA[
+._crit_edge.31:0  %merge = phi i5 [ -1, %._crit_edge.30 ], [ %p_s, %.loopexit ]
+
+]]></node>
+<StgValue><ssdm name="merge"/></StgValue>
+</operation>
+
+<operation id="68" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="123">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="100" bw="0" op_0_bw="5">
+<![CDATA[
+._crit_edge.31:1  ret i5 %merge
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+</ports>
+
+
+<dataflows>
+</dataflows>
+
+
+</stg>

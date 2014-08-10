@@ -129,7 +129,7 @@
 						</tool>
 					</fileInfo>
 					<sourceEntries>
-						<entry excluding="solution_kintex7|solution_spartan3|solution_spartan6|solution_virtex5|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="solution_kintex7|solution_spartan3|solution_spartan6|solution_virtex5|solution_virtex5_plb|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -252,7 +252,7 @@
 						</tool>
 					</fileInfo>
 					<sourceEntries>
-						<entry excluding="solution_kintex7|solution_spartan3|solution_spartan6|solution_virtex5|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="solution_kintex7|solution_spartan3|solution_spartan6|solution_virtex5|solution_virtex5_plb|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

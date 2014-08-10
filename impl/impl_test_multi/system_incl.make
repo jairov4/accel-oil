@@ -119,7 +119,8 @@ implementation/system_mdm_0_wrapper.ngc \
 implementation/system_proc_sys_reset_0_wrapper.ngc \
 implementation/system_nfa_accept_samples_generic_hw_top_0_wrapper.ngc \
 implementation/system_plb_v46_0_wrapper.ngc \
-implementation/system_plb_v46_1_wrapper.ngc
+implementation/system_plb_v46_1_wrapper.ngc \
+implementation/system_system_cache_0_wrapper.ngc
 
 POSTSYN_NETLIST = implementation/$(SYSTEM).ngc
 

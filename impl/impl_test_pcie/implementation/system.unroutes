@@ -1,0 +1,17 @@
+Release 14.7 - par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Sat Aug 09 19:45:44 2014
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 5 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   PCIe_Bridge/PCIe_Bridge/gen_pcie_bridge_64.pcie_bridge_64/sig_MB_RxFull
+   PCIe_Bridge/PCIe_Bridge/gen_pcie_bridge_64.pcie_bridge_64/sig_MB_TxREMn<0>
+   PCIe_Bridge/PCIe_Bridge/gen_pcie_bridge_64.pcie_bridge_64/sig_sb_txrem_n<0>
+   dlmb_LMB_ABus<30>
+   dlmb_LMB_ABus<31>
+
+

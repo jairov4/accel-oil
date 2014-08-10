@@ -1,0 +1,32 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Sat Aug 09 19:47:05 2014
+
+drc -z system.ncd system.pcf
+
+WARNING:PhysDesignRules:1841 - One or more GTPs are being used in this design.
+   Evaluate the SelectIO-To-GTP Crosstalk section of the Virtex-5 RocketIO GTP
+   Transceiver User Guide to ensure that the design SelectIO usage meets the
+   guidelines to minimize the impact on GTP performance. 
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   PCIe_Bridge/PCIe_Bridge/gen_pcie_bridge_64.pcie_bridge_64/gen_v5_pcie.comp_bl
+   ock_plus/comp_v5_endpoint/endpoint_blk_plus_v1_13x1_i.ep_v1_13x1/pcie_ep0/pci
+   e_blk/SIO/.pcie_gt_wrapper_i/icdrreset<0> is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:367 - The signal
+   <PCIe_Bridge/PCIe_Bridge/gen_pcie_bridge_64.pcie_bridge_64/sig_sb_txrem_n<0>>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <PCIe_Bridge/PCIe_Bridge/gen_pcie_bridge_64.pcie_bridge_64/sig_MB_TxREMn<0>>
+   is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dlmb_LMB_ABus<31>> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dlmb_LMB_ABus<30>> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <PCIe_Bridge/PCIe_Bridge/gen_pcie_bridge_64.pcie_bridge_64/sig_MB_RxFull> is
+   incomplete. The signal does not drive any load pins in the design.
+DRC detected 0 errors and 7 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

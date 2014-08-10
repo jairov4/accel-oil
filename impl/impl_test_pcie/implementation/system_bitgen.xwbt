@@ -1,0 +1,7 @@
+INFILE=C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_pcie\implementation\system.ncd
+OUTFILE=C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_pcie\implementation\system.bit
+FAMILY=Virtex5
+PART=xc5vlx50t-1ff1136
+WORKINGDIR=C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_pcie\implementation
+LICENSE=ISE
+USER_INFO=_

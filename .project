@@ -113,6 +113,11 @@
 			<location>C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/.tcls</location>
 		</link>
 		<link>
+			<name>solution_virtex5_plb/constraints</name>
+			<type>2</type>
+			<location>C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.tcls</location>
+		</link>
+		<link>
 			<name>source/bitset.c</name>
 			<type>1</type>
 			<location>C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/src/bitset.c</location>
@@ -196,6 +201,21 @@
 			<name>solution_virtex5/constraints/script.tcl</name>
 			<type>1</type>
 			<location>C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/script.tcl</location>
+		</link>
+		<link>
+			<name>solution_virtex5_plb/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/solution_virtex5_plb.directive</location>
+		</link>
+		<link>
+			<name>solution_virtex5_plb/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution_virtex5_plb/constraints/script.tcl</name>
+			<type>1</type>
+			<location>C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

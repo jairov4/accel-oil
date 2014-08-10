@@ -1,0 +1,239 @@
+
+
+================================================================
+== Vivado HLS Report for 'sample_iterator_next'
+================================================================
+* Date:           Sat Aug 09 17:29:24 2014
+
+* Version:        2014.1 (build date: Fri Apr 04 13:20:25 PM 2014)
+* Project:        oil_plainc_hls
+* Solution:       solution_virtex5_plb
+* Product family: virtex5 virtex5_fpv5 
+* Target device:  xc5vlx50tff1136-3
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |   7.00|      4.00|        3.00|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    3|    3|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
++-----------------+---------+-------+-------+-------+
+|Expression       |        -|      -|      -|      -|
+|FIFO             |        -|      -|      -|      -|
+|Instance         |        -|      -|      -|      -|
+|Memory           |        -|      -|      -|      -|
+|Multiplexer      |        -|      -|      -|      -|
+|Register         |        -|      -|      -|      -|
++-----------------+---------+-------+-------+-------+
+|Total            |        0|      0|      0|      0|
++-----------------+---------+-------+-------+-------+
+|Available        |      120|     48|  28800|  28800|
++-----------------+---------+-------+-------+-------+
+|Utilization (%)  |        0|      0|      0|      0|
++-----------------+---------+-------+-------+-------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 4
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 4
+* Pipeline: 1
+  Pipeline-0: II = 1, D = 4, States = { 1 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+* FSM state operations: 
+
+ <State 1>: 4.00ns
+ST_1: i_sample_read [1/1] 0.00ns
+:6  %i_sample_read = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %i_sample)
+
+ST_1: i_index_read [1/1] 0.00ns
+:7  %i_index_read = call i16 @_ssdm_op_Read.ap_auto.i16(i16 %i_index)
+
+ST_1: tmp_s [1/1] 0.00ns
+:9  %tmp_s = zext i16 %i_index_read to i64
+
+ST_1: indices_addr [1/1] 0.00ns
+:10  %indices_addr = getelementptr i56* %indices, i64 %tmp_s
+
+ST_1: indices_load_req [2/2] 4.00ns
+:11  %indices_load_req = call i1 @_ssdm_op_ReadReq.ap_bus.i56P(i56* %indices_addr, i32 1)
+
+
+ <State 2>: 4.00ns
+ST_2: indices_load_req [1/2] 4.00ns
+:11  %indices_load_req = call i1 @_ssdm_op_ReadReq.ap_bus.i56P(i56* %indices_addr, i32 1)
+
+
+ <State 3>: 4.00ns
+ST_3: indices_addr_read [1/1] 4.00ns
+:12  %indices_addr_read = call i56 @_ssdm_op_Read.ap_bus.i56P(i56* %indices_addr)
+
+ST_3: indices_samples_load_new5 [1/1] 0.00ns
+:13  %indices_samples_load_new5 = call i16 @_ssdm_op_PartSelect.i16.i56.i32.i32(i56 %indices_addr_read, i32 32, i32 47)
+
+
+ <State 4>: 3.93ns
+ST_4: stg_13 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecIFCore(i56* %indices, [1 x i8]* @p_str212, [7 x i8]* @p_str31, [1 x i8]* @p_str212, [1 x i8]* @p_str212, [1 x i8]* @p_str212, [1 x i8]* @p_str212)
+
+ST_4: stg_14 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecIFCore(i56* %indices, [1 x i8]* @p_str212, [7 x i8]* @p_str31, [1 x i8]* @p_str212, [1 x i8]* @p_str212, [1 x i8]* @p_str212, [1 x i8]* @p_str212)
+
+ST_4: stg_15 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBus(i56* %indices, [7 x i8]* @p_str28, i32 0, i32 0, i32 0, i32 10, [1 x i8]* @p_str212, [1 x i8]* @p_str212, [1 x i8]* @p_str212)
+
+ST_4: stg_16 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecBus(i56* %indices, [7 x i8]* @p_str28, i32 0, i32 0, i32 0, i32 10, [1 x i8]* @p_str212, [1 x i8]* @p_str212, [1 x i8]* @p_str212)
+
+ST_4: stg_17 [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecIFCore(i56* %indices, [1 x i8]* @p_str212, [7 x i8]* @p_str31, [1 x i8]* @p_str212, [1 x i8]* @p_str212, [1 x i8]* @p_str212, [1 x i8]* @p_str212)
+
+ST_4: stg_18 [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecBus(i56* %indices, [7 x i8]* @p_str28, i32 0, i32 0, i32 0, i32 10, [1 x i8]* @p_str212, [1 x i8]* @p_str212, [1 x i8]* @p_str212)
+
+ST_4: tmp_cast [1/1] 0.00ns
+:8  %tmp_cast = zext i16 %i_sample_read to i18
+
+ST_4: tmp_6_cast [1/1] 0.00ns
+:14  %tmp_6_cast = zext i16 %indices_samples_load_new5 to i17
+
+ST_4: tmp_7 [1/1] 1.69ns
+:15  %tmp_7 = add i17 %tmp_6_cast, -1
+
+ST_4: tmp_7_cast [1/1] 0.00ns
+:16  %tmp_7_cast = sext i17 %tmp_7 to i18
+
+ST_4: tmp_8 [1/1] 1.47ns
+:17  %tmp_8 = icmp slt i18 %tmp_cast, %tmp_7_cast
+
+ST_4: tmp_9 [1/1] 1.69ns
+:18  %tmp_9 = add i16 %i_index_read, 1
+
+ST_4: tmp_1 [1/1] 1.69ns
+:19  %tmp_1 = add i16 %i_sample_read, 1
+
+ST_4: agg_result_sample_write_assign [1/1] 0.77ns
+:20  %agg_result_sample_write_assign = select i1 %tmp_8, i16 %tmp_1, i16 0
+
+ST_4: agg_result_index_write_assign [1/1] 0.77ns
+:21  %agg_result_index_write_assign = select i1 %tmp_8, i16 %i_index_read, i16 %tmp_9
+
+ST_4: mrv [1/1] 0.00ns
+:22  %mrv = insertvalue { i16, i16 } undef, i16 %agg_result_index_write_assign, 0
+
+ST_4: mrv_1 [1/1] 0.00ns
+:23  %mrv_1 = insertvalue { i16, i16 } %mrv, i16 %agg_result_sample_write_assign, 1
+
+ST_4: stg_30 [1/1] 0.00ns
+:24  ret { i16, i16 } %mrv_1
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,1991 @@
+Release 14.7 Xflow P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+xflow.exe -wd implementation -p xc5vlx50tff1136-2 -implement xflow.opt
+system.ngc  
+PMSPEC -- Overriding Xilinx file
+<C:/Programas/Xilinx/14.7/ISE_DS/EDK/virtex5/data/virtex5.acd> with local file
+<C:/Programas/Xilinx/14.7/ISE_DS/ISE/virtex5/data/virtex5.acd>
+
+Using Flow File:
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/impl/impl_test_single/imple
+mentation/fpga.flw 
+Using Option File(s): 
+ C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/impl/impl_test_single/impl
+ementation/xflow.opt 
+
+Creating Script File ... 
+
+#----------------------------------------------#
+# Starting program ngdbuild
+# ngdbuild -p xc5vlx50tff1136-2 -nt timestamp -bm system.bmm
+"C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/impl/impl_test_single/impl
+ementation/system.ngc" -uc system.ucf system.ngd 
+#----------------------------------------------#
+Release 14.7 - ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+PMSPEC -- Overriding Xilinx file
+<C:/Programas/Xilinx/14.7/ISE_DS/EDK/virtex5/data/virtex5.acd> with local file
+<C:/Programas/Xilinx/14.7/ISE_DS/ISE/virtex5/data/virtex5.acd>
+
+Command Line:
+C:\Programas\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe -p
+xc5vlx50tff1136-2 -nt timestamp -bm system.bmm
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/impl/impl_test_single/imple
+mentation/system.ngc -uc system.ucf system.ngd
+
+Reading NGO file
+"C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/impl/impl_test_single/impl
+ementation/system.ngc" ...
+Loading design module
+"C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/impl/impl_test_single/impl
+ementation/system_nfa_accept_samples_generic_hw_top_0_wrapper.ngc"...
+Loading design module
+"C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/impl/impl_test_single/impl
+ementation/system_plbv46_pcie_0_wrapper.ngc"...
+Loading design module
+"C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/impl/impl_test_single/impl
+ementation/system_plb_v46_0_wrapper.ngc"...
+Loading design module
+"C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/impl/impl_test_single/impl
+ementation/system_mpmc_0_wrapper.ngc"...
+Loading design module
+"C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/impl/impl_test_single/impl
+ementation/system_nfa_accept_samples_generic_hw_top_1_wrapper.ngc"...
+Loading design module
+"C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/impl/impl_test_single/impl
+ementation/system_clock_generator_0_wrapper.ngc"...
+Applying constraints in
+"C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/impl/impl_test_single/impl
+ementation/system_plbv46_pcie_0_wrapper.ncf" to module "plbv46_pcie_0"...
+Checking Constraint Associations...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "system.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_CE_pin<0> LOC=T28  |>
+   [system.ucf(5)]: NET "mpmc_0_DDR2_CE_pin<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_CE_pin<0> LOC=T28  |> [system.ucf(5)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(5)]: NET "mpmc_0_DDR2_CE_pin<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_CE_pin<1> LOC=U30  |>
+   [system.ucf(6)]: NET "mpmc_0_DDR2_CE_pin<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_CE_pin<1> LOC=U30  |> [system.ucf(6)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(6)]: NET "mpmc_0_DDR2_CE_pin<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_CS_n_pin<0> LOC=L29  |>
+   [system.ucf(7)]: NET "mpmc_0_DDR2_CS_n_pin<0>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_CS_n_pin<0> LOC=L29  |> [system.ucf(7)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(7)]: NET "mpmc_0_DDR2_CS_n_pin<0>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_CS_n_pin<1> LOC=J29  |>
+   [system.ucf(8)]: NET "mpmc_0_DDR2_CS_n_pin<1>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_CS_n_pin<1> LOC=J29  |> [system.ucf(8)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(8)]: NET "mpmc_0_DDR2_CS_n_pin<1>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_ODT_pin<0> LOC=F31  |>
+   [system.ucf(9)]: NET "mpmc_0_DDR2_ODT_pin<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_ODT_pin<0> LOC=F31  |> [system.ucf(9)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(9)]: NET "mpmc_0_DDR2_ODT_pin<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_ODT_pin<1> LOC=F30  |>
+   [system.ucf(10)]: NET "mpmc_0_DDR2_ODT_pin<1>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_ODT_pin<1> LOC=F30  |> [system.ucf(10)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(10)]: NET "mpmc_0_DDR2_ODT_pin<1>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<0> LOC=AF30  |>
+   [system.ucf(29)]: NET "mpmc_0_DDR2_DQ_pin<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<0> LOC=AF30  |> [system.ucf(29)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(29)]: NET "mpmc_0_DDR2_DQ_pin<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<1> LOC=AK31  |>
+   [system.ucf(30)]: NET "mpmc_0_DDR2_DQ_pin<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<1> LOC=AK31  |> [system.ucf(30)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(30)]: NET "mpmc_0_DDR2_DQ_pin<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<2> LOC=AF31  |>
+   [system.ucf(31)]: NET "mpmc_0_DDR2_DQ_pin<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<2> LOC=AF31  |> [system.ucf(31)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(31)]: NET "mpmc_0_DDR2_DQ_pin<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<3> LOC=AD30  |>
+   [system.ucf(32)]: NET "mpmc_0_DDR2_DQ_pin<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<3> LOC=AD30  |> [system.ucf(32)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(32)]: NET "mpmc_0_DDR2_DQ_pin<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<4> LOC=AJ30  |>
+   [system.ucf(33)]: NET "mpmc_0_DDR2_DQ_pin<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<4> LOC=AJ30  |> [system.ucf(33)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(33)]: NET "mpmc_0_DDR2_DQ_pin<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<5> LOC=AF29  |>
+   [system.ucf(34)]: NET "mpmc_0_DDR2_DQ_pin<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<5> LOC=AF29  |> [system.ucf(34)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(34)]: NET "mpmc_0_DDR2_DQ_pin<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<6> LOC=AD29  |>
+   [system.ucf(35)]: NET "mpmc_0_DDR2_DQ_pin<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<6> LOC=AD29  |> [system.ucf(35)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(35)]: NET "mpmc_0_DDR2_DQ_pin<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<7> LOC=AE29  |>
+   [system.ucf(36)]: NET "mpmc_0_DDR2_DQ_pin<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<7> LOC=AE29  |> [system.ucf(36)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(36)]: NET "mpmc_0_DDR2_DQ_pin<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<8> LOC=AH27  |>
+   [system.ucf(37)]: NET "mpmc_0_DDR2_DQ_pin<8>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<8> LOC=AH27  |> [system.ucf(37)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(37)]: NET "mpmc_0_DDR2_DQ_pin<8>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<9> LOC=AF28  |>
+   [system.ucf(38)]: NET "mpmc_0_DDR2_DQ_pin<9>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<9> LOC=AF28  |> [system.ucf(38)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(38)]: NET "mpmc_0_DDR2_DQ_pin<9>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<10> LOC=AH28  |>
+   [system.ucf(39)]: NET "mpmc_0_DDR2_DQ_pin<10>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<10> LOC=AH28  |> [system.ucf(39)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(39)]: NET "mpmc_0_DDR2_DQ_pin<10>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<11> LOC=AA28  |>
+   [system.ucf(40)]: NET "mpmc_0_DDR2_DQ_pin<11>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<11> LOC=AA28  |> [system.ucf(40)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(40)]: NET "mpmc_0_DDR2_DQ_pin<11>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<12> LOC=AG25  |>
+   [system.ucf(41)]: NET "mpmc_0_DDR2_DQ_pin<12>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<12> LOC=AG25  |> [system.ucf(41)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(41)]: NET "mpmc_0_DDR2_DQ_pin<12>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<13> LOC=AJ26  |>
+   [system.ucf(42)]: NET "mpmc_0_DDR2_DQ_pin<13>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<13> LOC=AJ26  |> [system.ucf(42)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(42)]: NET "mpmc_0_DDR2_DQ_pin<13>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<14> LOC=AG28  |>
+   [system.ucf(43)]: NET "mpmc_0_DDR2_DQ_pin<14>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<14> LOC=AG28  |> [system.ucf(43)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(43)]: NET "mpmc_0_DDR2_DQ_pin<14>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<15> LOC=AB28  |>
+   [system.ucf(44)]: NET "mpmc_0_DDR2_DQ_pin<15>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<15> LOC=AB28  |> [system.ucf(44)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(44)]: NET "mpmc_0_DDR2_DQ_pin<15>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<16> LOC=AC28  |>
+   [system.ucf(45)]: NET "mpmc_0_DDR2_DQ_pin<16>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<16> LOC=AC28  |> [system.ucf(45)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(45)]: NET "mpmc_0_DDR2_DQ_pin<16>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<17> LOC=AB25  |>
+   [system.ucf(46)]: NET "mpmc_0_DDR2_DQ_pin<17>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<17> LOC=AB25  |> [system.ucf(46)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(46)]: NET "mpmc_0_DDR2_DQ_pin<17>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<18> LOC=AC27  |>
+   [system.ucf(47)]: NET "mpmc_0_DDR2_DQ_pin<18>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<18> LOC=AC27  |> [system.ucf(47)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(47)]: NET "mpmc_0_DDR2_DQ_pin<18>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<19> LOC=AA26  |>
+   [system.ucf(48)]: NET "mpmc_0_DDR2_DQ_pin<19>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<19> LOC=AA26  |> [system.ucf(48)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(48)]: NET "mpmc_0_DDR2_DQ_pin<19>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<20> LOC=AB26  |>
+   [system.ucf(49)]: NET "mpmc_0_DDR2_DQ_pin<20>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<20> LOC=AB26  |> [system.ucf(49)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(49)]: NET "mpmc_0_DDR2_DQ_pin<20>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<21> LOC=AA24  |>
+   [system.ucf(50)]: NET "mpmc_0_DDR2_DQ_pin<21>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<21> LOC=AA24  |> [system.ucf(50)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(50)]: NET "mpmc_0_DDR2_DQ_pin<21>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<22> LOC=AB27  |>
+   [system.ucf(51)]: NET "mpmc_0_DDR2_DQ_pin<22>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<22> LOC=AB27  |> [system.ucf(51)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(51)]: NET "mpmc_0_DDR2_DQ_pin<22>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<23> LOC=AA25  |>
+   [system.ucf(52)]: NET "mpmc_0_DDR2_DQ_pin<23>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<23> LOC=AA25  |> [system.ucf(52)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(52)]: NET "mpmc_0_DDR2_DQ_pin<23>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<24> LOC=AC29  |>
+   [system.ucf(53)]: NET "mpmc_0_DDR2_DQ_pin<24>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<24> LOC=AC29  |> [system.ucf(53)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(53)]: NET "mpmc_0_DDR2_DQ_pin<24>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<25> LOC=AB30  |>
+   [system.ucf(54)]: NET "mpmc_0_DDR2_DQ_pin<25>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<25> LOC=AB30  |> [system.ucf(54)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(54)]: NET "mpmc_0_DDR2_DQ_pin<25>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<26> LOC=W31  |>
+   [system.ucf(55)]: NET "mpmc_0_DDR2_DQ_pin<26>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<26> LOC=W31  |> [system.ucf(55)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(55)]: NET "mpmc_0_DDR2_DQ_pin<26>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<27> LOC=V30  |>
+   [system.ucf(56)]: NET "mpmc_0_DDR2_DQ_pin<27>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<27> LOC=V30  |> [system.ucf(56)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(56)]: NET "mpmc_0_DDR2_DQ_pin<27>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<28> LOC=AC30  |>
+   [system.ucf(57)]: NET "mpmc_0_DDR2_DQ_pin<28>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<28> LOC=AC30  |> [system.ucf(57)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(57)]: NET "mpmc_0_DDR2_DQ_pin<28>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<29> LOC=W29  |>
+   [system.ucf(58)]: NET "mpmc_0_DDR2_DQ_pin<29>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<29> LOC=W29  |> [system.ucf(58)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(58)]: NET "mpmc_0_DDR2_DQ_pin<29>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<30> LOC=V27  |>
+   [system.ucf(59)]: NET "mpmc_0_DDR2_DQ_pin<30>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<30> LOC=V27  |> [system.ucf(59)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(59)]: NET "mpmc_0_DDR2_DQ_pin<30>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<31> LOC=W27  |>
+   [system.ucf(60)]: NET "mpmc_0_DDR2_DQ_pin<31>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<31> LOC=W27  |> [system.ucf(60)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(60)]: NET "mpmc_0_DDR2_DQ_pin<31>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<32> LOC=V29  |>
+   [system.ucf(61)]: NET "mpmc_0_DDR2_DQ_pin<32>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<32> LOC=V29  |> [system.ucf(61)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(61)]: NET "mpmc_0_DDR2_DQ_pin<32>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<33> LOC=Y27  |>
+   [system.ucf(62)]: NET "mpmc_0_DDR2_DQ_pin<33>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<33> LOC=Y27  |> [system.ucf(62)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(62)]: NET "mpmc_0_DDR2_DQ_pin<33>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<34> LOC=Y26  |>
+   [system.ucf(63)]: NET "mpmc_0_DDR2_DQ_pin<34>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<34> LOC=Y26  |> [system.ucf(63)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(63)]: NET "mpmc_0_DDR2_DQ_pin<34>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<35> LOC=W24  |>
+   [system.ucf(64)]: NET "mpmc_0_DDR2_DQ_pin<35>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<35> LOC=W24  |> [system.ucf(64)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(64)]: NET "mpmc_0_DDR2_DQ_pin<35>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<36> LOC=V28  |>
+   [system.ucf(65)]: NET "mpmc_0_DDR2_DQ_pin<36>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<36> LOC=V28  |> [system.ucf(65)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(65)]: NET "mpmc_0_DDR2_DQ_pin<36>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<37> LOC=W25  |>
+   [system.ucf(66)]: NET "mpmc_0_DDR2_DQ_pin<37>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<37> LOC=W25  |> [system.ucf(66)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(66)]: NET "mpmc_0_DDR2_DQ_pin<37>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<38> LOC=W26  |>
+   [system.ucf(67)]: NET "mpmc_0_DDR2_DQ_pin<38>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<38> LOC=W26  |> [system.ucf(67)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(67)]: NET "mpmc_0_DDR2_DQ_pin<38>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<39> LOC=V24  |>
+   [system.ucf(68)]: NET "mpmc_0_DDR2_DQ_pin<39>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<39> LOC=V24  |> [system.ucf(68)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(68)]: NET "mpmc_0_DDR2_DQ_pin<39>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<40> LOC=R24  |>
+   [system.ucf(69)]: NET "mpmc_0_DDR2_DQ_pin<40>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<40> LOC=R24  |> [system.ucf(69)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(69)]: NET "mpmc_0_DDR2_DQ_pin<40>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<41> LOC=P25  |>
+   [system.ucf(70)]: NET "mpmc_0_DDR2_DQ_pin<41>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<41> LOC=P25  |> [system.ucf(70)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(70)]: NET "mpmc_0_DDR2_DQ_pin<41>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<42> LOC=N24  |>
+   [system.ucf(71)]: NET "mpmc_0_DDR2_DQ_pin<42>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<42> LOC=N24  |> [system.ucf(71)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(71)]: NET "mpmc_0_DDR2_DQ_pin<42>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<43> LOC=P26  |>
+   [system.ucf(72)]: NET "mpmc_0_DDR2_DQ_pin<43>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<43> LOC=P26  |> [system.ucf(72)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(72)]: NET "mpmc_0_DDR2_DQ_pin<43>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<44> LOC=T24  |>
+   [system.ucf(73)]: NET "mpmc_0_DDR2_DQ_pin<44>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<44> LOC=T24  |> [system.ucf(73)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(73)]: NET "mpmc_0_DDR2_DQ_pin<44>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<45> LOC=N25  |>
+   [system.ucf(74)]: NET "mpmc_0_DDR2_DQ_pin<45>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<45> LOC=N25  |> [system.ucf(74)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(74)]: NET "mpmc_0_DDR2_DQ_pin<45>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<46> LOC=P27  |>
+   [system.ucf(75)]: NET "mpmc_0_DDR2_DQ_pin<46>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<46> LOC=P27  |> [system.ucf(75)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(75)]: NET "mpmc_0_DDR2_DQ_pin<46>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<47> LOC=N28  |>
+   [system.ucf(76)]: NET "mpmc_0_DDR2_DQ_pin<47>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<47> LOC=N28  |> [system.ucf(76)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(76)]: NET "mpmc_0_DDR2_DQ_pin<47>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<48> LOC=M28  |>
+   [system.ucf(77)]: NET "mpmc_0_DDR2_DQ_pin<48>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<48> LOC=M28  |> [system.ucf(77)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(77)]: NET "mpmc_0_DDR2_DQ_pin<48>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<49> LOC=L28  |>
+   [system.ucf(78)]: NET "mpmc_0_DDR2_DQ_pin<49>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<49> LOC=L28  |> [system.ucf(78)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(78)]: NET "mpmc_0_DDR2_DQ_pin<49>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<50> LOC=F25  |>
+   [system.ucf(79)]: NET "mpmc_0_DDR2_DQ_pin<50>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<50> LOC=F25  |> [system.ucf(79)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(79)]: NET "mpmc_0_DDR2_DQ_pin<50>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<51> LOC=H25  |>
+   [system.ucf(80)]: NET "mpmc_0_DDR2_DQ_pin<51>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<51> LOC=H25  |> [system.ucf(80)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(80)]: NET "mpmc_0_DDR2_DQ_pin<51>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<52> LOC=K27  |>
+   [system.ucf(81)]: NET "mpmc_0_DDR2_DQ_pin<52>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<52> LOC=K27  |> [system.ucf(81)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(81)]: NET "mpmc_0_DDR2_DQ_pin<52>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<53> LOC=K28  |>
+   [system.ucf(82)]: NET "mpmc_0_DDR2_DQ_pin<53>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<53> LOC=K28  |> [system.ucf(82)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(82)]: NET "mpmc_0_DDR2_DQ_pin<53>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<54> LOC=H24  |>
+   [system.ucf(83)]: NET "mpmc_0_DDR2_DQ_pin<54>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<54> LOC=H24  |> [system.ucf(83)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(83)]: NET "mpmc_0_DDR2_DQ_pin<54>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<55> LOC=G26  |>
+   [system.ucf(84)]: NET "mpmc_0_DDR2_DQ_pin<55>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<55> LOC=G26  |> [system.ucf(84)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(84)]: NET "mpmc_0_DDR2_DQ_pin<55>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<56> LOC=G25  |>
+   [system.ucf(85)]: NET "mpmc_0_DDR2_DQ_pin<56>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<56> LOC=G25  |> [system.ucf(85)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(85)]: NET "mpmc_0_DDR2_DQ_pin<56>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<57> LOC=M26  |>
+   [system.ucf(86)]: NET "mpmc_0_DDR2_DQ_pin<57>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<57> LOC=M26  |> [system.ucf(86)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(86)]: NET "mpmc_0_DDR2_DQ_pin<57>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<58> LOC=J24  |>
+   [system.ucf(87)]: NET "mpmc_0_DDR2_DQ_pin<58>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<58> LOC=J24  |> [system.ucf(87)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(87)]: NET "mpmc_0_DDR2_DQ_pin<58>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<59> LOC=L26  |>
+   [system.ucf(88)]: NET "mpmc_0_DDR2_DQ_pin<59>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<59> LOC=L26  |> [system.ucf(88)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(88)]: NET "mpmc_0_DDR2_DQ_pin<59>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<60> LOC=J27  |>
+   [system.ucf(89)]: NET "mpmc_0_DDR2_DQ_pin<60>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<60> LOC=J27  |> [system.ucf(89)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(89)]: NET "mpmc_0_DDR2_DQ_pin<60>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<61> LOC=M25  |>
+   [system.ucf(90)]: NET "mpmc_0_DDR2_DQ_pin<61>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<61> LOC=M25  |> [system.ucf(90)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(90)]: NET "mpmc_0_DDR2_DQ_pin<61>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<62> LOC=L25  |>
+   [system.ucf(91)]: NET "mpmc_0_DDR2_DQ_pin<62>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<62> LOC=L25  |> [system.ucf(91)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(91)]: NET "mpmc_0_DDR2_DQ_pin<62>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQ_pin<63> LOC=L24  |>
+   [system.ucf(92)]: NET "mpmc_0_DDR2_DQ_pin<63>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQ_pin<63> LOC=L24  |> [system.ucf(92)]' could not be found
+   and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = SSTL18_II;>
+   [system.ucf(92)]: NET "mpmc_0_DDR2_DQ_pin<63>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQS_pin<0> LOC=AA29  |>
+   [system.ucf(101)]: NET "mpmc_0_DDR2_DQS_pin<0>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQS_pin<0> LOC=AA29  |> [system.ucf(101)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = DIFF_SSTL18_II;>
+   [system.ucf(101)]: NET "mpmc_0_DDR2_DQS_pin<0>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQS_pin<1> LOC=AK28  |>
+   [system.ucf(102)]: NET "mpmc_0_DDR2_DQS_pin<1>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQS_pin<1> LOC=AK28  |> [system.ucf(102)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = DIFF_SSTL18_II;>
+   [system.ucf(102)]: NET "mpmc_0_DDR2_DQS_pin<1>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQS_pin<2> LOC=AK26  |>
+   [system.ucf(103)]: NET "mpmc_0_DDR2_DQS_pin<2>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQS_pin<2> LOC=AK26  |> [system.ucf(103)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = DIFF_SSTL18_II;>
+   [system.ucf(103)]: NET "mpmc_0_DDR2_DQS_pin<2>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQS_pin<3> LOC=AB31  |>
+   [system.ucf(104)]: NET "mpmc_0_DDR2_DQS_pin<3>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQS_pin<3> LOC=AB31  |> [system.ucf(104)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = DIFF_SSTL18_II;>
+   [system.ucf(104)]: NET "mpmc_0_DDR2_DQS_pin<3>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQS_pin<4> LOC=Y28  |>
+   [system.ucf(105)]: NET "mpmc_0_DDR2_DQS_pin<4>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQS_pin<4> LOC=Y28  |> [system.ucf(105)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = DIFF_SSTL18_II;>
+   [system.ucf(105)]: NET "mpmc_0_DDR2_DQS_pin<4>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQS_pin<5> LOC=E26  |>
+   [system.ucf(106)]: NET "mpmc_0_DDR2_DQS_pin<5>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQS_pin<5> LOC=E26  |> [system.ucf(106)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = DIFF_SSTL18_II;>
+   [system.ucf(106)]: NET "mpmc_0_DDR2_DQS_pin<5>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQS_pin<6> LOC=H28  |>
+   [system.ucf(107)]: NET "mpmc_0_DDR2_DQS_pin<6>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQS_pin<6> LOC=H28  |> [system.ucf(107)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = DIFF_SSTL18_II;>
+   [system.ucf(107)]: NET "mpmc_0_DDR2_DQS_pin<6>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQS_pin<7> LOC=G27  |>
+   [system.ucf(108)]: NET "mpmc_0_DDR2_DQS_pin<7>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQS_pin<7> LOC=G27  |> [system.ucf(108)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = DIFF_SSTL18_II;>
+   [system.ucf(108)]: NET "mpmc_0_DDR2_DQS_pin<7>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQS_n_pin<0> LOC=AA30 
+   |> [system.ucf(109)]: NET "mpmc_0_DDR2_DQS_n_pin<0>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQS_n_pin<0> LOC=AA30  |> [system.ucf(109)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = DIFF_SSTL18_II;>
+   [system.ucf(109)]: NET "mpmc_0_DDR2_DQS_n_pin<0>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQS_n_pin<1> LOC=AK27 
+   |> [system.ucf(110)]: NET "mpmc_0_DDR2_DQS_n_pin<1>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQS_n_pin<1> LOC=AK27  |> [system.ucf(110)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = DIFF_SSTL18_II;>
+   [system.ucf(110)]: NET "mpmc_0_DDR2_DQS_n_pin<1>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQS_n_pin<2> LOC=AJ27 
+   |> [system.ucf(111)]: NET "mpmc_0_DDR2_DQS_n_pin<2>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQS_n_pin<2> LOC=AJ27  |> [system.ucf(111)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = DIFF_SSTL18_II;>
+   [system.ucf(111)]: NET "mpmc_0_DDR2_DQS_n_pin<2>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQS_n_pin<3> LOC=AA31 
+   |> [system.ucf(112)]: NET "mpmc_0_DDR2_DQS_n_pin<3>" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQS_n_pin<3> LOC=AA31  |> [system.ucf(112)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = DIFF_SSTL18_II;>
+   [system.ucf(112)]: NET "mpmc_0_DDR2_DQS_n_pin<3>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQS_n_pin<4> LOC=Y29  |>
+   [system.ucf(113)]: NET "mpmc_0_DDR2_DQS_n_pin<4>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQS_n_pin<4> LOC=Y29  |> [system.ucf(113)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = DIFF_SSTL18_II;>
+   [system.ucf(113)]: NET "mpmc_0_DDR2_DQS_n_pin<4>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQS_n_pin<5> LOC=E27  |>
+   [system.ucf(114)]: NET "mpmc_0_DDR2_DQS_n_pin<5>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQS_n_pin<5> LOC=E27  |> [system.ucf(114)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = DIFF_SSTL18_II;>
+   [system.ucf(114)]: NET "mpmc_0_DDR2_DQS_n_pin<5>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQS_n_pin<6> LOC=G28  |>
+   [system.ucf(115)]: NET "mpmc_0_DDR2_DQS_n_pin<6>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQS_n_pin<6> LOC=G28  |> [system.ucf(115)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = DIFF_SSTL18_II;>
+   [system.ucf(115)]: NET "mpmc_0_DDR2_DQS_n_pin<6>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <Net mpmc_0_DDR2_DQS_n_pin<7> LOC=H27  |>
+   [system.ucf(116)]: NET "mpmc_0_DDR2_DQS_n_pin<7>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<Net mpmc_0_DDR2_DQS_n_pin<7> LOC=H27  |> [system.ucf(116)]' could not be
+   found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = DIFF_SSTL18_II;>
+   [system.ucf(116)]: NET "mpmc_0_DDR2_DQS_n_pin<7>" not found.  Please verify
+   that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_sys_clk_pin = PERIOD
+   CLKIN_pin 100000 kHz;> [system.ucf(118)]: Unable to find an active 'TNM' or
+   'TimeGrp' constraint named 'CLKIN_pin'.
+
+Done...
+
+Processing BMM file "system.bmm" ...
+
+WARNING::53 - File 'system.bmm' is empty or has no BMM content.
+
+
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_FAST_MODE_BURSTXFER.I_STEER_ADDRESS_COUNTER/GEN_S_
+   H_SIZE_REG[0].I_SIZE_S_H_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_FAST_MODE_BURSTXFER.I_BUS_ADDRESS_COUNTER/GEN_S_H_
+   SIZE_REG[0].I_SIZE_S_H_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_FAST_MODE_BURSTXFER.I_BUS_ADDRESS_COUNTER/I_FLEX_A
+   DDR_CNTR/GEN_DWIDTH_64_128.LDMUX_FDRSE_4to7[7].I_FDRSE_BE4to7' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_FAST_MODE_BURSTXFER.I_BUS_ADDRESS_COUNTER/I_FLEX_A
+   DDR_CNTR/GEN_DWIDTH_64_128.LDMUX_FDRSE_4to7[6].I_FDRSE_BE4to7' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_FAST_MODE_BURSTXFER.I_BUS_ADDRESS_COUNTER/I_FLEX_A
+   DDR_CNTR/GEN_DWIDTH_64_128.LDMUX_FDRSE_4to7[5].I_FDRSE_BE4to7' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_FAST_MODE_BURSTXFER.I_BUS_ADDRESS_COUNTER/I_FLEX_A
+   DDR_CNTR/GEN_DWIDTH_64_128.LDMUX_FDRSE_4to7[4].I_FDRSE_BE4to7' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_FAST_MODE_BURSTXFER.I_BUS_ADDRESS_COUNTER/I_FLEX_A
+   DDR_CNTR/LDMUX_FDRSE_0to3[3].I_FDRSE_BE0to3' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_FAST_MODE_BURSTXFER.I_BUS_ADDRESS_COUNTER/I_FLEX_A
+   DDR_CNTR/LDMUX_FDRSE_0to3[2].I_FDRSE_BE0to3' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_FAST_MODE_BURSTXFER.I_BUS_ADDRESS_COUNTER/I_FLEX_A
+   DDR_CNTR/LDMUX_FDRSE_0to3[1].I_FDRSE_BE0to3' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_FAST_MODE_BURSTXFER.I_BUS_ADDRESS_COUNTER/I_FLEX_A
+   DDR_CNTR/LDMUX_FDRSE_0to3[0].I_FDRSE_BE0to3' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/I_DECODER/GEN_S_H_ADDR_REG[0].I_ADDR_S_H_REG' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/I_DECODER/GEN_S_H_ADDR_REG[1].I_ADDR_S_H_REG' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/I_DECODER/GEN_S_H_ADDR_REG[2].I_ADDR_S_H_REG' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/I_DECODER/GEN_CE_ASSIGNMENTS[0].GEN_USER_CE.GEN_ALL_CE
+   s[0].I_BKend_CE_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/I_DECODER/GEN_CE_ASSIGNMENTS[0].GEN_USER_CE.GEN_ALL_CE
+   s[0].I_BKend_RDCE_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/I_DECODER/GEN_CE_ASSIGNMENTS[0].GEN_USER_CE.GEN_ALL_CE
+   s[0].I_BKend_WRCE_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/I_DECODER/GEN_CE_ASSIGNMENTS[1].GEN_USER_CE.GEN_ALL_CE
+   s[1].I_BKend_CE_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/I_DECODER/GEN_CE_ASSIGNMENTS[1].GEN_USER_CE.GEN_ALL_CE
+   s[1].I_BKend_RDCE_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/I_DECODER/GEN_CE_ASSIGNMENTS[1].GEN_USER_CE.GEN_ALL_CE
+   s[1].I_BKend_WRCE_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/I_DECODER/GEN_CE_ASSIGNMENTS[2].GEN_USER_CE.GEN_ALL_CE
+   s[2].I_BKend_CE_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/I_DECODER/GEN_CE_ASSIGNMENTS[2].GEN_USER_CE.GEN_ALL_CE
+   s[2].I_BKend_RDCE_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/I_DECODER/GEN_CE_ASSIGNMENTS[2].GEN_USER_CE.GEN_ALL_CE
+   s[2].I_BKend_WRCE_REG' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/I_DECODER/I_CS_SIZE2_REG0' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/I_DECODER/I_CS_SIZE2_REG1' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/I_DECODER/I_CS_SIZE2_REG2' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_EQL_TO_32_ADDR.REG_ADDR1_INPUT[28].I_ADDR_REG' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_EQL_TO_32_ADDR.REG_ADDR1_INPUT[27].I_ADDR_REG' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_EQL_TO_32_ADDR.REG_ADDR1_INPUT[26].I_ADDR_REG' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_EQL_TO_32_ADDR.REG_ADDR1_INPUT[25].I_ADDR_REG' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_EQL_TO_32_ADDR.REG_ADDR1_INPUT[24].I_ADDR_REG' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_EQL_TO_32_ADDR.REG_ADDR1_INPUT[23].I_ADDR_REG' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_EQL_TO_32_ADDR.REG_ADDR1_INPUT[22].I_ADDR_REG' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_EQL_TO_32_ADDR.REG_ADDR1_INPUT[21].I_ADDR_REG' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_EQL_TO_32_ADDR.REG_ADDR1_INPUT[20].I_ADDR_REG' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_EQL_TO_32_ADDR.REG_ADDR1_INPUT[19].I_ADDR_REG' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_sl
+   ave/I_SLAVE_ATTACHMENT/GEN_EQL_TO_32_ADDR.REG_ADDR1_INPUT[18].I_ADDR_REG' has
+   unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/comp_plbv46_ma
+   ster/I_RD_CONTROL/I_RD_ABORT_REG' has unconnected output pin
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[
+   0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP" of type "RAMB16".  This attribute
+   will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[
+   1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP" of type "RAMB16".  This attribute
+   will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[
+   2].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP" of type "RAMB16".  This attribute
+   will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[
+   0].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP" of type "RAMB16".  This attribute
+   will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[
+   1].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP" of type "RAMB16".  This attribute
+   will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[
+   2].ram.r/v4_noinit.ram/SDP.SINGLE_PRIM.SDP" of type "RAMB16".  This attribute
+   will be ignored.
+WARNING:NgdBuild:443 - SFF primitive
+   'mpmc_0/mpmc_0/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_cal
+   ib_0/gen_rden[1].u_calib_rden_r' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'mpmc_0/mpmc_0/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_cal
+   ib_0/gen_rden[2].u_calib_rden_r' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'mpmc_0/mpmc_0/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_cal
+   ib_0/gen_rden[3].u_calib_rden_r' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'mpmc_0/mpmc_0/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_cal
+   ib_0/gen_rden[4].u_calib_rden_r' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'mpmc_0/mpmc_0/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_cal
+   ib_0/gen_rden[5].u_calib_rden_r' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'mpmc_0/mpmc_0/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_cal
+   ib_0/gen_rden[6].u_calib_rden_r' has unconnected output pin
+WARNING:NgdBuild:443 - SFF primitive
+   'mpmc_0/mpmc_0/mpmc_core_0/gen_v5_ddr2_phy.mpmc_phy_if_0/u_phy_io_0/u_phy_cal
+   ib_0/gen_rden[7].u_calib_rden_r' has unconnected output pin
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[0].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[3].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[0].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[2].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[0].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[1].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[0].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[0].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[1].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[3].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[1].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[2].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[1].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[1].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[1].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[0].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[2].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[3].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[2].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[2].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[2].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[1].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[2].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[0].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[3].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[3].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[3].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[2].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[3].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[1].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[3].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[0].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[4].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[3].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[4].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[2].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[4].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[1].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[4].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[0].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[5].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[3].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[5].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[2].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[5].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[1].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[5].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[0].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[6].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[3].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[6].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[2].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[6].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[1].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[6].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[0].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[7].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[3].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[7].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[2].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[7].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[1].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_read_fifos[7].gen_fifos.mp
+   mc_read_fifo_0/gen_fifos_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_br
+   ams[0].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[0].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[3].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[0].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[2].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[0].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[1].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[0].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[0].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[1].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[3].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[1].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[2].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[1].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[1].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[1].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[0].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[2].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[3].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[2].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[2].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[2].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[1].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[2].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[0].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[3].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[3].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[3].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[2].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[3].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[1].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[3].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[0].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[4].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[3].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[4].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[2].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[4].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[1].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[4].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[0].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[5].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[3].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[5].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[2].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[5].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[1].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[5].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[0].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[6].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[3].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[6].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[2].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[6].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[1].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[6].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[0].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[7].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[3].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[7].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[2].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[7].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[1].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:486 - Attribute "INIT_FILE" is not allowed on symbol
+   "mpmc_0/mpmc_core_0/gen_paths.mpmc_data_path_0/gen_write_fifos[7].gen_fifos.m
+   pmc_write_fifo_0/gen_fifo_bram.mpmc_bram_fifo_0/gen_brams_normal.gen_v4.gen_b
+   rams[0].bram" of type "RAMB16".  This attribute will be ignored.
+WARNING:NgdBuild:452 - logical net 'N100' has no driver
+WARNING:NgdBuild:452 - logical net 'N101' has no driver
+WARNING:NgdBuild:452 - logical net 'N102' has no driver
+WARNING:NgdBuild:452 - logical net 'N103' has no driver
+WARNING:NgdBuild:452 - logical net 'N104' has no driver
+WARNING:NgdBuild:452 - logical net 'N105' has no driver
+WARNING:NgdBuild:452 - logical net 'N106' has no driver
+WARNING:NgdBuild:452 - logical net 'N107' has no driver
+WARNING:NgdBuild:452 - logical net 'N108' has no driver
+WARNING:NgdBuild:452 - logical net 'N109' has no driver
+WARNING:NgdBuild:452 - logical net 'N110' has no driver
+WARNING:NgdBuild:452 - logical net 'N111' has no driver
+WARNING:NgdBuild:452 - logical net 'N112' has no driver
+WARNING:NgdBuild:452 - logical net 'N113' has no driver
+WARNING:NgdBuild:452 - logical net 'N114' has no driver
+WARNING:NgdBuild:452 - logical net 'N115' has no driver
+WARNING:NgdBuild:452 - logical net 'N116' has no driver
+WARNING:NgdBuild:452 - logical net 'N117' has no driver
+WARNING:NgdBuild:452 - logical net 'N118' has no driver
+WARNING:NgdBuild:452 - logical net 'N119' has no driver
+WARNING:NgdBuild:452 - logical net 'N120' has no driver
+WARNING:NgdBuild:452 - logical net 'N121' has no driver
+WARNING:NgdBuild:452 - logical net 'N122' has no driver
+WARNING:NgdBuild:452 - logical net 'N123' has no driver
+WARNING:NgdBuild:452 - logical net 'N124' has no driver
+WARNING:NgdBuild:452 - logical net 'N125' has no driver
+WARNING:NgdBuild:452 - logical net 'N126' has no driver
+WARNING:NgdBuild:452 - logical net 'N127' has no driver
+WARNING:NgdBuild:452 - logical net 'N128' has no driver
+WARNING:NgdBuild:452 - logical net 'N129' has no driver
+WARNING:NgdBuild:452 - logical net 'N130' has no driver
+WARNING:NgdBuild:452 - logical net 'N131' has no driver
+WARNING:NgdBuild:452 - logical net 'N132' has no driver
+WARNING:NgdBuild:452 - logical net 'N133' has no driver
+WARNING:NgdBuild:452 - logical net 'N134' has no driver
+WARNING:NgdBuild:452 - logical net 'N135' has no driver
+WARNING:NgdBuild:452 - logical net 'N136' has no driver
+WARNING:NgdBuild:452 - logical net 'N137' has no driver
+WARNING:NgdBuild:452 - logical net 'N138' has no driver
+WARNING:NgdBuild:452 - logical net 'N139' has no driver
+WARNING:NgdBuild:452 - logical net 'N140' has no driver
+WARNING:NgdBuild:452 - logical net 'N141' has no driver
+WARNING:NgdBuild:452 - logical net 'N142' has no driver
+WARNING:NgdBuild:452 - logical net 'N143' has no driver
+WARNING:NgdBuild:452 - logical net 'N144' has no driver
+WARNING:NgdBuild:452 - logical net 'N145' has no driver
+WARNING:NgdBuild:452 - logical net 'N146' has no driver
+WARNING:NgdBuild:452 - logical net 'N147' has no driver
+WARNING:NgdBuild:452 - logical net 'N148' has no driver
+WARNING:NgdBuild:452 - logical net 'N149' has no driver
+WARNING:NgdBuild:452 - logical net 'N150' has no driver
+WARNING:NgdBuild:452 - logical net 'N151' has no driver
+WARNING:NgdBuild:452 - logical net 'N152' has no driver
+WARNING:NgdBuild:452 - logical net 'N153' has no driver
+WARNING:NgdBuild:452 - logical net 'N154' has no driver
+WARNING:NgdBuild:452 - logical net 'N155' has no driver
+WARNING:NgdBuild:452 - logical net 'N156' has no driver
+WARNING:NgdBuild:452 - logical net 'N157' has no driver
+WARNING:NgdBuild:452 - logical net 'N158' has no driver
+WARNING:NgdBuild:452 - logical net 'N159' has no driver
+WARNING:NgdBuild:452 - logical net 'N160' has no driver
+WARNING:NgdBuild:452 - logical net 'N161' has no driver
+WARNING:NgdBuild:452 - logical net 'N82' has no driver
+WARNING:NgdBuild:452 - logical net 'N83' has no driver
+WARNING:NgdBuild:452 - logical net 'N84' has no driver
+WARNING:NgdBuild:452 - logical net 'N85' has no driver
+WARNING:NgdBuild:452 - logical net 'N86' has no driver
+WARNING:NgdBuild:452 - logical net 'N87' has no driver
+WARNING:NgdBuild:452 - logical net 'N88' has no driver
+WARNING:NgdBuild:452 - logical net 'N89' has no driver
+WARNING:NgdBuild:452 - logical net 'N90' has no driver
+WARNING:NgdBuild:452 - logical net 'N91' has no driver
+WARNING:NgdBuild:452 - logical net 'N92' has no driver
+WARNING:NgdBuild:452 - logical net 'N93' has no driver
+WARNING:NgdBuild:452 - logical net 'N94' has no driver
+WARNING:NgdBuild:452 - logical net 'N95' has no driver
+WARNING:NgdBuild:452 - logical net 'N96' has no driver
+WARNING:NgdBuild:452 - logical net 'N97' has no driver
+WARNING:NgdBuild:452 - logical net 'N98' has no driver
+WARNING:NgdBuild:452 - logical net 'N99' has no driver
+WARNING:NgdBuild:452 - logical net
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/sig_trn_terrfw
+   d_n' has no driver
+WARNING:NgdBuild:452 - logical net
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/sig_trn_rerrfw
+   d_n' has no driver
+WARNING:NgdBuild:452 - logical net
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/sig_trn_tsrc_d
+   sc_n' has no driver
+WARNING:NgdBuild:452 - logical net
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/sig_trn_tbuf_a
+   v<3>' has no driver
+WARNING:NgdBuild:452 - logical net
+   'plbv46_pcie_0/plbv46_pcie_0/gen_pcie_bridge_64.pcie_bridge_64/sig_trn_trem_n
+   <4>' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:   172
+  Number of warnings: 286
+
+Total REAL time to NGDBUILD completion:  45 sec
+Total CPU time to NGDBUILD completion:   44 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "system.bld"...
+ERROR:Xflow - Program ngdbuild returned error code 2. Aborting flow execution...

@@ -283,3 +283,8 @@ BEGIN plb_v46
  PORT SYS_Rst = sys_bus_reset
 END
 
+BEGIN system_cache
+ PARAMETER INSTANCE = system_cache_0
+ PARAMETER HW_VER = 2.00.b
+END
+

@@ -1,0 +1,71 @@
+###############################################################################
+#
+# File:  plbv46_pcie_wrapper.ucf
+#
+# Use this file only with the device listed below.  Any other
+# combination is invalid.  Do not modify this file except in
+# regions designated for User constraints.
+#
+# Copyright (c) 2008 Xilinx, Inc.  All rights reserved.
+#
+###############################################################################
+
+
+
+
+###############################################################################
+# Define Device, Package And Speed Grade
+###############################################################################
+
+
+# CONFIG PART = XC5VLX50T-FF1136-1
+
+
+################################################################################ 
+# Timing constraints
+################################################################################ 
+
+
+NET "pcie_bridge/*sig_pulse_reset_n" TIG;
+NET "pcie_bridge/*core_clk"    PERIOD = 4 ns;
+NET "pcie_bridge/*Bridge_Clk"  PERIOD = 8 ns;
+
+
+###############################################################################
+# Physical Constraints
+###############################################################################
+
+
+# BlockRAM placement
+INST "pcie_bridge/*pcie_mim_wrapper_i/bram_tl_tx/generate_tdp2[1].ram_tdp2_inst"  LOC = RAMB36_X1Y9;
+INST "pcie_bridge/*pcie_mim_wrapper_i/bram_tl_rx/generate_tdp2[1].ram_tdp2_inst"  LOC = RAMB36_X1Y8;
+INST "pcie_bridge/*pcie_mim_wrapper_i/bram_tl_tx/generate_tdp2[0].ram_tdp2_inst"  LOC = RAMB36_X1Y7;
+INST "pcie_bridge/*pcie_mim_wrapper_i/bram_tl_rx/generate_tdp2[0].ram_tdp2_inst"  LOC = RAMB36_X1Y6;
+INST "pcie_bridge/*pcie_mim_wrapper_i/bram_retry/generate_sdp.ram_sdp_inst"         LOC = RAMB36_X1Y5;
+
+
+# Timing critical placements
+INST "pcie_bridge/*tx_bridge/shift_pipe1"                 LOC = "SLICE_X59Y36";
+INST "pcie_bridge/*arb_inst/completion_available"         LOC = "SLICE_X58Y26";
+INST "pcie_bridge/*management_interface/mgmt_rdata_d1_3"  LOC = "SLICE_X59Y25";
+
+
+#################################################################################
+## Clock domain crossing constraints
+#################################################################################
+#
+##         (Copy and paste in system.ucf when using asyncronously)
+#
+# NET "pcie_bridge/*MPLB_Clk"      PERIOD =  <Add period constraint here>;
+# NET "pcie_bridge/*SPLB_Clk"      PERIOD =  <Add period constraint here>;
+#
+# NET "pcie_bridge/*SPLB_Clk"      TNM_NET = "SPLB_Clk";
+# NET "pcie_bridge/*Bridge_Clk"    TNM_NET = "Bridge_Clk";
+#
+## Timing constraints between clock domain boundaries
+#
+# TIMESPEC "TS_PLB_PCIe" = FROM "SPLB_Clk" TO "Bridge_Clk" 8 ns datapathonly;
+# TIMESPEC "TS_PCIe_PLB" = FROM "Bridge_Clk" TO "SPLB_Clk" <Add period constraint here> datapathonly;
+#
+
+

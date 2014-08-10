@@ -1,0 +1,148 @@
+
+ PARAMETER VERSION = 2.1.0
+
+
+ PORT CLKIN_pin = net_CLKIN_pin, DIR = I, SIGIS = CLK
+ PORT RST_pin = net_RST_pin, DIR = I, SIGIS = RST
+ PORT PLBSYS_Rst_pin = net_PLBSYS_Rst_pin, DIR = I, SIGIS = RST
+ PORT mpmc_0_DDR2_Clk_pin = mpmc_0_DDR2_Clk, DIR = O, SIGIS = CLK, VEC = [1:0]
+ PORT mpmc_0_DDR2_Clk_n_pin = mpmc_0_DDR2_Clk_n, DIR = O, SIGIS = CLK, VEC = [1:0]
+ PORT mpmc_0_DDR2_CE_pin = mpmc_0_DDR2_CE, DIR = O
+ PORT mpmc_0_DDR2_CS_n_pin = mpmc_0_DDR2_CS_n, DIR = O
+ PORT mpmc_0_DDR2_ODT_pin = mpmc_0_DDR2_ODT, DIR = O
+ PORT mpmc_0_DDR2_RAS_n_pin = mpmc_0_DDR2_RAS_n, DIR = O
+ PORT mpmc_0_DDR2_CAS_n_pin = mpmc_0_DDR2_CAS_n, DIR = O
+ PORT mpmc_0_DDR2_WE_n_pin = mpmc_0_DDR2_WE_n, DIR = O
+ PORT mpmc_0_DDR2_BankAddr_pin = mpmc_0_DDR2_BankAddr, DIR = O, VEC = [1:0]
+ PORT mpmc_0_DDR2_Addr_pin = mpmc_0_DDR2_Addr, DIR = O, VEC = [12:0]
+ PORT mpmc_0_DDR2_DQ = mpmc_0_DDR2_DQ, DIR = IO, VEC = [63:0]
+ PORT mpmc_0_DDR2_DM_pin = mpmc_0_DDR2_DM, DIR = O, VEC = [7:0]
+ PORT mpmc_0_DDR2_DQS = mpmc_0_DDR2_DQS, DIR = IO, VEC = [7:0]
+ PORT mpmc_0_DDR2_DQS_n = mpmc_0_DDR2_DQS_n, DIR = IO, VEC = [7:0]
+ PORT plbv46_pcie_0_REFCLK_pin = plbv46_pcie_0_REFCLK, DIR = I
+ PORT plbv46_pcie_0_Bridge_Clk_pin = plbv46_pcie_0_Bridge_Clk, DIR = O
+ PORT plbv46_pcie_0_RXN_pin = plbv46_pcie_0_RXN, DIR = I
+ PORT plbv46_pcie_0_RXP_pin = plbv46_pcie_0_RXP, DIR = I
+ PORT plbv46_pcie_0_TXN_pin = plbv46_pcie_0_TXN, DIR = O
+ PORT plbv46_pcie_0_TXP_pin = plbv46_pcie_0_TXP, DIR = O
+ PORT plbv46_pcie_0_MSI_request_pin = plbv46_pcie_0_MSI_request, DIR = I, SIGIS = INTERRUPT, SENSITIVITY = LEVEL_HIGH
+
+
+BEGIN nfa_accept_samples_generic_hw_top
+ PARAMETER INSTANCE = nfa_accept_samples_generic_hw_top_0
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE indices = plb_v46_0
+ BUS_INTERFACE sample_buffer = plb_v46_0
+ BUS_INTERFACE SPLB_SLV0 = plb_v46_0
+ BUS_INTERFACE nfa_finals_buckets = nfa_accept_samples_generic_hw_top_0_nfa_finals_buckets
+ BUS_INTERFACE nfa_forward_buckets = nfa_accept_samples_generic_hw_top_0_nfa_forward_buckets
+ BUS_INTERFACE nfa_initials_buckets = nfa_accept_samples_generic_hw_top_0_nfa_initials_buckets
+ PORT aclk = clock_generator_0_CLKOUT0
+ PORT aresetn = plb_v46_0_PLB_Rst
+ PORT nfa_finals_buckets_NPI_clk = clock_generator_0_CLKOUT0
+ PORT nfa_finals_buckets_NPI_reset = plb_v46_0_PLB_Rst
+ PORT nfa_forward_buckets_NPI_clk = clock_generator_0_CLKOUT0
+ PORT nfa_forward_buckets_NPI_reset = plb_v46_0_PLB_Rst
+ PORT nfa_initials_buckets_NPI_clk = clock_generator_0_CLKOUT0
+ PORT nfa_initials_buckets_NPI_reset = plb_v46_0_PLB_Rst
+END
+
+BEGIN plbv46_pcie
+ PARAMETER INSTANCE = plbv46_pcie_0
+ PARAMETER HW_VER = 4.07.a
+ BUS_INTERFACE SPLB = plb_v46_0
+ BUS_INTERFACE MPLB = plb_v46_0
+ PORT REFCLK = plbv46_pcie_0_REFCLK
+ PORT Bridge_Clk = plbv46_pcie_0_Bridge_Clk
+ PORT RXN = plbv46_pcie_0_RXN
+ PORT RXP = plbv46_pcie_0_RXP
+ PORT TXN = plbv46_pcie_0_TXN
+ PORT TXP = plbv46_pcie_0_TXP
+ PORT MSI_request = plbv46_pcie_0_MSI_request
+END
+
+BEGIN plb_v46
+ PARAMETER INSTANCE = plb_v46_0
+ PARAMETER HW_VER = 1.05.a
+ PORT PLB_Clk = clock_generator_0_CLKOUT0
+ PORT SYS_Rst = net_PLBSYS_Rst_pin
+END
+
+BEGIN mpmc
+ PARAMETER INSTANCE = mpmc_0
+ PARAMETER HW_VER = 6.06.a
+ PARAMETER C_NUM_PORTS = 8
+ PARAMETER C_MPMC_BASEADDR = 0x00000000
+ PARAMETER C_MPMC_HIGHADDR = 0x0FFFFFFF
+ PARAMETER C_MEM_PARTNO = MT4HTF3264H-53E
+ PARAMETER C_PIM1_BASETYPE = 4
+ PARAMETER C_PIM2_BASETYPE = 4
+ PARAMETER C_PIM3_BASETYPE = 4
+ PARAMETER C_PIM4_BASETYPE = 4
+ PARAMETER C_PIM5_BASETYPE = 4
+ PARAMETER C_PIM6_BASETYPE = 4
+ PARAMETER C_PIM7_BASETYPE = 4
+ PARAMETER C_MEM_ODT_TYPE = 1
+ BUS_INTERFACE SPLB0 = plb_v46_0
+ BUS_INTERFACE MPMC_PIM1 = nfa_accept_samples_generic_hw_top_0_nfa_finals_buckets
+ BUS_INTERFACE MPMC_PIM2 = nfa_accept_samples_generic_hw_top_0_nfa_forward_buckets
+ BUS_INTERFACE MPMC_PIM3 = nfa_accept_samples_generic_hw_top_0_nfa_initials_buckets
+ BUS_INTERFACE MPMC_PIM4 = nfa_accept_samples_generic_hw_top_1_nfa_finals_buckets
+ BUS_INTERFACE MPMC_PIM5 = nfa_accept_samples_generic_hw_top_1_nfa_forward_buckets
+ BUS_INTERFACE MPMC_PIM6 = nfa_accept_samples_generic_hw_top_1_nfa_initials_buckets
+ PORT MPMC_Clk0 = clock_generator_0_CLKOUT0
+ PORT MPMC_Clk0_DIV2 = clock_generator_0_CLKOUT1
+ PORT MPMC_Clk90 = clock_generator_0_CLKOUT2
+ PORT MPMC_Clk_200MHz = clock_generator_0_CLKOUT3
+ PORT MPMC_Rst = plb_v46_0_PLB_Rst
+ PORT DDR2_Clk = mpmc_0_DDR2_Clk
+ PORT DDR2_Clk_n = mpmc_0_DDR2_Clk_n
+ PORT DDR2_CE = mpmc_0_DDR2_CE
+ PORT DDR2_CS_n = mpmc_0_DDR2_CS_n
+ PORT DDR2_ODT = mpmc_0_DDR2_ODT
+ PORT DDR2_RAS_n = mpmc_0_DDR2_RAS_n
+ PORT DDR2_CAS_n = mpmc_0_DDR2_CAS_n
+ PORT DDR2_WE_n = mpmc_0_DDR2_WE_n
+ PORT DDR2_BankAddr = mpmc_0_DDR2_BankAddr
+ PORT DDR2_Addr = mpmc_0_DDR2_Addr
+ PORT DDR2_DQ = mpmc_0_DDR2_DQ
+ PORT DDR2_DM = mpmc_0_DDR2_DM
+ PORT DDR2_DQS = mpmc_0_DDR2_DQS
+ PORT DDR2_DQS_n = mpmc_0_DDR2_DQS_n
+END
+
+BEGIN nfa_accept_samples_generic_hw_top
+ PARAMETER INSTANCE = nfa_accept_samples_generic_hw_top_1
+ PARAMETER HW_VER = 1.00.a
+ BUS_INTERFACE nfa_finals_buckets = nfa_accept_samples_generic_hw_top_1_nfa_finals_buckets
+ BUS_INTERFACE nfa_forward_buckets = nfa_accept_samples_generic_hw_top_1_nfa_forward_buckets
+ BUS_INTERFACE nfa_initials_buckets = nfa_accept_samples_generic_hw_top_1_nfa_initials_buckets
+ PORT aclk = clock_generator_0_CLKOUT0
+ PORT nfa_finals_buckets_NPI_clk = clock_generator_0_CLKOUT0
+ PORT nfa_forward_buckets_NPI_clk = clock_generator_0_CLKOUT0
+ PORT nfa_initials_buckets_NPI_clk = clock_generator_0_CLKOUT0
+ PORT aresetn = plb_v46_0_PLB_Rst
+ PORT nfa_finals_buckets_NPI_reset = plb_v46_0_PLB_Rst
+ PORT nfa_forward_buckets_NPI_reset = plb_v46_0_PLB_Rst
+ PORT nfa_initials_buckets_NPI_reset = plb_v46_0_PLB_Rst
+END
+
+BEGIN clock_generator
+ PARAMETER INSTANCE = clock_generator_0
+ PARAMETER HW_VER = 4.03.a
+ PARAMETER C_CLKIN_FREQ = 100000000
+ PARAMETER C_CLKFBOUT_FREQ = 0
+ PARAMETER C_CLKOUT0_FREQ = 125000000
+ PARAMETER C_CLKOUT1_FREQ = 62500000
+ PARAMETER C_CLKOUT1_PHASE = 0
+ PARAMETER C_CLKOUT2_FREQ = 125000000
+ PARAMETER C_CLKOUT2_PHASE = 90
+ PARAMETER C_CLKOUT3_FREQ = 200000000
+ PORT CLKOUT0 = clock_generator_0_CLKOUT0
+ PORT CLKOUT1 = clock_generator_0_CLKOUT1
+ PORT CLKIN = net_CLKIN_pin
+ PORT RST = net_RST_pin
+ PORT CLKOUT2 = clock_generator_0_CLKOUT2
+ PORT CLKOUT3 = clock_generator_0_CLKOUT3
+END
+
