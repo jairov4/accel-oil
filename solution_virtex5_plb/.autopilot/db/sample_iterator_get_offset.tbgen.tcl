@@ -1,12 +1,10 @@
 set moduleName sample_iterator_get_offset
 set isCombinational 0
 set isDatapathOnly 0
-set isPipelined 1
-set pipeline_type function
+set isPipelined 0
+set pipeline_type none
 set FunctionProtocol ap_ctrl_hs
 set isOneStateSeq 0
-set pipeII 1
-set pipeLatency 4
 set C_modelName sample_iterator_get_offset
 set C_modelType { int 32 }
 set C_modelArgList { 
@@ -24,7 +22,7 @@ set C_modelArgMapList {[
  	{ "Name" : "sample_length", "interface" : "wire", "bitwidth" : 16} , 
  	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 32} ]}
 # RTL Port declarations: 
-set portNum 21
+set portNum 20
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -32,6 +30,8 @@ set portList {
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
+	{ i_index sc_in sc_lv 16 signal 0 } 
+	{ i_sample sc_in sc_lv 16 signal 1 } 
 	{ indices_req_din sc_out sc_logic 1 signal 2 } 
 	{ indices_req_full_n sc_in sc_logic 1 signal 2 } 
 	{ indices_req_write sc_out sc_logic 1 signal 2 } 
@@ -41,9 +41,6 @@ set portList {
 	{ indices_datain sc_in sc_lv 56 signal 2 } 
 	{ indices_dataout sc_out sc_lv 56 signal 2 } 
 	{ indices_size sc_out sc_lv 32 signal 2 } 
-	{ ap_ce sc_in sc_logic 1 ce -1 } 
-	{ i_index sc_in sc_lv 16 signal 0 } 
-	{ i_sample sc_in sc_lv 16 signal 1 } 
 	{ sample_buffer_size sc_in sc_lv 32 signal 3 } 
 	{ sample_length sc_in sc_lv 16 signal 4 } 
 	{ ap_return sc_out sc_lv 32 signal -1 } 
@@ -55,6 +52,8 @@ set NewPortList {[
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
+ 	{ "name": "i_index", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "i_index", "role": "default" }} , 
+ 	{ "name": "i_sample", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "i_sample", "role": "default" }} , 
  	{ "name": "indices_req_din", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "indices", "role": "req_din" }} , 
  	{ "name": "indices_req_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "indices", "role": "req_full_n" }} , 
  	{ "name": "indices_req_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "indices", "role": "req_write" }} , 
@@ -64,9 +63,6 @@ set NewPortList {[
  	{ "name": "indices_datain", "direction": "in", "datatype": "sc_lv", "bitwidth":56, "type": "signal", "bundle":{"name": "indices", "role": "datain" }} , 
  	{ "name": "indices_dataout", "direction": "out", "datatype": "sc_lv", "bitwidth":56, "type": "signal", "bundle":{"name": "indices", "role": "dataout" }} , 
  	{ "name": "indices_size", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "indices", "role": "size" }} , 
- 	{ "name": "ap_ce", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "ce", "bundle":{"name": "ap_ce", "role": "default" }} , 
- 	{ "name": "i_index", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "i_index", "role": "default" }} , 
- 	{ "name": "i_sample", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "i_sample", "role": "default" }} , 
  	{ "name": "sample_buffer_size", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "sample_buffer_size", "role": "default" }} , 
  	{ "name": "sample_length", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "sample_length", "role": "default" }} , 
  	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}

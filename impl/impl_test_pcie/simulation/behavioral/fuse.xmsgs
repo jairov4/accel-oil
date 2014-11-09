@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_blk_ll_credit.v" Line 285: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_blk_ll_credit</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_blk_ll_credit.v" Line 286: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_blk_ll_credit</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_blk_ll_credit.v" Line 287: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_blk_ll_credit</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_blk_ll_credit.v" Line 288: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_blk_ll_credit</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_blk_ll_credit.v" Line 289: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_blk_ll_credit</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_blk_ll_credit.v" Line 290: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_blk_ll_credit</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_blk_ll_credit.v" Line 291: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_blk_ll_credit</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_blk_ll_credit.v" Line 292: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_blk_ll_credit</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_blk_ll_credit.v" Line 293: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_blk_ll_credit</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_blk_ll_credit.v" Line 294: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_blk_ll_credit</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_blk_ll_credit.v" Line 295: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_blk_ll_credit</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_blk_ll_credit.v" Line 296: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_blk_ll_credit</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_blk_ll_credit.v" Line 297: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_blk_ll_credit</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_blk_ll_credit.v" Line 298: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_blk_ll_credit</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_blk_ll_credit.v" Line 299: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_blk_ll_credit</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_blk_ll_credit.v" Line 301: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_blk_ll_credit</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/bram_common.v" Line 84: Parameter declaration becomes local in <arg fmt="%s" index="1">bram_common</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/bram_common.v" Line 91: Parameter declaration becomes local in <arg fmt="%s" index="1">bram_common</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_clocking.v" Line 101: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_clocking</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 106: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 107: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 204: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 205: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 206: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 207: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 213: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 214: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 215: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 216: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 217: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 218: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 224: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 225: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 226: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 227: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 228: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 229: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 230: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 231: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 232: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 233: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 234: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 235: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 236: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 237: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 238: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 239: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 244: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 245: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 246: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 247: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 248: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 249: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 250: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 255: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/tx_sync_gtx.v" Line 256: Parameter declaration becomes local in <arg fmt="%s" index="1">TX_SYNC</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_mim_wrapper.v" Line 110: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_mim_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_mim_wrapper.v" Line 111: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_mim_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_mim_wrapper.v" Line 119: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_mim_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_mim_wrapper.v" Line 124: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_mim_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 594: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 595: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 596: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 597: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 599: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 603: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 650: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 656: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 657: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 662: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 663: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 664: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 665: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 669: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 670: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 677: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 681: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 685: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 689: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 694: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 695: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 696: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 697: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 701: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 702: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 705: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 706: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 707: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 709: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 710: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 711: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 712: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 713: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 714: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 715: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 716: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 717: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 719: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 720: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 721: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 722: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 723: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 724: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 725: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 726: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 727: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 730: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 731: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 737: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 738: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 739: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 740: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 741: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 742: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 743: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 744: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 745: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 746: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 747: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 748: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 749: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 750: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 751: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 752: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 753: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 754: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 755: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 756: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 757: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 758: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 759: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 760: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 761: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 763: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 764: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 773: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 775: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 776: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 862: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 863: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 864: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 865: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 926: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 927: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 928: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 930: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 932: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 933: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 934: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 935: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 936: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 937: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 938: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 939: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 940: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 941: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 943: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 944: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 946: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 948: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 949: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 950: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 952: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 953: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 954: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 955: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 956: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 957: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 958: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 959: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 961: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 962: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 963: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 964: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 965: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 966: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 967: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 968: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 969: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 970: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 971: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 972: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 973: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 974: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 975: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 976: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 977: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 978: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 980: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 981: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 982: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 983: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 984: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 985: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 986: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 988: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 989: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/pcie_top.v" Line 990: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_top_wrapper</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/sync_fifo.v" Line 100: Parameter declaration becomes local in <arg fmt="%s" index="1">sync_fifo</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/ep_blk_plus_v1_13_wrap.v" Line 253: Parameter declaration becomes local in <arg fmt="%s" index="1">ep_blk_plus_v1_13_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/ep_blk_plus_v1_13_wrap.v" Line 254: Parameter declaration becomes local in <arg fmt="%s" index="1">ep_blk_plus_v1_13_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/ep_blk_plus_v1_13_wrap.v" Line 255: Parameter declaration becomes local in <arg fmt="%s" index="1">ep_blk_plus_v1_13_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/ep_blk_plus_v1_13_wrap.v" Line 256: Parameter declaration becomes local in <arg fmt="%s" index="1">ep_blk_plus_v1_13_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/ep_blk_plus_v1_13_wrap.v" Line 257: Parameter declaration becomes local in <arg fmt="%s" index="1">ep_blk_plus_v1_13_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/ep_blk_plus_v1_13_wrap.v" Line 258: Parameter declaration becomes local in <arg fmt="%s" index="1">ep_blk_plus_v1_13_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/block_plus_v1_13_a/hdl/verilog/ep_blk_plus_v1_13_wrap.v" Line 260: Parameter declaration becomes local in <arg fmt="%s" index="1">ep_blk_plus_v1_13_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/spartan6_pcie_v1_04_a/hdl/verilog/s6_pcie_v1_3_ep_wrap.v" Line 232: Parameter declaration becomes local in <arg fmt="%s" index="1">s6_pcie_v1_3_ep_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/spartan6_pcie_v1_04_a/hdl/verilog/s6_pcie_v1_3_ep_wrap.v" Line 233: Parameter declaration becomes local in <arg fmt="%s" index="1">s6_pcie_v1_3_ep_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/spartan6_pcie_v1_04_a/hdl/verilog/s6_pcie_v1_3_ep_wrap.v" Line 234: Parameter declaration becomes local in <arg fmt="%s" index="1">s6_pcie_v1_3_ep_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/spartan6_pcie_v1_04_a/hdl/verilog/s6_pcie_v1_3_ep_wrap.v" Line 235: Parameter declaration becomes local in <arg fmt="%s" index="1">s6_pcie_v1_3_ep_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/spartan6_pcie_v1_04_a/hdl/verilog/s6_pcie_v1_3_ep_wrap.v" Line 236: Parameter declaration becomes local in <arg fmt="%s" index="1">s6_pcie_v1_3_ep_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/spartan6_pcie_v1_04_a/hdl/verilog/s6_pcie_v1_3_ep_wrap.v" Line 237: Parameter declaration becomes local in <arg fmt="%s" index="1">s6_pcie_v1_3_ep_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_rx_valid_filter_v6.v" Line 85: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_RX_VALID_FILTER_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_rx_valid_filter_v6.v" Line 87: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_RX_VALID_FILTER_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_rx_valid_filter_v6.v" Line 88: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_RX_VALID_FILTER_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_rx_valid_filter_v6.v" Line 89: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_RX_VALID_FILTER_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_rx_valid_filter_v6.v" Line 90: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_RX_VALID_FILTER_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_rx_valid_filter_v6.v" Line 91: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_RX_VALID_FILTER_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_rx_valid_filter_v6.v" Line 93: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_RX_VALID_FILTER_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_rx_valid_filter_v6.v" Line 94: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_RX_VALID_FILTER_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_rx_valid_filter_v6.v" Line 95: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_RX_VALID_FILTER_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_rx_valid_filter_v6.v" Line 96: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_RX_VALID_FILTER_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_rx_valid_filter_v6.v" Line 107: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_RX_VALID_FILTER_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_rx_valid_filter_v6.v" Line 108: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_RX_VALID_FILTER_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_rx_valid_filter_v6.v" Line 109: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_RX_VALID_FILTER_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_rx_valid_filter_v6.v" Line 110: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_RX_VALID_FILTER_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/pcie_upconfig_fix_3451_v6.v" Line 85: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_upconfig_fix_3451_v6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_drp_chanalign_fix_3752_v6.v" Line 90: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_DRP_CHANALIGN_FIX_3752_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_drp_chanalign_fix_3752_v6.v" Line 91: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_DRP_CHANALIGN_FIX_3752_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_drp_chanalign_fix_3752_v6.v" Line 92: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_DRP_CHANALIGN_FIX_3752_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_drp_chanalign_fix_3752_v6.v" Line 93: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_DRP_CHANALIGN_FIX_3752_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_drp_chanalign_fix_3752_v6.v" Line 94: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_DRP_CHANALIGN_FIX_3752_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_drp_chanalign_fix_3752_v6.v" Line 95: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_DRP_CHANALIGN_FIX_3752_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_drp_chanalign_fix_3752_v6.v" Line 96: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_DRP_CHANALIGN_FIX_3752_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_drp_chanalign_fix_3752_v6.v" Line 97: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_DRP_CHANALIGN_FIX_3752_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_drp_chanalign_fix_3752_v6.v" Line 98: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_DRP_CHANALIGN_FIX_3752_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_drp_chanalign_fix_3752_v6.v" Line 99: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_DRP_CHANALIGN_FIX_3752_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/gtx_drp_chanalign_fix_3752_v6.v" Line 100: Parameter declaration becomes local in <arg fmt="%s" index="1">GTX_DRP_CHANALIGN_FIX_3752_V6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/pcie_reset_delay_v6.v" Line 76: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_reset_delay_v6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/pcie_pipe_misc_v6.v" Line 90: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_pipe_misc_v6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/pcie_pipe_lane_v6.v" Line 103: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_pipe_lane_v6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/pcie_pipe_v6.v" Line 325: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_pipe_v6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/pcie_clocking_v6.v" Line 86: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_clocking_v6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/pcie_brams_v6.v" Line 120: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_brams_v6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/pcie_gtx_v6.v" Line 216: Parameter declaration becomes local in <arg fmt="%s" index="1">pcie_gtx_v6</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/v6_pcie_v1_7_ep_wrap.v" Line 478: Parameter declaration becomes local in <arg fmt="%s" index="1">v6_pcie_v1_7_ep_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/v6_pcie_v1_7_ep_wrap.v" Line 479: Parameter declaration becomes local in <arg fmt="%s" index="1">v6_pcie_v1_7_ep_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/v6_pcie_v1_7_ep_wrap.v" Line 480: Parameter declaration becomes local in <arg fmt="%s" index="1">v6_pcie_v1_7_ep_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/v6_pcie_v1_7_ep_wrap.v" Line 481: Parameter declaration becomes local in <arg fmt="%s" index="1">v6_pcie_v1_7_ep_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/v6_pcie_v1_7_ep_wrap.v" Line 482: Parameter declaration becomes local in <arg fmt="%s" index="1">v6_pcie_v1_7_ep_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/v6_pcie_v1_7_ep_wrap.v" Line 483: Parameter declaration becomes local in <arg fmt="%s" index="1">v6_pcie_v1_7_ep_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/v6_pcie_v1_7_ep_wrap.v" Line 485: Parameter declaration becomes local in <arg fmt="%s" index="1">v6_pcie_v1_7_ep_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/v6_pcie_v1_7_rp_wrap.v" Line 494: Parameter declaration becomes local in <arg fmt="%s" index="1">v6_pcie_v1_7_rp_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/v6_pcie_v1_7_rp_wrap.v" Line 495: Parameter declaration becomes local in <arg fmt="%s" index="1">v6_pcie_v1_7_rp_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/v6_pcie_v1_7_rp_wrap.v" Line 496: Parameter declaration becomes local in <arg fmt="%s" index="1">v6_pcie_v1_7_rp_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/v6_pcie_v1_7_rp_wrap.v" Line 497: Parameter declaration becomes local in <arg fmt="%s" index="1">v6_pcie_v1_7_rp_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/v6_pcie_v1_7_rp_wrap.v" Line 498: Parameter declaration becomes local in <arg fmt="%s" index="1">v6_pcie_v1_7_rp_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/v6_pcie_v1_7_rp_wrap.v" Line 499: Parameter declaration becomes local in <arg fmt="%s" index="1">v6_pcie_v1_7_rp_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/virtex6_pcie_v1_06_a/hdl/verilog/v6_pcie_v1_7_rp_wrap.v" Line 501: Parameter declaration becomes local in <arg fmt="%s" index="1">v6_pcie_v1_7_rp_wrap</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_pcie_v4_07_a/hdl/verilog/fifo_71x512.v" Line 3750: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_50_c/hdl/vhdl/debug.vhd" Line 1975: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"N:/P.20131013/rtf/vhdl/src/ieee/numeric_std.vhd" Line 3314: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="220" delta="unknown" >"N:/P.20131013/rtf/vhdl/src/ieee/numeric_std.vhd" Line 3314: Assignment ignored
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 402: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 403: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 405: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 406: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 408: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 409: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 411: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 412: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 948: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 950: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 951: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 952: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 954: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 956: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 957: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 958: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 402: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 403: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 405: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 406: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 408: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 409: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 411: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 412: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 948: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 950: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 951: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 952: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 954: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 956: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 957: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_mch_emc_v3_01_a/hdl/vhdl/xps_mch_emc.vhd" Line 958: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="220" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 702: Assignment ignored
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="220" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 703: Assignment ignored
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="220" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 704: Assignment ignored
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="220" delta="unknown" >"C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mch_plbv46_slave_burst_v2_01_a/hdl/vhdl/mch_plbv46_slave_burst.vhd" Line 705: Assignment ignored
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1242" delta="unknown" >"N:/P.20131013/rtf/vhdl/src/ieee/std_logic_arith.vhd" Line 2268: <arg fmt="%s" index="1">&quot;ARG is too large in CONV_INTEGER&quot;</arg>: <arg fmt="%s" index="2"></arg>
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="188" delta="unknown" >"v:/hipsBuilds/P_hips_v23.0/rst/hips/gtp_dual_fast_postlava/RTL/gtp5f_gtpdual_top.v" Line 23216: Actual bit length <arg fmt="%d" index="1">32</arg> differs from formal bit length <arg fmt="%d" index="2">1</arg>
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="188" delta="unknown" >"v:/hipsBuilds/P_hips_v23.0/rst/hips/gtp_dual_fast_postlava/RTL/gtp5f_gtpdual_top.v" Line 23220: Actual bit length <arg fmt="%d" index="1">32</arg> differs from formal bit length <arg fmt="%d" index="2">1</arg>
+</msg>
+
+<msg type="error" file="HDLCompiler" num="432" delta="unknown" >"C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/simhdl/vhdl/nfa_initials_buckets_if_ap_fifo.vhd" Line 21: Formal &lt;<arg fmt="%s" index="1">if_read_ce</arg>&gt; has no actual or default value.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="432" delta="unknown" >"C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/simhdl/vhdl/nfa_initials_buckets_if_ap_fifo.vhd" Line 25: Formal &lt;<arg fmt="%s" index="1">if_write_ce</arg>&gt; has no actual or default value.
+</msg>
+
+<msg type="error" file="Simulator" num="777" delta="unknown" >Static elaboration of top level VHDL design unit <arg fmt="%s" index="1">system_tb</arg> in library <arg fmt="%s" index="2">work</arg> failed
+</msg>
+
+</messages>
+

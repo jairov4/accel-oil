@@ -1490,13 +1490,14 @@ static uint8_t _bsf32(uint32_t bus)
 
 static uint8_t _bsf32_hw(uint32_t bus)
 {
- (void) ((!!(bus != 0)) || (_assert("bus != 0","oil_plainc_hls/src/bitset.c",50),0));
+_ssdm_InlineRegion(0, "");
+ (void) ((!!(bus != 0)) || (_assert("bus != 0","oil_plainc_hls/src/bitset.c",51),0));
  int i;
  for(i=0; i<32; i++)
- {
-#pragma UNROLL skip_exit_check
+ {_ssdm_RegionBegin("hls_label_0");
+_ssdm_Unroll(1, 4, 32, "");
  if((bus >> i)&1) return i;
- }
+ _ssdm_RegionEnd("hls_label_0");}
 }
 
 uint8_t bsf32(uint32_t bus)
@@ -1507,9 +1508,9 @@ uint8_t bsf32(uint32_t bus)
 void _conformance_check_bitset(void)
 {
  const size_t MAX_TOTAL_BITS = (8*sizeof(bucket_t)) * 2;
- (void) ((!!(2 <= ((1 << (8*sizeof(bucket_index_t))) - 1))) || (_assert("MAX_BUCKETS <= MAX_OF_TYPE(bucket_index_t)","oil_plainc_hls/src/bitset.c",67),0));
- (void) ((!!((8*sizeof(bucket_t)) - 1 <= ((1 << (8*sizeof(bucket_bit_index_t))) - 1))) || (_assert("BITS_OF_TYPE(bucket_t) - 1 <= MAX_OF_TYPE(bucket_bit_index_t)","oil_plainc_hls/src/bitset.c",68),0));
- (void) ((!!(MAX_TOTAL_BITS <= ((1 << (8*sizeof(bitset_element_index_t))) - 1))) || (_assert("MAX_TOTAL_BITS <= MAX_OF_TYPE(bitset_element_index_t)","oil_plainc_hls/src/bitset.c",69),0));
+ (void) ((!!(2 <= ((1 << (8*sizeof(bucket_index_t))) - 1))) || (_assert("MAX_BUCKETS <= MAX_OF_TYPE(bucket_index_t)","oil_plainc_hls/src/bitset.c",68),0));
+ (void) ((!!((8*sizeof(bucket_t)) - 1 <= ((1 << (8*sizeof(bucket_bit_index_t))) - 1))) || (_assert("BITS_OF_TYPE(bucket_t) - 1 <= MAX_OF_TYPE(bucket_bit_index_t)","oil_plainc_hls/src/bitset.c",69),0));
+ (void) ((!!(MAX_TOTAL_BITS <= ((1 << (8*sizeof(bitset_element_index_t))) - 1))) || (_assert("MAX_TOTAL_BITS <= MAX_OF_TYPE(bitset_element_index_t)","oil_plainc_hls/src/bitset.c",70),0));
 }
 
 // Elimina todos los elementos en un conjunto
@@ -1517,9 +1518,10 @@ void bitset_clear(bitset_t* set)
 {
  size_t i;
  for (i=0; i < 2; i++)
- {
-  set->buckets[i] = 0;
- }
+ {_ssdm_RegionBegin("hls_label_1");
+_ssdm_Unroll(0,0,0, "");
+ set->buckets[i] = 0;
+ _ssdm_RegionEnd("hls_label_1");}
 }
 
 // Inicializa el conjunto, queda sin contenido
@@ -1534,7 +1536,7 @@ void bitset_remove(bitset_t* set, bitset_element_index_t i)
  bucket_index_t bucket = i / (8*sizeof(bucket_t));
  bucket_bit_index_t bit = i % (8*sizeof(bucket_t));
 
- (void) ((!!(bucket < 2)) || (_assert("bucket < MAX_BUCKETS","oil_plainc_hls/src/bitset.c",94),0));
+ (void) ((!!(bucket < 2)) || (_assert("bucket < MAX_BUCKETS","oil_plainc_hls/src/bitset.c",96),0));
 
  set->buckets[bucket] &= ~(1 << bit);
 }
@@ -1542,9 +1544,9 @@ void bitset_remove(bitset_t* set, bitset_element_index_t i)
 // Elimina un elemento indicado por un iterador del bitset
 void bitset_remove_iterator(bitset_t* set, bitset_iterator_t i)
 {
- (void) ((!!(!i.end)) || (_assert("!i.end","oil_plainc_hls/src/bitset.c",102),0));
- (void) ((!!(i.bucket_index < 2)) || (_assert("i.bucket_index < MAX_BUCKETS","oil_plainc_hls/src/bitset.c",103),0));
- (void) ((!!(i.bit < (8*sizeof(bucket_t)))) || (_assert("i.bit < BITS_OF_TYPE(bucket_t)","oil_plainc_hls/src/bitset.c",104),0));
+ (void) ((!!(!i.end)) || (_assert("!i.end","oil_plainc_hls/src/bitset.c",104),0));
+ (void) ((!!(i.bucket_index < 2)) || (_assert("i.bucket_index < MAX_BUCKETS","oil_plainc_hls/src/bitset.c",105),0));
+ (void) ((!!(i.bit < (8*sizeof(bucket_t)))) || (_assert("i.bit < BITS_OF_TYPE(bucket_t)","oil_plainc_hls/src/bitset.c",106),0));
 
  set->buckets[i.bucket_index] &= ~(1 << i.bit);
 }
@@ -1555,7 +1557,7 @@ void bitset_add(bitset_t* set, bitset_element_index_t i)
  bucket_index_t bucket = i / (8*sizeof(bucket_t));
  bucket_bit_index_t bit = i % (8*sizeof(bucket_t));
 
- (void) ((!!(bucket < 2)) || (_assert("bucket < MAX_BUCKETS","oil_plainc_hls/src/bitset.c",115),0));
+ (void) ((!!(bucket < 2)) || (_assert("bucket < MAX_BUCKETS","oil_plainc_hls/src/bitset.c",117),0));
 
  set->buckets[bucket] |= (1 << bit);
 }
@@ -1572,9 +1574,9 @@ void bitset_add_range(bitset_t* set, bitset_element_index_t begin, bitset_elemen
 // Agrega un elemento indicado por un iterador
 void bitset_add_iterator(bitset_t* set, bitset_iterator_t i)
 {
- (void) ((!!(!i.end)) || (_assert("!i.end","oil_plainc_hls/src/bitset.c",132),0));
- (void) ((!!(i.bucket_index < 2)) || (_assert("i.bucket_index < MAX_BUCKETS","oil_plainc_hls/src/bitset.c",133),0));
- (void) ((!!(i.bit < (8*sizeof(bucket_t)))) || (_assert("i.bit < BITS_OF_TYPE(bucket_t)","oil_plainc_hls/src/bitset.c",134),0));
+ (void) ((!!(!i.end)) || (_assert("!i.end","oil_plainc_hls/src/bitset.c",134),0));
+ (void) ((!!(i.bucket_index < 2)) || (_assert("i.bucket_index < MAX_BUCKETS","oil_plainc_hls/src/bitset.c",135),0));
+ (void) ((!!(i.bit < (8*sizeof(bucket_t)))) || (_assert("i.bit < BITS_OF_TYPE(bucket_t)","oil_plainc_hls/src/bitset.c",136),0));
 
  set->buckets[i.bucket_index] |= (1 << i.bit);
 }
@@ -1585,7 +1587,7 @@ _Bool bitset_contains(const bitset_t* set, size_t i)
  bucket_index_t bucket = (bucket_index_t)(i / (8*sizeof(bucket_t)));
  bucket_bit_index_t bit = (bucket_bit_index_t)(i % (8*sizeof(bucket_t)));
 
- (void) ((!!(bucket < 2)) || (_assert("bucket < MAX_BUCKETS","oil_plainc_hls/src/bitset.c",145),0));
+ (void) ((!!(bucket < 2)) || (_assert("bucket < MAX_BUCKETS","oil_plainc_hls/src/bitset.c",147),0));
 
  return (set->buckets[bucket] >> bit) & 1 ? 1 : 0;
 }
@@ -1595,9 +1597,10 @@ void bitset_union(bitset_t* ra, const bitset_t* b)
 {
  bucket_index_t i;
  for (i=0; i < 2; i++)
- {
-  ra->buckets[i] |= b->buckets[i];
- }
+ {_ssdm_RegionBegin("hls_label_2");
+_ssdm_Unroll(0,0,0, "");
+ ra->buckets[i] |= b->buckets[i];
+ _ssdm_RegionEnd("hls_label_2");}
 }
 
 // Realiza la interseccion de dos conjuntos
@@ -1605,9 +1608,10 @@ void bitset_intersect(bitset_t* ra, const bitset_t* b)
 {
  bucket_index_t i;
  for (i=0; i < 2; i++)
- {
-  ra->buckets[i] &= b->buckets[i];
- }
+ {_ssdm_RegionBegin("hls_label_3");
+_ssdm_Unroll(0,0,0, "");
+ ra->buckets[i] &= b->buckets[i];
+ _ssdm_RegionEnd("hls_label_3");}
 }
 
 // Comprueba si existe al menos un elemento en el conjunto
@@ -1615,18 +1619,17 @@ _Bool bitset_any(const bitset_t* set)
 {
  bucket_index_t i;
  for (i=0; i < 2; i++)
- {
-  if (set->buckets[i]) return 1;
- }
+ {_ssdm_RegionBegin("hls_label_4");
+_ssdm_Unroll(0,0,0, "");
+ if (set->buckets[i]) return 1;
+ _ssdm_RegionEnd("hls_label_4");}
  return 0;
 }
 
 // Obtiene el elemento apuntado por un iterador
 bitset_element_index_t bitset_element(const bitset_iterator_t i)
 {
-_ssdm_InlineRegion(1, "");
- (void) ((!!(!i.end)) || (_assert("!i.end","oil_plainc_hls/src/bitset.c",185),0));
-
+ (void) ((!!(!i.end)) || (_assert("!i.end","oil_plainc_hls/src/bitset.c",189),0));
  return i.bit + i.bucket_index*(8*sizeof(bucket_t));
 }
 
@@ -1637,14 +1640,16 @@ bitset_iterator_t bitset_first(const bitset_t* set)
  r.end = 0;
 
  for(r.bucket_index=0; r.bucket_index<2; r.bucket_index++)
- {
-  r.bucket = set->buckets[r.bucket_index];
+ {_ssdm_RegionBegin("hls_label_5");
+_ssdm_Unroll(0,0,0, "");
+ r.bucket = set->buckets[r.bucket_index];
   if(r.bucket != 0)
-  {
-   r.bit = bsf32(r.bucket);
+  {_ssdm_RegionBegin("hls_label_6");
+_ssdm_InlineSelf(0, "");
+ r.bit = bsf32(r.bucket);
    return r;
-  }
- }
+  _ssdm_RegionEnd("hls_label_6");}
+ _ssdm_RegionEnd("hls_label_5");}
  r.end = 1;
  return r;
 }
@@ -1652,9 +1657,9 @@ bitset_iterator_t bitset_first(const bitset_t* set)
 // Avanza un iterador al siguiente elemento en el conjunto
 bitset_iterator_t bitset_next(const bitset_t* set, bitset_iterator_t r)
 {
- (void) ((!!(!r.end)) || (_assert("!r.end","oil_plainc_hls/src/bitset.c",212),0));
- (void) ((!!(r.bit < (8*sizeof(bucket_t)))) || (_assert("r.bit < BITS_OF_TYPE(bucket_t)","oil_plainc_hls/src/bitset.c",213),0));
- (void) ((!!(r.bucket_index < 2)) || (_assert("r.bucket_index < MAX_BUCKETS","oil_plainc_hls/src/bitset.c",214),0));
+ (void) ((!!(!r.end)) || (_assert("!r.end","oil_plainc_hls/src/bitset.c",217),0));
+ (void) ((!!(r.bit < (8*sizeof(bucket_t)))) || (_assert("r.bit < BITS_OF_TYPE(bucket_t)","oil_plainc_hls/src/bitset.c",218),0));
+ (void) ((!!(r.bucket_index < 2)) || (_assert("r.bucket_index < MAX_BUCKETS","oil_plainc_hls/src/bitset.c",219),0));
 
  // Elimina el uno anterior
  r.bucket &= r.bucket - 1;
@@ -1665,8 +1670,9 @@ bitset_iterator_t bitset_next(const bitset_t* set, bitset_iterator_t r)
  }
  bucket_index_t bound = r.bucket_index;
  for(r.bucket_index=0; r.bucket_index < 2; r.bucket_index++)
- {
-  if(r.bucket_index > bound)
+ {_ssdm_RegionBegin("hls_label_7");
+_ssdm_Unroll(0,0,0, "");
+ if(r.bucket_index > bound)
   {
    r.bucket = set->buckets[r.bucket_index];
    if(r.bucket != 0)
@@ -1675,7 +1681,7 @@ bitset_iterator_t bitset_next(const bitset_t* set, bitset_iterator_t r)
     return r;
    }
   }
- }
+ _ssdm_RegionEnd("hls_label_7");}
  r.end = 1;
  return r;
 }

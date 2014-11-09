@@ -1,66 +1,164 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 16
-set name nfa_accept_samples_generic_hw_mul_8ns_6ns_14_2
-set corename simcore_mul
-set op mul
-set stage_num 2
-set registered_input 1
-set in0_width 8
-set in0_signed 0
-set in1_width 6
-set in1_signed 0
-set out_width 14
+# Memory (RAM/ROM)  definition:
+set ID 27
+set MemName nfa_accept_samples_generic_hw_result
+set CoreName ap_simcore_mem
+set PortList { 2 3 }
+set DataWd 1
+set AddrRange 16
+set AddrWd 4
+set impl_style block
+set TrueReset 0
+set HasInitializer 0
+set IsROM 0
+set ROMData {}
+set NumOfStage 2
+set DelayBudget 2.39
+set ClkPeriod 10
+set RegisteredInput 0
 if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mul] == "ap_gen_simcore_mul"} {
-eval "ap_gen_simcore_mul { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
+if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
+    eval "ap_gen_simcore_mem { \
+    id ${ID} \
+    name ${MemName} \
+    corename ${CoreName}  \
+    op mem \
     reset_level 1 \
     sync_rst true \
-    stage_num ${stage_num} \
-    registered_input ${registered_input} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    out_width ${out_width} \
-}"
+    stage_num 2 \
+    registered_input ${RegisteredInput} \
+    port_num 2 \
+    port_list \{${PortList}\} \
+    data_wd ${DataWd} \
+    addr_wd ${AddrWd} \
+    addr_range ${AddrRange} \
+    style ${impl_style} \
+    true_reset ${TrueReset} \
+    delay_budget ${DelayBudget} \
+    clk_period ${ClkPeriod} \
+    HasInitializer ${HasInitializer} \
+    rom_data \{${ROMData}\} \
+ } "
 } else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mul, check your AutoPilot builtin lib"
+    puts "@W \[IMPL-102\] Cannot find ap_gen_simcore_mem, check your platform lib"
 }
 }
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
+  ::AP::rtl_comp_handler $MemName
 }
 
 
-set op mul
-set corename MAC2S
+set CoreName RAM
 if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_mac] == "::AESL_LIB_VIRTEX::xil_gen_mac"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_mac { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RAM"} {
+    eval "::AESL_LIB_VIRTEX::xil_gen_RAM { \
+    id ${ID} \
+    name ${MemName} \
+    corename ${CoreName}  \
+    op mem \
     reset_level 1 \
     sync_rst true \
-    stage_num ${stage_num} \
-    registered_input ${registered_input} \
-    in0_width ${in0_width} \
-    in0_signed ${in0_signed} \
-    in1_width ${in1_width} \
-    in1_signed ${in1_signed} \
-    out_width ${out_width} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_mac, check your platform lib"
+    stage_num 2 \
+    registered_input ${RegisteredInput} \
+    port_num 2 \
+    port_list \{${PortList}\} \
+    data_wd ${DataWd} \
+    addr_wd ${AddrWd} \
+    addr_range ${AddrRange} \
+    style ${impl_style} \
+    true_reset ${TrueReset} \
+    delay_budget ${DelayBudget} \
+    clk_period ${ClkPeriod} \
+    HasInitializer ${HasInitializer} \
+    rom_data \{${ROMData}\} \
+ } "
+  } else {
+    puts "@W \[IMPL-104\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_RAM, check your platform lib"
+  }
 }
+
+
+# Memory (RAM/ROM)  definition:
+set ID 28
+set MemName nfa_accept_samples_generic_hw_start_indices
+set CoreName ap_simcore_mem
+set PortList { 2 3 }
+set DataWd 32
+set AddrRange 16
+set AddrWd 4
+set impl_style block
+set TrueReset 0
+set HasInitializer 0
+set IsROM 0
+set ROMData {}
+set NumOfStage 2
+set DelayBudget 2.39
+set ClkPeriod 10
+set RegisteredInput 0
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
+    eval "ap_gen_simcore_mem { \
+    id ${ID} \
+    name ${MemName} \
+    corename ${CoreName}  \
+    op mem \
+    reset_level 1 \
+    sync_rst true \
+    stage_num 2 \
+    registered_input ${RegisteredInput} \
+    port_num 2 \
+    port_list \{${PortList}\} \
+    data_wd ${DataWd} \
+    addr_wd ${AddrWd} \
+    addr_range ${AddrRange} \
+    style ${impl_style} \
+    true_reset ${TrueReset} \
+    delay_budget ${DelayBudget} \
+    clk_period ${ClkPeriod} \
+    HasInitializer ${HasInitializer} \
+    rom_data \{${ROMData}\} \
+ } "
+} else {
+    puts "@W \[IMPL-102\] Cannot find ap_gen_simcore_mem, check your platform lib"
+}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+  ::AP::rtl_comp_handler $MemName
+}
+
+
+set CoreName RAM
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RAM"} {
+    eval "::AESL_LIB_VIRTEX::xil_gen_RAM { \
+    id ${ID} \
+    name ${MemName} \
+    corename ${CoreName}  \
+    op mem \
+    reset_level 1 \
+    sync_rst true \
+    stage_num 2 \
+    registered_input ${RegisteredInput} \
+    port_num 2 \
+    port_list \{${PortList}\} \
+    data_wd ${DataWd} \
+    addr_wd ${AddrWd} \
+    addr_range ${AddrRange} \
+    style ${impl_style} \
+    true_reset ${TrueReset} \
+    delay_budget ${DelayBudget} \
+    clk_period ${ClkPeriod} \
+    HasInitializer ${HasInitializer} \
+    rom_data \{${ROMData}\} \
+ } "
+  } else {
+    puts "@W \[IMPL-104\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_RAM, check your platform lib"
+  }
 }
 
 
@@ -73,11 +171,11 @@ if {${::AESL::PGuard_autoexp_gen}} {
 
 # Adapter definition:
 set PortName nfa_initials_buckets
-set DataWd 32
+set DataWd 64
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xilplb46_bus_rw_gen] == "::AESL_LIB_XILADAPTER::xilplb46_bus_rw_gen"} {
 eval "::AESL_LIB_XILADAPTER::xilplb46_bus_rw_gen { \
-    id 17 \
+    id 29 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \
@@ -96,11 +194,11 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 
 # Adapter definition:
 set PortName nfa_finals_buckets
-set DataWd 32
+set DataWd 64
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xilplb46_bus_rw_gen] == "::AESL_LIB_XILADAPTER::xilplb46_bus_rw_gen"} {
 eval "::AESL_LIB_XILADAPTER::xilplb46_bus_rw_gen { \
-    id 18 \
+    id 30 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \
@@ -123,7 +221,7 @@ set DataWd 32
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xilplb46_bus_rw_gen] == "::AESL_LIB_XILADAPTER::xilplb46_bus_rw_gen"} {
 eval "::AESL_LIB_XILADAPTER::xilplb46_bus_rw_gen { \
-    id 19 \
+    id 31 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \
@@ -146,7 +244,7 @@ set DataWd 8
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xilplb46_bus_rw_gen] == "::AESL_LIB_XILADAPTER::xilplb46_bus_rw_gen"} {
 eval "::AESL_LIB_XILADAPTER::xilplb46_bus_rw_gen { \
-    id 21 \
+    id 33 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \
@@ -169,7 +267,7 @@ set DataWd 56
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xilplb46_bus_rw_gen] == "::AESL_LIB_XILADAPTER::xilplb46_bus_rw_gen"} {
 eval "::AESL_LIB_XILADAPTER::xilplb46_bus_rw_gen { \
-    id 24 \
+    id 36 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \
@@ -190,7 +288,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 set corename slv0
 set opts {
     {
-        id 20
+        id 32
         name nfa_symbols
         reset_level 1
         sync_rst true
@@ -200,7 +298,7 @@ set opts {
         mode SIG_IN_VLD_OFF:SIG_IN_ACC_OFF
     }
     {
-        id 22
+        id 34
         name sample_buffer_length
         reset_level 1
         sync_rst true
@@ -210,7 +308,7 @@ set opts {
         mode SIG_IN_VLD_OFF:SIG_IN_ACC_OFF
     }
     {
-        id 23
+        id 35
         name sample_length
         reset_level 1
         sync_rst true
@@ -220,7 +318,7 @@ set opts {
         mode SIG_IN_VLD_OFF:SIG_IN_ACC_OFF
     }
     {
-        id 25
+        id 37
         name i_size
         reset_level 1
         sync_rst true
@@ -230,7 +328,7 @@ set opts {
         mode SIG_IN_VLD_OFF:SIG_IN_ACC_OFF
     }
     {
-        id 26
+        id 38
         name begin_index
         reset_level 1
         sync_rst true
@@ -240,7 +338,7 @@ set opts {
         mode SIG_IN_VLD_OFF:SIG_IN_ACC_OFF
     }
     {
-        id 27
+        id 39
         name begin_sample
         reset_level 1
         sync_rst true
@@ -250,7 +348,7 @@ set opts {
         mode SIG_IN_VLD_OFF:SIG_IN_ACC_OFF
     }
     {
-        id 28
+        id 40
         name end_index
         reset_level 1
         sync_rst true
@@ -260,7 +358,7 @@ set opts {
         mode SIG_IN_VLD_OFF:SIG_IN_ACC_OFF
     }
     {
-        id 29
+        id 41
         name end_sample
         reset_level 1
         sync_rst true
@@ -270,7 +368,7 @@ set opts {
         mode SIG_IN_VLD_OFF:SIG_IN_ACC_OFF
     }
     {
-        id 30
+        id 42
         name stop_on_first
         reset_level 1
         sync_rst true
@@ -280,7 +378,7 @@ set opts {
         mode SIG_IN_VLD_OFF:SIG_IN_ACC_OFF
     }
     {
-        id 31
+        id 43
         name accept
         reset_level 1
         sync_rst true

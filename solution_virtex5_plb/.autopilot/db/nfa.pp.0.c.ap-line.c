@@ -2069,50 +2069,46 @@ _Bool nfa_is_initial(const nfa_t* nfa, state_t q)
 #pragma empty_line
 void nfa_get_initials(const nfa_t* nfa, bitset_t* initials)
 {
-#pragma HLS INLINE region
  *initials = nfa->initials;
 }
 #pragma empty_line
 void nfa_add_final(nfa_t* nfa, state_t q)
 {
- (void) ((!!(q < nfa_get_states(nfa))) || (_assert("q < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",64),0));
+ (void) ((!!(q < nfa_get_states(nfa))) || (_assert("q < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",63),0));
 #pragma empty_line
  bitset_add(&nfa->finals, q);
 }
 #pragma empty_line
 void nfa_remove_final(nfa_t* nfa, state_t q)
 {
- (void) ((!!(q < nfa_get_states(nfa))) || (_assert("q < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",71),0));
+ (void) ((!!(q < nfa_get_states(nfa))) || (_assert("q < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",70),0));
 #pragma empty_line
  bitset_remove(&nfa->finals, q);
 }
 #pragma empty_line
 _Bool nfa_is_final(const nfa_t* nfa, state_t q)
 {
- (void) ((!!(q < nfa_get_states(nfa))) || (_assert("q < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",78),0));
+ (void) ((!!(q < nfa_get_states(nfa))) || (_assert("q < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",77),0));
 #pragma empty_line
  return bitset_contains(&nfa->finals, q);
 }
 #pragma empty_line
 void nfa_get_finals(const nfa_t* nfa, bitset_t* finals)
 {
-#pragma HLS INLINE region
  *finals = nfa->finals;
 }
 #pragma empty_line
 // Obtiene el numero de simbolos asociado al alfabeto del automata
 symbol_t nfa_get_symbols(const nfa_t* nfa)
 {
-#pragma HLS INLINE region
  return nfa->symbols;
 }
 #pragma empty_line
 // Obtiene el conjunto de sucesores de un par estado-simbolo de un automata
 void nfa_get_sucessors(const nfa_t* nfa, state_t state, symbol_t sym, bitset_t* bs)
 {
-#pragma HLS INLINE region
- (void) ((!!(state < nfa_get_states(nfa))) || (_assert("state < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",100),0));
- (void) ((!!(sym < nfa_get_symbols(nfa))) || (_assert("sym < nfa_get_symbols(nfa)","oil_plainc_hls/src/nfa.c",101),0));
+ (void) ((!!(state < nfa_get_states(nfa))) || (_assert("state < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",96),0));
+ (void) ((!!(sym < nfa_get_symbols(nfa))) || (_assert("sym < nfa_get_symbols(nfa)","oil_plainc_hls/src/nfa.c",97),0));
 #pragma empty_line
  size_t offset = (state * nfa_get_symbols(nfa) + sym);
  *bs = nfa->forward[offset];
@@ -2121,8 +2117,8 @@ void nfa_get_sucessors(const nfa_t* nfa, state_t state, symbol_t sym, bitset_t* 
 // Obtiene el conjunto de predecesores de un par estado-simbolo de un automata
 void nfa_get_predecessors(const nfa_t* nfa, state_t state, symbol_t sym, bitset_t* bs)
 {
- (void) ((!!(state < nfa_get_states(nfa))) || (_assert("state < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",110),0));
- (void) ((!!(sym < nfa_get_symbols(nfa))) || (_assert("sym < nfa_get_symbols(nfa)","oil_plainc_hls/src/nfa.c",111),0));
+ (void) ((!!(state < nfa_get_states(nfa))) || (_assert("state < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",106),0));
+ (void) ((!!(sym < nfa_get_symbols(nfa))) || (_assert("sym < nfa_get_symbols(nfa)","oil_plainc_hls/src/nfa.c",107),0));
 #pragma empty_line
  size_t offset = (state * nfa_get_symbols(nfa) + sym);
  *bs = nfa->backward[offset];
@@ -2131,8 +2127,8 @@ void nfa_get_predecessors(const nfa_t* nfa, state_t state, symbol_t sym, bitset_
 // Inicializa un NFA de manera que queda sin estados ni transiciones
 void nfa_init(nfa_t* nfa, symbol_t symbols)
 {
- (void) ((!!(nfa != ((void*)0))) || (_assert("nfa != NULL","oil_plainc_hls/src/nfa.c",120),0));
- (void) ((!!(symbols <= 255u)) || (_assert("symbols <= MAX_SYMBOLS","oil_plainc_hls/src/nfa.c",121),0));
+ (void) ((!!(nfa != ((void*)0))) || (_assert("nfa != NULL","oil_plainc_hls/src/nfa.c",116),0));
+ (void) ((!!(symbols <= 255u)) || (_assert("symbols <= MAX_SYMBOLS","oil_plainc_hls/src/nfa.c",117),0));
 #pragma empty_line
  bitset_init(&nfa->initials);
  bitset_init(&nfa->finals);
@@ -2154,9 +2150,9 @@ void nfa_add_transition(nfa_t* nfa,
  state_t q1,
  symbol_t a)
 {
- (void) ((!!(a < nfa_get_symbols(nfa))) || (_assert("a < nfa_get_symbols(nfa)","oil_plainc_hls/src/nfa.c",143),0));
- (void) ((!!(q0 < nfa_get_states(nfa))) || (_assert("q0 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",144),0));
- (void) ((!!(q1 < nfa_get_states(nfa))) || (_assert("q1 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",145),0));
+ (void) ((!!(a < nfa_get_symbols(nfa))) || (_assert("a < nfa_get_symbols(nfa)","oil_plainc_hls/src/nfa.c",139),0));
+ (void) ((!!(q0 < nfa_get_states(nfa))) || (_assert("q0 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",140),0));
+ (void) ((!!(q1 < nfa_get_states(nfa))) || (_assert("q1 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",141),0));
 #pragma empty_line
  size_t offset;
  // successor
@@ -2175,9 +2171,9 @@ void nfa_remove_transition(nfa_t* nfa,
  state_t q1,
  symbol_t a)
 {
- (void) ((!!(a < nfa_get_symbols(nfa))) || (_assert("a < nfa_get_symbols(nfa)","oil_plainc_hls/src/nfa.c",164),0));
- (void) ((!!(q0 < nfa_get_states(nfa))) || (_assert("q0 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",165),0));
- (void) ((!!(q1 < nfa_get_states(nfa))) || (_assert("q1 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",166),0));
+ (void) ((!!(a < nfa_get_symbols(nfa))) || (_assert("a < nfa_get_symbols(nfa)","oil_plainc_hls/src/nfa.c",160),0));
+ (void) ((!!(q0 < nfa_get_states(nfa))) || (_assert("q0 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",161),0));
+ (void) ((!!(q1 < nfa_get_states(nfa))) || (_assert("q1 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",162),0));
 #pragma empty_line
  size_t offset;
  // successor
@@ -2197,8 +2193,8 @@ void nfa_clone(nfa_t* dest, const nfa_t* src)
 // Combina dos estados en un automata, el estado Q2 queda aislado
 void nfa_merge_states(nfa_t* nfa, state_t q1, state_t q2)
 {
- (void) ((!!(q1 < nfa_get_states(nfa))) || (_assert("q1 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",186),0));
- (void) ((!!(q2 < nfa_get_states(nfa))) || (_assert("q2 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",187),0));
+ (void) ((!!(q1 < nfa_get_states(nfa))) || (_assert("q1 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",182),0));
+ (void) ((!!(q2 < nfa_get_states(nfa))) || (_assert("q2 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",183),0));
 #pragma empty_line
  if (nfa_is_initial(nfa, q2))
  {
@@ -2238,8 +2234,6 @@ void nfa_merge_states(nfa_t* nfa, state_t q1, state_t q2)
 #pragma empty_line
 sample_iterator_t sample_iterator_begin(void)
 {
-#pragma HLS INLINE recursive region
-#pragma empty_line
  sample_iterator_t r;
  r.index = 0;
  r.sample = 0;
@@ -2250,7 +2244,6 @@ sample_iterator_t sample_iterator_begin(void)
 // length es la cantidad de indices en la cadena de descriptores
 sample_iterator_t sample_iterator_end(uint16_t length)
 {
-#pragma HLS INLINE recursive region
  sample_iterator_t r;
  r.index = length;
  r.sample = 0;
@@ -2260,7 +2253,6 @@ sample_iterator_t sample_iterator_end(uint16_t length)
 sample_iterator_t sample_iterator_next(const index_t indices[1024],
   sample_iterator_t i)
 {
-#pragma HLS INLINE recursive region
  if(i.sample < indices[i.index].samples - 1)
  {
   i.sample++;
@@ -2273,7 +2265,6 @@ sample_iterator_t sample_iterator_next(const index_t indices[1024],
 #pragma empty_line
 _Bool sample_iterator_equals(sample_iterator_t a, sample_iterator_t b)
 {
-#pragma HLS INLINE recursive region
  return (a.sample == b.sample) && (a.index == b.index);
 }
 #pragma empty_line
@@ -2281,9 +2272,8 @@ uint32_t sample_iterator_get_offset(sample_iterator_t i,
  const index_t indices[1024],
  uint32_t sample_buffer_size, uint16_t sample_length)
 {
-#pragma HLS INLINE recursive region
  uint32_t offset = indices[i.index].begin + indices[i.index].stride * i.sample;
- (void) ((!!(offset <= sample_buffer_size - sample_length)) || (_assert("offset <= sample_buffer_size - sample_length","oil_plainc_hls/src/nfa.c",272),0));
+ (void) ((!!(offset <= sample_buffer_size - sample_length)) || (_assert("offset <= sample_buffer_size - sample_length","oil_plainc_hls/src/nfa.c",262),0));
  return offset;
 }
 #pragma empty_line
@@ -2341,6 +2331,177 @@ _Bool nfa_accept_sample(const nfa_t* nfa,
  return bitset_any(&current);
 }
 #pragma empty_line
+#pragma empty_line
+#pragma empty_line
+// Comprueba si el automata reconoce la secuencia suministrada
+// return true if stop on first condition was meet
+_Bool nfa_accept_sample_multi(const nfa_t* nfa,
+ const symbol_t sample[(1024*5)],
+ uint16_t length, uint32_t start_indices[16],
+ _Bool stop_on_first, _Bool accept, uint8_t units,
+ _Bool result[16])
+{
+#pragma HLS DATA_PACK variable=nfa->initials
+#pragma HLS DATA_PACK variable=nfa->finals
+#pragma empty_line
+#pragma HLS PIPELINE
+ bitset_t next[16];
+ bitset_t current[16];
+ bitset_t tmp[16];
+#pragma empty_line
+//#pragma HLS ARRAY_PARTITION variable=next
+//#pragma HLS ARRAY_PARTITION variable=current
+//#pragma HLS ARRAY_PARTITION variable=tmp
+#pragma HLS DATA_PACK variable=next
+#pragma HLS DATA_PACK variable=current
+#pragma HLS DATA_PACK variable=tmp
+#pragma empty_line
+ // Indica si una unidad ya termino con toda la cadena
+ _Bool end_string[16];
+#pragma empty_line
+#pragma HLS ARRAY_PARTITION variable=end_string
+#pragma empty_line
+ uint8_t k;
+#pragma empty_line
+ for(k=0; k<units; k++)
+ {
+#pragma HLS UNROLL factor=16
+//#pragma HLS INLINE recursive
+  bitset_init(&next[k]);
+  end_string[k] = 0;
+#pragma empty_line
+//#pragma HLS INLINE recursive
+  nfa_get_initials(nfa, &current[k]);
+ }
+#pragma empty_line
+ uint16_t i = length;
+ while(i-- > 0)
+ {
+  // This tripcount is max MAX_SAMPLE_LENGTH
+#pragma HLS LOOP_TRIPCOUNT min=0 max=1000
+#pragma empty_line
+ // index of symbol being proccessed per unit
+  uint32_t sym_offset[16];
+  // State iterator per unit
+  bitset_iterator_t j[16];
+  // any state is to be continue advancing in string
+  _Bool any_state[16];
+#pragma empty_line
+#pragma HLS ARRAY_PARTITION variable=sym_offset
+#pragma HLS ARRAY_PARTITION variable=j
+#pragma HLS ARRAY_PARTITION variable=any_state
+#pragma empty_line
+ // Initialization for each unit before to process new symbol
+  for(k=0; k<units; k++)
+  {
+#pragma HLS UNROLL factor=16
+ sym_offset[k] = start_indices[k];
+   any_state[k] = 0;
+#pragma empty_line
+//#pragma HLS INLINE recursive
+   bitset_clear(&next[k]);
+#pragma empty_line
+//#pragma HLS INLINE recursive
+   j[k] = bitset_first(&current[k]);
+  }
+#pragma empty_line
+  // all units ended this symbol
+  _Bool all_end;
+  // unit ended this symbol
+  _Bool end[16];
+  // any unit ended this symbol
+  _Bool any_end = 0;
+  // Symbol being processed per unit
+  symbol_t sym[16];
+  // state evalutated per unit
+  state_t state[16];
+#pragma empty_line
+#pragma HLS ARRAY_PARTITION variable=end
+#pragma HLS ARRAY_PARTITION variable=sym
+#pragma HLS ARRAY_PARTITION variable=state
+#pragma empty_line
+ do
+  {
+#pragma HLS LOOP_TRIPCOUNT min=0 max=10
+#pragma empty_line
+ // main loop body part 1
+   for(k=0; k<units; k++)
+   {
+#pragma HLS UNROLL factor=16
+//#pragma HLS INLINE recursive
+    end[k] = bitset_end(j[k]);
+    if(end[k])
+    {
+     // if ended this symbol and this is the last symbol
+     // or there are no more transitions to continue on next symbol
+     end_string[k] = i==0 || !any_state[k];
+     if(end_string[k]) // unit finished string
+     {
+      if(any_state[k])
+      {
+//#pragma HLS INLINE recursive
+       nfa_get_finals(nfa, &tmp[k]);
+//#pragma HLS INLINE recursive
+       bitset_intersect(&next[k], &tmp[k]);
+//#pragma HLS INLINE recursive
+       result[k] = bitset_any(&next[k]); // compute result
+      }
+      else
+      {
+       result[k] = 0;
+      }
+     }
+     else // not yet full string but symbol finished
+     {
+      // swap
+      tmp[k] = next[k];
+      next[k] = current[k];
+      current[k] = tmp[k];
+     }
+    }
+    else
+    {
+     any_state[k] = 1;
+//#pragma HLS INLINE recursive
+     state[k] = bitset_element(j[k]);
+    }
+#pragma empty_line
+    if(end_string[k] && stop_on_first && result[k] == accept)
+    {
+     return 1;
+    }
+#pragma empty_line
+    if(end[k]) continue;
+    // WARN This mem access may be critical
+    uint32_t offset = sym_offset[k]++;
+    sym[k] = sample[offset];
+#pragma empty_line
+    // WARN Here occurs memory access and is critical
+//#pragma HLS INLINE recursive
+    nfa_get_sucessors(nfa, state[k], sym[k], &tmp[k]);
+   }
+#pragma empty_line
+   // set base end condition
+   all_end = 1;
+   any_end = 0;
+#pragma empty_line
+   // main loop body part 4
+   for(k=0; k<units; k++)
+   {
+#pragma HLS UNROLL factor=16
+ if(!end[k])
+    {
+     bitset_union(&next[k], &tmp[k]);
+    }
+    all_end = all_end && end[k];
+    any_end = any_end || end[k];
+   }
+  } while(!all_end);
+ }
+ return 0;
+}
+#pragma empty_line
+#pragma empty_line
 // Indica si e NFA acepta al menos una muestra
 _Bool nfa_accept_any_sample(const nfa_t* nfa,
  const symbol_t sample_buffer[(1024*5)],
@@ -2369,7 +2530,6 @@ int nfa_accept_samples_generic_hw(const nfa_t* nfa,
  sample_iterator_t begin, sample_iterator_t end,
  _Bool stop_on_first, _Bool accept)
 {
-#pragma HLS PIPELINE
 #pragma HLS DATA_PACK variable=indices struct_level
 #pragma empty_line
 #pragma HLS INTERFACE ap_bus port=nfa->initials depth=10
@@ -2408,20 +2568,45 @@ int nfa_accept_samples_generic_hw(const nfa_t* nfa,
 #pragma HLS RESOURCE variable=accept core=PLB46S metadata="-bus_bundle slv0"
 #pragma HLS RESOURCE variable=return core=PLB46S metadata="-bus_bundle slv0"
 #pragma empty_line
- int c = 0;
- sample_iterator_t i;
- for (i = begin; !sample_iterator_equals(i, end); i = sample_iterator_next(indices, i))
+ uint16_t c = 0;
+ sample_iterator_t i = begin;
+#pragma empty_line
+ _Bool finished = 0;
+ _Bool stop_on_first_meet = 0;
+#pragma empty_line
+ do
  {
-#pragma HLS LOOP_TRIPCOUNT min=0 max=65535 avg=2000
- uint32_t offset = sample_iterator_get_offset(i, indices, sample_buffer_length, sample_length);
-  _Bool r = nfa_accept_sample(nfa, sample_buffer + offset, sample_length);
-  if((r && accept) || (!r && !accept))
+#pragma HLS LOOP_TRIPCOUNT min=0 max=1000
+ _Bool result[16];
+  uint32_t start_indices[16];
+#pragma empty_line
+  uint8_t units = 0;
+  uint8_t k;
+#pragma empty_line
+  for(k=0; k<16; k++)
   {
-   if(stop_on_first) return 1;
-   c++;
+   finished = sample_iterator_equals(i, end);
+   if(finished) break;
+#pragma empty_line
+   uint32_t offset = sample_iterator_get_offset(i, indices, sample_buffer_length, sample_length);
+   start_indices[k] = offset;
+   i = sample_iterator_next(indices, i);
+   units++;
   }
- }
- return c;
+#pragma empty_line
+  stop_on_first_meet = nfa_accept_sample_multi(nfa, sample_buffer, sample_length, start_indices, stop_on_first, accept, units, result);
+#pragma empty_line
+  if(stop_on_first && stop_on_first_meet) return 1;
+#pragma empty_line
+  for(k=0; k<units; k++)
+  {
+   if(result[k])
+   {
+    c++;
+   }
+  }
+ } while(!finished);
+ return stop_on_first ? (stop_on_first_meet?1:0) : c;
 }
 #pragma empty_line
 // Indica si el NFA acepta todas las muestras

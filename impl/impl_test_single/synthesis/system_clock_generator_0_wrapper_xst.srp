@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> 
 TABLE OF CONTENTS
@@ -30,7 +30,7 @@ TABLE OF CONTENTS
 ---- Source Parameters
 Input Format                       : MIXED
 Input File Name                    : "system_clock_generator_0_wrapper_xst.prj"
-Verilog Include Directory          : {"C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\pcores\" "C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\solution_virtex5\impl\pcores\" "C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+Verilog Include Directory          : {"C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\pcores\" "C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\solution_virtex5_plb\impl\pcores\" "C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
 
 ---- Target Parameters
 Target Device                      : xc5vlx50tff1136-2
@@ -92,28 +92,28 @@ Analyzing hierarchy for entity <pll_module> in library <clock_generator_v4_03_a>
 	C_BANDWIDTH = "OPTIMIZED"
 	C_CLKFBOUT_BUF = false
 	C_CLKFBOUT_DESKEW_ADJUST = "NONE"
-	C_CLKFBOUT_MULT = 10
+	C_CLKFBOUT_MULT = 12
 	C_CLKFBOUT_PHASE = 0.000000
 	C_CLKIN1_BUF = false
 	C_CLKIN1_PERIOD = 10.000000
 	C_CLKOUT0_BUF = false
 	C_CLKOUT0_DESKEW_ADJUST = "NONE"
-	C_CLKOUT0_DIVIDE = 8
+	C_CLKOUT0_DIVIDE = 24
 	C_CLKOUT0_DUTY_CYCLE = 0.500000
 	C_CLKOUT0_PHASE = 0.000000
 	C_CLKOUT1_BUF = false
 	C_CLKOUT1_DESKEW_ADJUST = "NONE"
-	C_CLKOUT1_DIVIDE = 16
+	C_CLKOUT1_DIVIDE = 1
 	C_CLKOUT1_DUTY_CYCLE = 0.500000
 	C_CLKOUT1_PHASE = 0.000000
 	C_CLKOUT2_BUF = false
 	C_CLKOUT2_DESKEW_ADJUST = "NONE"
-	C_CLKOUT2_DIVIDE = 8
+	C_CLKOUT2_DIVIDE = 1
 	C_CLKOUT2_DUTY_CYCLE = 0.500000
-	C_CLKOUT2_PHASE = 90.000000
+	C_CLKOUT2_PHASE = 0.000000
 	C_CLKOUT3_BUF = false
 	C_CLKOUT3_DESKEW_ADJUST = "NONE"
-	C_CLKOUT3_DIVIDE = 5
+	C_CLKOUT3_DIVIDE = 1
 	C_CLKOUT3_DUTY_CYCLE = 0.500000
 	C_CLKOUT3_PHASE = 0.000000
 	C_CLKOUT4_BUF = false
@@ -128,7 +128,7 @@ Analyzing hierarchy for entity <pll_module> in library <clock_generator_v4_03_a>
 	C_CLKOUT5_PHASE = 0.000000
 	C_COMPENSATION = "SYSTEM_SYNCHRONOUS"
 	C_DIVCLK_DIVIDE = 1
-	C_EXT_RESET_HIGH = 1
+	C_EXT_RESET_HIGH = 0
 	C_FAMILY = "virtex5"
 	C_REF_JITTER = 0.100000
 	C_RESET_ON_LOSS_OF_LOCK = false
@@ -153,28 +153,28 @@ Analyzing generic Entity <pll_module> in library <clock_generator_v4_03_a> (Arch
 	C_BANDWIDTH = "OPTIMIZED"
 	C_CLKFBOUT_BUF = false
 	C_CLKFBOUT_DESKEW_ADJUST = "NONE"
-	C_CLKFBOUT_MULT = 10
+	C_CLKFBOUT_MULT = 12
 	C_CLKFBOUT_PHASE = 0.000000
 	C_CLKIN1_BUF = false
 	C_CLKIN1_PERIOD = 10.000000
 	C_CLKOUT0_BUF = false
 	C_CLKOUT0_DESKEW_ADJUST = "NONE"
-	C_CLKOUT0_DIVIDE = 8
+	C_CLKOUT0_DIVIDE = 24
 	C_CLKOUT0_DUTY_CYCLE = 0.500000
 	C_CLKOUT0_PHASE = 0.000000
 	C_CLKOUT1_BUF = false
 	C_CLKOUT1_DESKEW_ADJUST = "NONE"
-	C_CLKOUT1_DIVIDE = 16
+	C_CLKOUT1_DIVIDE = 1
 	C_CLKOUT1_DUTY_CYCLE = 0.500000
 	C_CLKOUT1_PHASE = 0.000000
 	C_CLKOUT2_BUF = false
 	C_CLKOUT2_DESKEW_ADJUST = "NONE"
-	C_CLKOUT2_DIVIDE = 8
+	C_CLKOUT2_DIVIDE = 1
 	C_CLKOUT2_DUTY_CYCLE = 0.500000
-	C_CLKOUT2_PHASE = 90.000000
+	C_CLKOUT2_PHASE = 0.000000
 	C_CLKOUT3_BUF = false
 	C_CLKOUT3_DESKEW_ADJUST = "NONE"
-	C_CLKOUT3_DIVIDE = 5
+	C_CLKOUT3_DIVIDE = 1
 	C_CLKOUT3_DUTY_CYCLE = 0.500000
 	C_CLKOUT3_PHASE = 0.000000
 	C_CLKOUT4_BUF = false
@@ -189,31 +189,31 @@ Analyzing generic Entity <pll_module> in library <clock_generator_v4_03_a> (Arch
 	C_CLKOUT5_PHASE = 0.000000
 	C_COMPENSATION = "SYSTEM_SYNCHRONOUS"
 	C_DIVCLK_DIVIDE = 1
-	C_EXT_RESET_HIGH = 1
+	C_EXT_RESET_HIGH = 0
 	C_FAMILY = "virtex5"
 	C_REF_JITTER = 0.100000
 	C_RESET_ON_LOSS_OF_LOCK = false
 	C_RST_DEASSERT_CLK = "CLKIN1"
     Set user-defined property "BANDWIDTH =  OPTIMIZED" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
     Set user-defined property "CLKFBOUT_DESKEW_ADJUST =  NONE" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
-    Set user-defined property "CLKFBOUT_MULT =  10" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
+    Set user-defined property "CLKFBOUT_MULT =  12" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
     Set user-defined property "CLKFBOUT_PHASE =  0.0000000000000000" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
     Set user-defined property "CLKIN1_PERIOD =  10.0000000000000000" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
     Set user-defined property "CLKIN2_PERIOD =  10.0000000000000000" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
     Set user-defined property "CLKOUT0_DESKEW_ADJUST =  NONE" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
-    Set user-defined property "CLKOUT0_DIVIDE =  8" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
+    Set user-defined property "CLKOUT0_DIVIDE =  24" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
     Set user-defined property "CLKOUT0_DUTY_CYCLE =  0.5000000000000000" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
     Set user-defined property "CLKOUT0_PHASE =  0.0000000000000000" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
     Set user-defined property "CLKOUT1_DESKEW_ADJUST =  NONE" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
-    Set user-defined property "CLKOUT1_DIVIDE =  16" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
+    Set user-defined property "CLKOUT1_DIVIDE =  1" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
     Set user-defined property "CLKOUT1_DUTY_CYCLE =  0.5000000000000000" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
     Set user-defined property "CLKOUT1_PHASE =  0.0000000000000000" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
     Set user-defined property "CLKOUT2_DESKEW_ADJUST =  NONE" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
-    Set user-defined property "CLKOUT2_DIVIDE =  8" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
+    Set user-defined property "CLKOUT2_DIVIDE =  1" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
     Set user-defined property "CLKOUT2_DUTY_CYCLE =  0.5000000000000000" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
-    Set user-defined property "CLKOUT2_PHASE =  90.0000000000000000" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
+    Set user-defined property "CLKOUT2_PHASE =  0.0000000000000000" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
     Set user-defined property "CLKOUT3_DESKEW_ADJUST =  NONE" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
-    Set user-defined property "CLKOUT3_DIVIDE =  5" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
+    Set user-defined property "CLKOUT3_DIVIDE =  1" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
     Set user-defined property "CLKOUT3_DUTY_CYCLE =  0.5000000000000000" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
     Set user-defined property "CLKOUT3_PHASE =  0.0000000000000000" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
     Set user-defined property "CLKOUT4_DESKEW_ADJUST =  NONE" for instance <Using_PLL_ADV.PLL_ADV_inst> in unit <pll_module>.
@@ -268,6 +268,9 @@ WARNING:Xst:646 - Signal <SIG_PLL0_CLKOUTDCM1> is assigned but never used. This 
 WARNING:Xst:646 - Signal <SIG_PLL0_CLKOUTDCM0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <SIG_PLL0_CLKOUT5_BUF> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <SIG_PLL0_CLKOUT4_BUF> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_PLL0_CLKOUT3_BUF> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_PLL0_CLKOUT2_BUF> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <SIG_PLL0_CLKOUT1_BUF> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <SIG_PLL0_CLKFBOUT_BUF> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <SIG_PLL0_CLKFBDCM> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 Unit <clock_generator> synthesized.
@@ -336,11 +339,12 @@ Design Statistics
 # IOs                              : 25
 
 Cell Usage :
-# BELS                             : 2
+# BELS                             : 3
 #      GND                         : 1
+#      INV                         : 1
 #      VCC                         : 1
-# Clock Buffers                    : 5
-#      BUFG                        : 5
+# Clock Buffers                    : 2
+#      BUFG                        : 2
 # Others                           : 1
 #      PLL_ADV                     : 1
 =========================================================================
@@ -352,12 +356,14 @@ Selected Device : 5vlx50tff1136-2
 
 
 Slice Logic Utilization: 
+ Number of Slice LUTs:                    1  out of  28800     0%  
+    Number used as Logic:                 1  out of  28800     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      0
-   Number with an unused Flip Flop:       0  out of      0         
-   Number with an unused LUT:             0  out of      0         
-   Number of fully used LUT-FF pairs:     0  out of      0         
+ Number of LUT Flip Flop pairs used:      1
+   Number with an unused Flip Flop:       1  out of      1   100%  
+   Number with an unused LUT:             0  out of      1     0%  
+   Number of fully used LUT-FF pairs:     0  out of      1     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
@@ -365,7 +371,7 @@ IO Utilization:
  Number of bonded IOBs:                   0  out of    480     0%  
 
 Specific Feature Utilization:
- Number of BUFG/BUFGCTRLs:                5  out of     32    15%  
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
  Number of PLL_ADVs:                      1  out of      6    16%  
 
 ---------------------------
@@ -399,7 +405,7 @@ Speed Grade: -2
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 0.000ns
+   Maximum combinational path delay: 0.212ns
 
 Timing Detail:
 --------------
@@ -409,29 +415,31 @@ All values displayed in nanoseconds (ns)
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Delay:               0.000ns (Levels of Logic = 0)
-  Source:            clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst:LOCKED (PAD)
-  Destination:       LOCKED (PAD)
+Delay:               0.212ns (Levels of Logic = 1)
+  Source:            RST (PAD)
+  Destination:       clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst:RST (PAD)
 
-  Data Path: clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst:LOCKED to LOCKED
+  Data Path: RST to clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst:RST
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-    PLL_ADV:LOCKED         0   0.000   0.000  clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst (LOCKED)
+     INV:I->O              0   0.212   0.000  clock_generator_0/PLL0_INST/rsti1_INV_0 (clock_generator_0/PLL0_INST/rsti)
+    PLL_ADV:RST                0.000          clock_generator_0/PLL0_INST/Using_PLL_ADV.PLL_ADV_inst
     ----------------------------------------
-    Total                      0.000ns (0.000ns logic, 0.000ns route)
+    Total                      0.212ns (0.212ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.78 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.84 secs
  
 --> 
 
-Total memory usage is 328116 kilobytes
+Total memory usage is 328004 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   21 (   0 filtered)
+Number of warnings :   24 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

@@ -1,0 +1,279 @@
+<stg><name>nfa_get_initials.1</name>
+
+
+<trans_list>
+
+<trans id="19" from="1" to="2">
+<condition id="3">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="20" from="2" to="3">
+<condition id="4">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="21" from="3" to="4">
+<condition id="5">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="4" bw="5" op_0_bw="5" op_1_bw="5">
+<![CDATA[
+:0  %tmp_read = call i5 @_ssdm_op_Read.ap_auto.i5(i5 %tmp_s)
+
+]]></node>
+<StgValue><ssdm name="tmp_read"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="2" lat="2">
+<core>PLB46M</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="9" bw="1" op_0_bw="1" op_1_bw="64" op_2_bw="32">
+<![CDATA[
+:5  %nfa_initials_buckets_load_req = call i1 @_ssdm_op_ReadReq.ap_bus.i64P(i64* %nfa_initials_buckets, i32 1)
+
+]]></node>
+<StgValue><ssdm name="nfa_initials_buckets_load_req"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="7" st_id="2" stage="1" lat="2">
+<core>PLB46M</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="9" bw="1" op_0_bw="1" op_1_bw="64" op_2_bw="32">
+<![CDATA[
+:5  %nfa_initials_buckets_load_req = call i1 @_ssdm_op_ReadReq.ap_bus.i64P(i64* %nfa_initials_buckets, i32 1)
+
+]]></node>
+<StgValue><ssdm name="nfa_initials_buckets_load_req"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="3">
+
+<operation id="8" st_id="3" stage="1" lat="1">
+<core>PLB46M</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="10" bw="64" op_0_bw="64" op_1_bw="64">
+<![CDATA[
+:6  %nfa_initials_buckets_read = call i64 @_ssdm_op_Read.ap_bus.i64P(i64* %nfa_initials_buckets)
+
+]]></node>
+<StgValue><ssdm name="nfa_initials_buckets_read"/></StgValue>
+</operation>
+</state>
+
+<state id="4" st_id="4">
+
+<operation id="9" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="5" bw="64" op_0_bw="5">
+<![CDATA[
+:1  %tmp_cast = zext i5 %tmp_read to i64
+
+]]></node>
+<StgValue><ssdm name="tmp_cast"/></StgValue>
+</operation>
+
+<operation id="10" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="6" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8">
+<![CDATA[
+:2  call void (...)* @_ssdm_op_SpecIFCore(i64* %nfa_initials_buckets, [1 x i8]* @p_str1129, [7 x i8]* @p_str38, [1 x i8]* @p_str1129, [1 x i8]* @p_str1129, [1 x i8]* @p_str1129, [1 x i8]* @p_str1129)
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="11" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="7" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8">
+<![CDATA[
+:3  call void (...)* @_ssdm_op_SpecBus(i64* %nfa_initials_buckets, [7 x i8]* @p_str35, i32 0, i32 0, i32 0, i32 10, [1 x i8]* @p_str1129, [1 x i8]* @p_str1129, [1 x i8]* @p_str1129) nounwind
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="12" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="8" bw="4" op_0_bw="64" op_1_bw="64" op_2_bw="64">
+<![CDATA[
+:4  %initials_buckets_addr = getelementptr [16 x i64]* %initials_buckets, i64 0, i64 %tmp_cast
+
+]]></node>
+<StgValue><ssdm name="initials_buckets_addr"/></StgValue>
+</operation>
+
+<operation id="13" st_id="4" stage="1" lat="1">
+<core>RAM</core>
+<MemPortIdVec>0 </MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="11" bw="0" op_0_bw="64" op_1_bw="4">
+<![CDATA[
+:7  store i64 %nfa_initials_buckets_read, i64* %initials_buckets_addr, align 8
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+
+<operation id="14" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<node id="12" bw="0">
+<![CDATA[
+:8  ret void
+
+]]></node>
+<StgValue><ssdm name=""/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="22" name="nfa_initials_buckets" dir="0" iftype="4">
+<core>PLB46M</core><StgValue><ssdm name="nfa_initials_buckets"/></StgValue>
+</port>
+<port id="23" name="initials_buckets" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="initials_buckets"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="24" name="tmp_s" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="tmp_s"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="26" from="_ssdm_op_Read.ap_auto.i5" to="tmp_read" fromId="25" toId="5">
+</dataflow>
+<dataflow id="27" from="tmp_s" to="tmp_read" fromId="24" toId="5">
+</dataflow>
+<dataflow id="29" from="_ssdm_op_ReadReq.ap_bus.i64P" to="nfa_initials_buckets_load_req" fromId="28" toId="6">
+</dataflow>
+<dataflow id="30" from="nfa_initials_buckets" to="nfa_initials_buckets_load_req" fromId="22" toId="6">
+</dataflow>
+<dataflow id="32" from="stg_31" to="nfa_initials_buckets_load_req" fromId="31" toId="6">
+</dataflow>
+<dataflow id="33" from="_ssdm_op_ReadReq.ap_bus.i64P" to="nfa_initials_buckets_load_req" fromId="28" toId="7">
+</dataflow>
+<dataflow id="34" from="nfa_initials_buckets" to="nfa_initials_buckets_load_req" fromId="22" toId="7">
+</dataflow>
+<dataflow id="35" from="stg_31" to="nfa_initials_buckets_load_req" fromId="31" toId="7">
+</dataflow>
+<dataflow id="37" from="_ssdm_op_Read.ap_bus.i64P" to="nfa_initials_buckets_read" fromId="36" toId="8">
+</dataflow>
+<dataflow id="38" from="nfa_initials_buckets" to="nfa_initials_buckets_read" fromId="22" toId="8">
+</dataflow>
+<dataflow id="39" from="tmp_read" to="tmp_cast" fromId="5" toId="9">
+</dataflow>
+<dataflow id="41" from="_ssdm_op_SpecIFCore" to="stg_10" fromId="40" toId="10">
+</dataflow>
+<dataflow id="42" from="nfa_initials_buckets" to="stg_10" fromId="22" toId="10">
+</dataflow>
+<dataflow id="44" from="p_str1129" to="stg_10" fromId="43" toId="10">
+</dataflow>
+<dataflow id="46" from="p_str38" to="stg_10" fromId="45" toId="10">
+</dataflow>
+<dataflow id="47" from="p_str1129" to="stg_10" fromId="43" toId="10">
+</dataflow>
+<dataflow id="48" from="p_str1129" to="stg_10" fromId="43" toId="10">
+</dataflow>
+<dataflow id="49" from="p_str1129" to="stg_10" fromId="43" toId="10">
+</dataflow>
+<dataflow id="50" from="p_str1129" to="stg_10" fromId="43" toId="10">
+</dataflow>
+<dataflow id="52" from="_ssdm_op_SpecBus" to="stg_11" fromId="51" toId="11">
+</dataflow>
+<dataflow id="53" from="nfa_initials_buckets" to="stg_11" fromId="22" toId="11">
+</dataflow>
+<dataflow id="55" from="p_str35" to="stg_11" fromId="54" toId="11">
+</dataflow>
+<dataflow id="57" from="stg_56" to="stg_11" fromId="56" toId="11">
+</dataflow>
+<dataflow id="58" from="stg_56" to="stg_11" fromId="56" toId="11">
+</dataflow>
+<dataflow id="59" from="stg_56" to="stg_11" fromId="56" toId="11">
+</dataflow>
+<dataflow id="61" from="stg_60" to="stg_11" fromId="60" toId="11">
+</dataflow>
+<dataflow id="62" from="p_str1129" to="stg_11" fromId="43" toId="11">
+</dataflow>
+<dataflow id="63" from="p_str1129" to="stg_11" fromId="43" toId="11">
+</dataflow>
+<dataflow id="64" from="p_str1129" to="stg_11" fromId="43" toId="11">
+</dataflow>
+<dataflow id="65" from="initials_buckets" to="initials_buckets_addr" fromId="23" toId="12">
+</dataflow>
+<dataflow id="67" from="stg_66" to="initials_buckets_addr" fromId="66" toId="12">
+</dataflow>
+<dataflow id="68" from="tmp_cast" to="initials_buckets_addr" fromId="9" toId="12">
+</dataflow>
+<dataflow id="69" from="nfa_initials_buckets_read" to="stg_13" fromId="8" toId="13">
+</dataflow>
+<dataflow id="70" from="initials_buckets_addr" to="stg_13" fromId="12" toId="13">
+</dataflow>
+</dataflows>
+
+
+</stg>

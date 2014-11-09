@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'nfa_accept_samples_generic_hw'
 ================================================================
-* Date:           Sat Aug 09 17:29:26 2014
+* Date:           Sat Nov 08 10:20:52 2014
 
 * Version:        2014.1 (build date: Fri Apr 04 13:20:25 PM 2014)
 * Project:        oil_plainc_hls
@@ -20,41 +20,38 @@
     +---------+-------+----------+------------+
     |  Clock  | Target| Estimated| Uncertainty|
     +---------+-------+----------+------------+
-    |default  |   7.00|      5.20|        3.00|
+    |default  |  10.00|      7.00|        3.00|
     +---------+-------+----------+------------+
 
 + Latency (clock cycles): 
     * Summary: 
-    +-----+-------------+-----+-------------+---------+
-    |      Latency      |      Interval     | Pipeline|
-    | min |     max     | min |     max     |   Type  |
-    +-----+-------------+-----+-------------+---------+
-    |    2|  39125640183|    3|  39125640184|   none  |
-    +-----+-------------+-----+-------------+---------+
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
 
     + Detail: 
         * Instance: 
-        +---------------------------------------+----------------------------+-----+-----+-----+-----+----------+
-        |                                       |                            |  Latency  |  Interval | Pipeline |
-        |                Instance               |           Module           | min | max | min | max |   Type   |
-        +---------------------------------------+----------------------------+-----+-----+-----+-----+----------+
-        |grp_bitset_next_fu_460                 |bitset_next                 |    2|    2|    1|    1| function |
-        |grp_sample_iterator_next_fu_472        |sample_iterator_next        |    3|    3|    1|    1| function |
-        |grp_sample_iterator_get_offset_fu_482  |sample_iterator_get_offset  |    4|    4|    1|    1| function |
-        |grp_nfa_get_initials_fu_494            |nfa_get_initials            |    5|    5|    4|    4| function |
-        |grp_nfa_get_finals_fu_500              |nfa_get_finals              |    5|    5|    4|    4| function |
-        |r_bit_p_bsf32_hw_fu_506                |p_bsf32_hw                  |    0|    0|    1|    1| function |
-        +---------------------------------------+----------------------------+-----+-----+-----+-----+----------+
+        +---------------------------------------+----------------------------+-----+-----+-----+-----+---------+
+        |                                       |                            |  Latency  |  Interval | Pipeline|
+        |                Instance               |           Module           | min | max | min | max |   Type  |
+        +---------------------------------------+----------------------------+-----+-----+-----+-----+---------+
+        |grp_nfa_accept_sample_multi_fu_268     |nfa_accept_sample_multi     |    ?|    ?|    ?|    ?|   none  |
+        |grp_sample_iterator_next_fu_289        |sample_iterator_next        |    3|    3|    3|    3|   none  |
+        |grp_sample_iterator_get_offset_fu_297  |sample_iterator_get_offset  |    3|    3|    3|    3|   none  |
+        +---------------------------------------+----------------------------+-----+-----+-----+-----+---------+
 
         * Loop: 
-        +-----------------+-----+-------------+-------------+-----------+-----------+-----------+----------+
-        |                 |      Latency      |  Iteration  |  Initiation Interval  |    Trip   |          |
-        |    Loop Name    | min |     max     |   Latency   |  achieved |   target  |   Count   | Pipelined|
-        +-----------------+-----+-------------+-------------+-----------+-----------+-----------+----------+
-        |- Loop 1         |    0|  39125640181| 14 ~ 597019 |          -|          -| 0 ~ 65535 |    no    |
-        | + Loop 1.1      |    0|       596998|   6 ~ 583   |          -|          -|  0 ~ 1024 |    no    |
-        |  ++ Loop 1.1.1  |    0|          576|            9|          -|          -|   0 ~ 64  |    no    |
-        +-----------------+-----+-------------+-------------+-----------+-----------+-----------+----------+
+        +-------------+-----+-----+----------+-----------+-----------+----------+----------+
+        |             |  Latency  | Iteration|  Initiation Interval  |   Trip   |          |
+        |  Loop Name  | min | max |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +-------------+-----+-----+----------+-----------+-----------+----------+----------+
+        |- Loop 1     |    ?|    ?|         ?|          -|          -| 0 ~ 1000 |    no    |
+        | + Loop 1.1  |    ?|    ?|        10|          -|          -|         ?|    no    |
+        | + Loop 1.2  |    0|   32|         2|          -|          -|  0 ~ 16  |    no    |
+        +-------------+-----+-----+----------+-----------+-----------+----------+----------+
 
 
 
@@ -65,156 +62,107 @@
 +-----------------+---------+-------+-------+-------+
 |       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
 +-----------------+---------+-------+-------+-------+
-|Expression       |        -|      -|      0|    397|
+|Expression       |        -|      -|      0|     75|
 |FIFO             |        -|      -|      -|      -|
-|Instance         |        -|      2|    410|    524|
-|Memory           |        -|      -|      -|      -|
-|Multiplexer      |        -|      -|      -|    609|
-|Register         |        -|      -|    893|      -|
+|Instance         |       12|      2|   4715|   4010|
+|Memory           |        0|      -|     66|     89|
+|Multiplexer      |        -|      -|      -|    202|
+|Register         |        -|      -|    127|      -|
 +-----------------+---------+-------+-------+-------+
-|Total            |        0|      2|   1303|   1530|
+|Total            |       12|      2|   4908|   4376|
 +-----------------+---------+-------+-------+-------+
 |Available        |      120|     48|  28800|  28800|
 +-----------------+---------+-------+-------+-------+
-|Utilization (%)  |        0|      4|      4|      5|
+|Utilization (%)  |       10|      4|     17|     15|
 +-----------------+---------+-------+-------+-------+
 
 + Detail: 
     * Instance: 
-    +----------------------------------------------------+------------------------------------------------+---------+-------+-----+-----+
-    |                      Instance                      |                     Module                     | BRAM_18K| DSP48E|  FF | LUT |
-    +----------------------------------------------------+------------------------------------------------+---------+-------+-----+-----+
-    |grp_bitset_next_fu_460                              |bitset_next                                     |        0|      0|  193|  265|
-    |nfa_accept_samples_generic_hw_mul_8ns_6ns_14_2_U16  |nfa_accept_samples_generic_hw_mul_8ns_6ns_14_2  |        0|      1|    0|    0|
-    |grp_nfa_get_finals_fu_500                           |nfa_get_finals                                  |        0|      0|   36|   34|
-    |grp_nfa_get_initials_fu_494                         |nfa_get_initials                                |        0|      0|   36|   34|
-    |r_bit_p_bsf32_hw_fu_506                             |p_bsf32_hw                                      |        0|      0|    0|   55|
-    |grp_sample_iterator_get_offset_fu_482               |sample_iterator_get_offset                      |        0|      1|   93|   16|
-    |grp_sample_iterator_next_fu_472                     |sample_iterator_next                            |        0|      0|   52|  120|
-    +----------------------------------------------------+------------------------------------------------+---------+-------+-----+-----+
-    |Total                                               |                                                |        0|      2|  410|  524|
-    +----------------------------------------------------+------------------------------------------------+---------+-------+-----+-----+
+    +---------------------------------------+----------------------------+---------+-------+------+------+
+    |                Instance               |           Module           | BRAM_18K| DSP48E|  FF  |  LUT |
+    +---------------------------------------+----------------------------+---------+-------+------+------+
+    |grp_nfa_accept_sample_multi_fu_268     |nfa_accept_sample_multi     |       12|      1|  4655|  3922|
+    |grp_sample_iterator_get_offset_fu_297  |sample_iterator_get_offset  |        0|      1|    42|     0|
+    |grp_sample_iterator_next_fu_289        |sample_iterator_next        |        0|      0|    18|    88|
+    +---------------------------------------+----------------------------+---------+-------+------+------+
+    |Total                                  |                            |       12|      2|  4715|  4010|
+    +---------------------------------------+----------------------------+---------+-------+------+------+
 
     * Memory: 
-    N/A
+    +-----------------+---------------------------------------------+---------+------+-----+------+-------------+
+    |      Memory     |                    Module                   | BRAM_18K| Words| Bits| Banks| W*Bits*Banks|
+    +-----------------+---------------------------------------------+---------+------+-----+------+-------------+
+    |result_U         |nfa_accept_samples_generic_hw_result         |        0|    16|    1|     1|           16|
+    |start_indices_U  |nfa_accept_samples_generic_hw_start_indices  |        0|    16|   32|     1|          512|
+    +-----------------+---------------------------------------------+---------+------+-----+------+-------------+
+    |Total            |                                             |        0|    32|   33|     2|          528|
+    +-----------------+---------------------------------------------+---------+------+-----+------+-------------+
 
     * FIFO: 
     N/A
 
     * Expression: 
-    +-------------------------------+----------+-------+---+----+------------+------------+
-    |         Variable Name         | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
-    +-------------------------------+----------+-------+---+----+------------+------------+
-    |c_1_fu_748_p2                  |     +    |      0|  0|  32|          32|           1|
-    |i_fu_568_p2                    |     +    |      0|  0|  16|          16|           1|
-    |p_rec_i_fu_574_p2              |     +    |      0|  0|  64|          64|           1|
-    |state_fu_624_p2                |     +    |      0|  0|   6|           6|           6|
-    |sum_fu_552_p2                  |     +    |      0|  0|  64|          64|          64|
-    |ap_sig_bdd_187                 |    and   |      0|  0|   1|           1|           1|
-    |ap_sig_bdd_370                 |    and   |      0|  0|   1|           1|           1|
-    |current_buckets_0_1_fu_721_p2  |    and   |      0|  0|  32|          32|          32|
-    |current_buckets_1_1_fu_726_p2  |    and   |      0|  0|  32|          32|          32|
-    |tmp_i_13_fu_534_p2             |    and   |      0|  0|   1|           1|           1|
-    |tmp_2_1_i_fu_586_p2            |   icmp   |      0|  0|  11|          32|           1|
-    |tmp_2_i_fu_580_p2              |   icmp   |      0|  0|  11|          32|           1|
-    |tmp_3_fu_563_p2                |   icmp   |      0|  0|   6|          16|          16|
-    |tmp_5_fu_737_p2                |   icmp   |      0|  0|  11|          32|           1|
-    |tmp_i_12_fu_529_p2             |   icmp   |      0|  0|   6|          16|          16|
-    |tmp_i_fu_524_p2                |   icmp   |      0|  0|   6|          16|          16|
-    |next_buckets_0_1_fu_701_p2     |    or    |      0|  0|  32|          32|          32|
-    |next_buckets_1_1_fu_707_p2     |    or    |      0|  0|  32|          32|          32|
-    |tmp_1_fu_731_p2                |    or    |      0|  0|  32|          32|          32|
-    |or_cond_fu_743_p2              |    xor   |      0|  0|   1|           1|           1|
-    +-------------------------------+----------+-------+---+----+------------+------------+
-    |Total                          |          |      0|  0| 397|         490|         288|
-    +-------------------------------+----------+-------+---+----+------------+------------+
+    +----------------------------+----------+-------+---+----+------------+------------+
+    |        Variable Name       | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------+----------+-------+---+----+------------+------------+
+    |c_1_fu_419_p2               |     +    |      0|  0|  16|          16|           1|
+    |k_2_fu_398_p2               |     +    |      0|  0|   5|           5|           1|
+    |units_fu_334_p2             |     +    |      0|  0|   5|           5|           1|
+    |p_c_1_fu_425_p3             |  Select  |      0|  0|  16|           1|          16|
+    |tmp_5_fu_412_p3             |  Select  |      0|  0|  16|           1|          16|
+    |ap_sig_bdd_287              |    and   |      0|  0|   1|           1|           1|
+    |brmerge_demorgan_fu_387_p2  |    and   |      0|  0|   1|           1|           1|
+    |finished_3_fu_358_p2        |    and   |      0|  0|   1|           1|           1|
+    |exitcond_fu_392_p2          |   icmp   |      0|  0|   2|           5|           5|
+    |tmp_i_16_fu_353_p2          |   icmp   |      0|  0|   6|          16|          16|
+    |tmp_i_fu_348_p2             |   icmp   |      0|  0|   6|          16|          16|
+    +----------------------------+----------+-------+---+----+------------+------------+
+    |Total                       |          |      0|  0|  75|          68|          75|
+    +----------------------------+----------+-------+---+----+------------+------------+
 
     * Multiplexer: 
-    +----------------------------------+----+-----------+-----+-----------+
-    |               Name               | LUT| Input Size| Bits| Total Bits|
-    +----------------------------------+----+-----------+-----+-----------+
-    |bus_assign_reg_284                |  32|          2|   32|         64|
-    |c_fu_140                          |  32|          2|   32|         64|
-    |i_0_i_reg_262                     |  16|          2|   16|         32|
-    |i_index_reg_222                   |  16|          2|   16|         32|
-    |i_sample_reg_232                  |  16|          2|   16|         32|
-    |indices_address                   |  32|          3|   32|         96|
-    |indices_dataout                   |  56|          3|   56|        168|
-    |indices_size                      |  32|          3|   32|         96|
-    |j_bit1_ph_phi_fu_337_p4           |   5|          2|    5|         10|
-    |j_bit1_reg_404                    |   8|          2|    8|         16|
-    |j_bucket1_ph_phi_fu_313_p4        |  32|          2|   32|         64|
-    |j_bucket1_ph_reg_309              |  32|          2|   32|         64|
-    |j_bucket1_reg_383                 |  32|          2|   32|         64|
-    |j_bucket_index1_ph_phi_fu_326_p4  |   2|          2|    2|          4|
-    |j_bucket_index1_ph_reg_322        |   2|          2|    2|          4|
-    |j_bucket_index1_reg_394           |   8|          2|    8|         16|
-    |next_buckets_0_reg_252            |  32|          2|   32|         64|
-    |next_buckets_1_reg_242            |  32|          2|   32|         64|
-    |nfa_forward_buckets_address       |  32|          3|   32|         96|
-    |p_01_rec_i_reg_273                |  64|          2|   64|        128|
-    |p_0_reg_448                       |  32|          2|   32|         64|
-    |tmp_buckets_0_3_reg_370           |  32|          2|   32|         64|
-    |tmp_buckets_1_3_reg_357           |  32|          2|   32|         64|
-    +----------------------------------+----+-----------+-----+-----------+
-    |Total                             | 609|         50|  609|       1370|
-    +----------------------------------+----+-----------+-----+-----------+
+    +------------------------+----+-----------+-----+-----------+
+    |          Name          | LUT| Input Size| Bits| Total Bits|
+    +------------------------+----+-----------+-----+-----------+
+    |c_fu_106                |  16|          2|   16|         32|
+    |i_index_fu_110          |  16|          2|   16|         32|
+    |i_sample_fu_114         |  16|          2|   16|         32|
+    |indices_address         |  32|          3|   32|         96|
+    |indices_dataout         |  56|          3|   56|        168|
+    |indices_size            |  32|          3|   32|         96|
+    |indvars_iv_reg_208      |   5|          2|    5|         10|
+    |k_1_reg_245             |   5|          2|    5|         10|
+    |p_0_reg_256             |  16|          2|   16|         32|
+    |result_address0         |   4|          3|    4|         12|
+    |start_indices_address0  |   4|          3|    4|         12|
+    +------------------------+----+-----------+-----+-----------+
+    |Total                   | 202|         27|  202|        532|
+    +------------------------+----+-----------+-----+-----------+
 
     * Register: 
     +-------------------------------------------------------------+----+----+-----+-----------+
     |                             Name                            | FF | LUT| Bits| Const Bits|
     +-------------------------------------------------------------+----+----+-----+-----------+
-    |agg_result_bucket_index_0_lcssa4_i_reg_296                   |   1|   0|    1|          0|
-    |any_0_i_reg_424                                              |   1|   0|    1|          0|
-    |ap_CS_fsm                                                    |   6|   0|    6|          0|
-    |bus_assign_reg_284                                           |  32|   0|   32|          0|
-    |c_fu_140                                                     |  32|   0|   32|          0|
-    |c_load_reg_813                                               |  32|   0|   32|          0|
-    |current_buckets_0_reg_822                                    |  32|   0|   32|          0|
-    |current_buckets_1_reg_827                                    |  32|   0|   32|          0|
-    |grp_bitset_next_fu_460_ap_start_ap_start_reg                 |   1|   0|    1|          0|
-    |grp_nfa_get_finals_fu_500_ap_start_ap_start_reg              |   1|   0|    1|          0|
-    |grp_nfa_get_initials_fu_494_ap_start_ap_start_reg            |   1|   0|    1|          0|
-    |grp_sample_iterator_get_offset_fu_482_ap_start_ap_start_reg  |   1|   0|    1|          0|
-    |grp_sample_iterator_next_fu_472_ap_start_ap_start_reg        |   1|   0|    1|          0|
-    |i_0_i_reg_262                                                |  16|   0|   16|          0|
-    |i_index_reg_222                                              |  16|   0|   16|          0|
-    |i_reg_846                                                    |  16|   0|   16|          0|
-    |i_sample_reg_232                                             |  16|   0|   16|          0|
-    |j_bit1_ph_reg_333                                            |   5|   0|    5|          0|
-    |j_bit1_reg_404                                               |   8|   0|    8|          0|
-    |j_bit_reg_911                                                |   8|   0|    8|          0|
-    |j_bucket1_ph_reg_309                                         |  32|   0|   32|          0|
-    |j_bucket1_reg_383                                            |  32|   0|   32|          0|
-    |j_bucket_index1_ph_reg_322                                   |   2|   0|    2|          0|
-    |j_bucket_index1_reg_394                                      |   8|   0|    8|          0|
-    |j_bucket_index_reg_916                                       |   8|   0|    8|          0|
-    |j_bucket_reg_921                                             |  32|   0|   32|          0|
-    |j_end_ph_reg_344                                             |   1|   0|    1|          0|
-    |j_end_reg_414                                                |   1|   0|    1|          0|
-    |next_buckets_0_1_reg_937                                     |  32|   0|   32|          0|
-    |next_buckets_0_reg_252                                       |  32|   0|   32|          0|
-    |next_buckets_1_reg_242                                       |  32|   0|   32|          0|
-    |p_01_rec_i_reg_273                                           |  64|   0|   64|          0|
-    |p_0_reg_448                                                  |  32|   0|   32|          0|
-    |p_rec_i_reg_851                                              |  64|   0|   64|          0|
-    |p_s_reg_926                                                  |   1|   0|    1|          0|
-    |r_bit_reg_869                                                |   5|   0|    5|          0|
-    |r_reg_437                                                    |   1|   0|    1|          0|
-    |reg_512                                                      |  32|   0|   32|          0|
-    |sample_buffer_addr_reg_837                                   |  32|   0|   32|          0|
-    |sym_reg_856                                                  |   8|   0|    8|          0|
-    |tmp_10_i_cast_reg_884                                        |   8|   0|   14|          6|
-    |tmp_11_i_reg_899                                             |  14|   0|   14|          0|
-    |tmp_2_1_i_reg_865                                            |   1|   0|    1|          0|
-    |tmp_2_i_reg_861                                              |   1|   0|    1|          0|
-    |tmp_2_reg_832                                                |  32|   0|   64|         32|
-    |tmp_buckets_0_3_reg_370                                      |  32|   0|   32|          0|
-    |tmp_buckets_0_reg_947                                        |  32|   0|   32|          0|
-    |tmp_buckets_1_3_reg_357                                      |  32|   0|   32|          0|
-    |tmp_buckets_1_reg_952                                        |  32|   0|   32|          0|
+    |ap_CS_fsm                                                    |   4|   0|    4|          0|
+    |c_fu_106                                                     |  16|   0|   16|          0|
+    |finished_1_reg_220                                           |   1|   0|    1|          0|
+    |finished_2_reg_233                                           |   1|   0|    1|          0|
+    |finished_reg_196                                             |   1|   0|    1|          0|
+    |grp_nfa_accept_sample_multi_fu_268_ap_start_ap_start_reg     |   1|   0|    1|          0|
+    |grp_sample_iterator_get_offset_fu_297_ap_start_ap_start_reg  |   1|   0|    1|          0|
+    |grp_sample_iterator_next_fu_289_ap_start_ap_start_reg        |   1|   0|    1|          0|
+    |i_index_fu_110                                               |  16|   0|   16|          0|
+    |i_index_load_reg_504                                         |  16|   0|   16|          0|
+    |i_sample_fu_114                                              |  16|   0|   16|          0|
+    |i_sample_load_reg_510                                        |  16|   0|   16|          0|
+    |indvars_iv_reg_208                                           |   5|   0|    5|          0|
+    |k_1_reg_245                                                  |   5|   0|    5|          0|
+    |k_2_reg_532                                                  |   5|   0|    5|          0|
+    |p_0_reg_256                                                  |  16|   0|   16|          0|
+    |stop_on_first_meet_reg_521                                   |   1|   0|    1|          0|
+    |units_reg_499                                                |   5|   0|    5|          0|
     +-------------------------------------------------------------+----+----+-----+-----------+
-    |Total                                                        | 893|   0|  931|         38|
+    |Total                                                        | 127|   0|  127|          0|
     +-------------------------------------------------------------+----+----+-----+-----------+
 
 
@@ -239,8 +187,8 @@
 |nfa_initials_buckets_rsp_empty_n  |  in |    1|   ap_bus   |      nfa_initials_buckets     |    pointer   |
 |nfa_initials_buckets_rsp_read     | out |    1|   ap_bus   |      nfa_initials_buckets     |    pointer   |
 |nfa_initials_buckets_address      | out |   32|   ap_bus   |      nfa_initials_buckets     |    pointer   |
-|nfa_initials_buckets_datain       |  in |   32|   ap_bus   |      nfa_initials_buckets     |    pointer   |
-|nfa_initials_buckets_dataout      | out |   32|   ap_bus   |      nfa_initials_buckets     |    pointer   |
+|nfa_initials_buckets_datain       |  in |   64|   ap_bus   |      nfa_initials_buckets     |    pointer   |
+|nfa_initials_buckets_dataout      | out |   64|   ap_bus   |      nfa_initials_buckets     |    pointer   |
 |nfa_initials_buckets_size         | out |   32|   ap_bus   |      nfa_initials_buckets     |    pointer   |
 |nfa_finals_buckets_req_din        | out |    1|   ap_bus   |       nfa_finals_buckets      |    pointer   |
 |nfa_finals_buckets_req_full_n     |  in |    1|   ap_bus   |       nfa_finals_buckets      |    pointer   |
@@ -248,8 +196,8 @@
 |nfa_finals_buckets_rsp_empty_n    |  in |    1|   ap_bus   |       nfa_finals_buckets      |    pointer   |
 |nfa_finals_buckets_rsp_read       | out |    1|   ap_bus   |       nfa_finals_buckets      |    pointer   |
 |nfa_finals_buckets_address        | out |   32|   ap_bus   |       nfa_finals_buckets      |    pointer   |
-|nfa_finals_buckets_datain         |  in |   32|   ap_bus   |       nfa_finals_buckets      |    pointer   |
-|nfa_finals_buckets_dataout        | out |   32|   ap_bus   |       nfa_finals_buckets      |    pointer   |
+|nfa_finals_buckets_datain         |  in |   64|   ap_bus   |       nfa_finals_buckets      |    pointer   |
+|nfa_finals_buckets_dataout        | out |   64|   ap_bus   |       nfa_finals_buckets      |    pointer   |
 |nfa_finals_buckets_size           | out |   32|   ap_bus   |       nfa_finals_buckets      |    pointer   |
 |nfa_forward_buckets_req_din       | out |    1|   ap_bus   |      nfa_forward_buckets      |    pointer   |
 |nfa_forward_buckets_req_full_n    |  in |    1|   ap_bus   |      nfa_forward_buckets      |    pointer   |

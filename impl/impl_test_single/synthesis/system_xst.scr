@@ -12,4 +12,4 @@ run
 -iobuf YES
 -max_fanout 10000
 -sd {../implementation}
--vlgincdir {"C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\pcores\" "C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\solution_virtex5\impl\pcores\" "C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" "C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\block_plus_v1_13_a\hdl\verilog\" "C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plbv46_pcie_v4_07_a\hdl\verilog\" }
+-vlgincdir {"C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\pcores\" "C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\solution_virtex5_plb\impl\pcores\" "C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

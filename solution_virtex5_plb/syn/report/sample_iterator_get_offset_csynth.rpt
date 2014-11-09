@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'sample_iterator_get_offset'
 ================================================================
-* Date:           Sat Aug 09 17:29:25 2014
+* Date:           Sat Nov 08 10:20:48 2014
 
 * Version:        2014.1 (build date: Fri Apr 04 13:20:25 PM 2014)
 * Project:        oil_plainc_hls
@@ -20,17 +20,17 @@
     +---------+-------+----------+------------+
     |  Clock  | Target| Estimated| Uncertainty|
     +---------+-------+----------+------------+
-    |default  |   7.00|      4.00|        3.00|
+    |default  |  10.00|      7.00|        3.00|
     +---------+-------+----------+------------+
 
 + Latency (clock cycles): 
     * Summary: 
-    +-----+-----+-----+-----+----------+
-    |  Latency  |  Interval | Pipeline |
-    | min | max | min | max |   Type   |
-    +-----+-----+-----+-----+----------+
-    |    4|    4|    1|    1| function |
-    +-----+-----+-----+-----+----------+
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    3|    3|    3|    3|   none  |
+    +-----+-----+-----+-----+---------+
 
     + Detail: 
         * Instance: 
@@ -48,29 +48,23 @@
 +-----------------+---------+-------+-------+-------+
 |       Name      | BRAM_18K| DSP48E|   FF  |  LUT  |
 +-----------------+---------+-------+-------+-------+
-|Expression       |        -|      -|      -|      -|
+|Expression       |        -|      1|      0|      0|
 |FIFO             |        -|      -|      -|      -|
-|Instance         |        -|      1|      -|      -|
+|Instance         |        -|      -|      -|      -|
 |Memory           |        -|      -|      -|      -|
 |Multiplexer      |        -|      -|      -|      -|
-|Register         |        -|      -|     93|     16|
+|Register         |        -|      -|     42|      -|
 +-----------------+---------+-------+-------+-------+
-|Total            |        0|      1|     93|     16|
+|Total            |        0|      1|     42|      0|
 +-----------------+---------+-------+-------+-------+
 |Available        |      120|     48|  28800|  28800|
 +-----------------+---------+-------+-------+-------+
-|Utilization (%)  |        0|      2|   ~0  |   ~0  |
+|Utilization (%)  |        0|      2|   ~0  |      0|
 +-----------------+---------+-------+-------+-------+
 
 + Detail: 
     * Instance: 
-    +----------------------------------------------------+-------------------------------------------------+---------+-------+---+----+
-    |                      Instance                      |                      Module                     | BRAM_18K| DSP48E| FF| LUT|
-    +----------------------------------------------------+-------------------------------------------------+---------+-------+---+----+
-    |nfa_accept_samples_generic_hw_mul_16ns_8ns_24_2_U0  |nfa_accept_samples_generic_hw_mul_16ns_8ns_24_2  |        0|      1|  0|   0|
-    +----------------------------------------------------+-------------------------------------------------+---------+-------+---+----+
-    |Total                                               |                                                 |        0|      1|  0|   0|
-    +----------------------------------------------------+-------------------------------------------------+---------+-------+---+----+
+    N/A
 
     * Memory: 
     N/A
@@ -79,28 +73,27 @@
     N/A
 
     * Expression: 
-    N/A
+    +-----------------+----------+-------+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |tmp_s_fu_113_p2  |     *    |      1|  0|   0|          16|           8|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |Total            |          |      1|  0|   0|          16|           8|
+    +-----------------+----------+-------+---+----+------------+------------+
 
     * Multiplexer: 
     N/A
 
     * Register: 
-    +------------------------------------+----+----+-----+-----------+
-    |                Name                | FF | LUT| Bits| Const Bits|
-    +------------------------------------+----+----+-----+-----------+
-    |ap_CS_fsm                           |   1|   0|    1|          0|
-    |ap_reg_ppiten_pp0_it1               |   1|   0|    1|          0|
-    |ap_reg_ppiten_pp0_it2               |   1|   0|    1|          0|
-    |ap_reg_ppiten_pp0_it3               |   1|   0|    1|          0|
-    |ap_reg_ppiten_pp0_it4               |   1|   0|    1|          0|
-    |ap_reg_ppstg_tmp_9_reg_138_pp0_it3  |  32|   0|   32|          0|
-    |i_sample_read_reg_127               |  16|   0|   16|          0|
-    |indices_stride_load_new_reg_143     |   8|   0|    8|          0|
-    |tmp_9_reg_138                       |  32|   0|   32|          0|
-    |i_sample_read_reg_127               |   0|  16|   16|          0|
-    +------------------------------------+----+----+-----+-----------+
-    |Total                               |  93|  16|  109|          0|
-    +------------------------------------+----+----+-----+-----------+
+    +---------------------------------+----+----+-----+-----------+
+    |               Name              | FF | LUT| Bits| Const Bits|
+    +---------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                        |   2|   0|    2|          0|
+    |indices_stride_load_new_reg_139  |   8|   0|    8|          0|
+    |tmp_4_reg_134                    |  32|   0|   32|          0|
+    +---------------------------------+----+----+-----+-----------+
+    |Total                            |  42|   0|   42|          0|
+    +---------------------------------+----+----+-----+-----------+
 
 
 
@@ -117,8 +110,9 @@
 |ap_done              | out |    1| ap_ctrl_hs | sample_iterator_get_offset | return value |
 |ap_idle              | out |    1| ap_ctrl_hs | sample_iterator_get_offset | return value |
 |ap_ready             | out |    1| ap_ctrl_hs | sample_iterator_get_offset | return value |
-|ap_ce                |  in |    1| ap_ctrl_hs | sample_iterator_get_offset | return value |
 |ap_return            | out |   32| ap_ctrl_hs | sample_iterator_get_offset | return value |
+|i_index              |  in |   16|   ap_none  |           i_index          |    scalar    |
+|i_sample             |  in |   16|   ap_none  |          i_sample          |    scalar    |
 |indices_req_din      | out |    1|   ap_bus   |           indices          |    pointer   |
 |indices_req_full_n   |  in |    1|   ap_bus   |           indices          |    pointer   |
 |indices_req_write    | out |    1|   ap_bus   |           indices          |    pointer   |
@@ -128,8 +122,6 @@
 |indices_datain       |  in |   56|   ap_bus   |           indices          |    pointer   |
 |indices_dataout      | out |   56|   ap_bus   |           indices          |    pointer   |
 |indices_size         | out |   32|   ap_bus   |           indices          |    pointer   |
-|i_index              |  in |   16|   ap_none  |           i_index          |    scalar    |
-|i_sample             |  in |   16|   ap_none  |          i_sample          |    scalar    |
 |sample_buffer_size   |  in |   32|   ap_none  |     sample_buffer_size     |    scalar    |
 |sample_length        |  in |   16|   ap_none  |        sample_length       |    scalar    |
 +---------------------+-----+-----+------------+----------------------------+--------------+

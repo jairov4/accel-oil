@@ -1,664 +1,1351 @@
-@I [HLS-0] Workspace C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb opened at Sat Aug 09 17:41:02 -0500 2014
-@I [HLS-100] Command "config_clock -quiet -name default -period 7 -default=false "
-@I [SYN-201] Setting up clock 'default' with a period of 7ns.
-@I [HLS-100] Command 'config_clock' returned 0; elapsed 0Total elapsed time: 0.735 sec.
+@I [HLS-0] Workspace C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb opened at Sat Nov 08 10:20:18 -0500 2014
+@I [HLS-100] Command "config_clock -quiet -name default -period 10 -default=false "
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 0Total elapsed time: 0.719 sec.
 @I [HLS-100] Command "config_clock -quiet -name default -uncertainty 3 "
 @I [SYN-201] Setting up clock 'default' with an uncertainty of 3ns.
-@I [HLS-100] Command 'config_clock' returned 0; elapsed 0Total elapsed time: 0.735 sec.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 0Total elapsed time: 0.719 sec.
 @I [HLS-100] Command "open_platform DefaultPlatform "
-@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 0.735 sec.
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 0.797 sec.
 @I [HLS-100] Command "import_lib C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5 "
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx.lib "
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/xilinx_interface.lib "
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/plb46.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.735 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.875 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/fsl.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.735 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.875 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/axi4.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.735 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.735 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.875 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 0.875 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/dsp48.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.735 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.875 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfft.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.735 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.875 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfir.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.735 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.735 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.875 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.062Total elapsed time: 0.875 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx_old.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.735 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 0.891 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx.hlp "
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/target_info.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.750 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.891 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/dsp48.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.750 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 0.750 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.891 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.891 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/dsp48e.hlp "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.750 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.891 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.750 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.891 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 51840} {LUT 207360} {FF 207360} {DSP48E 192 } {BRAM 576 }  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.750 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.891 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed medium "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.750 sec.
-@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.015Total elapsed time: 0.750 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.891 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.094Total elapsed time: 0.891 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5.gen "
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.750 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.907 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.750 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.907 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.750 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 0.922 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/nativeAXI4.gen "
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 0.766 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.922 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.766 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 0.766 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 0.954 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 0.954 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 0.781 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 0.969 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.781 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 0.985 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.797 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.985 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.141Total elapsed time: 0.938 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.149Total elapsed time: 1.133 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfir.gen "
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/tps/tcl/tcllib1.11.1/struct/list.tcl "
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 0.985 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.032Total elapsed time: 0.985 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 1.274 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.094Total elapsed time: 1.274 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/tps/tcl/tcllib1.11.1/math/bignum.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.985 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.047Total elapsed time: 0.985 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.25Total elapsed time: 1.0 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 1.337 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 1.352 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.446Total elapsed time: 1.352 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.0 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.25Total elapsed time: 1.0 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.25Total elapsed time: 1.0 sec.
-@I [HLS-100] Command "open_platform DefaultPlatform "
-@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 1.0 sec.
-@I [HLS-100] Command "import_lib C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5_fpv5 "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx_fpv5_old.lib "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx_fpv5.lib "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.0 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.0 sec.
-@I [HLS-100] Command 'import_lib' returned 0; elapsed 0Total elapsed time: 1.0 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5_fpv5.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx_fpv5.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.0 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.0 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.352 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.461Total elapsed time: 1.352 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.461Total elapsed time: 1.352 sec.
 @I [HLS-100] Command "set_part xc5vlx50tff1136-3 "
 @I [HLS-100] Command "add_library xilinx/virtex5/virtex5:xc5vlx50t:ff1136:-3 "
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.16 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.352 sec.
 @I [HLS-100] Command "license_exists VIVADO_HLS "
-@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 1.16 sec.
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 1.352 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.16 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.368 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 7200 } {LUT 28800 } {FF 28800 } {DSP48E 48  } {BRAM 120 }  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.16 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.368 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed fast "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.16 sec.
-@I [HLS-100] Command 'add_library' returned 0; elapsed 0Total elapsed time: 1.16 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.368 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.016Total elapsed time: 1.368 sec.
 @I [HLS-100] Command "add_library xilinx/virtex5/virtex5_fpv5 "
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.16 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.368 sec.
 @I [HLS-100] Command "license_exists VIVADO_HLS "
-@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 1.16 sec.
-@I [HLS-100] Command 'add_library' returned 0; elapsed 0Total elapsed time: 1.16 sec.
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 1.368 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 1.368 sec.
+@I [HLS-100] Command "import_lib C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5_fpv5 "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx_fpv5_old.lib "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx_fpv5.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.368 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.368 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.015Total elapsed time: 1.383 sec.
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5_fpv5.gen "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx_fpv5.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.399 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 1.399 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.031Total elapsed time: 1.399 sec.
 @I [HLS-10] Setting target device to 'xc5vlx50tff1136-3'
-@I [HLS-100] Command 'set_part' returned 0; elapsed 0.016Total elapsed time: 1.16 sec.
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.047Total elapsed time: 1.399 sec.
 @I [HLS-100] Command "get_default_platform "
-@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.16 sec.
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.399 sec.
 @I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 7200 } {LUT 28800 } {FF 28800 } {DSP48E 48  } {BRAM 120 }  "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.16 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.399 sec.
 @I [HLS-100] Command "config_chip_info -quiet -speed fast "
-@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.16 sec.
-@I [HLS-100] Command "config_schedule -effort=high -verbose=true "
-@I [HLS-100] Command 'config_schedule' returned 0; elapsed 0Total elapsed time: 1.16 sec.
-@I [HLS-100] Command 'open_solution' returned 0; elapsed 0.313Total elapsed time: 1.16 sec.
-@I [HLS-100] Command "export_design -format pcore -version 1.01.a -use_netlist none "
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.31 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/common.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 1.47 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 1.47 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.47 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.47 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.47 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 1.63 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/virtex.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.63 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.63 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.63 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/nativeAXI4.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.63 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.018Total elapsed time: 1.81 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.018Total elapsed time: 1.81 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.013Total elapsed time: 1.94 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.94 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.94 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.156Total elapsed time: 1.250 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 1.281 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.218Total elapsed time: 1.281 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.281 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.218Total elapsed time: 1.281 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.218Total elapsed time: 1.281 sec.
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.399 sec.
+@I [HLS-100] Command "config_schedule -effort=high -verbose=1 "
+@I [HLS-100] Command 'config_schedule' returned 0; elapsed 0.015Total elapsed time: 1.415 sec.
+@I [HLS-100] Command 'open_solution' returned 0; elapsed 0.773Total elapsed time: 1.415 sec.
+@I [HLS-100] Command "set_part xc5vlx50tff1136-3 "
+@I [HLS-100] Command "add_library xilinx/virtex5/virtex5:xc5vlx50t:ff1136:-3 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.415 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 1.415 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.415 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 7200 } {LUT 28800 } {FF 28800 } {DSP48E 48  } {BRAM 120 }  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.415 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed fast "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 1.415 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0Total elapsed time: 1.415 sec.
+@I [HLS-100] Command "add_library xilinx/virtex5/virtex5_fpv5 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 1.415 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 1.415 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 1.415 sec.
+@I [HLS-100] Command "import_lib C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5_fpv5 "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx_fpv5_old.lib "
+@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx_fpv5.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.415 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.415 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.016Total elapsed time: 1.430 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5_fpv5.gen "
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx_fpv5.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.281 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.281 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.281 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 1.313 sec.
-@I [IMPL-8] Exporting the design as a Pcore for EDK.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 1.328 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.328 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/common.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.328 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.328 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.328 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.328 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.328 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.328 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/virtex.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 1.344 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.344 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.344 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/nativeAXI4.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.344 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.344 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.344 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 1.360 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 1.375 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.375 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.141Total elapsed time: 1.516 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 1.547 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 1.547 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.547 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 1.547 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 1.547 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5_fpv5.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx_fpv5.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.547 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.547 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_get_offset.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.578 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_initials.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.578 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/p_bsf32_hw.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.578 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset_next.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 1.594 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_finals.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.594 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_next.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.594 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.594 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_get_offset.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.641 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_initials.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.641 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/p_bsf32_hw.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.641 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset_next.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.641 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_finals.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.641 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_next.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 1.672 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.430 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.430 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.016Total elapsed time: 1.430 sec.
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.016Total elapsed time: 1.430 sec.
+@I [HLS-100] Command "create_clock -period 10 -name default "
+@I [HLS-100] Command "config_clock -quiet -name default -period 10 -default=false "
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 0Total elapsed time: 1.430 sec.
+@I [HLS-100] Command 'create_clock' returned 0; elapsed 0Total elapsed time: 1.430 sec.
+@I [HLS-100] Command "set_clock_uncertainty 3 "
+@I [HLS-100] Command 'set_clock_uncertainty' returned 0; elapsed 0Total elapsed time: 1.430 sec.
+@I [HLS-100] Command "config_schedule -effort high -verbose "
+@I [HLS-100] Command 'config_schedule' returned 0; elapsed 0Total elapsed time: 1.430 sec.
+@I [HLS-100] Command "source ./oil_plainc_hls/solution_virtex5_plb/directives.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.047Total elapsed time: 1.477 sec.
+@I [HLS-100] Command "csynth_design "
+@I [HLS-100] Command "elaborate -effort=medium -skip_syncheck=0 -lm=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 "
+@I [HLS-10] Analyzing design file 'oil_plainc_hls/src/bitset.c' ... 
+@0 [HLS-0] Analyzing design file 'oil_plainc_hls/src/bitset.c' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2014.1/msys" -hls    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl=  "oil_plainc_hls/src/bitset.c"  -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset.pp.00.o"
+
+oil_plainc_hls/src/bitset.c:58:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.
+oil_plainc_hls/src/bitset.c:58:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.
+
+@I [HLS-0] Syntax Checker time: 1 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2014.1/msys" -hls -fno-exceptions  -D__llvm__  -CC -E "oil_plainc_hls/src/bitset.c"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl= -D "__asm__(...)="  -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset.pp.0.c"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-100] Command "list_core -type functional_unit "
+@I [HLS-100] Command 'list_core' returned 0; elapsed 0Total elapsed time: 2.712 sec.
+@I [HLS-0] Marker-Pragma convertor: C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset.pp.0.c C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset.pp.0.c.ap-line.c C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset.pp.0.c.ap-line.c.CXX 1
+@I [HLS-0] 
+Source processor: exec C:/Programas/Xilinx/Vivado_HLS/2014.1/tps/win64/jre/bin/java -Xmx512m -classpath   "C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/autopilot.sourceprocessor.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/org.eclipse.core.runtime_3.7.0.v20110110.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/org.eclipse.equinox.common_3.6.0.v20110523.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/com.ibm.icu_4.4.2.v20110208.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/jargs.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/org.eclipse.emf.common_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/org.eclipse.emf.ecore_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset.pp.0.c.ap-line.c"  -m "nfa_accept_samples_generic_hw" -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset.pp.0.c.ap-cdt.c" -c --ad --pc --pp --directive C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/solution_virtex5_plb.directive --source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/src/bitset.c --error C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db --funcunit "AddSub AddSubnS Mul MulnS Mul2S Mul3S Mul4S Mul5S Mul6S DivnS FDiv FSqrt DDiv DSqrt FAddSub_nodsp FAddSub_fulldsp FMul_nodsp FMul_meddsp FMul_fulldsp FMul_maxdsp DAddSub_nodsp DAddSub_fulldsp DMul_nodsp DMul_meddsp DMul_fulldsp DMul_maxdsp" --ce --tcl C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db --lp --ca --gf --nk --df --pd --p2d C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db --sd --scff C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/.systemc_flag
+
+@I [HLS-0] Marker-Pragma convertor: C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset.pp.0.c.ap-cdt.c C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset.pragma.0.c C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset.pragma.0.c.ap-line.CXX 0
+@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.665 sec.
+@I [HLS-0] CDT processor time: 1 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2014.1/msys" -hls -fno-exceptions  -D__llvm__  -CC -E "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset.pragma.1.c"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl= -D "__asm__(...)="  -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset.pragma.2.c"
+
+@I [HLS-0] exec clang -gcc-toolchain C:/Programas/Xilinx/Vivado_HLS/2014.1/msys -hls -fno-exceptions  -D__llvm__  -w  "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset.pragma.2.c"    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset.g.bc"
+@I [HLS-10] Analyzing design file 'oil_plainc_hls/src/nfa.c' ... 
+@0 [HLS-0] Analyzing design file 'oil_plainc_hls/src/nfa.c' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2014.1/msys" -hls    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl=  "oil_plainc_hls/src/nfa.c"  -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa.pp.00.o"
+
+@I [HLS-0] Syntax Checker time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2014.1/msys" -hls -fno-exceptions  -D__llvm__  -CC -E "oil_plainc_hls/src/nfa.c"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl= -D "__asm__(...)="  -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa.pp.0.c"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-100] Command "list_core -type functional_unit "
+@I [HLS-100] Command 'list_core' returned 0; elapsed 0Total elapsed time: 5.102 sec.
+@I [HLS-0] Marker-Pragma convertor: C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa.pp.0.c C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa.pp.0.c.ap-line.c C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa.pp.0.c.ap-line.c.CXX 1
+@I [HLS-0] 
+Source processor: exec C:/Programas/Xilinx/Vivado_HLS/2014.1/tps/win64/jre/bin/java -Xmx512m -classpath   "C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/autopilot.sourceprocessor.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/org.eclipse.core.runtime_3.7.0.v20110110.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/org.eclipse.equinox.common_3.6.0.v20110523.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/com.ibm.icu_4.4.2.v20110208.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/jargs.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/org.eclipse.emf.common_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/org.eclipse.emf.ecore_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa.pp.0.c.ap-line.c"  -m "nfa_accept_samples_generic_hw" -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa.pp.0.c.ap-cdt.c" -c --ad --pc --pp --directive C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/solution_virtex5_plb.directive --source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/src/nfa.c --error C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db --funcunit "AddSub AddSubnS Mul MulnS Mul2S Mul3S Mul4S Mul5S Mul6S DivnS FDiv FSqrt DDiv DSqrt FAddSub_nodsp FAddSub_fulldsp FMul_nodsp FMul_meddsp FMul_fulldsp FMul_maxdsp DAddSub_nodsp DAddSub_fulldsp DMul_nodsp DMul_meddsp DMul_fulldsp DMul_maxdsp" --ce --tcl C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db --lp --ca --gf --nk --df --pd --p2d C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db --sd --scff C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/.systemc_flag
+
+@I [HLS-0] Marker-Pragma convertor: C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa.pp.0.c.ap-cdt.c C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa.pragma.0.c C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa.pragma.0.c.ap-line.CXX 0
+@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 6.790 sec.
+@I [HLS-0] CDT processor time: 1 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2014.1/msys" -hls -fno-exceptions  -D__llvm__  -CC -E "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa.pragma.1.c"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl= -D "__asm__(...)="  -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa.pragma.2.c"
+
+@I [HLS-0] exec clang -gcc-toolchain C:/Programas/Xilinx/Vivado_HLS/2014.1/msys -hls -fno-exceptions  -D__llvm__  -w  "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa.pragma.2.c"    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa.g.bc"
+@I [HLS-10] Analyzing design file 'oil_plainc_hls/src/nfa_file.c' ... 
+@0 [HLS-0] Analyzing design file 'oil_plainc_hls/src/nfa_file.c' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2014.1/msys" -hls    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl=  "oil_plainc_hls/src/nfa_file.c"  -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_file.pp.00.o"
+
+@I [HLS-0] Syntax Checker time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2014.1/msys" -hls -fno-exceptions  -D__llvm__  -CC -E "oil_plainc_hls/src/nfa_file.c"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl= -D "__asm__(...)="  -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_file.pp.0.c"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-100] Command "list_core -type functional_unit "
+@I [HLS-100] Command 'list_core' returned 0; elapsed 0Total elapsed time: 7.149 sec.
+@I [HLS-0] Marker-Pragma convertor: C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_file.pp.0.c C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_file.pp.0.c.ap-line.c C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_file.pp.0.c.ap-line.c.CXX 1
+@I [HLS-0] 
+Source processor: exec C:/Programas/Xilinx/Vivado_HLS/2014.1/tps/win64/jre/bin/java -Xmx512m -classpath   "C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/autopilot.sourceprocessor.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/org.eclipse.core.runtime_3.7.0.v20110110.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/org.eclipse.equinox.common_3.6.0.v20110523.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/com.ibm.icu_4.4.2.v20110208.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/jargs.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/org.eclipse.emf.common_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/org.eclipse.emf.ecore_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_file.pp.0.c.ap-line.c"  -m "nfa_accept_samples_generic_hw" -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_file.pp.0.c.ap-cdt.c" -c --ad --pc --pp --directive C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/solution_virtex5_plb.directive --source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/src/nfa_file.c --error C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db --funcunit "AddSub AddSubnS Mul MulnS Mul2S Mul3S Mul4S Mul5S Mul6S DivnS FDiv FSqrt DDiv DSqrt FAddSub_nodsp FAddSub_fulldsp FMul_nodsp FMul_meddsp FMul_fulldsp FMul_maxdsp DAddSub_nodsp DAddSub_fulldsp DMul_nodsp DMul_meddsp DMul_fulldsp DMul_maxdsp" --ce --tcl C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db --lp --ca --gf --nk --df --pd --p2d C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db --sd --scff C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/.systemc_flag
+
+@I [HLS-0] Marker-Pragma convertor: C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_file.pp.0.c.ap-cdt.c C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_file.pragma.0.c C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_file.pragma.0.c.ap-line.CXX 0
+@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.477 sec.
+@I [HLS-0] CDT processor time: 1 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2014.1/msys" -hls -fno-exceptions  -D__llvm__  -CC -E "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_file.pragma.1.c"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl= -D "__asm__(...)="  -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_file.pragma.2.c"
+
+@I [HLS-0] exec clang -gcc-toolchain C:/Programas/Xilinx/Vivado_HLS/2014.1/msys -hls -fno-exceptions  -D__llvm__  -w  "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_file.pragma.2.c"    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_file.g.bc"
+@I [HLS-10] Analyzing design file 'oil_plainc_hls/src/oil.c' ... 
+@0 [HLS-0] Analyzing design file 'oil_plainc_hls/src/oil.c' ... 
+@I [HLS-0] Compiling one TU...
+@I [HLS-0] 
+Checking before pre-process: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2014.1/msys" -hls    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl=  "oil_plainc_hls/src/oil.c"  -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/oil.pp.00.o"
+
+@I [HLS-0] Syntax Checker time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2014.1/msys" -hls -fno-exceptions  -D__llvm__  -CC -E "oil_plainc_hls/src/oil.c"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl= -D "__asm__(...)="  -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/oil.pp.0.c"
+
+@I [HLS-0] GCC PP time: 0 seconds per iteration
+@I [HLS-100] Command "list_core -type functional_unit "
+@I [HLS-100] Command 'list_core' returned 0; elapsed 0Total elapsed time: 8.790 sec.
+@I [HLS-0] Marker-Pragma convertor: C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/oil.pp.0.c C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/oil.pp.0.c.ap-line.c C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/oil.pp.0.c.ap-line.c.CXX 1
+@I [HLS-0] 
+Source processor: exec C:/Programas/Xilinx/Vivado_HLS/2014.1/tps/win64/jre/bin/java -Xmx512m -classpath   "C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/autopilot.sourceprocessor.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/org.eclipse.cdt.core_5.3.0.xilinx_patch.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/org.eclipse.core.runtime_3.7.0.v20110110.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/org.eclipse.equinox.common_3.6.0.v20110523.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/com.ibm.icu_4.4.2.v20110208.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/lib/classes/jargs.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/org.eclipse.emf.common_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/org.eclipse.emf.ecore_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.7.0.v20120127-1122.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/com.autoesl.autopilot.ui.directiveFileModel_1.0.0.jar;C:/Programas/Xilinx/Vivado_HLS/2014.1/win64/tools/eclipse/plugins/com.autoesl.autopilot.ui.common_1.0.0.jar"  autopilot.sourceprocessor.CParser  "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/oil.pp.0.c.ap-line.c"  -m "nfa_accept_samples_generic_hw" -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/oil.pp.0.c.ap-cdt.c" -c --ad --pc --pp --directive C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/solution_virtex5_plb.directive --source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/src/oil.c --error C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db --funcunit "AddSub AddSubnS Mul MulnS Mul2S Mul3S Mul4S Mul5S Mul6S DivnS FDiv FSqrt DDiv DSqrt FAddSub_nodsp FAddSub_fulldsp FMul_nodsp FMul_meddsp FMul_fulldsp FMul_maxdsp DAddSub_nodsp DAddSub_fulldsp DMul_nodsp DMul_meddsp DMul_fulldsp DMul_maxdsp" --ce --tcl C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db --lp --ca --gf --nk --df --pd --p2d C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db --sd --scff C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/.systemc_flag
+
+@I [HLS-0] Marker-Pragma convertor: C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/oil.pp.0.c.ap-cdt.c C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/oil.pragma.0.c C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/oil.pragma.0.c.ap-line.CXX 0
+@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 10.133 sec.
+@I [HLS-0] CDT processor time: 1 seconds per iteration
+@I [HLS-0] Pragma handling time: 0 seconds per iteration
+@I [HLS-0] 
+Source preprocessing: exec clang -gcc-toolchain "C:/Programas/Xilinx/Vivado_HLS/2014.1/msys" -hls -fno-exceptions  -D__llvm__  -CC -E "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/oil.pragma.1.c"     -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89   -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__cdecl= -D "__asm__(...)="  -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/oil.pragma.2.c"
+
+@I [HLS-0] exec clang -gcc-toolchain C:/Programas/Xilinx/Vivado_HLS/2014.1/msys -hls -fno-exceptions  -D__llvm__  -w  "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/oil.pragma.2.c"    -D "__asm__(...)=" -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -std=gnu89  -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot" -I "C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -g -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/oil.g.bc"
+@I [HLS-10] Validating synthesis directives ...
+@0 [HLS-0] Validating synthesis directives ...
+@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/pragma.status.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 10.352 sec.
+@I [HLS-0] Linking all ...
+@I [HLS-0] exec llvm-ld  "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset.bc" "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa.bc" "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_file.bc" "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/oil.bc"  -disable-opt  -LC:/Programas/Xilinx/Vivado_HLS/2014.1/win64/lib -lm_basic -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/a.o.pre"
+@I [HLS-0] Link time: 0 seconds per iteration
+@I [HLS-0] Linking all ...
+@I [HLS-0] exec llvm-ld  "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset.g.bc" "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa.g.bc" "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_file.g.bc" "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/oil.g.bc"  -disable-opt  -LC:/Programas/Xilinx/Vivado_HLS/2014.1/win64/lib -lm_basic -o "C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/a.g.pre"
+@I [HLS-0] Link time: 0 seconds per iteration
+@I [HLS-100] Command "opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 "
+@I [HLS-100] Command "cleanup_all_models "
+@I [HLS-100] Command 'cleanup_all_models' returned 0; elapsed 0Total elapsed time: 11.102 sec.
+@I [HLS-10] Starting code transformations ...
+@0 [HLS-0] Starting code transformations ...
+@I [HLS-0] std xform: transform -hls -share-std-xform -always-inline -promote-dbg-pointer  -interface-preproc  -scalarrepl -mem2reg -keep-read-access -instcombine -dce  -promote-dbg-pointer  -bitop-raise  -indvars -loop-simplify -xunroll  -constprop -instcombine -simplifycfg -indvars  -simplifycfg -dce -globaldce  -basicaa  -simplifycfg -mem2reg -globalopt  -global-constprop -deadargelim -instcombine -simplifycfg  -prune-eh -simplifycfg  -scalarrepl -instcombine -reassociate -licm  -simplifycfg -loop-simplify -indvars -instcombine  -simplifycfg -mem2reg -loop-simplify -indvars -instcombine  -gvn -gvn -instcombine -adce  -break-crit-edges  -simplifycfg -loop-delete  -global-array-opt -dce -dse -adce  -find-syn-modules -top nfa_accept_samples_generic_hw  -deadargelim  -mem2reg -instcombine -dce  -presyn-prepare -auto-rom-infer  -syn-check -check-rec-only  -find-region -simplifycfg -func-extr -function-inline  -mem2reg -instcombine -dce   -gvn -adce -adse  -constprop -instcombine -bit-constprop  -instcombine -dce -simplifycfg -bitop-raise  -simplifycfg -dce -loop-delete  -globalopt -global-privatize -mem2reg -dce  -global-constprop -pointer-simplify -constprop -dce  -promote-dbg-pointer  -norm-name   C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/a.g.0.bc -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/a.g.1.bc -f  -phase std-opt
+@I [XFORM-501] Unrolling loop 'Loop-1' (oil_plainc_hls/src/bitset.c:53) in function '_bsf32_hw': changing partial unrolling into complete unrolling since the unrolling factor (=32) is no less than the loop trip count (=32).
+@I [XFORM-603] Inlining function 'bitset_first' into 'nfa_accept_sample_multi' (oil_plainc_hls/src/nfa.c:391).
+@I [HLS-0] Std xform time: 0 seconds per iteration
+@I [HLS-10] Checking synthesizability ...
+@0 [HLS-0] Checking synthesizability ...
+@I [HLS-0] syn check 1/2: transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce  -mem2reg -instcombine  -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce  -array-normalize -instcombine -dce  -array-seg-normalize -instcombine -dce  -array-flatten -instcombine -dce  -array-burst -dce  -deadargelim -promote-global-argument  -doublePtrSimplify -doublePtrElim -dce  -doublePtrSimplify -promote-dbg-pointer  -dce -scalarrepl -dse -adse -instcombine  -ptrLegalization  -simplifycfg -dce -instcombine  -pointer-simplify -ptrArgReplace -dce -instcombine   -disaggr -scalarrepl -norm-name -dce  -mem2reg -instcombine -ptrLegalization   -simplifycfg  -instcombine -dce -inst-simplify  -directive-preproc -mem2reg -dse -dce  -globaldce    C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/a.g.1.bc -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/a.g.2.prechk.bc -f
+@I [HLS-0] Syn check 1/2 time: 1 seconds per iteration
+@I [HLS-0] syn check 2/2: transform -syn-check   -interface-gen -constprop -dse -dce  C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/a.g.2.prechk.bc -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/a.g.2.bc -f  -phase syn-check
+@I [HLS-0] Syn check 2/2 time: 0 seconds per iteration
+@I [HLS-0] Compiler optimizing ...
+@I [HLS-0] Share syncheck's 1.bc for syn flow: copy C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/a.g.1.bc to C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/a.o.1.bc
+@I [HLS-0] presyn 1: transform -hls  -directive-preproc -mem2reg -dse -dce  -disaggr -scalarrepl -norm-name -deadargelim  -mem2reg -instcombine -dce -auto-rom-infer -dce  -directive-preproc -mem2reg -dse -dce  -func-buffer -dce -array-normalize  -func-legal -instcombine -gvn -constprop -dce   -ptrArgReplace -mem2reg -instcombine -dce  -array-seg-normalize -deadargelim  -instcombine -dce  -pointer-simplify -dce  -port-alignment -dce  -data-pack -instcombine -dce   -loop-simplify -indvars -instcombine  -gvn -loop-simplify -mem2reg -dce -simplifycfg  -find-region -instcombine  -array-burst -dce  -auto-loop-pipeline  -inst-simplify  -interface-preproc  -indvars -auto-loop-unroll -loop-simplify -xunroll  -constprop -instcombine -simplifycfg -indvars  -simplifycfg -dce -globaldce  -gvn -disable-agg-range -inst-simplify  -constprop -simplifycfg -dce  -pointer-simplify -dce  -array-transform-check  -globalopt -constprop -dce  -array-promote -constprop -instcombine -dce -auto-par -array-partition -instcombine -simplifycfg -dce  -ptrArgReplace -global-constprop -deadargelim -mem2reg  -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg  -instcombine -simplifycfg -dce  -array-reshape -instcombine -simplifycfg -dce   -mem-intrinsic-preproc -dce  -global-privatize  -mem2reg -globaldce  -promote-global-argument  -ptrArgReplace -mem2reg -instcombine -dce  -globalopt -mergereturn -simplify-global-access -mem2reg -dce  -pointer-simplify -dce  -functionattrs  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -inst-simplify -dce -norm-name  -function-inline  -func-inst -constprop -instcombine -simplifycfg -dce  -func-legal -dce   -directive-preproc -mem2reg -dse -dce  -loop-bound  -arraycheck -bitwidthmin -on-by-dataflow  -instcombine -simplifycfg -dce -loop-simplify -simplifycfg -loop-stream -instcombine -simplifycfg -dce -globaldce  -funstream-prep -function-stream -dce -globaldce  -array-streaming -instcombine -simplifycfg -dce      -group-axi-access  -simplifycfg -dce -loop-delete  -norm-name  C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/a.o.1.bc -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/a.o.1.tmp.bc -f
+@I [XFORM-1101] Packing variable 'indices' (oil_plainc_hls/src/nfa.c:515) into a 56-bit variable.
+@I [XFORM-1101] Packing variable 'nfa.initials.buckets' (oil_plainc_hls/src/nfa.c:511) into a 64-bit variable.
+@I [XFORM-1101] Packing variable 'nfa.finals.buckets' (oil_plainc_hls/src/nfa.c:511) into a 64-bit variable.
+@I [XFORM-1101] Packing variable 'next.buckets' (oil_plainc_hls/src/nfa.c:334) into a 64-bit variable.
+@I [XFORM-1101] Packing variable 'current.buckets' (oil_plainc_hls/src/nfa.c:335) into a 64-bit variable.
+@I [XFORM-1101] Packing variable 'tmp.buckets' (oil_plainc_hls/src/nfa.c:336) into a 64-bit variable.
+@I [XFORM-502] Unrolling all loops for pipelining in function '_bsf32_hw' (oil_plainc_hls/src/bitset.c:48).
+@W [XFORM-503] Ignored partial unroll directive for loop 'Loop-1' (oil_plainc_hls/src/bitset.c:53) because its parent loop or function is pipelined.
+@I [XFORM-502] Unrolling all loops for pipelining in function 'bitset_clear' (oil_plainc_hls/src/bitset.c:74).
+@I [XFORM-502] Unrolling all loops for pipelining in function 'bitset_intersect' (oil_plainc_hls/src/bitset.c:164).
+@I [XFORM-502] Unrolling all loops for pipelining in function 'bitset_any' (oil_plainc_hls/src/bitset.c:175).
+@I [XFORM-502] Unrolling all loops for pipelining in function 'bitset_union' (oil_plainc_hls/src/bitset.c:153).
+@I [XFORM-502] Unrolling all loops for pipelining in function 'nfa_accept_sample_multi' (oil_plainc_hls/src/nfa.c:324).
+@W [XFORM-503] Ignored partial unroll directive for loop 'Loop-1' (oil_plainc_hls/src/nfa.c:352) because its parent loop or function is pipelined.
+@W [XFORM-503] Ignored partial unroll directive for loop 'Loop-2.1' (oil_plainc_hls/src/nfa.c:199) because its parent loop or function is pipelined.
+@W [XFORM-503] Ignored partial unroll directive for loop 'Loop-2.2.1' (oil_plainc_hls/src/nfa.c:414) because its parent loop or function is pipelined.
+@W [XFORM-503] Ignored partial unroll directive for loop 'Loop-2.2.2' (oil_plainc_hls/src/nfa.c:475) because its parent loop or function is pipelined.
+@I [XFORM-501] Unrolling loop 'Loop-1' (oil_plainc_hls/src/bitset.c:53) in function '_bsf32_hw' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1' (oil_plainc_hls/src/bitset.c:77) in function 'bitset_clear' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1' (oil_plainc_hls/src/bitset.c:167) in function 'bitset_intersect' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1' (oil_plainc_hls/src/bitset.c:178) in function 'bitset_any' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1' (oil_plainc_hls/src/bitset.c:156) in function 'bitset_union' completely.
+@W [XFORM-503] Cannot unroll loop 'Loop-1' (oil_plainc_hls/src/nfa.c:352) in function 'nfa_accept_sample_multi': cannot completely unroll a loop with a variable trip count.
+@W [XFORM-503] Cannot unroll loop 'Loop-2' (oil_plainc_hls/src/nfa.c:199) in function 'nfa_accept_sample_multi': cannot completely unroll a loop with a variable trip count.
+@W [XFORM-503] Cannot unroll loop 'Loop-2.1' (oil_plainc_hls/src/nfa.c:199) in function 'nfa_accept_sample_multi': cannot completely unroll a loop with a variable trip count.
+@I [XFORM-501] Unrolling loop 'Loop-2.1.1' (oil_plainc_hls/src/bitset.c:199) in function 'nfa_accept_sample_multi' completely.
+@W [XFORM-503] Cannot unroll loop 'Loop-2.2' (oil_plainc_hls/src/nfa.c:410) in function 'nfa_accept_sample_multi' completely: variable loop bound.
+@W [XFORM-503] Cannot unroll loop 'Loop-2.2.1' (oil_plainc_hls/src/nfa.c:414) in function 'nfa_accept_sample_multi': cannot completely unroll a loop with a variable trip count.
+@W [XFORM-503] Cannot unroll loop 'Loop-2.2.2' (oil_plainc_hls/src/nfa.c:475) in function 'nfa_accept_sample_multi': cannot completely unroll a loop with a variable trip count.
+@I [XFORM-101] Partitioning array 'end_string' (oil_plainc_hls/src/nfa.c:346) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'sym_offset' (oil_plainc_hls/src/nfa.c:370) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'j.bit' (oil_plainc_hls/src/nfa.c:372) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'j.bucket_index' (oil_plainc_hls/src/nfa.c:372) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'j.bucket' (oil_plainc_hls/src/nfa.c:372) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'j.end' (oil_plainc_hls/src/nfa.c:372) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'any_state' (oil_plainc_hls/src/nfa.c:374) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'end' (oil_plainc_hls/src/nfa.c:397) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'sym' (oil_plainc_hls/src/nfa.c:401) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'state' (oil_plainc_hls/src/nfa.c:403) in dimension 1 completely.
+@I [XFORM-602] Inlining function 'bitset_clear' into 'bitset_init' automatically.
+@I [XFORM-602] Inlining function 'nfa_get_symbols' into 'nfa_get_sucessors' (oil_plainc_hls/src/nfa.c:97) automatically.
+@I [XFORM-602] Inlining function 'bitset_init' into 'nfa_accept_sample_multi' automatically.
+@I [XFORM-602] Inlining function 'bitset_clear' into 'nfa_accept_sample_multi' automatically.
+@I [XFORM-602] Inlining function 'bsf32' into 'nfa_accept_sample_multi' (oil_plainc_hls/src/bitset.c:206->oil_plainc_hls/src/nfa.c:391) automatically.
+@I [XFORM-602] Inlining function 'bitset_end' into 'nfa_accept_sample_multi' (oil_plainc_hls/src/nfa.c:418) automatically.
+@I [XFORM-602] Inlining function 'bitset_intersect' into 'nfa_accept_sample_multi' automatically.
+@I [XFORM-602] Inlining function 'bitset_any' into 'nfa_accept_sample_multi' automatically.
+@I [XFORM-602] Inlining function 'bitset_element' into 'nfa_accept_sample_multi' (oil_plainc_hls/src/nfa.c:452) automatically.
+@I [XFORM-602] Inlining function 'nfa_get_sucessors' into 'nfa_accept_sample_multi' automatically.
+@I [XFORM-602] Inlining function 'bitset_union' into 'nfa_accept_sample_multi' automatically.
+@I [XFORM-602] Inlining function 'sample_iterator_equals' into 'nfa_accept_samples_generic_hw' (oil_plainc_hls/src/nfa.c:574) automatically.
+@I [HLS-0] Presyn 1 time: 2 seconds per iteration
+@I [HLS-0] presyn 2: transform -hls -keep-callgraph -scalarrepl -mem2reg  -indvars -loop-bound  -inst-simplify -instcombine -dce  -merge-array-access -mem2reg -dce  -clean-region -mergereturn -if-conv  -instcombine -dce -constprop  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce  -scalarrepl -mem2reg  -global-constprop -deadargelim -deadargelim  -instcombine -dce -simplifycfg    -ptrArgReplace -mem2reg -function-inline  -mem2reg -instcombine -dce -expr-balance  -instcombine -dce  -bitwidthmin  -directive-preproc  -inst-rectify -instcombine -dce  -functionattrs  -constprop -instcombine -bit-constprop  -globalopt -globaldce  -inst-simplify -instcombine -elimdeaddata -dce  -loop-delete -simplifycfg   -norm-name C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/a.o.1.tmp.bc -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/a.o.2.bc -f  -phase presyn
+@I [XFORM-401] Performing if-conversion on hyperblock from (oil_plainc_hls/src/bitset.c:56:2) to (oil_plainc_hls/src/bitset.c:58:1) in function '_bsf32_hw'... converting 34 basic blocks.
+@I [XFORM-401] Performing if-conversion on hyperblock to (oil_plainc_hls/src/nfa.c:434:7) in function 'nfa_accept_sample_multi'... converting 4 basic blocks.
+@I [HLS-0] Presyn 2 time: 1 seconds per iteration
+@I [HLS-0] build ssdm: transform -hls -function-uniquify -auto-function-inline  -loop-simplify -indvars -licm -loop-dep  -loop-bound -licm -loop-simplify -flattenloopnest  -array-flatten -gvn -instcombine -dce  -promote-global-argument  -array-map -dce -func-legal  -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify   -axi4-lower -array-seg-normalize  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce  -inst-simplify -dce  -globaldce -array-streaming -instcombine  -dce   -deadargelim -doublePtrSimplify -doublePtrElim  -dce -doublePtrSimplify -promote-dbg-pointer -dce  -scalarrepl -mem2reg -disaggr -norm-name -mem2reg  -instcombine  -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -dce -instcombine  -loop-rot -constprop -cfgopt -simplifycfg -indvars -pointer-simplify -dce -loop-bound  -loop-simplify -loop-preproc  -constprop -gvn -mem2reg -instcombine -dce  -loop-merge -dce  -bitwidthmin  -directive-preproc -inst-simplify -dce  -interface-gen -gvn -mem2reg -instcombine -dce -adse  -loop-bound  -instcombine -cfgopt -simplifycfg -loop-simplify  -clean-region -io-protocol  -find-region -mem2reg  -loop-simplify -phi-opt -bitop-raise  -inst-simplify -inst-rectify -instcombine -adce -deadargelim  -cfgopt -simplifycfg -strip-dead-prototypes  -interface-lower -bitop-lower -intrinsic-lower  -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa  -inst-simplify -simplifycfg   -mergereturn -inst-simplify -inst-rectify  -dce -bitop-lower  -loop-rewind -pointer-simplify -dce -cfgopt  -norm-name -legalize -read-loop-dep -dce -bitwidth   -cdfg-build  C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/a.o.2.bc -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/a.o.3.bc -f  -phase build-ssdm
+@I [HLS-0] Build ssdm time: 2 seconds per iteration
+@I [HLS-0] Finish building internal data model.
+@I [HLS-100] Command 'opt_and_import_c' returned 0; elapsed 8.549Total elapsed time: 19.651 sec.
+@I [HLS-111] Elapsed time: 19.681 seconds; current memory usage: 127 MB.
+@I [HLS-100] Command 'elaborate' returned 0; elapsed 18.189Total elapsed time: 19.667 sec.
+@I [HLS-100] Command "autosyn "
+@I [HLS-10] Starting hardware synthesis ...
+@0 [HLS-0] Starting hardware synthesis ...
+@I [HLS-0] Synthesizing C/C++ design ...
+@I [HLS-10] Synthesizing 'nfa_accept_samples_generic_hw' ...
+@0 [HLS-0] Synthesizing 'nfa_accept_samples_generic_hw' ...
+@I [HLS-100] Command "ap_set_top_model nfa_accept_samples_generic_hw "
+@W [SYN-103] Legalizing function name 'nfa_get_initials.1' to 'nfa_get_initials_1'.
+@W [SYN-103] Legalizing function name '_bsf32_hw' to 'p_bsf32_hw'.
+@W [SYN-103] Legalizing function name 'nfa_get_finals.1' to 'nfa_get_finals_1'.
+@I [HLS-100] Command 'ap_set_top_model' returned 0; elapsed 0Total elapsed time: 19.729 sec.
+@I [HLS-100] Command "get_model_list nfa_accept_samples_generic_hw -filter all-wo-channel -topdown "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0Total elapsed time: 19.729 sec.
+@I [HLS-100] Command "preproc_iomode -model nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 19.729 sec.
+@I [HLS-100] Command "preproc_iomode -model nfa_accept_sample_multi "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 19.729 sec.
+@I [HLS-100] Command "preproc_iomode -model nfa_get_finals.1 "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 19.729 sec.
+@I [HLS-100] Command "preproc_iomode -model _bsf32_hw "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 19.729 sec.
+@I [HLS-100] Command "preproc_iomode -model nfa_get_initials.1 "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 19.729 sec.
+@I [HLS-100] Command "preproc_iomode -model sample_iterator_next "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 19.729 sec.
+@I [HLS-100] Command "preproc_iomode -model sample_iterator_get_offset "
+@I [HLS-100] Command 'preproc_iomode' returned 0; elapsed 0Total elapsed time: 19.729 sec.
+@I [HLS-100] Command "get_model_list nfa_accept_samples_generic_hw -filter all-wo-channel "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-0] Model list for configure: sample_iterator_get_offset sample_iterator_next nfa_get_initials.1 _bsf32_hw nfa_get_finals.1 nfa_accept_sample_multi nfa_accept_samples_generic_hw
+@I [HLS-0] Configuring Module : sample_iterator_get_offset ...
+@I [HLS-100] Command "set_default_model sample_iterator_get_offset "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-100] Command "apply_spec_resource_limit sample_iterator_get_offset "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-0] Configuring Module : sample_iterator_next ...
+@I [HLS-100] Command "set_default_model sample_iterator_next "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-100] Command "apply_spec_resource_limit sample_iterator_next "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-0] Configuring Module : nfa_get_initials.1 ...
+@I [HLS-100] Command "set_default_model nfa_get_initials.1 "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-100] Command "apply_spec_resource_limit nfa_get_initials.1 "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-0] Configuring Module : _bsf32_hw ...
+@I [HLS-100] Command "set_default_model _bsf32_hw "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-100] Command "apply_spec_resource_limit _bsf32_hw "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-0] Configuring Module : nfa_get_finals.1 ...
+@I [HLS-100] Command "set_default_model nfa_get_finals.1 "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-100] Command "apply_spec_resource_limit nfa_get_finals.1 "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-0] Configuring Module : nfa_accept_sample_multi ...
+@I [HLS-100] Command "set_default_model nfa_accept_sample_multi "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-100] Command "apply_spec_resource_limit nfa_accept_sample_multi "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-0] Configuring Module : nfa_accept_samples_generic_hw ...
+@I [HLS-100] Command "set_default_model nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-100] Command "apply_spec_resource_limit nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'apply_spec_resource_limit' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-0] Model list for preprocess: sample_iterator_get_offset sample_iterator_next nfa_get_initials.1 _bsf32_hw nfa_get_finals.1 nfa_accept_sample_multi nfa_accept_samples_generic_hw
+@I [HLS-0] Preprocessing Module: sample_iterator_get_offset ...
+@I [HLS-100] Command "set_default_model sample_iterator_get_offset "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-100] Command "cdfg_preprocess -model sample_iterator_get_offset "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-100] Command "rtl_gen_preprocess sample_iterator_get_offset "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-0] Preprocessing Module: sample_iterator_next ...
+@I [HLS-100] Command "set_default_model sample_iterator_next "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-100] Command "cdfg_preprocess -model sample_iterator_next "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-100] Command "rtl_gen_preprocess sample_iterator_next "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-0] Preprocessing Module: nfa_get_initials.1 ...
+@I [HLS-100] Command "set_default_model nfa_get_initials.1 "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-100] Command "cdfg_preprocess -model nfa_get_initials.1 "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-100] Command "rtl_gen_preprocess nfa_get_initials.1 "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-0] Preprocessing Module: _bsf32_hw ...
+@I [HLS-100] Command "set_default_model _bsf32_hw "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 19.745 sec.
+@I [HLS-100] Command "cdfg_preprocess -model _bsf32_hw "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0.015Total elapsed time: 19.760 sec.
+@I [HLS-100] Command "rtl_gen_preprocess _bsf32_hw "
+@W [RTGEN-101] Legalizing port name '_bsf32_hw/bus' to '_bsf32_hw/bus_r'.
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 19.760 sec.
+@I [HLS-0] Preprocessing Module: nfa_get_finals.1 ...
+@I [HLS-100] Command "set_default_model nfa_get_finals.1 "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 19.760 sec.
+@I [HLS-100] Command "cdfg_preprocess -model nfa_get_finals.1 "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0Total elapsed time: 19.760 sec.
+@I [HLS-100] Command "rtl_gen_preprocess nfa_get_finals.1 "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 19.760 sec.
+@I [HLS-0] Preprocessing Module: nfa_accept_sample_multi ...
+@I [HLS-100] Command "set_default_model nfa_accept_sample_multi "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 19.760 sec.
+@I [HLS-100] Command "cdfg_preprocess -model nfa_accept_sample_multi "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0.063Total elapsed time: 19.823 sec.
+@I [HLS-100] Command "rtl_gen_preprocess nfa_accept_sample_multi "
+@W [RTGEN-101] Legalizing port name 'nfa_accept_sample_multi/length' to 'nfa_accept_sample_multi/length_r'.
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 19.823 sec.
+@I [HLS-0] Preprocessing Module: nfa_accept_samples_generic_hw ...
+@I [HLS-100] Command "set_default_model nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 19.823 sec.
+@I [HLS-100] Command "cdfg_preprocess -model nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'cdfg_preprocess' returned 0; elapsed 0Total elapsed time: 19.823 sec.
+@I [HLS-100] Command "rtl_gen_preprocess nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 19.823 sec.
+@I [HLS-0] Model list for synthesis: sample_iterator_get_offset sample_iterator_next nfa_get_initials.1 _bsf32_hw nfa_get_finals.1 nfa_accept_sample_multi nfa_accept_samples_generic_hw
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'sample_iterator_get_offset' 
+@0 [HLS-0] -- Scheduling module 'sample_iterator_get_offset' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model sample_iterator_get_offset "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 19.823 sec.
+@I [HLS-100] Command "schedule -model sample_iterator_get_offset "
+@I [SCHED-11] Starting scheduling ...
+@I [SYN-351] The following objects are mapped to a MAC.
+   a  wire read on port 'i_sample'
+   b  'partselect' operation ('indices_stride_load_new', oil_plainc_hls/src/nfa.c:261)
+   c  bus read on port 'indices' (oil_plainc_hls/src/nfa.c:261)
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.172Total elapsed time: 19.995 sec.
+@I [HLS-111] Elapsed time: 0.36 seconds; current memory usage: 128 MB.
+@I [HLS-100] Command "report -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_get_offset.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 20.104 sec.
+@I [HLS-100] Command "db_write -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_get_offset.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.016Total elapsed time: 20.120 sec.
+@I [HLS-0] Finish scheduling sample_iterator_get_offset.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'sample_iterator_get_offset' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'sample_iterator_get_offset' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model sample_iterator_get_offset "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 20.151 sec.
+@I [HLS-100] Command "bind -model sample_iterator_get_offset "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=sample_iterator_get_offset
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.015Total elapsed time: 20.167 sec.
+@I [HLS-111] Elapsed time: 0.156 seconds; current memory usage: 128 MB.
+@I [HLS-100] Command "report -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_get_offset.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.016Total elapsed time: 20.198 sec.
+@I [HLS-100] Command "db_write -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_get_offset.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.015Total elapsed time: 20.214 sec.
+@I [HLS-0] Finish binding sample_iterator_get_offset.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'sample_iterator_next' 
+@0 [HLS-0] -- Scheduling module 'sample_iterator_next' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model sample_iterator_next "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 20.214 sec.
+@I [HLS-100] Command "schedule -model sample_iterator_next "
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.016Total elapsed time: 20.229 sec.
+@I [HLS-111] Elapsed time: 0.079 seconds; current memory usage: 128 MB.
+@I [HLS-100] Command "report -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_next.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.016Total elapsed time: 20.308 sec.
+@I [HLS-100] Command "db_write -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_next.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0Total elapsed time: 20.308 sec.
+@I [HLS-0] Finish scheduling sample_iterator_next.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'sample_iterator_next' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'sample_iterator_next' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model sample_iterator_next "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 20.340 sec.
+@I [HLS-100] Command "bind -model sample_iterator_next "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=sample_iterator_next
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0Total elapsed time: 20.340 sec.
+@I [HLS-111] Elapsed time: 0.141 seconds; current memory usage: 128 MB.
+@I [HLS-100] Command "report -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_next.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.015Total elapsed time: 20.418 sec.
+@I [HLS-100] Command "db_write -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_next.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0Total elapsed time: 20.418 sec.
+@I [HLS-0] Finish binding sample_iterator_next.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'nfa_get_initials_1' 
+@0 [HLS-0] -- Scheduling module 'nfa_get_initials_1' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model nfa_get_initials.1 "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 20.418 sec.
+@I [HLS-100] Command "schedule -model nfa_get_initials.1 "
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining function 'nfa_get_initials.1'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 4.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.016Total elapsed time: 20.433 sec.
+@I [HLS-111] Elapsed time: 0.047 seconds; current memory usage: 128 MB.
+@I [HLS-100] Command "report -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_initials_1.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.016Total elapsed time: 20.496 sec.
+@I [HLS-100] Command "db_write -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_initials_1.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0Total elapsed time: 20.496 sec.
+@I [HLS-0] Finish scheduling nfa_get_initials.1.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'nfa_get_initials_1' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'nfa_get_initials_1' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model nfa_get_initials.1 "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 20.527 sec.
+@I [HLS-100] Command "bind -model nfa_get_initials.1 "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=nfa_get_initials.1
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0Total elapsed time: 20.527 sec.
+@I [HLS-111] Elapsed time: 0.14 seconds; current memory usage: 128 MB.
+@I [HLS-100] Command "report -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_initials_1.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.016Total elapsed time: 20.605 sec.
+@I [HLS-100] Command "db_write -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_initials_1.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0Total elapsed time: 20.605 sec.
+@I [HLS-0] Finish binding nfa_get_initials.1.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'p_bsf32_hw' 
+@0 [HLS-0] -- Scheduling module 'p_bsf32_hw' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model _bsf32_hw "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 20.605 sec.
+@I [HLS-100] Command "schedule -model _bsf32_hw "
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining function '_bsf32_hw'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 1.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.062Total elapsed time: 20.668 sec.
+@I [HLS-111] Elapsed time: 0.11 seconds; current memory usage: 128 MB.
+@I [HLS-100] Command "report -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/p_bsf32_hw.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.016Total elapsed time: 20.730 sec.
+@I [HLS-100] Command "db_write -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/p_bsf32_hw.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.031Total elapsed time: 20.761 sec.
+@I [HLS-0] Finish scheduling _bsf32_hw.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'p_bsf32_hw' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'p_bsf32_hw' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model _bsf32_hw "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 20.824 sec.
+@I [HLS-100] Command "bind -model _bsf32_hw "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=_bsf32_hw
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.031Total elapsed time: 20.855 sec.
+@I [HLS-111] Elapsed time: 0.172 seconds; current memory usage: 128 MB.
+@I [HLS-100] Command "report -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/p_bsf32_hw.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.015Total elapsed time: 20.886 sec.
+@I [HLS-100] Command "db_write -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/p_bsf32_hw.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.031Total elapsed time: 20.918 sec.
+@I [HLS-0] Finish binding _bsf32_hw.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'nfa_get_finals_1' 
+@0 [HLS-0] -- Scheduling module 'nfa_get_finals_1' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model nfa_get_finals.1 "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 20.933 sec.
+@I [HLS-100] Command "schedule -model nfa_get_finals.1 "
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining function 'nfa_get_finals.1'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 4.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0Total elapsed time: 20.933 sec.
+@I [HLS-111] Elapsed time: 0.093 seconds; current memory usage: 129 MB.
+@I [HLS-100] Command "report -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_finals_1.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.015Total elapsed time: 21.11 sec.
+@I [HLS-100] Command "db_write -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_finals_1.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0Total elapsed time: 21.11 sec.
+@I [HLS-0] Finish scheduling nfa_get_finals.1.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'nfa_get_finals_1' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'nfa_get_finals_1' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model nfa_get_finals.1 "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 21.27 sec.
+@I [HLS-100] Command "bind -model nfa_get_finals.1 "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=nfa_get_finals.1
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0Total elapsed time: 21.27 sec.
+@I [HLS-111] Elapsed time: 0.094 seconds; current memory usage: 129 MB.
+@I [HLS-100] Command "report -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_finals_1.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.016Total elapsed time: 21.74 sec.
+@I [HLS-100] Command "db_write -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_finals_1.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0Total elapsed time: 21.74 sec.
+@I [HLS-0] Finish binding nfa_get_finals.1.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'nfa_accept_sample_multi' 
+@0 [HLS-0] -- Scheduling module 'nfa_accept_sample_multi' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model nfa_accept_sample_multi "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 21.74 sec.
+@I [HLS-100] Command "schedule -model nfa_accept_sample_multi "
+@I [SCHED-11] Starting scheduling ...
+@I [SYN-351] The following objects are mapped to a MAC.
+   a  wire read on port 'nfa_symbols' (oil_plainc_hls/src/nfa.c:90->oil_plainc_hls/src/nfa.c:97)
+   b  'phi' operation ('state_assign_in', oil_plainc_hls/src/bitset.c:190->oil_plainc_hls/src/nfa.c:452)
+   c  bus read on port 'sample' (oil_plainc_hls/src/nfa.c:463)
+@W [SCHED-65] Unable to satisfy pipeline directive: Function contains subloop(s) not being unrolled.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 6.907Total elapsed time: 27.981 sec.
+@I [HLS-111] Elapsed time: 6.97 seconds; current memory usage: 144 MB.
+@I [HLS-100] Command "report -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_sample_multi.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.187Total elapsed time: 28.247 sec.
+@I [HLS-100] Command "db_write -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_sample_multi.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.532Total elapsed time: 28.778 sec.
+@I [HLS-0] Finish scheduling nfa_accept_sample_multi.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'nfa_accept_sample_multi' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'nfa_accept_sample_multi' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model nfa_accept_sample_multi "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 28.825 sec.
+@I [HLS-100] Command "bind -model nfa_accept_sample_multi "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=nfa_accept_sample_multi
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.156Total elapsed time: 28.981 sec.
+@I [HLS-111] Elapsed time: 1 seconds; current memory usage: 144 MB.
+@I [HLS-100] Command "report -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_sample_multi.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.281Total elapsed time: 29.309 sec.
+@I [HLS-100] Command "db_write -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_sample_multi.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.578Total elapsed time: 29.887 sec.
+@I [HLS-0] Finish binding nfa_accept_sample_multi.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'nfa_accept_samples_generic_hw' 
+@0 [HLS-0] -- Scheduling module 'nfa_accept_samples_generic_hw' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 29.887 sec.
+@I [HLS-100] Command "schedule -model nfa_accept_samples_generic_hw "
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-100] Command 'schedule' returned 0; elapsed 0.047Total elapsed time: 29.934 sec.
+@I [HLS-111] Elapsed time: 0.953 seconds; current memory usage: 144 MB.
+@I [HLS-100] Command "report -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.verbose.sched.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.031Total elapsed time: 30.59 sec.
+@I [HLS-100] Command "db_write -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.sched.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.031Total elapsed time: 30.106 sec.
+@I [HLS-0] Finish scheduling nfa_accept_samples_generic_hw.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'nfa_accept_samples_generic_hw' 
+@0 [HLS-0] -- Exploring micro-architecture for module 'nfa_accept_samples_generic_hw' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "set_default_model nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'set_default_model' returned 0; elapsed 0Total elapsed time: 30.137 sec.
+@I [HLS-100] Command "bind -model nfa_accept_samples_generic_hw "
+@I [BIND-110] clear=
+@I [BIND-110] debug=
+@I [BIND-110] drf=
+@I [BIND-110] effort=
+@I [BIND-110] fast_refine=
+@I [BIND-110] fu_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] global_opt=
+@I [BIND-110] gsearch=
+@I [BIND-110] help=
+@I [BIND-110] help-hidden=
+@I [BIND-110] min_mem_port=
+@I [BIND-110] min_op=
+@I [BIND-110] minreg=
+@I [BIND-110] ml=
+@I [BIND-110] model=nfa_accept_samples_generic_hw
+@I [BIND-110] no_false_path=
+@I [BIND-110] no_min_op=
+@I [BIND-110] normalize=
+@I [BIND-110] quiet=
+@I [BIND-110] refine=
+@I [BIND-110] reg_weight=[ 0.0 -- 1.0 ]
+@I [BIND-110] search=
+@I [BIND-110] tight_delay=
+@I [BIND-110] verbose=
+@I [BIND-110] wFF=
+@I [BIND-110] wFU=
+@I [BIND-110] wMUX=
+@I [BIND-110] wNET=
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-100] Command 'bind' returned 0; elapsed 0.11Total elapsed time: 30.247 sec.
+@I [HLS-111] Elapsed time: 0.328 seconds; current memory usage: 144 MB.
+@I [HLS-100] Command "report -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.verbose.bind.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.094Total elapsed time: 30.403 sec.
+@I [HLS-100] Command "db_write -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.bind.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.031Total elapsed time: 30.434 sec.
+@I [HLS-0] Finish binding nfa_accept_samples_generic_hw.
+@I [HLS-100] Command "get_model_list nfa_accept_samples_generic_hw -filter all-wo-channel "
+@I [HLS-100] Command 'get_model_list' returned 0; elapsed 0Total elapsed time: 30.434 sec.
+@I [HLS-0] Preprocessing for RTLGen ...
+@I [HLS-100] Command "rtl_gen_preprocess sample_iterator_get_offset "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 30.434 sec.
+@I [HLS-100] Command "rtl_gen_preprocess sample_iterator_next "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0.016Total elapsed time: 30.450 sec.
+@I [HLS-100] Command "rtl_gen_preprocess nfa_get_initials.1 "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 30.450 sec.
+@I [HLS-100] Command "rtl_gen_preprocess _bsf32_hw "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 30.450 sec.
+@I [HLS-100] Command "rtl_gen_preprocess nfa_get_finals.1 "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 30.450 sec.
+@I [HLS-100] Command "rtl_gen_preprocess nfa_accept_sample_multi "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 30.450 sec.
+@I [HLS-100] Command "rtl_gen_preprocess nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'rtl_gen_preprocess' returned 0; elapsed 0Total elapsed time: 30.450 sec.
+@I [HLS-0] Model list for RTL generation: sample_iterator_get_offset sample_iterator_next nfa_get_initials.1 _bsf32_hw nfa_get_finals.1 nfa_accept_sample_multi nfa_accept_samples_generic_hw
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'sample_iterator_get_offset' 
+@0 [HLS-0] -- Generating RTL for module 'sample_iterator_get_offset' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model sample_iterator_get_offset -vendor xilinx -mg_file C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_get_offset.compgen.tcl "
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_get_offset/indices_dataout' to 0.
+@I [RTGEN-100] Finished creating RTL model for 'sample_iterator_get_offset'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0Total elapsed time: 30.481 sec.
+@I [HLS-111] Elapsed time: 0.234 seconds; current memory usage: 144 MB.
 @I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 1.688 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 30.591 sec.
+@I [HLS-100] Command "gen_rtl sample_iterator_get_offset -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/systemc/sample_iterator_get_offset -synmodules sample_iterator_get_offset sample_iterator_next nfa_get_initials.1 _bsf32_hw nfa_get_finals.1 nfa_accept_sample_multi nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 30.591 sec.
+@I [HLS-100] Command "gen_rtl sample_iterator_get_offset -style xilinx -f -lang vhdl -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/vhdl/sample_iterator_get_offset "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 30.591 sec.
+@I [HLS-100] Command "gen_rtl sample_iterator_get_offset -style xilinx -f -lang vlog -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/verilog/sample_iterator_get_offset "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 30.591 sec.
+@I [HLS-100] Command "gen_tb_info sample_iterator_get_offset -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_get_offset -p C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0Total elapsed time: 30.591 sec.
+@I [HLS-100] Command "report -model sample_iterator_get_offset -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/report/sample_iterator_get_offset_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 30.606 sec.
+@I [HLS-100] Command "report -model sample_iterator_get_offset -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/report/sample_iterator_get_offset_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 30.606 sec.
+@I [HLS-100] Command "report -model sample_iterator_get_offset -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_get_offset.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 30.606 sec.
+@I [HLS-100] Command "db_write -model sample_iterator_get_offset -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_get_offset.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.016Total elapsed time: 30.622 sec.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'sample_iterator_next' 
+@0 [HLS-0] -- Generating RTL for module 'sample_iterator_next' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model sample_iterator_next -vendor xilinx -mg_file C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_next.compgen.tcl "
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_next/indices_dataout' to 0.
+@I [RTGEN-100] Finished creating RTL model for 'sample_iterator_next'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.032Total elapsed time: 30.700 sec.
+@I [HLS-111] Elapsed time: 0.235 seconds; current memory usage: 144 MB.
 @I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.rtl_wrap.cfg.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.688 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.tbgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.688 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.tbgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 1.688 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.234Total elapsed time: 1.906 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 30.794 sec.
+@I [HLS-100] Command "gen_rtl sample_iterator_next -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/systemc/sample_iterator_next -synmodules sample_iterator_get_offset sample_iterator_next nfa_get_initials.1 _bsf32_hw nfa_get_finals.1 nfa_accept_sample_multi nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 30.794 sec.
+@I [HLS-100] Command "gen_rtl sample_iterator_next -style xilinx -f -lang vhdl -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/vhdl/sample_iterator_next "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 30.794 sec.
+@I [HLS-100] Command "gen_rtl sample_iterator_next -style xilinx -f -lang vlog -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/verilog/sample_iterator_next "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 30.794 sec.
+@I [HLS-100] Command "gen_tb_info sample_iterator_next -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_next -p C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0Total elapsed time: 30.794 sec.
+@I [HLS-100] Command "report -model sample_iterator_next -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/report/sample_iterator_next_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 30.794 sec.
+@I [HLS-100] Command "report -model sample_iterator_next -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/report/sample_iterator_next_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 30.794 sec.
+@I [HLS-100] Command "report -model sample_iterator_next -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_next.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.016Total elapsed time: 30.809 sec.
+@I [HLS-100] Command "db_write -model sample_iterator_next -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_next.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.016Total elapsed time: 30.825 sec.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'nfa_get_initials_1' 
+@0 [HLS-0] -- Generating RTL for module 'nfa_get_initials_1' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model nfa_get_initials.1 -vendor xilinx -mg_file C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_initials_1.compgen.tcl "
+@W [RTGEN-101] Setting dangling out port 'nfa_get_initials_1/nfa_initials_buckets_dataout' to 0.
+@I [RTGEN-100] Finished creating RTL model for 'nfa_get_initials_1'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.062Total elapsed time: 31.12 sec.
+@I [HLS-111] Elapsed time: 0.281 seconds; current memory usage: 144 MB.
+@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.59 sec.
+@I [HLS-100] Command "gen_rtl nfa_get_initials.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/systemc/nfa_get_initials_1 -synmodules sample_iterator_get_offset sample_iterator_next nfa_get_initials.1 _bsf32_hw nfa_get_finals.1 nfa_accept_sample_multi nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 31.59 sec.
+@I [HLS-100] Command "gen_rtl nfa_get_initials.1 -style xilinx -f -lang vhdl -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/vhdl/nfa_get_initials_1 "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.016Total elapsed time: 31.75 sec.
+@I [HLS-100] Command "gen_rtl nfa_get_initials.1 -style xilinx -f -lang vlog -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/verilog/nfa_get_initials_1 "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 31.75 sec.
+@I [HLS-100] Command "gen_tb_info nfa_get_initials.1 -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_initials_1 -p C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0Total elapsed time: 31.75 sec.
+@I [HLS-100] Command "report -model nfa_get_initials.1 -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/report/nfa_get_initials_1_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 31.75 sec.
+@I [HLS-100] Command "report -model nfa_get_initials.1 -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/report/nfa_get_initials_1_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 31.75 sec.
+@I [HLS-100] Command "report -model nfa_get_initials.1 -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_initials_1.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.015Total elapsed time: 31.91 sec.
+@I [HLS-100] Command "db_write -model nfa_get_initials.1 -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_initials_1.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0Total elapsed time: 31.91 sec.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'p_bsf32_hw' 
+@0 [HLS-0] -- Generating RTL for module 'p_bsf32_hw' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model _bsf32_hw -vendor xilinx -mg_file C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/p_bsf32_hw.compgen.tcl "
+@I [RTGEN-100] Finished creating RTL model for 'p_bsf32_hw'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.015Total elapsed time: 31.169 sec.
+@I [HLS-111] Elapsed time: 0.172 seconds; current memory usage: 144 MB.
+@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 31.231 sec.
+@I [HLS-100] Command "gen_rtl _bsf32_hw -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/systemc/p_bsf32_hw -synmodules sample_iterator_get_offset sample_iterator_next nfa_get_initials.1 _bsf32_hw nfa_get_finals.1 nfa_accept_sample_multi nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 31.231 sec.
+@I [HLS-100] Command "gen_rtl _bsf32_hw -style xilinx -f -lang vhdl -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/vhdl/p_bsf32_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 31.231 sec.
+@I [HLS-100] Command "gen_rtl _bsf32_hw -style xilinx -f -lang vlog -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/verilog/p_bsf32_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.016Total elapsed time: 31.247 sec.
+@I [HLS-100] Command "gen_tb_info _bsf32_hw -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/p_bsf32_hw -p C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0Total elapsed time: 31.247 sec.
+@I [HLS-100] Command "report -model _bsf32_hw -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/report/p_bsf32_hw_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 31.247 sec.
+@I [HLS-100] Command "report -model _bsf32_hw -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/report/p_bsf32_hw_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 31.247 sec.
+@I [HLS-100] Command "report -model _bsf32_hw -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/p_bsf32_hw.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.015Total elapsed time: 31.262 sec.
+@I [HLS-100] Command "db_write -model _bsf32_hw -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/p_bsf32_hw.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.032Total elapsed time: 31.294 sec.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'nfa_get_finals_1' 
+@0 [HLS-0] -- Generating RTL for module 'nfa_get_finals_1' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model nfa_get_finals.1 -vendor xilinx -mg_file C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_finals_1.compgen.tcl "
+@W [RTGEN-101] Setting dangling out port 'nfa_get_finals_1/nfa_finals_buckets_dataout' to 0.
+@I [RTGEN-100] Finished creating RTL model for 'nfa_get_finals_1'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0Total elapsed time: 31.387 sec.
+@I [HLS-111] Elapsed time: 0.219 seconds; current memory usage: 144 MB.
+@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 31.466 sec.
+@I [HLS-100] Command "gen_rtl nfa_get_finals.1 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/systemc/nfa_get_finals_1 -synmodules sample_iterator_get_offset sample_iterator_next nfa_get_initials.1 _bsf32_hw nfa_get_finals.1 nfa_accept_sample_multi nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 31.466 sec.
+@I [HLS-100] Command "gen_rtl nfa_get_finals.1 -style xilinx -f -lang vhdl -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/vhdl/nfa_get_finals_1 "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 31.466 sec.
+@I [HLS-100] Command "gen_rtl nfa_get_finals.1 -style xilinx -f -lang vlog -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/verilog/nfa_get_finals_1 "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 31.466 sec.
+@I [HLS-100] Command "gen_tb_info nfa_get_finals.1 -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_finals_1 -p C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0Total elapsed time: 31.466 sec.
+@I [HLS-100] Command "report -model nfa_get_finals.1 -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/report/nfa_get_finals_1_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 31.466 sec.
+@I [HLS-100] Command "report -model nfa_get_finals.1 -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/report/nfa_get_finals_1_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 31.466 sec.
+@I [HLS-100] Command "report -model nfa_get_finals.1 -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_finals_1.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 31.466 sec.
+@I [HLS-100] Command "db_write -model nfa_get_finals.1 -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_finals_1.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.016Total elapsed time: 31.481 sec.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'nfa_accept_sample_multi' 
+@0 [HLS-0] -- Generating RTL for module 'nfa_accept_sample_multi' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model nfa_accept_sample_multi -vendor xilinx -mg_file C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_sample_multi.compgen.tcl "
+@W [RTGEN-101] Setting dangling out port 'nfa_accept_sample_multi/nfa_forward_buckets_dataout' to 0.
+@W [RTGEN-101] Setting dangling out port 'nfa_accept_sample_multi/sample_dataout' to 0.
+@I [RTGEN-100] Finished creating RTL model for 'nfa_accept_sample_multi'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.609Total elapsed time: 32.137 sec.
+@I [HLS-111] Elapsed time: 0.75 seconds; current memory usage: 148 MB.
+@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 32.200 sec.
+@I [HLS-100] Command "gen_rtl nfa_accept_sample_multi -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/systemc/nfa_accept_sample_multi -synmodules sample_iterator_get_offset sample_iterator_next nfa_get_initials.1 _bsf32_hw nfa_get_finals.1 nfa_accept_sample_multi nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.047Total elapsed time: 32.247 sec.
+@I [HLS-100] Command "gen_rtl nfa_accept_sample_multi -style xilinx -f -lang vhdl -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/vhdl/nfa_accept_sample_multi "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.031Total elapsed time: 32.278 sec.
+@I [HLS-100] Command "gen_rtl nfa_accept_sample_multi -style xilinx -f -lang vlog -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/verilog/nfa_accept_sample_multi "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.032Total elapsed time: 32.310 sec.
+@I [HLS-100] Command "gen_tb_info nfa_accept_sample_multi -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_sample_multi -p C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0Total elapsed time: 32.310 sec.
+@I [HLS-100] Command "report -model nfa_accept_sample_multi -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/report/nfa_accept_sample_multi_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.047Total elapsed time: 32.357 sec.
+@I [HLS-100] Command "report -model nfa_accept_sample_multi -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/report/nfa_accept_sample_multi_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.047Total elapsed time: 32.404 sec.
+@I [HLS-100] Command "report -model nfa_accept_sample_multi -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_sample_multi.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.343Total elapsed time: 32.748 sec.
+@I [HLS-100] Command "db_write -model nfa_accept_sample_multi -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_sample_multi.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.672Total elapsed time: 33.420 sec.
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'nfa_accept_samples_generic_hw' 
+@0 [HLS-0] -- Generating RTL for module 'nfa_accept_samples_generic_hw' 
+@I [HLS-10] ----------------------------------------------------------------
+@0 [HLS-0] ----------------------------------------------------------------
+@I [HLS-100] Command "create_rtl_model nfa_accept_samples_generic_hw -vendor xilinx -mg_file C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.compgen.tcl "
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/nfa_initials_buckets' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/nfa_finals_buckets' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/nfa_forward_buckets' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/nfa_backward_buckets' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/nfa_symbols' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/sample_buffer' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/sample_buffer_length' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/sample_length' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/indices' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/i_size' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/begin_index' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/begin_sample' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/end_index' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/end_sample' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/stop_on_first' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/accept' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on function 'nfa_accept_samples_generic_hw' to 'ap_ctrl_hs'.
+@W [RTGEN-101] Port 'nfa_accept_samples_generic_hw/i_size' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@I [RTGEN-100] Finished creating RTL model for 'nfa_accept_samples_generic_hw'.
+@I [HLS-100] Command 'create_rtl_model' returned 0; elapsed 0.047Total elapsed time: 34.435 sec.
+@I [HLS-111] Elapsed time: 2.298 seconds; current memory usage: 151 MB.
+@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 34.545 sec.
+@I [HLS-100] Command "gen_rtl nfa_accept_samples_generic_hw -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/systemc/nfa_accept_samples_generic_hw -synmodules sample_iterator_get_offset sample_iterator_next nfa_get_initials.1 _bsf32_hw nfa_get_finals.1 nfa_accept_sample_multi nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 34.545 sec.
+@I [HLS-100] Command "gen_rtl nfa_accept_samples_generic_hw -istop -style xilinx -f -lang vhdl -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/vhdl/nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0Total elapsed time: 34.545 sec.
+@I [HLS-100] Command "gen_rtl nfa_accept_samples_generic_hw -istop -style xilinx -f -lang vlog -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/verilog/nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'gen_rtl' returned 0; elapsed 0.016Total elapsed time: 34.560 sec.
+@I [HLS-100] Command "export_constraint_db -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.constraint.tcl -f -tool general "
+@I [HLS-100] Command 'export_constraint_db' returned 0; elapsed 0Total elapsed time: 34.560 sec.
+@I [HLS-100] Command "report -model nfa_accept_samples_generic_hw -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.design.xml -verbose -f -dv "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.078Total elapsed time: 34.670 sec.
+@I [HLS-100] Command "gen_tb_info nfa_accept_samples_generic_hw -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw -p C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db "
+@I [HLS-100] Command 'gen_tb_info' returned 0; elapsed 0Total elapsed time: 34.670 sec.
+@I [HLS-100] Command "report -model nfa_accept_samples_generic_hw -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/report/nfa_accept_samples_generic_hw_csynth.rpt -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.016Total elapsed time: 34.685 sec.
+@I [HLS-100] Command "report -model nfa_accept_samples_generic_hw -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/syn/report/nfa_accept_samples_generic_hw_csynth.xml -f -x "
+@I [HLS-100] Command 'report' returned 0; elapsed 0Total elapsed time: 34.685 sec.
+@I [HLS-100] Command "report -model nfa_accept_samples_generic_hw -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.verbose.rpt -verbose -f "
+@I [HLS-100] Command 'report' returned 0; elapsed 0.109Total elapsed time: 34.795 sec.
+@I [HLS-100] Command "db_write -model nfa_accept_samples_generic_hw -o C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.adb -f "
+@I [HLS-100] Command 'db_write' returned 0; elapsed 0.047Total elapsed time: 34.842 sec.
+@I [HLS-100] Command "sc_get_clocks nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'sc_get_clocks' returned 0; elapsed 0Total elapsed time: 34.888 sec.
+@I [HLS-100] Command "sc_get_portdomain nfa_accept_samples_generic_hw "
+@I [HLS-100] Command 'sc_get_portdomain' returned 0; elapsed 0Total elapsed time: 34.888 sec.
+@I [HLS-0] Model list for RTL component generation: sample_iterator_get_offset sample_iterator_next nfa_get_initials.1 _bsf32_hw nfa_get_finals.1 nfa_accept_sample_multi nfa_accept_samples_generic_hw
+@I [HLS-0] Handling components in module [sample_iterator_get_offset] ... 
 @I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_get_offset.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.31 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_initials.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.31 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/p_bsf32_hw.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.31 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset_next.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.31 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_finals.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.31 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 34.967 sec.
+@I [HLS-0] Handling components in module [sample_iterator_next] ... 
 @I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_next.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.31 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.032Total elapsed time: 34.998 sec.
+@I [HLS-0] Handling components in module [nfa_get_initials_1] ... 
+@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_initials_1.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 35.29 sec.
+@I [HLS-0] Handling components in module [p_bsf32_hw] ... 
+@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/p_bsf32_hw.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 35.60 sec.
+@I [HLS-0] Handling components in module [nfa_get_finals_1] ... 
+@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_finals_1.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 35.92 sec.
+@I [HLS-0] Handling components in module [nfa_accept_sample_multi] ... 
+@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_sample_multi.compgen.tcl "
+@I [HLS-0] Found component nfa_accept_sample_multi_next_buckets.
+@I [HLS-0] Append model nfa_accept_sample_multi_next_buckets
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 35.138 sec.
+@I [HLS-0] Handling components in module [nfa_accept_samples_generic_hw] ... 
 @I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.31 sec.
+@I [HLS-0] Found component nfa_accept_samples_generic_hw_result.
+@I [HLS-0] Append model nfa_accept_samples_generic_hw_result
+@I [HLS-0] Found component nfa_accept_samples_generic_hw_start_indices.
+@I [HLS-0] Append model nfa_accept_samples_generic_hw_start_indices
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.032Total elapsed time: 35.201 sec.
+@I [HLS-0] Append model sample_iterator_get_offset
+@I [HLS-0] Append model sample_iterator_next
+@I [HLS-0] Append model nfa_get_initials_1
+@I [HLS-0] Append model p_bsf32_hw
+@I [HLS-0] Append model nfa_get_finals_1
+@I [HLS-0] Append model nfa_accept_sample_multi
+@I [HLS-0] Append model nfa_accept_samples_generic_hw
+@I [HLS-0] Generating RTL model list ...
+@I [HLS-0] All models in this session: nfa_accept_sample_multi_next_buckets nfa_accept_samples_generic_hw_result nfa_accept_samples_generic_hw_start_indices sample_iterator_get_offset sample_iterator_next nfa_get_initials_1 p_bsf32_hw nfa_get_finals_1 nfa_accept_sample_multi nfa_accept_samples_generic_hw
+@I [HLS-0] To file: write model nfa_accept_sample_multi_next_buckets
+@I [HLS-0] To file: write model nfa_accept_samples_generic_hw_result
+@I [HLS-0] To file: write model nfa_accept_samples_generic_hw_start_indices
+@I [HLS-0] To file: write model sample_iterator_get_offset
+@I [HLS-0] To file: write model sample_iterator_next
+@I [HLS-0] To file: write model nfa_get_initials_1
+@I [HLS-0] To file: write model p_bsf32_hw
+@I [HLS-0] To file: write model nfa_get_finals_1
+@I [HLS-0] To file: write model nfa_accept_sample_multi
+@I [HLS-0] To file: write model nfa_accept_samples_generic_hw
+@I [HLS-0] Finished generating RTL model list.
+
+
+@I [HLS-0] RTL Generation done.
+@I [HLS-0] CAS Generation done.
+@I [HLS-0] CBC Generation done.
+@I [HLS-100] Command "export_ssdm C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/a.export.ll "
+@I [HLS-100] Command 'export_ssdm' returned 0; elapsed 0.015Total elapsed time: 35.295 sec.
 @I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.469 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.constraint.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.469 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.563 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.578 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.constraint.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.078Total elapsed time: 2.656 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.constraint.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.656 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 35.295 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/common.gen "
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.672 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.672 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 35.342 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.03Total elapsed time: 35.342 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.672 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 35.342 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.672 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 35.357 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.672 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 35.357 sec.
 @I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.672 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 35.357 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5.gen "
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/virtex.gen "
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx.gen "
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.672 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 35.373 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.672 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 35.373 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.672 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 35.373 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/nativeAXI4.gen "
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.688 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 35.373 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.688 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.688 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 35.388 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 35.388 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 2.703 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 35.404 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 2.719 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 35.404 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.719 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 35.420 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.141Total elapsed time: 2.860 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.125Total elapsed time: 35.545 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 2.891 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 2.891 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.047Total elapsed time: 35.592 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.234Total elapsed time: 35.592 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.891 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 2.891 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 2.891 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 35.592 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.234Total elapsed time: 35.592 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.234Total elapsed time: 35.592 sec.
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5_fpv5.gen "
 @I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx_fpv5.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.891 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.891 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 35.592 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 35.592 sec.
 @I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.969 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/common.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.969 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.969 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.969 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.969 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.969 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 35.638 sec.
 @I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.969 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/virtex.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 2.985 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.985 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.985 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/nativeAXI4.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.985 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.985 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 2.985 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 3.0 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 3.16 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.16 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.14Total elapsed time: 3.156 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.032Total elapsed time: 3.188 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 3.188 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.188 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 3.188 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 3.188 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5_fpv5.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx_fpv5.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 3.203 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 3.203 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.375 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.391 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.391 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/common.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.391 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.391 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.391 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.391 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.391 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.391 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/virtex.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.406 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.406 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.406 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/nativeAXI4.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.406 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.406 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.406 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 3.422 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 3.438 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.438 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.147Total elapsed time: 3.585 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 3.616 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.21Total elapsed time: 3.616 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.616 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.225Total elapsed time: 3.616 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.225Total elapsed time: 3.616 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5_fpv5.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx_fpv5.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.616 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.616 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 35.638 sec.
 @I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_get_offset.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.648 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_initials.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.648 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/p_bsf32_hw.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.648 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset_next.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.648 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_finals.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 3.679 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 35.638 sec.
 @I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_next.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.679 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.679 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.741 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.constraint.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.741 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/common.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.741 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.741 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.741 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.741 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.741 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.741 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/virtex.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 3.757 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.757 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.757 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/nativeAXI4.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.757 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.757 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.757 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 3.773 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 3.788 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.788 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.141Total elapsed time: 3.929 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 3.960 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 3.960 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.960 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 3.960 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 3.960 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5_fpv5.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx_fpv5.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 3.976 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 3.976 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.23 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/common.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.38 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.38 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.38 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.38 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.38 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.38 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/virtex.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.38 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.38 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.38 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/nativeAXI4.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 4.54 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.54 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 4.54 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.54 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 4.69 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.69 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.141Total elapsed time: 4.210 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.047Total elapsed time: 4.257 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 4.257 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.257 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 4.257 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 4.257 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5_fpv5.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx_fpv5.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.257 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.257 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.273 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.273 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.273 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/common.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.288 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.288 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.288 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.288 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.288 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 4.304 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/virtex.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.304 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.304 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 4.319 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/nativeAXI4.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.319 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.319 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.319 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 4.335 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 4.351 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.351 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.14Total elapsed time: 4.491 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.032Total elapsed time: 4.523 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 4.523 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.523 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 4.523 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 4.523 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5_fpv5.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx_fpv5.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.523 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.523 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_get_offset.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 4.538 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_initials.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.047Total elapsed time: 4.585 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 35.638 sec.
+@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_initials_1.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 35.638 sec.
 @I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/p_bsf32_hw.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.585 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/bitset_next.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.585 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_finals.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.585 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/sample_iterator_next.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.585 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 35.638 sec.
+@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_get_finals_1.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 35.638 sec.
+@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_sample_multi.compgen.tcl "
+@I [RTMG-278] Implementing memory 'nfa_accept_sample_multi_next_buckets_ram' using block RAMs.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 35.654 sec.
 @I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.compgen.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.585 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.648 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/nfa_accept_samples_generic_hw.constraint.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.648 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/common.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/APCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.648 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.648 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/op.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.648 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/op_simcore.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 4.663 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/generic/autopilot/interface.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.663 sec.
-@I [HLS-100] Command "source C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/.autopilot/db/global.setting.tcl "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.663 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/virtex.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/plb46.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.663 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/fsl.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.663 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/axi4.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.663 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/nativeAXI4.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/saxilite.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.663 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/maxi.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 4.679 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.016Total elapsed time: 4.679 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/scripts/xilinxcoregen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.679 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/interface/XilEDKCoreGen.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.015Total elapsed time: 4.694 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/util.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.694 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfft.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.141Total elapsed time: 4.835 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/ip/xfir.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.047Total elapsed time: 4.882 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 4.882 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/dsp48.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.882 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 4.882 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.219Total elapsed time: 4.882 sec.
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/virtex5/virtex5_fpv5.gen "
-@I [HLS-100] Command "source C:/Programas/Xilinx/Vivado_HLS/2014.1/common/technology/xilinx/common/xilinx_fpv5.gen "
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.882 sec.
-@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.882 sec.
-@I [HLS-100] Command 'export_design' returned 0; elapsed 3.928Total elapsed time: 4.944 sec.
+@I [RTMG-278] Implementing memory 'nfa_accept_samples_generic_hw_result_ram' using distributed RAMs.
+@I [RTMG-278] Implementing memory 'nfa_accept_samples_generic_hw_start_indices_ram' using distributed RAMs.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.031Total elapsed time: 35.685 sec.
+@I [HLS-10] Finished generating all RTL models.
+@0 [HLS-0] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'nfa_accept_samples_generic_hw'.
+@I [WVHDL-304] Generating RTL VHDL for 'nfa_accept_samples_generic_hw'.
+@I [WVLOG-307] Generating RTL Verilog for 'nfa_accept_samples_generic_hw'.
+@I [HLS-100] Command 'autosyn' returned 0; elapsed 16.05Total elapsed time: 35.717 sec.
+@I [HLS-100] Command 'csynth_design' returned 0; elapsed 34.239Total elapsed time: 35.717 sec.
 @I [HLS-100] Command "cleanup_all "
-@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0Total elapsed time: 4.944 sec.
+@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0.063Total elapsed time: 35.779 sec.

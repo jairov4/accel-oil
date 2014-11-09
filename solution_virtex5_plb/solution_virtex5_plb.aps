@@ -2,9 +2,6 @@
     <downStreamTool>
         <DownStreamTool name=""/>
     </downStreamTool>
-    <clockList>
-        <clock name="default" period="7" uncertainty="3"/>
-    </clockList>
     <config>
         <schedule model="nfa_accept_samples_generic_hw"/>
         <config_schedule effort="high" verbose="1"/>
@@ -12,7 +9,6 @@
     <UIConfigurations>
         <UIAutosynConf hideTrivialOp="true" isBasedOnBoard="false" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">
             <Platform>xilinx/virtex5/virtex5</Platform>
-            <Platform>xilinx/virtex5/virtex5_fpv5</Platform>
             <customLibs/>
         </UIAutosynConf>
         <UIIPPackagerConf AskAgain="true" DescriptionButton="false" LibraryButton="false" RTLLanguage="verilog" UseNetList="none" VendorButton="false" VersionButton="false" evaluateRTL="false" setup="false">
@@ -66,7 +62,10 @@
     </targetInfo>
     <libraryList>
         <library name="DefaultPlatform" value="xilinx/virtex5/virtex5"/>
-        <library name="DefaultPlatform" value="xilinx/virtex5/virtex5_fpv5"/>
+        <library value="xilinx/virtex5/virtex5_fpv5" name="DefaultPlatform"/>
     </libraryList>
+    <clockList>
+        <clock name="default" default="false" uncertainty="3" period="10"/>
+    </clockList>
 </solution>
 

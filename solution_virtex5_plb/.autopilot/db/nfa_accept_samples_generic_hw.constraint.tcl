@@ -2,7 +2,7 @@ set clock_constraint { \
     name clk \
     module nfa_accept_samples_generic_hw \
     port ap_clk \
-    period 7 \
+    period 10 \
     uncertainty 3 \
 }
 

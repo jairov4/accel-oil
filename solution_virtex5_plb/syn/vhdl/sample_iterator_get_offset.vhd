@@ -17,6 +17,8 @@ port (
     ap_done : OUT STD_LOGIC;
     ap_idle : OUT STD_LOGIC;
     ap_ready : OUT STD_LOGIC;
+    i_index : IN STD_LOGIC_VECTOR (15 downto 0);
+    i_sample : IN STD_LOGIC_VECTOR (15 downto 0);
     indices_req_din : OUT STD_LOGIC;
     indices_req_full_n : IN STD_LOGIC;
     indices_req_write : OUT STD_LOGIC;
@@ -26,9 +28,6 @@ port (
     indices_datain : IN STD_LOGIC_VECTOR (55 downto 0);
     indices_dataout : OUT STD_LOGIC_VECTOR (55 downto 0);
     indices_size : OUT STD_LOGIC_VECTOR (31 downto 0);
-    ap_ce : IN STD_LOGIC;
-    i_index : IN STD_LOGIC_VECTOR (15 downto 0);
-    i_sample : IN STD_LOGIC_VECTOR (15 downto 0);
     sample_buffer_size : IN STD_LOGIC_VECTOR (31 downto 0);
     sample_length : IN STD_LOGIC_VECTOR (15 downto 0);
     ap_return : OUT STD_LOGIC_VECTOR (31 downto 0) );
@@ -38,70 +37,30 @@ end;
 architecture behav of sample_iterator_get_offset is 
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
-    constant ap_ST_pp0_stg0_fsm_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
+    constant ap_ST_st1_fsm_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
+    constant ap_ST_st2_fsm_1 : STD_LOGIC_VECTOR (1 downto 0) := "01";
+    constant ap_ST_st3_fsm_2 : STD_LOGIC_VECTOR (1 downto 0) := "10";
+    constant ap_ST_st4_fsm_3 : STD_LOGIC_VECTOR (1 downto 0) := "11";
     constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
     constant ap_const_lv32_30 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000110000";
     constant ap_const_lv32_37 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000110111";
     constant ap_const_lv56_0 : STD_LOGIC_VECTOR (55 downto 0) := "00000000000000000000000000000000000000000000000000000000";
 
-    signal ap_CS_fsm : STD_LOGIC_VECTOR (0 downto 0) := "0";
-    signal ap_reg_ppiten_pp0_it0 : STD_LOGIC;
-    signal ap_reg_ppiten_pp0_it1 : STD_LOGIC := '0';
-    signal ap_reg_ppiten_pp0_it2 : STD_LOGIC := '0';
-    signal ap_reg_ppiten_pp0_it3 : STD_LOGIC := '0';
-    signal ap_reg_ppiten_pp0_it4 : STD_LOGIC := '0';
-    signal i_sample_read_reg_127 : STD_LOGIC_VECTOR (15 downto 0);
-    signal ap_reg_ppstg_i_sample_read_reg_127_pp0_it1 : STD_LOGIC_VECTOR (15 downto 0);
-    signal ap_reg_ppstg_i_sample_read_reg_127_pp0_it2 : STD_LOGIC_VECTOR (15 downto 0);
-    signal tmp_9_fu_92_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_9_reg_138 : STD_LOGIC_VECTOR (31 downto 0);
-    signal ap_reg_ppstg_tmp_9_reg_138_pp0_it3 : STD_LOGIC_VECTOR (31 downto 0);
-    signal indices_stride_load_new_reg_143 : STD_LOGIC_VECTOR (7 downto 0);
+    signal ap_CS_fsm : STD_LOGIC_VECTOR (1 downto 0) := "00";
+    signal tmp_4_fu_92_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal tmp_4_reg_134 : STD_LOGIC_VECTOR (31 downto 0);
+    signal indices_stride_load_new_reg_139 : STD_LOGIC_VECTOR (7 downto 0);
     signal tmp_fu_81_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal grp_fu_112_p0 : STD_LOGIC_VECTOR (15 downto 0);
-    signal grp_fu_112_p1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_fu_112_p2 : STD_LOGIC_VECTOR (23 downto 0);
-    signal tmp_2_cast_fu_118_p1 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_fu_112_ce : STD_LOGIC;
-    signal ap_NS_fsm : STD_LOGIC_VECTOR (0 downto 0);
-    signal ap_sig_pprstidle_pp0 : STD_LOGIC;
-    signal grp_fu_112_p00 : STD_LOGIC_VECTOR (23 downto 0);
-    signal grp_fu_112_p10 : STD_LOGIC_VECTOR (23 downto 0);
-
-    component nfa_accept_samples_generic_hw_mul_16ns_8ns_24_2 IS
-    generic (
-        ID : INTEGER;
-        NUM_STAGE : INTEGER;
-        din0_WIDTH : INTEGER;
-        din1_WIDTH : INTEGER;
-        dout_WIDTH : INTEGER );
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        din0 : IN STD_LOGIC_VECTOR (15 downto 0);
-        din1 : IN STD_LOGIC_VECTOR (7 downto 0);
-        ce : IN STD_LOGIC;
-        dout : OUT STD_LOGIC_VECTOR (23 downto 0) );
-    end component;
-
+    signal tmp_s_fu_113_p0 : STD_LOGIC_VECTOR (15 downto 0);
+    signal tmp_s_fu_113_p1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal tmp_s_fu_113_p2 : STD_LOGIC_VECTOR (23 downto 0);
+    signal tmp_17_cast_fu_119_p1 : STD_LOGIC_VECTOR (31 downto 0);
+    signal ap_NS_fsm : STD_LOGIC_VECTOR (1 downto 0);
+    signal tmp_s_fu_113_p00 : STD_LOGIC_VECTOR (23 downto 0);
+    signal tmp_s_fu_113_p10 : STD_LOGIC_VECTOR (23 downto 0);
 
 
 begin
-    nfa_accept_samples_generic_hw_mul_16ns_8ns_24_2_U0 : component nfa_accept_samples_generic_hw_mul_16ns_8ns_24_2
-    generic map (
-        ID => 0,
-        NUM_STAGE => 2,
-        din0_WIDTH => 16,
-        din1_WIDTH => 8,
-        dout_WIDTH => 24)
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        din0 => grp_fu_112_p0,
-        din1 => grp_fu_112_p1,
-        ce => grp_fu_112_ce,
-        dout => grp_fu_112_p2);
-
 
 
 
@@ -111,7 +70,7 @@ begin
     begin
         if (ap_clk'event and ap_clk =  '1') then
             if (ap_rst = '1') then
-                ap_CS_fsm <= ap_ST_pp0_stg0_fsm_0;
+                ap_CS_fsm <= ap_ST_st1_fsm_0;
             else
                 ap_CS_fsm <= ap_NS_fsm;
             end if;
@@ -119,114 +78,46 @@ begin
     end process;
 
 
-    -- ap_reg_ppiten_pp0_it1 assign process. --
-    ap_reg_ppiten_pp0_it1_assign_proc : process(ap_clk)
-    begin
-        if (ap_clk'event and ap_clk =  '1') then
-            if (ap_rst = '1') then
-                ap_reg_ppiten_pp0_it1 <= ap_const_logic_0;
-            else
-                if (((ap_ST_pp0_stg0_fsm_0 = ap_CS_fsm) and not((((ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and (ap_start = ap_const_logic_0)) or ((ap_const_logic_1 = ap_reg_ppiten_pp0_it2) and (indices_rsp_empty_n = ap_const_logic_0)) or not((ap_const_logic_1 = ap_ce)))))) then 
-                    ap_reg_ppiten_pp0_it1 <= ap_reg_ppiten_pp0_it0;
-                end if; 
-            end if;
-        end if;
-    end process;
-
-
-    -- ap_reg_ppiten_pp0_it2 assign process. --
-    ap_reg_ppiten_pp0_it2_assign_proc : process(ap_clk)
-    begin
-        if (ap_clk'event and ap_clk =  '1') then
-            if (ap_rst = '1') then
-                ap_reg_ppiten_pp0_it2 <= ap_const_logic_0;
-            else
-                if (((ap_ST_pp0_stg0_fsm_0 = ap_CS_fsm) and not((((ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and (ap_start = ap_const_logic_0)) or ((ap_const_logic_1 = ap_reg_ppiten_pp0_it2) and (indices_rsp_empty_n = ap_const_logic_0)) or not((ap_const_logic_1 = ap_ce)))))) then 
-                    ap_reg_ppiten_pp0_it2 <= ap_reg_ppiten_pp0_it1;
-                end if; 
-            end if;
-        end if;
-    end process;
-
-
-    -- ap_reg_ppiten_pp0_it3 assign process. --
-    ap_reg_ppiten_pp0_it3_assign_proc : process(ap_clk)
-    begin
-        if (ap_clk'event and ap_clk =  '1') then
-            if (ap_rst = '1') then
-                ap_reg_ppiten_pp0_it3 <= ap_const_logic_0;
-            else
-                if (((ap_ST_pp0_stg0_fsm_0 = ap_CS_fsm) and not((((ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and (ap_start = ap_const_logic_0)) or ((ap_const_logic_1 = ap_reg_ppiten_pp0_it2) and (indices_rsp_empty_n = ap_const_logic_0)) or not((ap_const_logic_1 = ap_ce)))))) then 
-                    ap_reg_ppiten_pp0_it3 <= ap_reg_ppiten_pp0_it2;
-                end if; 
-            end if;
-        end if;
-    end process;
-
-
-    -- ap_reg_ppiten_pp0_it4 assign process. --
-    ap_reg_ppiten_pp0_it4_assign_proc : process(ap_clk)
-    begin
-        if (ap_clk'event and ap_clk =  '1') then
-            if (ap_rst = '1') then
-                ap_reg_ppiten_pp0_it4 <= ap_const_logic_0;
-            else
-                if (((ap_ST_pp0_stg0_fsm_0 = ap_CS_fsm) and not((((ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and (ap_start = ap_const_logic_0)) or ((ap_const_logic_1 = ap_reg_ppiten_pp0_it2) and (indices_rsp_empty_n = ap_const_logic_0)) or not((ap_const_logic_1 = ap_ce)))))) then 
-                    ap_reg_ppiten_pp0_it4 <= ap_reg_ppiten_pp0_it3;
-                end if; 
-            end if;
-        end if;
-    end process;
-
-
     -- assign process. --
     process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_pp0_stg0_fsm_0 = ap_CS_fsm) and not((((ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and (ap_start = ap_const_logic_0)) or ((ap_const_logic_1 = ap_reg_ppiten_pp0_it2) and (indices_rsp_empty_n = ap_const_logic_0)))) and (ap_const_logic_1 = ap_ce))) then
-                ap_reg_ppstg_i_sample_read_reg_127_pp0_it1 <= i_sample_read_reg_127;
-                ap_reg_ppstg_i_sample_read_reg_127_pp0_it2 <= ap_reg_ppstg_i_sample_read_reg_127_pp0_it1;
-                ap_reg_ppstg_tmp_9_reg_138_pp0_it3 <= tmp_9_reg_138;
-            end if;
-        end if;
-    end process;
-
-    -- assign process. --
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_pp0_stg0_fsm_0 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and not((((ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and (ap_start = ap_const_logic_0)) or ((ap_const_logic_1 = ap_reg_ppiten_pp0_it2) and (indices_rsp_empty_n = ap_const_logic_0)))) and (ap_const_logic_1 = ap_ce))) then
-                i_sample_read_reg_127 <= i_sample;
-            end if;
-        end if;
-    end process;
-
-    -- assign process. --
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if (((ap_ST_pp0_stg0_fsm_0 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it2) and not((((ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and (ap_start = ap_const_logic_0)) or ((ap_const_logic_1 = ap_reg_ppiten_pp0_it2) and (indices_rsp_empty_n = ap_const_logic_0)))) and (ap_const_logic_1 = ap_ce))) then
-                indices_stride_load_new_reg_143 <= indices_datain(55 downto 48);
-                tmp_9_reg_138 <= tmp_9_fu_92_p1;
+            if (((ap_ST_st3_fsm_2 = ap_CS_fsm) and not((indices_rsp_empty_n = ap_const_logic_0)))) then
+                indices_stride_load_new_reg_139 <= indices_datain(55 downto 48);
+                tmp_4_reg_134 <= tmp_4_fu_92_p1;
             end if;
         end if;
     end process;
 
     -- the next state (ap_NS_fsm) of the state machine. --
-    ap_NS_fsm_assign_proc : process (ap_start , ap_CS_fsm , ap_reg_ppiten_pp0_it0 , ap_reg_ppiten_pp0_it2 , indices_rsp_empty_n , ap_ce , ap_sig_pprstidle_pp0)
+    ap_NS_fsm_assign_proc : process (ap_start , ap_CS_fsm , indices_rsp_empty_n)
     begin
         case ap_CS_fsm is
-            when ap_ST_pp0_stg0_fsm_0 => 
-                ap_NS_fsm <= ap_ST_pp0_stg0_fsm_0;
+            when ap_ST_st1_fsm_0 => 
+                if (not((ap_start = ap_const_logic_0))) then
+                    ap_NS_fsm <= ap_ST_st2_fsm_1;
+                else
+                    ap_NS_fsm <= ap_ST_st1_fsm_0;
+                end if;
+            when ap_ST_st2_fsm_1 => 
+                ap_NS_fsm <= ap_ST_st3_fsm_2;
+            when ap_ST_st3_fsm_2 => 
+                if (not((indices_rsp_empty_n = ap_const_logic_0))) then
+                    ap_NS_fsm <= ap_ST_st4_fsm_3;
+                else
+                    ap_NS_fsm <= ap_ST_st3_fsm_2;
+                end if;
+            when ap_ST_st4_fsm_3 => 
+                ap_NS_fsm <= ap_ST_st1_fsm_0;
             when others =>  
-                ap_NS_fsm <= "X";
+                ap_NS_fsm <= "XX";
         end case;
     end process;
 
     -- ap_done assign process. --
-    ap_done_assign_proc : process(ap_start, ap_CS_fsm, ap_reg_ppiten_pp0_it0, ap_reg_ppiten_pp0_it2, ap_reg_ppiten_pp0_it4, indices_rsp_empty_n, ap_ce)
+    ap_done_assign_proc : process(ap_start, ap_CS_fsm)
     begin
-        if (((not((ap_const_logic_1 = ap_start)) and (ap_ST_pp0_stg0_fsm_0 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0)) or ((ap_ST_pp0_stg0_fsm_0 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it4) and not((((ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and (ap_start = ap_const_logic_0)) or ((ap_const_logic_1 = ap_reg_ppiten_pp0_it2) and (indices_rsp_empty_n = ap_const_logic_0)))) and (ap_const_logic_1 = ap_ce)))) then 
+        if (((not((ap_const_logic_1 = ap_start)) and (ap_ST_st1_fsm_0 = ap_CS_fsm)) or (ap_ST_st4_fsm_3 = ap_CS_fsm))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_const_logic_0;
@@ -235,9 +126,9 @@ begin
 
 
     -- ap_idle assign process. --
-    ap_idle_assign_proc : process(ap_start, ap_CS_fsm, ap_reg_ppiten_pp0_it0, ap_reg_ppiten_pp0_it1, ap_reg_ppiten_pp0_it2, ap_reg_ppiten_pp0_it3, ap_reg_ppiten_pp0_it4)
+    ap_idle_assign_proc : process(ap_start, ap_CS_fsm)
     begin
-        if ((not((ap_const_logic_1 = ap_start)) and (ap_ST_pp0_stg0_fsm_0 = ap_CS_fsm) and (ap_const_logic_0 = ap_reg_ppiten_pp0_it0) and (ap_const_logic_0 = ap_reg_ppiten_pp0_it1) and (ap_const_logic_0 = ap_reg_ppiten_pp0_it2) and (ap_const_logic_0 = ap_reg_ppiten_pp0_it3) and (ap_const_logic_0 = ap_reg_ppiten_pp0_it4))) then 
+        if ((not((ap_const_logic_1 = ap_start)) and (ap_ST_st1_fsm_0 = ap_CS_fsm))) then 
             ap_idle <= ap_const_logic_1;
         else 
             ap_idle <= ap_const_logic_0;
@@ -246,51 +137,24 @@ begin
 
 
     -- ap_ready assign process. --
-    ap_ready_assign_proc : process(ap_start, ap_CS_fsm, ap_reg_ppiten_pp0_it0, ap_reg_ppiten_pp0_it2, indices_rsp_empty_n, ap_ce)
+    ap_ready_assign_proc : process(ap_CS_fsm)
     begin
-        if (((ap_ST_pp0_stg0_fsm_0 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and not((((ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and (ap_start = ap_const_logic_0)) or ((ap_const_logic_1 = ap_reg_ppiten_pp0_it2) and (indices_rsp_empty_n = ap_const_logic_0)))) and (ap_const_logic_1 = ap_ce))) then 
+        if ((ap_ST_st4_fsm_3 = ap_CS_fsm)) then 
             ap_ready <= ap_const_logic_1;
         else 
             ap_ready <= ap_const_logic_0;
         end if; 
     end process;
 
-    ap_reg_ppiten_pp0_it0 <= ap_start;
-    ap_return <= std_logic_vector(unsigned(tmp_2_cast_fu_118_p1) + unsigned(ap_reg_ppstg_tmp_9_reg_138_pp0_it3));
-
-    -- ap_sig_pprstidle_pp0 assign process. --
-    ap_sig_pprstidle_pp0_assign_proc : process(ap_start, ap_reg_ppiten_pp0_it0, ap_reg_ppiten_pp0_it1, ap_reg_ppiten_pp0_it2, ap_reg_ppiten_pp0_it3)
-    begin
-        if (((ap_const_logic_0 = ap_reg_ppiten_pp0_it0) and (ap_const_logic_0 = ap_reg_ppiten_pp0_it1) and (ap_const_logic_0 = ap_reg_ppiten_pp0_it2) and (ap_const_logic_0 = ap_reg_ppiten_pp0_it3) and (ap_const_logic_0 = ap_start))) then 
-            ap_sig_pprstidle_pp0 <= ap_const_logic_1;
-        else 
-            ap_sig_pprstidle_pp0 <= ap_const_logic_0;
-        end if; 
-    end process;
-
-
-    -- grp_fu_112_ce assign process. --
-    grp_fu_112_ce_assign_proc : process(ap_start, ap_CS_fsm, ap_reg_ppiten_pp0_it0, ap_reg_ppiten_pp0_it2, indices_rsp_empty_n, ap_ce)
-    begin
-        if (((ap_ST_pp0_stg0_fsm_0 = ap_CS_fsm) and not((((ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and (ap_start = ap_const_logic_0)) or ((ap_const_logic_1 = ap_reg_ppiten_pp0_it2) and (indices_rsp_empty_n = ap_const_logic_0)))) and (ap_const_logic_1 = ap_ce))) then 
-            grp_fu_112_ce <= ap_const_logic_1;
-        else 
-            grp_fu_112_ce <= ap_const_logic_0;
-        end if; 
-    end process;
-
-    grp_fu_112_p0 <= grp_fu_112_p00(16 - 1 downto 0);
-    grp_fu_112_p00 <= std_logic_vector(resize(unsigned(ap_reg_ppstg_i_sample_read_reg_127_pp0_it2),24));
-    grp_fu_112_p1 <= grp_fu_112_p10(8 - 1 downto 0);
-    grp_fu_112_p10 <= std_logic_vector(resize(unsigned(indices_stride_load_new_reg_143),24));
+    ap_return <= std_logic_vector(unsigned(tmp_17_cast_fu_119_p1) + unsigned(tmp_4_reg_134));
     indices_address <= tmp_fu_81_p1(32 - 1 downto 0);
     indices_dataout <= ap_const_lv56_0;
     indices_req_din <= ap_const_logic_0;
 
     -- indices_req_write assign process. --
-    indices_req_write_assign_proc : process(ap_start, ap_CS_fsm, ap_reg_ppiten_pp0_it0, ap_reg_ppiten_pp0_it2, indices_rsp_empty_n, ap_ce)
+    indices_req_write_assign_proc : process(ap_start, ap_CS_fsm)
     begin
-        if (((ap_ST_pp0_stg0_fsm_0 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and not((((ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and (ap_start = ap_const_logic_0)) or ((ap_const_logic_1 = ap_reg_ppiten_pp0_it2) and (indices_rsp_empty_n = ap_const_logic_0)))) and (ap_const_logic_1 = ap_ce))) then 
+        if (((ap_ST_st1_fsm_0 = ap_CS_fsm) and not((ap_start = ap_const_logic_0)))) then 
             indices_req_write <= ap_const_logic_1;
         else 
             indices_req_write <= ap_const_logic_0;
@@ -299,9 +163,9 @@ begin
 
 
     -- indices_rsp_read assign process. --
-    indices_rsp_read_assign_proc : process(ap_start, ap_CS_fsm, ap_reg_ppiten_pp0_it0, ap_reg_ppiten_pp0_it2, indices_rsp_empty_n, ap_ce)
+    indices_rsp_read_assign_proc : process(ap_CS_fsm, indices_rsp_empty_n)
     begin
-        if (((ap_ST_pp0_stg0_fsm_0 = ap_CS_fsm) and (ap_const_logic_1 = ap_reg_ppiten_pp0_it2) and not((((ap_const_logic_1 = ap_reg_ppiten_pp0_it0) and (ap_start = ap_const_logic_0)) or ((ap_const_logic_1 = ap_reg_ppiten_pp0_it2) and (indices_rsp_empty_n = ap_const_logic_0)))) and (ap_const_logic_1 = ap_ce))) then 
+        if (((ap_ST_st3_fsm_2 = ap_CS_fsm) and not((indices_rsp_empty_n = ap_const_logic_0)))) then 
             indices_rsp_read <= ap_const_logic_1;
         else 
             indices_rsp_read <= ap_const_logic_0;
@@ -309,7 +173,12 @@ begin
     end process;
 
     indices_size <= ap_const_lv32_1;
-    tmp_2_cast_fu_118_p1 <= std_logic_vector(resize(unsigned(grp_fu_112_p2),32));
-    tmp_9_fu_92_p1 <= indices_datain(32 - 1 downto 0);
+    tmp_17_cast_fu_119_p1 <= std_logic_vector(resize(unsigned(tmp_s_fu_113_p2),32));
+    tmp_4_fu_92_p1 <= indices_datain(32 - 1 downto 0);
     tmp_fu_81_p1 <= std_logic_vector(resize(unsigned(i_index),64));
+    tmp_s_fu_113_p0 <= tmp_s_fu_113_p00(16 - 1 downto 0);
+    tmp_s_fu_113_p00 <= std_logic_vector(resize(unsigned(i_sample),24));
+    tmp_s_fu_113_p1 <= tmp_s_fu_113_p10(8 - 1 downto 0);
+    tmp_s_fu_113_p10 <= std_logic_vector(resize(unsigned(indices_stride_load_new_reg_139),24));
+    tmp_s_fu_113_p2 <= std_logic_vector(resize(unsigned(tmp_s_fu_113_p0) * unsigned(tmp_s_fu_113_p1), 24));
 end behav;

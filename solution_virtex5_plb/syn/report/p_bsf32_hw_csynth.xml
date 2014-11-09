@@ -9,7 +9,7 @@
 <ProductFamily>virtex5 virtex5_fpv5 </ProductFamily>
 <Part>xc5vlx50tff1136-3</Part>
 <TopModelName>p_bsf32_hw</TopModelName>
-<TargetClockPeriod>7.00</TargetClockPeriod>
+<TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>3.00</ClockUncertainty>
 <TargetInitiationInterval>1</TargetInitiationInterval>
 </UserAssignments>
@@ -18,7 +18,7 @@
 <PipelineType>function</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>3.36</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.45</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -32,7 +32,7 @@
 
 <AreaEstimates>
 <Resources>
-<LUT>55</LUT>
+<LUT>56</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
 <FF>0</FF>
@@ -67,7 +67,7 @@
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>5</Bits>
+<Bits>6</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 </InterfaceSummary>

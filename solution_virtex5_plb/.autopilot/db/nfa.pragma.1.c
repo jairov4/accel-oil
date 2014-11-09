@@ -2069,50 +2069,46 @@ _Bool nfa_is_initial(const nfa_t* nfa, state_t q)
 
 void nfa_get_initials(const nfa_t* nfa, bitset_t* initials)
 {
-_ssdm_InlineRegion(0, "");
  *initials = nfa->initials;
 }
 
 void nfa_add_final(nfa_t* nfa, state_t q)
 {
- (void) ((!!(q < nfa_get_states(nfa))) || (_assert("q < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",64),0));
+ (void) ((!!(q < nfa_get_states(nfa))) || (_assert("q < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",63),0));
 
  bitset_add(&nfa->finals, q);
 }
 
 void nfa_remove_final(nfa_t* nfa, state_t q)
 {
- (void) ((!!(q < nfa_get_states(nfa))) || (_assert("q < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",71),0));
+ (void) ((!!(q < nfa_get_states(nfa))) || (_assert("q < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",70),0));
 
  bitset_remove(&nfa->finals, q);
 }
 
 _Bool nfa_is_final(const nfa_t* nfa, state_t q)
 {
- (void) ((!!(q < nfa_get_states(nfa))) || (_assert("q < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",78),0));
+ (void) ((!!(q < nfa_get_states(nfa))) || (_assert("q < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",77),0));
 
  return bitset_contains(&nfa->finals, q);
 }
 
 void nfa_get_finals(const nfa_t* nfa, bitset_t* finals)
 {
-_ssdm_InlineRegion(0, "");
  *finals = nfa->finals;
 }
 
 // Obtiene el numero de simbolos asociado al alfabeto del automata
 symbol_t nfa_get_symbols(const nfa_t* nfa)
 {
-_ssdm_InlineRegion(0, "");
  return nfa->symbols;
 }
 
 // Obtiene el conjunto de sucesores de un par estado-simbolo de un automata
 void nfa_get_sucessors(const nfa_t* nfa, state_t state, symbol_t sym, bitset_t* bs)
 {
-_ssdm_InlineRegion(0, "");
- (void) ((!!(state < nfa_get_states(nfa))) || (_assert("state < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",100),0));
- (void) ((!!(sym < nfa_get_symbols(nfa))) || (_assert("sym < nfa_get_symbols(nfa)","oil_plainc_hls/src/nfa.c",101),0));
+ (void) ((!!(state < nfa_get_states(nfa))) || (_assert("state < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",96),0));
+ (void) ((!!(sym < nfa_get_symbols(nfa))) || (_assert("sym < nfa_get_symbols(nfa)","oil_plainc_hls/src/nfa.c",97),0));
 
  size_t offset = (state * nfa_get_symbols(nfa) + sym);
  *bs = nfa->forward[offset];
@@ -2121,8 +2117,8 @@ _ssdm_InlineRegion(0, "");
 // Obtiene el conjunto de predecesores de un par estado-simbolo de un automata
 void nfa_get_predecessors(const nfa_t* nfa, state_t state, symbol_t sym, bitset_t* bs)
 {
- (void) ((!!(state < nfa_get_states(nfa))) || (_assert("state < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",110),0));
- (void) ((!!(sym < nfa_get_symbols(nfa))) || (_assert("sym < nfa_get_symbols(nfa)","oil_plainc_hls/src/nfa.c",111),0));
+ (void) ((!!(state < nfa_get_states(nfa))) || (_assert("state < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",106),0));
+ (void) ((!!(sym < nfa_get_symbols(nfa))) || (_assert("sym < nfa_get_symbols(nfa)","oil_plainc_hls/src/nfa.c",107),0));
 
  size_t offset = (state * nfa_get_symbols(nfa) + sym);
  *bs = nfa->backward[offset];
@@ -2131,8 +2127,8 @@ void nfa_get_predecessors(const nfa_t* nfa, state_t state, symbol_t sym, bitset_
 // Inicializa un NFA de manera que queda sin estados ni transiciones
 void nfa_init(nfa_t* nfa, symbol_t symbols)
 {
- (void) ((!!(nfa != ((void*)0))) || (_assert("nfa != NULL","oil_plainc_hls/src/nfa.c",120),0));
- (void) ((!!(symbols <= 255u)) || (_assert("symbols <= MAX_SYMBOLS","oil_plainc_hls/src/nfa.c",121),0));
+ (void) ((!!(nfa != ((void*)0))) || (_assert("nfa != NULL","oil_plainc_hls/src/nfa.c",116),0));
+ (void) ((!!(symbols <= 255u)) || (_assert("symbols <= MAX_SYMBOLS","oil_plainc_hls/src/nfa.c",117),0));
 
  bitset_init(&nfa->initials);
  bitset_init(&nfa->finals);
@@ -2154,9 +2150,9 @@ void nfa_add_transition(nfa_t* nfa,
  state_t q1,
  symbol_t a)
 {
- (void) ((!!(a < nfa_get_symbols(nfa))) || (_assert("a < nfa_get_symbols(nfa)","oil_plainc_hls/src/nfa.c",143),0));
- (void) ((!!(q0 < nfa_get_states(nfa))) || (_assert("q0 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",144),0));
- (void) ((!!(q1 < nfa_get_states(nfa))) || (_assert("q1 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",145),0));
+ (void) ((!!(a < nfa_get_symbols(nfa))) || (_assert("a < nfa_get_symbols(nfa)","oil_plainc_hls/src/nfa.c",139),0));
+ (void) ((!!(q0 < nfa_get_states(nfa))) || (_assert("q0 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",140),0));
+ (void) ((!!(q1 < nfa_get_states(nfa))) || (_assert("q1 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",141),0));
 
  size_t offset;
  // successor
@@ -2175,9 +2171,9 @@ void nfa_remove_transition(nfa_t* nfa,
  state_t q1,
  symbol_t a)
 {
- (void) ((!!(a < nfa_get_symbols(nfa))) || (_assert("a < nfa_get_symbols(nfa)","oil_plainc_hls/src/nfa.c",164),0));
- (void) ((!!(q0 < nfa_get_states(nfa))) || (_assert("q0 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",165),0));
- (void) ((!!(q1 < nfa_get_states(nfa))) || (_assert("q1 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",166),0));
+ (void) ((!!(a < nfa_get_symbols(nfa))) || (_assert("a < nfa_get_symbols(nfa)","oil_plainc_hls/src/nfa.c",160),0));
+ (void) ((!!(q0 < nfa_get_states(nfa))) || (_assert("q0 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",161),0));
+ (void) ((!!(q1 < nfa_get_states(nfa))) || (_assert("q1 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",162),0));
 
  size_t offset;
  // successor
@@ -2197,8 +2193,8 @@ void nfa_clone(nfa_t* dest, const nfa_t* src)
 // Combina dos estados en un automata, el estado Q2 queda aislado
 void nfa_merge_states(nfa_t* nfa, state_t q1, state_t q2)
 {
- (void) ((!!(q1 < nfa_get_states(nfa))) || (_assert("q1 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",186),0));
- (void) ((!!(q2 < nfa_get_states(nfa))) || (_assert("q2 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",187),0));
+ (void) ((!!(q1 < nfa_get_states(nfa))) || (_assert("q1 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",182),0));
+ (void) ((!!(q2 < nfa_get_states(nfa))) || (_assert("q2 < nfa_get_states(nfa)","oil_plainc_hls/src/nfa.c",183),0));
 
  if (nfa_is_initial(nfa, q2))
  {
@@ -2238,8 +2234,6 @@ void nfa_merge_states(nfa_t* nfa, state_t q1, state_t q2)
 
 sample_iterator_t sample_iterator_begin(void)
 {
-_ssdm_InlineRegion(1, "");
-
  sample_iterator_t r;
  r.index = 0;
  r.sample = 0;
@@ -2250,7 +2244,6 @@ _ssdm_InlineRegion(1, "");
 // length es la cantidad de indices en la cadena de descriptores
 sample_iterator_t sample_iterator_end(uint16_t length)
 {
-_ssdm_InlineRegion(1, "");
  sample_iterator_t r;
  r.index = length;
  r.sample = 0;
@@ -2260,7 +2253,6 @@ _ssdm_InlineRegion(1, "");
 sample_iterator_t sample_iterator_next(const index_t indices[1024],
   sample_iterator_t i)
 {_ssdm_SpecArrayDimSize(indices,1024);
-_ssdm_InlineRegion(1, "");
  if(i.sample < indices[i.index].samples - 1)
  {
   i.sample++;
@@ -2273,7 +2265,6 @@ _ssdm_InlineRegion(1, "");
 
 _Bool sample_iterator_equals(sample_iterator_t a, sample_iterator_t b)
 {
-_ssdm_InlineRegion(1, "");
  return (a.sample == b.sample) && (a.index == b.index);
 }
 
@@ -2281,9 +2272,8 @@ uint32_t sample_iterator_get_offset(sample_iterator_t i,
  const index_t indices[1024],
  uint32_t sample_buffer_size, uint16_t sample_length)
 {_ssdm_SpecArrayDimSize(indices,1024);
-_ssdm_InlineRegion(1, "");
  uint32_t offset = indices[i.index].begin + indices[i.index].stride * i.sample;
- (void) ((!!(offset <= sample_buffer_size - sample_length)) || (_assert("offset <= sample_buffer_size - sample_length","oil_plainc_hls/src/nfa.c",272),0));
+ (void) ((!!(offset <= sample_buffer_size - sample_length)) || (_assert("offset <= sample_buffer_size - sample_length","oil_plainc_hls/src/nfa.c",262),0));
  return offset;
 }
 
@@ -2341,6 +2331,177 @@ _ssdm_InlineSelf(0, "");
  return bitset_any(&current);
 }
 
+
+
+// Comprueba si el automata reconoce la secuencia suministrada
+// return true if stop on first condition was meet
+_Bool nfa_accept_sample_multi(const nfa_t* nfa,
+ const symbol_t sample[(1024*5)],
+ uint16_t length, uint32_t start_indices[16],
+ _Bool stop_on_first, _Bool accept, uint8_t units,
+ _Bool result[16])
+{_ssdm_SpecArrayDimSize(result,16);_ssdm_SpecArrayDimSize(start_indices,16);_ssdm_SpecArrayDimSize(sample,(1024*5));
+_ssdm_DataPack( &nfa->initials, 0, 0, "", "", "");
+_ssdm_DataPack( &nfa->finals, 0, 0, "", "", "");
+
+_ssdm_op_SpecPipeline(1, 1, 1, 0, "");
+ bitset_t next[16];
+ bitset_t current[16];
+ bitset_t tmp[16];
+
+//#pragma HLS ARRAY_PARTITION variable=next
+//#pragma HLS ARRAY_PARTITION variable=current
+//#pragma HLS ARRAY_PARTITION variable=tmp
+_ssdm_DataPack( next, 0, 0, "", "", "");
+_ssdm_DataPack( current, 0, 0, "", "", "");
+_ssdm_DataPack( tmp, 0, 0, "", "", "");
+
+ // Indica si una unidad ya termino con toda la cadena
+ _Bool end_string[16];
+
+_ssdm_SpecArrayPartition( end_string, 1, "complete", 0, "");
+
+ uint8_t k;
+
+ for(k=0; k<units; k++)
+ {_ssdm_RegionBegin("hls_label_2");
+_ssdm_Unroll(1, 0, 16, "");
+//#pragma HLS INLINE recursive
+  bitset_init(&next[k]);
+  end_string[k] = 0;
+
+//#pragma HLS INLINE recursive
+  nfa_get_initials(nfa, &current[k]);
+ _ssdm_RegionEnd("hls_label_2");}
+
+ uint16_t i = length;
+ while(i-- > 0)
+ {_ssdm_RegionBegin("hls_label_3");
+  // This tripcount is max MAX_SAMPLE_LENGTH
+_ssdm_op_SpecLoopTripCount(0, 1000, 500, "");
+
+ // index of symbol being proccessed per unit
+  uint32_t sym_offset[16];
+  // State iterator per unit
+  bitset_iterator_t j[16];
+  // any state is to be continue advancing in string
+  _Bool any_state[16];
+
+_ssdm_SpecArrayPartition( sym_offset, 1, "complete", 0, "");
+_ssdm_SpecArrayPartition( j, 1, "complete", 0, "");
+_ssdm_SpecArrayPartition( any_state, 1, "complete", 0, "");
+
+ // Initialization for each unit before to process new symbol
+  for(k=0; k<units; k++)
+  {_ssdm_RegionBegin("hls_label_4");
+_ssdm_Unroll(1, 0, 16, "");
+ sym_offset[k] = start_indices[k];
+   any_state[k] = 0;
+
+//#pragma HLS INLINE recursive
+   bitset_clear(&next[k]);
+
+//#pragma HLS INLINE recursive
+   j[k] = bitset_first(&current[k]);
+  _ssdm_RegionEnd("hls_label_4");}
+
+  // all units ended this symbol
+  _Bool all_end;
+  // unit ended this symbol
+  _Bool end[16];
+  // any unit ended this symbol
+  _Bool any_end = 0;
+  // Symbol being processed per unit
+  symbol_t sym[16];
+  // state evalutated per unit
+  state_t state[16];
+
+_ssdm_SpecArrayPartition( end, 1, "complete", 0, "");
+_ssdm_SpecArrayPartition( sym, 1, "complete", 0, "");
+_ssdm_SpecArrayPartition( state, 1, "complete", 0, "");
+
+ do
+  {_ssdm_RegionBegin("hls_label_5");
+_ssdm_op_SpecLoopTripCount(0, 10, 5, "");
+
+ // main loop body part 1
+   for(k=0; k<units; k++)
+   {_ssdm_RegionBegin("hls_label_6");
+_ssdm_Unroll(1, 0, 16, "");
+//#pragma HLS INLINE recursive
+    end[k] = bitset_end(j[k]);
+    if(end[k])
+    {
+     // if ended this symbol and this is the last symbol
+     // or there are no more transitions to continue on next symbol
+     end_string[k] = i==0 || !any_state[k];
+     if(end_string[k]) // unit finished string
+     {
+      if(any_state[k])
+      {
+//#pragma HLS INLINE recursive
+       nfa_get_finals(nfa, &tmp[k]);
+//#pragma HLS INLINE recursive
+       bitset_intersect(&next[k], &tmp[k]);
+//#pragma HLS INLINE recursive
+       result[k] = bitset_any(&next[k]); // compute result
+      }
+      else
+      {
+       result[k] = 0;
+      }
+     }
+     else // not yet full string but symbol finished
+     {
+      // swap
+      tmp[k] = next[k];
+      next[k] = current[k];
+      current[k] = tmp[k];
+     }
+    }
+    else
+    {
+     any_state[k] = 1;
+//#pragma HLS INLINE recursive
+     state[k] = bitset_element(j[k]);
+    }
+
+    if(end_string[k] && stop_on_first && result[k] == accept)
+    {
+     return 1;
+    }
+
+    if(end[k]) continue;
+    // WARN This mem access may be critical
+    uint32_t offset = sym_offset[k]++;
+    sym[k] = sample[offset];
+
+    // WARN Here occurs memory access and is critical
+//#pragma HLS INLINE recursive
+    nfa_get_sucessors(nfa, state[k], sym[k], &tmp[k]);
+   _ssdm_RegionEnd("hls_label_6");}
+
+   // set base end condition
+   all_end = 1;
+   any_end = 0;
+
+   // main loop body part 4
+   for(k=0; k<units; k++)
+   {_ssdm_RegionBegin("hls_label_7");
+_ssdm_Unroll(1, 0, 16, "");
+ if(!end[k])
+    {
+     bitset_union(&next[k], &tmp[k]);
+    }
+    all_end = all_end && end[k];
+    any_end = any_end || end[k];
+   _ssdm_RegionEnd("hls_label_7");}
+  _ssdm_RegionEnd("hls_label_5");} while(!all_end);
+ _ssdm_RegionEnd("hls_label_3");}
+ return 0;
+}
+
+
 // Indica si e NFA acepta al menos una muestra
 _Bool nfa_accept_any_sample(const nfa_t* nfa,
  const symbol_t sample_buffer[(1024*5)],
@@ -2369,7 +2530,6 @@ int nfa_accept_samples_generic_hw(const nfa_t* nfa,
  sample_iterator_t begin, sample_iterator_t end,
  _Bool stop_on_first, _Bool accept)
 {_ssdm_SpecArrayDimSize(indices,1024);_ssdm_SpecArrayDimSize(sample_buffer,(1024*5));SSDM_KEEP_name(end.index, &end.index); SSDM_KEEP_name(end.sample, &end.sample); SSDM_KEEP_name(begin.index, &begin.index); SSDM_KEEP_name(begin.sample, &begin.sample); SSDM_KEEP_name(indices.begin, &indices[0].begin); SSDM_KEEP_name(indices.samples, &indices[0].samples); SSDM_KEEP_name(indices.stride, &indices[0].stride); SSDM_KEEP_name(nfa.initials.buckets, &nfa->initials.buckets); SSDM_KEEP_name(nfa.finals.buckets, &nfa->finals.buckets); SSDM_KEEP_name(nfa.forward.buckets, &nfa->forward[0].buckets); SSDM_KEEP_name(nfa.backward.buckets, &nfa->backward[0].buckets); SSDM_KEEP_name(nfa.symbols, &nfa->symbols); 
-_ssdm_op_SpecPipeline(1, 1, 1, 0, "");
 _ssdm_DataPack( indices, 0, 0, "", "struct_level", "");
 
 _ssdm_op_SpecBus(&nfa->initials, "ap_bus", 0, 0, 0, 10, "", "", "");
@@ -2408,20 +2568,45 @@ _ssdm_op_SpecResource(stop_on_first, "", "PLB46S", "", "", "", "-bus_bundle slv0
 _ssdm_op_SpecResource(accept, "", "PLB46S", "", "", "", "-bus_bundle slv0");
 _ssdm_op_SpecResource(0, "", "PLB46S", "", "", "", "-bus_bundle slv0");
 
- int c = 0;
- sample_iterator_t i;
- for (i = begin; !sample_iterator_equals(i, end); i = sample_iterator_next(indices, i))
- {_ssdm_RegionBegin("hls_label_2");
-_ssdm_op_SpecLoopTripCount(0, 65535, 2000, "");
- uint32_t offset = sample_iterator_get_offset(i, indices, sample_buffer_length, sample_length);
-  _Bool r = nfa_accept_sample(nfa, sample_buffer + offset, sample_length);
-  if((r && accept) || (!r && !accept))
+ uint16_t c = 0;
+ sample_iterator_t i = begin;
+
+ _Bool finished = 0;
+ _Bool stop_on_first_meet = 0;
+
+ do
+ {_ssdm_RegionBegin("hls_label_8");
+_ssdm_op_SpecLoopTripCount(0, 1000, 500, "");
+ _Bool result[16];
+  uint32_t start_indices[16];
+
+  uint8_t units = 0;
+  uint8_t k;
+
+  for(k=0; k<16; k++)
   {
-   if(stop_on_first) return 1;
-   c++;
+   finished = sample_iterator_equals(i, end);
+   if(finished) break;
+
+   uint32_t offset = sample_iterator_get_offset(i, indices, sample_buffer_length, sample_length);
+   start_indices[k] = offset;
+   i = sample_iterator_next(indices, i);
+   units++;
   }
- _ssdm_RegionEnd("hls_label_2");}
- return c;
+
+  stop_on_first_meet = nfa_accept_sample_multi(nfa, sample_buffer, sample_length, start_indices, stop_on_first, accept, units, result);
+
+  if(stop_on_first && stop_on_first_meet) return 1;
+
+  for(k=0; k<units; k++)
+  {
+   if(result[k])
+   {
+    c++;
+   }
+  }
+ _ssdm_RegionEnd("hls_label_8");} while(!finished);
+ return stop_on_first ? (stop_on_first_meet?1:0) : c;
 }
 
 // Indica si el NFA acepta todas las muestras

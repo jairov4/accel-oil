@@ -1,6 +1,6 @@
 
 set TopModule "nfa_accept_samples_generic_hw"
-set ClockPeriod "7.000000"
+set ClockPeriod "10.000000"
 set ClockList {ap_clk}
 set multiClockList {}
 set PortClockMap {}

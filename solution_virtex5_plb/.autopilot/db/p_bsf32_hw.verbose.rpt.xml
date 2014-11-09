@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'p_bsf32_hw'" level="0">
-<item name = "Date">Sat Aug 09 17:29:25 2014
+<item name = "Date">Sat Nov 08 10:20:49 2014
 </item>
 <item name = "Version">2014.1 (build date: Fri Apr 04 13:20:25 PM 2014)</item>
 <item name = "Project">oil_plainc_hls</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="default">7.00, 3.36, 3.00</column>
+<column name="default">10.00, 3.45, 3.00</column>
 </table>
 </item>
 </section>
@@ -50,7 +50,7 @@
 <column name="FIFO">-, -, -, -</column>
 <column name="Instance">-, -, -, -</column>
 <column name="Memory">-, -, -, -</column>
-<column name="Multiplexer">-, -, -, 55</column>
+<column name="Multiplexer">-, -, -, 56</column>
 <column name="Register">-, -, -, -</column>
 <specialColumn name="Available">120, 48, 28800, 28800</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, 0, ~0</specialColumn>
@@ -76,7 +76,7 @@
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="merge_phi_fu_237_p4">5, 3, 5, 15</column>
+<column name="UnifiedRetVal_phi_fu_237_p4">6, 3, 6, 18</column>
 <column name="p_s_phi_fu_139_p62">50, 32, 5, 160</column>
 </table>
 </item>
@@ -92,7 +92,7 @@
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
 <column name="bus_r">in, 32, ap_none, bus_r, scalar</column>
-<column name="ap_return">out, 5, ap_ctrl_hs, _bsf32_hw, return value</column>
+<column name="ap_return">out, 6, ap_ctrl_hs, _bsf32_hw, return value</column>
 </table>
 </item>
 </section>

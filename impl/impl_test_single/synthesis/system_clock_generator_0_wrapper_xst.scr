@@ -11,4 +11,4 @@ run
 -hierarchy_separator /
 -iobuf NO
 -sd {../implementation}
--vlgincdir {"C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\pcores\" "C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\solution_virtex5\impl\pcores\" "C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+-vlgincdir {"C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\pcores\" "C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\solution_virtex5_plb\impl\pcores\" "C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

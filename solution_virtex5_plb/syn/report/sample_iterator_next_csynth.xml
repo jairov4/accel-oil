@@ -9,31 +9,28 @@
 <ProductFamily>virtex5 virtex5_fpv5 </ProductFamily>
 <Part>xc5vlx50tff1136-3</Part>
 <TopModelName>sample_iterator_next</TopModelName>
-<TargetClockPeriod>7.00</TargetClockPeriod>
+<TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>3.00</ClockUncertainty>
-<TargetInitiationInterval>1</TargetInitiationInterval>
 </UserAssignments>
 
 <PerformanceEstimates>
-<PipelineType>function</PipelineType>
+<PipelineType>none</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>4.00</EstimatedClockPeriod>
+<EstimatedClockPeriod>7.00</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
 <Best-caseLatency>3</Best-caseLatency>
 <Average-caseLatency>3</Average-caseLatency>
 <Worst-caseLatency>3</Worst-caseLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>4</PipelineDepth>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<FF>52</FF>
-<LUT>120</LUT>
+<FF>18</FF>
+<LUT>88</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
 <SLICE>0</SLICE>
@@ -111,17 +108,6 @@
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_ce</name>
-<Object>sample_iterator_next</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>

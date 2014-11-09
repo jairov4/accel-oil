@@ -23,13 +23,13 @@ INTSTYLE = default
 
 XPS_HDL_LANG = vhdl
 GLOBAL_SEARCHPATHOPT = 
-PROJECT_SEARCHPATHOPT =  -lp C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/
+PROJECT_SEARCHPATHOPT =  -lp C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/
 
 SEARCHPATHOPT = $(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT)
 
 SUBMODULE_OPT = 
 
-PLATGEN_OPTIONS = -p $(DEVICE) -lang $(XPS_HDL_LANG) -intstyle $(INTSTYLE) $(SEARCHPATHOPT) $(SUBMODULE_OPT) -msg __xps/ise/xmsgprops.lst
+PLATGEN_OPTIONS = -p $(DEVICE) -lang $(XPS_HDL_LANG) -intstyle $(INTSTYLE) $(SEARCHPATHOPT) $(SUBMODULE_OPT) -msg __xps/ise/xmsgprops.lst -parallel yes
 
 OBSERVE_PAR_OPTIONS = -error yes
 
@@ -39,23 +39,27 @@ PPC405_BOOTLOOP = $(XILINX_EDK_DIR)/sw/lib/ppc405/ppc_bootloop.elf
 PPC440_BOOTLOOP = $(XILINX_EDK_DIR)/sw/lib/ppc440/ppc440_bootloop.elf
 BOOTLOOP_DIR = bootloops
 
-BRAMINIT_ELF_IMP_FILES =
-BRAMINIT_ELF_IMP_FILE_ARGS =
+MICROBLAZE_0_BOOTLOOP = $(BOOTLOOP_DIR)/microblaze_0.elf
+MICROBLAZE_0_ELF_IMP = eclipse_workspace/test_sim1/Debug/test_sim1.elf
+MICROBLAZE_0_ELF_SIM = eclipse_workspace/test_sim1/Debug/test_sim1.elf
 
-BRAMINIT_ELF_SIM_FILES =
-BRAMINIT_ELF_SIM_FILE_ARGS =
+BRAMINIT_ELF_IMP_FILES = $(MICROBLAZE_0_ELF_IMP)
+BRAMINIT_ELF_IMP_FILE_ARGS = -pe microblaze_0 $(MICROBLAZE_0_ELF_IMP)
 
-SIM_CMD = isim_system
+BRAMINIT_ELF_SIM_FILES = $(MICROBLAZE_0_ELF_SIM)
+BRAMINIT_ELF_SIM_FILE_ARGS = -pe microblaze_0 $(MICROBLAZE_0_ELF_SIM)
 
-BEHAVIORAL_SIM_SCRIPT = simulation/behavioral/$(SYSTEM)_setup.tcl
+SIM_CMD = C:\Programas\modeltech64_10.1c\win64/vsim
 
-STRUCTURAL_SIM_SCRIPT = simulation/structural/$(SYSTEM)_setup.tcl
+BEHAVIORAL_SIM_SCRIPT = simulation/behavioral/$(SYSTEM)_setup.do
 
-TIMING_SIM_SCRIPT = simulation/timing/$(SYSTEM)_setup.tcl
+STRUCTURAL_SIM_SCRIPT = simulation/structural/$(SYSTEM)_setup.do
+
+TIMING_SIM_SCRIPT = simulation/timing/$(SYSTEM)_setup.do
 
 DEFAULT_SIM_SCRIPT = $(BEHAVIORAL_SIM_SCRIPT)
 
-SIMGEN_OPTIONS = -p $(DEVICE) -lang $(XPS_HDL_LANG) -intstyle $(INTSTYLE) $(SEARCHPATHOPT) $(BRAMINIT_ELF_SIM_FILE_ARGS) -msg __xps/ise/xmsgprops.lst -s isim -tb -X C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/impl/impl_test_single/
+SIMGEN_OPTIONS = -p $(DEVICE) -lang $(XPS_HDL_LANG) -intstyle $(INTSTYLE) $(SEARCHPATHOPT) $(BRAMINIT_ELF_SIM_FILE_ARGS) -msg __xps/ise/xmsgprops.lst -s mgm -tb -X D:/xlx_lib
 
 
 CORE_STATE_DEVELOPMENT_FILES = C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd \
@@ -74,41 +78,45 @@ C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v
 C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd \
 C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd \
 C:/Programas/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/vhdl/indices_if_ap_fifo.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/vhdl/indices_if_plb_master_if.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/vhdl/indices_if.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/verilog/p_bsf32_hw.v \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/verilog/bitset_next.v \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/verilog/nfa_get_finals.v \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/verilog/nfa_get_initials.v \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/verilog/sample_iterator_get_offset.v \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/verilog/sample_iterator_next.v \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/verilog/nfa_accept_samples_generic_hw.v \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/verilog/nfa_accept_samples_generic_hw_ap_rst_if.v \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/vhdl/nfa_finals_buckets_if_ap_fifo.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/vhdl/nfa_finals_buckets_if_ap_fifo_af.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/vhdl/nfa_finals_buckets_if_async_fifo.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/vhdl/nfa_finals_buckets_if.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/vhdl/nfa_forward_buckets_if_ap_fifo.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/vhdl/nfa_forward_buckets_if_ap_fifo_af.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/vhdl/nfa_forward_buckets_if_async_fifo.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/vhdl/nfa_forward_buckets_if.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/vhdl/nfa_initials_buckets_if_ap_fifo.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/vhdl/nfa_initials_buckets_if_ap_fifo_af.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/vhdl/nfa_initials_buckets_if_async_fifo.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/vhdl/nfa_initials_buckets_if.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/vhdl/sample_buffer_if_ap_fifo.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/vhdl/sample_buffer_if_plb_master_if.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/vhdl/sample_buffer_if.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/vhdl/slv0_if.vhd \
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/impl/pcores/nfa_accept_samples_generic_hw_top_v1_00_a/synhdl/verilog/nfa_accept_samples_generic_hw_top.v
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/vhdl/indices_if_ap_fifo.vhd \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/vhdl/indices_if_plb_master_if.vhd \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/vhdl/indices_if.vhd \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/verilog/p_bsf32_hw.v \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/verilog/bitset_next.v \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/verilog/nfa_accept_samples_generic_hw_mul_8ns_6ns_14_2.v \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/verilog/nfa_get_finals.v \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/verilog/nfa_get_initials.v \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/verilog/nfa_accept_samples_generic_hw_mul_16ns_8ns_24_2.v \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/verilog/sample_iterator_get_offset.v \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/verilog/sample_iterator_next.v \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/verilog/nfa_accept_samples_generic_hw.v \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/verilog/nfa_accept_samples_generic_hw_ap_rst_if.v \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/vhdl/nfa_finals_buckets_if_ap_fifo.vhd \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/vhdl/nfa_finals_buckets_if_plb_master_if.vhd \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/vhdl/nfa_finals_buckets_if.vhd \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/vhdl/nfa_forward_buckets_if_ap_fifo.vhd \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/vhdl/nfa_forward_buckets_if_plb_master_if.vhd \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/vhdl/nfa_forward_buckets_if.vhd \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/vhdl/nfa_initials_buckets_if_ap_fifo.vhd \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/vhdl/nfa_initials_buckets_if_plb_master_if.vhd \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/vhdl/nfa_initials_buckets_if.vhd \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/vhdl/sample_buffer_if_ap_fifo.vhd \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/vhdl/sample_buffer_if_plb_master_if.vhd \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/vhdl/sample_buffer_if.vhd \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/vhdl/slv0_if.vhd \
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/impl/pcores/nfa_accept_samples_generic_hw_top_v1_01_a/synhdl/verilog/nfa_accept_samples_generic_hw_top.v
 
-WRAPPER_NGC_FILES = implementation/system_nfa_accept_samples_generic_hw_top_0_wrapper.ngc \
-implementation/system_plbv46_pcie_0_wrapper.ngc \
-implementation/system_plb_v46_0_wrapper.ngc \
-implementation/system_mpmc_0_wrapper.ngc \
-implementation/system_nfa_accept_samples_generic_hw_top_1_wrapper.ngc \
-implementation/system_clock_generator_0_wrapper.ngc
+WRAPPER_NGC_FILES = implementation/system_microblaze_0_wrapper.ngc \
+implementation/system_mb_plb_wrapper.ngc \
+implementation/system_ilmb_wrapper.ngc \
+implementation/system_dlmb_wrapper.ngc \
+implementation/system_dlmb_cntlr_wrapper.ngc \
+implementation/system_ilmb_cntlr_wrapper.ngc \
+implementation/system_lmb_bram_wrapper.ngc \
+implementation/system_clock_generator_0_wrapper.ngc \
+implementation/system_mdm_0_wrapper.ngc \
+implementation/system_proc_sys_reset_0_wrapper.ngc \
+implementation/system_nfa_accept_samples_generic_hw_top_0_wrapper.ngc
 
 POSTSYN_NETLIST = implementation/$(SYSTEM).ngc
 
@@ -135,4 +143,5 @@ FPGA_IMP_DEPENDENCY = $(BMM_FILE) $(POSTSYN_NETLIST) $(UCF_FILE) $(XFLOW_DEPENDE
 SDK_EXPORT_DIR = SDK\SDK_Export\hw
 SYSTEM_HW_HANDOFF = $(SDK_EXPORT_DIR)/$(SYSTEM).xml
 SYSTEM_HW_HANDOFF_BIT = $(SDK_EXPORT_DIR)/$(SYSTEM).bit
-SYSTEM_HW_HANDOFF_DEP = $(SYSTEM_HW_HANDOFF) $(SYSTEM_HW_HANDOFF_BIT)
+SYSTEM_HW_HANDOFF_BMM = $(SDK_EXPORT_DIR)/$(SYSTEM)_bd.bmm
+SYSTEM_HW_HANDOFF_DEP = $(SYSTEM_HW_HANDOFF) $(SYSTEM_HW_HANDOFF_BIT) $(SYSTEM_HW_HANDOFF_BMM)

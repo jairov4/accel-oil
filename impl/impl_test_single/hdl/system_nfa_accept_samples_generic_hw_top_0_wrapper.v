@@ -38,69 +38,102 @@ module system_nfa_accept_samples_generic_hw_top_0_wrapper
     indices_PLB_MRdBTerm,
     indices_PLB_MWrDAck,
     indices_PLB_MWrBTerm,
-    nfa_finals_buckets_NPI_clk,
-    nfa_finals_buckets_NPI_reset,
-    nfa_finals_buckets_NPI_Addr,
-    nfa_finals_buckets_NPI_AddrReq,
-    nfa_finals_buckets_NPI_AddrAck,
-    nfa_finals_buckets_NPI_RNW,
-    nfa_finals_buckets_NPI_Size,
-    nfa_finals_buckets_NPI_WrFIFO_Data,
-    nfa_finals_buckets_NPI_WrFIFO_BE,
-    nfa_finals_buckets_NPI_WrFIFO_Push,
-    nfa_finals_buckets_NPI_RdFIFO_Data,
-    nfa_finals_buckets_NPI_RdFIFO_Pop,
-    nfa_finals_buckets_NPI_RdFIFO_RdWdAddr,
-    nfa_finals_buckets_NPI_WrFIFO_Empty,
-    nfa_finals_buckets_NPI_WrFIFO_AlmostFull,
-    nfa_finals_buckets_NPI_WrFIFO_Flush,
-    nfa_finals_buckets_NPI_RdFIFO_Empty,
-    nfa_finals_buckets_NPI_RdFIFO_Flush,
-    nfa_finals_buckets_NPI_RdFIFO_Latency,
-    nfa_finals_buckets_NPI_RdModWr,
-    nfa_finals_buckets_NPI_InitDone,
-    nfa_forward_buckets_NPI_clk,
-    nfa_forward_buckets_NPI_reset,
-    nfa_forward_buckets_NPI_Addr,
-    nfa_forward_buckets_NPI_AddrReq,
-    nfa_forward_buckets_NPI_AddrAck,
-    nfa_forward_buckets_NPI_RNW,
-    nfa_forward_buckets_NPI_Size,
-    nfa_forward_buckets_NPI_WrFIFO_Data,
-    nfa_forward_buckets_NPI_WrFIFO_BE,
-    nfa_forward_buckets_NPI_WrFIFO_Push,
-    nfa_forward_buckets_NPI_RdFIFO_Data,
-    nfa_forward_buckets_NPI_RdFIFO_Pop,
-    nfa_forward_buckets_NPI_RdFIFO_RdWdAddr,
-    nfa_forward_buckets_NPI_WrFIFO_Empty,
-    nfa_forward_buckets_NPI_WrFIFO_AlmostFull,
-    nfa_forward_buckets_NPI_WrFIFO_Flush,
-    nfa_forward_buckets_NPI_RdFIFO_Empty,
-    nfa_forward_buckets_NPI_RdFIFO_Flush,
-    nfa_forward_buckets_NPI_RdFIFO_Latency,
-    nfa_forward_buckets_NPI_RdModWr,
-    nfa_forward_buckets_NPI_InitDone,
-    nfa_initials_buckets_NPI_clk,
-    nfa_initials_buckets_NPI_reset,
-    nfa_initials_buckets_NPI_Addr,
-    nfa_initials_buckets_NPI_AddrReq,
-    nfa_initials_buckets_NPI_AddrAck,
-    nfa_initials_buckets_NPI_RNW,
-    nfa_initials_buckets_NPI_Size,
-    nfa_initials_buckets_NPI_WrFIFO_Data,
-    nfa_initials_buckets_NPI_WrFIFO_BE,
-    nfa_initials_buckets_NPI_WrFIFO_Push,
-    nfa_initials_buckets_NPI_RdFIFO_Data,
-    nfa_initials_buckets_NPI_RdFIFO_Pop,
-    nfa_initials_buckets_NPI_RdFIFO_RdWdAddr,
-    nfa_initials_buckets_NPI_WrFIFO_Empty,
-    nfa_initials_buckets_NPI_WrFIFO_AlmostFull,
-    nfa_initials_buckets_NPI_WrFIFO_Flush,
-    nfa_initials_buckets_NPI_RdFIFO_Empty,
-    nfa_initials_buckets_NPI_RdFIFO_Flush,
-    nfa_initials_buckets_NPI_RdFIFO_Latency,
-    nfa_initials_buckets_NPI_RdModWr,
-    nfa_initials_buckets_NPI_InitDone,
+    nfa_finals_buckets_MPLB_Clk,
+    nfa_finals_buckets_MPLB_Rst,
+    nfa_finals_buckets_M_request,
+    nfa_finals_buckets_M_priority,
+    nfa_finals_buckets_M_busLock,
+    nfa_finals_buckets_M_RNW,
+    nfa_finals_buckets_M_BE,
+    nfa_finals_buckets_M_MSize,
+    nfa_finals_buckets_M_size,
+    nfa_finals_buckets_M_type,
+    nfa_finals_buckets_M_TAttribute,
+    nfa_finals_buckets_M_lockErr,
+    nfa_finals_buckets_M_abort,
+    nfa_finals_buckets_M_UABus,
+    nfa_finals_buckets_M_ABus,
+    nfa_finals_buckets_M_wrDBus,
+    nfa_finals_buckets_M_wrBurst,
+    nfa_finals_buckets_M_rdBurst,
+    nfa_finals_buckets_PLB_MAddrAck,
+    nfa_finals_buckets_PLB_MSSize,
+    nfa_finals_buckets_PLB_MRearbitrate,
+    nfa_finals_buckets_PLB_MTimeout,
+    nfa_finals_buckets_PLB_MBusy,
+    nfa_finals_buckets_PLB_MRdErr,
+    nfa_finals_buckets_PLB_MWrErr,
+    nfa_finals_buckets_PLB_MIRQ,
+    nfa_finals_buckets_PLB_MRdDBus,
+    nfa_finals_buckets_PLB_MRdWdAddr,
+    nfa_finals_buckets_PLB_MRdDAck,
+    nfa_finals_buckets_PLB_MRdBTerm,
+    nfa_finals_buckets_PLB_MWrDAck,
+    nfa_finals_buckets_PLB_MWrBTerm,
+    nfa_forward_buckets_MPLB_Clk,
+    nfa_forward_buckets_MPLB_Rst,
+    nfa_forward_buckets_M_request,
+    nfa_forward_buckets_M_priority,
+    nfa_forward_buckets_M_busLock,
+    nfa_forward_buckets_M_RNW,
+    nfa_forward_buckets_M_BE,
+    nfa_forward_buckets_M_MSize,
+    nfa_forward_buckets_M_size,
+    nfa_forward_buckets_M_type,
+    nfa_forward_buckets_M_TAttribute,
+    nfa_forward_buckets_M_lockErr,
+    nfa_forward_buckets_M_abort,
+    nfa_forward_buckets_M_UABus,
+    nfa_forward_buckets_M_ABus,
+    nfa_forward_buckets_M_wrDBus,
+    nfa_forward_buckets_M_wrBurst,
+    nfa_forward_buckets_M_rdBurst,
+    nfa_forward_buckets_PLB_MAddrAck,
+    nfa_forward_buckets_PLB_MSSize,
+    nfa_forward_buckets_PLB_MRearbitrate,
+    nfa_forward_buckets_PLB_MTimeout,
+    nfa_forward_buckets_PLB_MBusy,
+    nfa_forward_buckets_PLB_MRdErr,
+    nfa_forward_buckets_PLB_MWrErr,
+    nfa_forward_buckets_PLB_MIRQ,
+    nfa_forward_buckets_PLB_MRdDBus,
+    nfa_forward_buckets_PLB_MRdWdAddr,
+    nfa_forward_buckets_PLB_MRdDAck,
+    nfa_forward_buckets_PLB_MRdBTerm,
+    nfa_forward_buckets_PLB_MWrDAck,
+    nfa_forward_buckets_PLB_MWrBTerm,
+    nfa_initials_buckets_MPLB_Clk,
+    nfa_initials_buckets_MPLB_Rst,
+    nfa_initials_buckets_M_request,
+    nfa_initials_buckets_M_priority,
+    nfa_initials_buckets_M_busLock,
+    nfa_initials_buckets_M_RNW,
+    nfa_initials_buckets_M_BE,
+    nfa_initials_buckets_M_MSize,
+    nfa_initials_buckets_M_size,
+    nfa_initials_buckets_M_type,
+    nfa_initials_buckets_M_TAttribute,
+    nfa_initials_buckets_M_lockErr,
+    nfa_initials_buckets_M_abort,
+    nfa_initials_buckets_M_UABus,
+    nfa_initials_buckets_M_ABus,
+    nfa_initials_buckets_M_wrDBus,
+    nfa_initials_buckets_M_wrBurst,
+    nfa_initials_buckets_M_rdBurst,
+    nfa_initials_buckets_PLB_MAddrAck,
+    nfa_initials_buckets_PLB_MSSize,
+    nfa_initials_buckets_PLB_MRearbitrate,
+    nfa_initials_buckets_PLB_MTimeout,
+    nfa_initials_buckets_PLB_MBusy,
+    nfa_initials_buckets_PLB_MRdErr,
+    nfa_initials_buckets_PLB_MWrErr,
+    nfa_initials_buckets_PLB_MIRQ,
+    nfa_initials_buckets_PLB_MRdDBus,
+    nfa_initials_buckets_PLB_MRdWdAddr,
+    nfa_initials_buckets_PLB_MRdDAck,
+    nfa_initials_buckets_PLB_MRdBTerm,
+    nfa_initials_buckets_PLB_MWrDAck,
+    nfa_initials_buckets_PLB_MWrBTerm,
     sample_buffer_MPLB_Clk,
     sample_buffer_MPLB_Rst,
     sample_buffer_M_request,
@@ -210,69 +243,102 @@ module system_nfa_accept_samples_generic_hw_top_0_wrapper
   input indices_PLB_MRdBTerm;
   input indices_PLB_MWrDAck;
   input indices_PLB_MWrBTerm;
-  input nfa_finals_buckets_NPI_clk;
-  input nfa_finals_buckets_NPI_reset;
-  output [31:0] nfa_finals_buckets_NPI_Addr;
-  output nfa_finals_buckets_NPI_AddrReq;
-  input nfa_finals_buckets_NPI_AddrAck;
-  output nfa_finals_buckets_NPI_RNW;
-  output [3:0] nfa_finals_buckets_NPI_Size;
-  output [63:0] nfa_finals_buckets_NPI_WrFIFO_Data;
-  output [7:0] nfa_finals_buckets_NPI_WrFIFO_BE;
-  output nfa_finals_buckets_NPI_WrFIFO_Push;
-  input [63:0] nfa_finals_buckets_NPI_RdFIFO_Data;
-  output nfa_finals_buckets_NPI_RdFIFO_Pop;
-  input [3:0] nfa_finals_buckets_NPI_RdFIFO_RdWdAddr;
-  input nfa_finals_buckets_NPI_WrFIFO_Empty;
-  input nfa_finals_buckets_NPI_WrFIFO_AlmostFull;
-  output nfa_finals_buckets_NPI_WrFIFO_Flush;
-  input nfa_finals_buckets_NPI_RdFIFO_Empty;
-  output nfa_finals_buckets_NPI_RdFIFO_Flush;
-  input [1:0] nfa_finals_buckets_NPI_RdFIFO_Latency;
-  output nfa_finals_buckets_NPI_RdModWr;
-  input nfa_finals_buckets_NPI_InitDone;
-  input nfa_forward_buckets_NPI_clk;
-  input nfa_forward_buckets_NPI_reset;
-  output [31:0] nfa_forward_buckets_NPI_Addr;
-  output nfa_forward_buckets_NPI_AddrReq;
-  input nfa_forward_buckets_NPI_AddrAck;
-  output nfa_forward_buckets_NPI_RNW;
-  output [3:0] nfa_forward_buckets_NPI_Size;
-  output [63:0] nfa_forward_buckets_NPI_WrFIFO_Data;
-  output [7:0] nfa_forward_buckets_NPI_WrFIFO_BE;
-  output nfa_forward_buckets_NPI_WrFIFO_Push;
-  input [63:0] nfa_forward_buckets_NPI_RdFIFO_Data;
-  output nfa_forward_buckets_NPI_RdFIFO_Pop;
-  input [3:0] nfa_forward_buckets_NPI_RdFIFO_RdWdAddr;
-  input nfa_forward_buckets_NPI_WrFIFO_Empty;
-  input nfa_forward_buckets_NPI_WrFIFO_AlmostFull;
-  output nfa_forward_buckets_NPI_WrFIFO_Flush;
-  input nfa_forward_buckets_NPI_RdFIFO_Empty;
-  output nfa_forward_buckets_NPI_RdFIFO_Flush;
-  input [1:0] nfa_forward_buckets_NPI_RdFIFO_Latency;
-  output nfa_forward_buckets_NPI_RdModWr;
-  input nfa_forward_buckets_NPI_InitDone;
-  input nfa_initials_buckets_NPI_clk;
-  input nfa_initials_buckets_NPI_reset;
-  output [31:0] nfa_initials_buckets_NPI_Addr;
-  output nfa_initials_buckets_NPI_AddrReq;
-  input nfa_initials_buckets_NPI_AddrAck;
-  output nfa_initials_buckets_NPI_RNW;
-  output [3:0] nfa_initials_buckets_NPI_Size;
-  output [63:0] nfa_initials_buckets_NPI_WrFIFO_Data;
-  output [7:0] nfa_initials_buckets_NPI_WrFIFO_BE;
-  output nfa_initials_buckets_NPI_WrFIFO_Push;
-  input [63:0] nfa_initials_buckets_NPI_RdFIFO_Data;
-  output nfa_initials_buckets_NPI_RdFIFO_Pop;
-  input [3:0] nfa_initials_buckets_NPI_RdFIFO_RdWdAddr;
-  input nfa_initials_buckets_NPI_WrFIFO_Empty;
-  input nfa_initials_buckets_NPI_WrFIFO_AlmostFull;
-  output nfa_initials_buckets_NPI_WrFIFO_Flush;
-  input nfa_initials_buckets_NPI_RdFIFO_Empty;
-  output nfa_initials_buckets_NPI_RdFIFO_Flush;
-  input [1:0] nfa_initials_buckets_NPI_RdFIFO_Latency;
-  output nfa_initials_buckets_NPI_RdModWr;
-  input nfa_initials_buckets_NPI_InitDone;
+  input nfa_finals_buckets_MPLB_Clk;
+  input nfa_finals_buckets_MPLB_Rst;
+  output nfa_finals_buckets_M_request;
+  output [0:1] nfa_finals_buckets_M_priority;
+  output nfa_finals_buckets_M_busLock;
+  output nfa_finals_buckets_M_RNW;
+  output [0:7] nfa_finals_buckets_M_BE;
+  output [0:1] nfa_finals_buckets_M_MSize;
+  output [0:3] nfa_finals_buckets_M_size;
+  output [0:2] nfa_finals_buckets_M_type;
+  output [0:15] nfa_finals_buckets_M_TAttribute;
+  output nfa_finals_buckets_M_lockErr;
+  output nfa_finals_buckets_M_abort;
+  output [0:31] nfa_finals_buckets_M_UABus;
+  output [0:31] nfa_finals_buckets_M_ABus;
+  output [0:63] nfa_finals_buckets_M_wrDBus;
+  output nfa_finals_buckets_M_wrBurst;
+  output nfa_finals_buckets_M_rdBurst;
+  input nfa_finals_buckets_PLB_MAddrAck;
+  input [0:1] nfa_finals_buckets_PLB_MSSize;
+  input nfa_finals_buckets_PLB_MRearbitrate;
+  input nfa_finals_buckets_PLB_MTimeout;
+  input nfa_finals_buckets_PLB_MBusy;
+  input nfa_finals_buckets_PLB_MRdErr;
+  input nfa_finals_buckets_PLB_MWrErr;
+  input nfa_finals_buckets_PLB_MIRQ;
+  input [0:63] nfa_finals_buckets_PLB_MRdDBus;
+  input [0:3] nfa_finals_buckets_PLB_MRdWdAddr;
+  input nfa_finals_buckets_PLB_MRdDAck;
+  input nfa_finals_buckets_PLB_MRdBTerm;
+  input nfa_finals_buckets_PLB_MWrDAck;
+  input nfa_finals_buckets_PLB_MWrBTerm;
+  input nfa_forward_buckets_MPLB_Clk;
+  input nfa_forward_buckets_MPLB_Rst;
+  output nfa_forward_buckets_M_request;
+  output [0:1] nfa_forward_buckets_M_priority;
+  output nfa_forward_buckets_M_busLock;
+  output nfa_forward_buckets_M_RNW;
+  output [0:7] nfa_forward_buckets_M_BE;
+  output [0:1] nfa_forward_buckets_M_MSize;
+  output [0:3] nfa_forward_buckets_M_size;
+  output [0:2] nfa_forward_buckets_M_type;
+  output [0:15] nfa_forward_buckets_M_TAttribute;
+  output nfa_forward_buckets_M_lockErr;
+  output nfa_forward_buckets_M_abort;
+  output [0:31] nfa_forward_buckets_M_UABus;
+  output [0:31] nfa_forward_buckets_M_ABus;
+  output [0:63] nfa_forward_buckets_M_wrDBus;
+  output nfa_forward_buckets_M_wrBurst;
+  output nfa_forward_buckets_M_rdBurst;
+  input nfa_forward_buckets_PLB_MAddrAck;
+  input [0:1] nfa_forward_buckets_PLB_MSSize;
+  input nfa_forward_buckets_PLB_MRearbitrate;
+  input nfa_forward_buckets_PLB_MTimeout;
+  input nfa_forward_buckets_PLB_MBusy;
+  input nfa_forward_buckets_PLB_MRdErr;
+  input nfa_forward_buckets_PLB_MWrErr;
+  input nfa_forward_buckets_PLB_MIRQ;
+  input [0:63] nfa_forward_buckets_PLB_MRdDBus;
+  input [0:3] nfa_forward_buckets_PLB_MRdWdAddr;
+  input nfa_forward_buckets_PLB_MRdDAck;
+  input nfa_forward_buckets_PLB_MRdBTerm;
+  input nfa_forward_buckets_PLB_MWrDAck;
+  input nfa_forward_buckets_PLB_MWrBTerm;
+  input nfa_initials_buckets_MPLB_Clk;
+  input nfa_initials_buckets_MPLB_Rst;
+  output nfa_initials_buckets_M_request;
+  output [0:1] nfa_initials_buckets_M_priority;
+  output nfa_initials_buckets_M_busLock;
+  output nfa_initials_buckets_M_RNW;
+  output [0:7] nfa_initials_buckets_M_BE;
+  output [0:1] nfa_initials_buckets_M_MSize;
+  output [0:3] nfa_initials_buckets_M_size;
+  output [0:2] nfa_initials_buckets_M_type;
+  output [0:15] nfa_initials_buckets_M_TAttribute;
+  output nfa_initials_buckets_M_lockErr;
+  output nfa_initials_buckets_M_abort;
+  output [0:31] nfa_initials_buckets_M_UABus;
+  output [0:31] nfa_initials_buckets_M_ABus;
+  output [0:63] nfa_initials_buckets_M_wrDBus;
+  output nfa_initials_buckets_M_wrBurst;
+  output nfa_initials_buckets_M_rdBurst;
+  input nfa_initials_buckets_PLB_MAddrAck;
+  input [0:1] nfa_initials_buckets_PLB_MSSize;
+  input nfa_initials_buckets_PLB_MRearbitrate;
+  input nfa_initials_buckets_PLB_MTimeout;
+  input nfa_initials_buckets_PLB_MBusy;
+  input nfa_initials_buckets_PLB_MRdErr;
+  input nfa_initials_buckets_PLB_MWrErr;
+  input nfa_initials_buckets_PLB_MIRQ;
+  input [0:63] nfa_initials_buckets_PLB_MRdDBus;
+  input [0:3] nfa_initials_buckets_PLB_MRdWdAddr;
+  input nfa_initials_buckets_PLB_MRdDAck;
+  input nfa_initials_buckets_PLB_MRdBTerm;
+  input nfa_initials_buckets_PLB_MWrDAck;
+  input nfa_initials_buckets_PLB_MWrBTerm;
   input sample_buffer_MPLB_Clk;
   input sample_buffer_MPLB_Rst;
   output sample_buffer_M_request;
@@ -313,7 +379,7 @@ module system_nfa_accept_samples_generic_hw_top_0_wrapper
   input splb_slv0_PLB_SAValid;
   input splb_slv0_PLB_rdPrim;
   input splb_slv0_PLB_wrPrim;
-  input [0:1] splb_slv0_PLB_masterID;
+  input [0:2] splb_slv0_PLB_masterID;
   input splb_slv0_PLB_abort;
   input splb_slv0_PLB_busLock;
   input splb_slv0_PLB_RNW;
@@ -343,10 +409,10 @@ module system_nfa_accept_samples_generic_hw_top_0_wrapper
   output splb_slv0_Sl_rdDAck;
   output splb_slv0_Sl_rdComp;
   output splb_slv0_Sl_rdBTerm;
-  output [0:2] splb_slv0_Sl_MBusy;
-  output [0:2] splb_slv0_Sl_MWrErr;
-  output [0:2] splb_slv0_Sl_MRdErr;
-  output [0:2] splb_slv0_Sl_MIRQ;
+  output [0:6] splb_slv0_Sl_MBusy;
+  output [0:6] splb_slv0_Sl_MWrErr;
+  output [0:6] splb_slv0_Sl_MRdErr;
+  output [0:6] splb_slv0_Sl_MIRQ;
 
   nfa_accept_samples_generic_hw_top
     #(
@@ -355,23 +421,32 @@ module system_nfa_accept_samples_generic_hw_top_0_wrapper
       .C_indices_AWIDTH ( 32 ),
       .C_indices_DWIDTH ( 64 ),
       .C_indices_NATIVE_DWIDTH ( 64 ),
-      .C_nfa_finals_buckets_MPMC_BASE_ADDRESS ( 32'h00000000 ),
-      .C_nfa_forward_buckets_MPMC_BASE_ADDRESS ( 32'h00000000 ),
-      .C_nfa_initials_buckets_MPMC_BASE_ADDRESS ( 32'h00000000 ),
+      .C_nfa_finals_buckets_REMOTE_DESTINATION_ADDRESS ( 32'h00000000 ),
+      .C_nfa_finals_buckets_AWIDTH ( 32 ),
+      .C_nfa_finals_buckets_DWIDTH ( 64 ),
+      .C_nfa_finals_buckets_NATIVE_DWIDTH ( 64 ),
+      .C_nfa_forward_buckets_REMOTE_DESTINATION_ADDRESS ( 32'h00000000 ),
+      .C_nfa_forward_buckets_AWIDTH ( 32 ),
+      .C_nfa_forward_buckets_DWIDTH ( 64 ),
+      .C_nfa_forward_buckets_NATIVE_DWIDTH ( 64 ),
+      .C_nfa_initials_buckets_REMOTE_DESTINATION_ADDRESS ( 32'h00000000 ),
+      .C_nfa_initials_buckets_AWIDTH ( 32 ),
+      .C_nfa_initials_buckets_DWIDTH ( 64 ),
+      .C_nfa_initials_buckets_NATIVE_DWIDTH ( 64 ),
       .C_sample_buffer_REMOTE_DESTINATION_ADDRESS ( 32'h00000000 ),
       .C_sample_buffer_AWIDTH ( 32 ),
       .C_sample_buffer_DWIDTH ( 64 ),
       .C_sample_buffer_NATIVE_DWIDTH ( 64 ),
-      .C_SPLB_SLV0_BASEADDR ( 32'hffffffff ),
-      .C_SPLB_SLV0_HIGHADDR ( 32'h00000000 ),
+      .C_SPLB_SLV0_BASEADDR ( 32'h80000000 ),
+      .C_SPLB_SLV0_HIGHADDR ( 32'h80000FFF ),
       .C_SPLB_SLV0_AWIDTH ( 32 ),
       .C_SPLB_SLV0_DWIDTH ( 64 ),
-      .C_SPLB_SLV0_NUM_MASTERS ( 3 ),
-      .C_SPLB_SLV0_MID_WIDTH ( 2 ),
+      .C_SPLB_SLV0_NUM_MASTERS ( 7 ),
+      .C_SPLB_SLV0_MID_WIDTH ( 3 ),
       .C_SPLB_SLV0_NATIVE_DWIDTH ( 32 ),
       .C_SPLB_SLV0_P2P ( 0 ),
       .C_SPLB_SLV0_SUPPORT_BURSTS ( 0 ),
-      .C_SPLB_SLV0_SMALLEST_MASTER ( 64 ),
+      .C_SPLB_SLV0_SMALLEST_MASTER ( 32 ),
       .C_SPLB_SLV0_INCLUDE_DPHASE_TIMER ( 0 )
     )
     nfa_accept_samples_generic_hw_top_0 (
@@ -409,69 +484,102 @@ module system_nfa_accept_samples_generic_hw_top_0_wrapper
       .indices_PLB_MRdBTerm ( indices_PLB_MRdBTerm ),
       .indices_PLB_MWrDAck ( indices_PLB_MWrDAck ),
       .indices_PLB_MWrBTerm ( indices_PLB_MWrBTerm ),
-      .nfa_finals_buckets_NPI_clk ( nfa_finals_buckets_NPI_clk ),
-      .nfa_finals_buckets_NPI_reset ( nfa_finals_buckets_NPI_reset ),
-      .nfa_finals_buckets_NPI_Addr ( nfa_finals_buckets_NPI_Addr ),
-      .nfa_finals_buckets_NPI_AddrReq ( nfa_finals_buckets_NPI_AddrReq ),
-      .nfa_finals_buckets_NPI_AddrAck ( nfa_finals_buckets_NPI_AddrAck ),
-      .nfa_finals_buckets_NPI_RNW ( nfa_finals_buckets_NPI_RNW ),
-      .nfa_finals_buckets_NPI_Size ( nfa_finals_buckets_NPI_Size ),
-      .nfa_finals_buckets_NPI_WrFIFO_Data ( nfa_finals_buckets_NPI_WrFIFO_Data ),
-      .nfa_finals_buckets_NPI_WrFIFO_BE ( nfa_finals_buckets_NPI_WrFIFO_BE ),
-      .nfa_finals_buckets_NPI_WrFIFO_Push ( nfa_finals_buckets_NPI_WrFIFO_Push ),
-      .nfa_finals_buckets_NPI_RdFIFO_Data ( nfa_finals_buckets_NPI_RdFIFO_Data ),
-      .nfa_finals_buckets_NPI_RdFIFO_Pop ( nfa_finals_buckets_NPI_RdFIFO_Pop ),
-      .nfa_finals_buckets_NPI_RdFIFO_RdWdAddr ( nfa_finals_buckets_NPI_RdFIFO_RdWdAddr ),
-      .nfa_finals_buckets_NPI_WrFIFO_Empty ( nfa_finals_buckets_NPI_WrFIFO_Empty ),
-      .nfa_finals_buckets_NPI_WrFIFO_AlmostFull ( nfa_finals_buckets_NPI_WrFIFO_AlmostFull ),
-      .nfa_finals_buckets_NPI_WrFIFO_Flush ( nfa_finals_buckets_NPI_WrFIFO_Flush ),
-      .nfa_finals_buckets_NPI_RdFIFO_Empty ( nfa_finals_buckets_NPI_RdFIFO_Empty ),
-      .nfa_finals_buckets_NPI_RdFIFO_Flush ( nfa_finals_buckets_NPI_RdFIFO_Flush ),
-      .nfa_finals_buckets_NPI_RdFIFO_Latency ( nfa_finals_buckets_NPI_RdFIFO_Latency ),
-      .nfa_finals_buckets_NPI_RdModWr ( nfa_finals_buckets_NPI_RdModWr ),
-      .nfa_finals_buckets_NPI_InitDone ( nfa_finals_buckets_NPI_InitDone ),
-      .nfa_forward_buckets_NPI_clk ( nfa_forward_buckets_NPI_clk ),
-      .nfa_forward_buckets_NPI_reset ( nfa_forward_buckets_NPI_reset ),
-      .nfa_forward_buckets_NPI_Addr ( nfa_forward_buckets_NPI_Addr ),
-      .nfa_forward_buckets_NPI_AddrReq ( nfa_forward_buckets_NPI_AddrReq ),
-      .nfa_forward_buckets_NPI_AddrAck ( nfa_forward_buckets_NPI_AddrAck ),
-      .nfa_forward_buckets_NPI_RNW ( nfa_forward_buckets_NPI_RNW ),
-      .nfa_forward_buckets_NPI_Size ( nfa_forward_buckets_NPI_Size ),
-      .nfa_forward_buckets_NPI_WrFIFO_Data ( nfa_forward_buckets_NPI_WrFIFO_Data ),
-      .nfa_forward_buckets_NPI_WrFIFO_BE ( nfa_forward_buckets_NPI_WrFIFO_BE ),
-      .nfa_forward_buckets_NPI_WrFIFO_Push ( nfa_forward_buckets_NPI_WrFIFO_Push ),
-      .nfa_forward_buckets_NPI_RdFIFO_Data ( nfa_forward_buckets_NPI_RdFIFO_Data ),
-      .nfa_forward_buckets_NPI_RdFIFO_Pop ( nfa_forward_buckets_NPI_RdFIFO_Pop ),
-      .nfa_forward_buckets_NPI_RdFIFO_RdWdAddr ( nfa_forward_buckets_NPI_RdFIFO_RdWdAddr ),
-      .nfa_forward_buckets_NPI_WrFIFO_Empty ( nfa_forward_buckets_NPI_WrFIFO_Empty ),
-      .nfa_forward_buckets_NPI_WrFIFO_AlmostFull ( nfa_forward_buckets_NPI_WrFIFO_AlmostFull ),
-      .nfa_forward_buckets_NPI_WrFIFO_Flush ( nfa_forward_buckets_NPI_WrFIFO_Flush ),
-      .nfa_forward_buckets_NPI_RdFIFO_Empty ( nfa_forward_buckets_NPI_RdFIFO_Empty ),
-      .nfa_forward_buckets_NPI_RdFIFO_Flush ( nfa_forward_buckets_NPI_RdFIFO_Flush ),
-      .nfa_forward_buckets_NPI_RdFIFO_Latency ( nfa_forward_buckets_NPI_RdFIFO_Latency ),
-      .nfa_forward_buckets_NPI_RdModWr ( nfa_forward_buckets_NPI_RdModWr ),
-      .nfa_forward_buckets_NPI_InitDone ( nfa_forward_buckets_NPI_InitDone ),
-      .nfa_initials_buckets_NPI_clk ( nfa_initials_buckets_NPI_clk ),
-      .nfa_initials_buckets_NPI_reset ( nfa_initials_buckets_NPI_reset ),
-      .nfa_initials_buckets_NPI_Addr ( nfa_initials_buckets_NPI_Addr ),
-      .nfa_initials_buckets_NPI_AddrReq ( nfa_initials_buckets_NPI_AddrReq ),
-      .nfa_initials_buckets_NPI_AddrAck ( nfa_initials_buckets_NPI_AddrAck ),
-      .nfa_initials_buckets_NPI_RNW ( nfa_initials_buckets_NPI_RNW ),
-      .nfa_initials_buckets_NPI_Size ( nfa_initials_buckets_NPI_Size ),
-      .nfa_initials_buckets_NPI_WrFIFO_Data ( nfa_initials_buckets_NPI_WrFIFO_Data ),
-      .nfa_initials_buckets_NPI_WrFIFO_BE ( nfa_initials_buckets_NPI_WrFIFO_BE ),
-      .nfa_initials_buckets_NPI_WrFIFO_Push ( nfa_initials_buckets_NPI_WrFIFO_Push ),
-      .nfa_initials_buckets_NPI_RdFIFO_Data ( nfa_initials_buckets_NPI_RdFIFO_Data ),
-      .nfa_initials_buckets_NPI_RdFIFO_Pop ( nfa_initials_buckets_NPI_RdFIFO_Pop ),
-      .nfa_initials_buckets_NPI_RdFIFO_RdWdAddr ( nfa_initials_buckets_NPI_RdFIFO_RdWdAddr ),
-      .nfa_initials_buckets_NPI_WrFIFO_Empty ( nfa_initials_buckets_NPI_WrFIFO_Empty ),
-      .nfa_initials_buckets_NPI_WrFIFO_AlmostFull ( nfa_initials_buckets_NPI_WrFIFO_AlmostFull ),
-      .nfa_initials_buckets_NPI_WrFIFO_Flush ( nfa_initials_buckets_NPI_WrFIFO_Flush ),
-      .nfa_initials_buckets_NPI_RdFIFO_Empty ( nfa_initials_buckets_NPI_RdFIFO_Empty ),
-      .nfa_initials_buckets_NPI_RdFIFO_Flush ( nfa_initials_buckets_NPI_RdFIFO_Flush ),
-      .nfa_initials_buckets_NPI_RdFIFO_Latency ( nfa_initials_buckets_NPI_RdFIFO_Latency ),
-      .nfa_initials_buckets_NPI_RdModWr ( nfa_initials_buckets_NPI_RdModWr ),
-      .nfa_initials_buckets_NPI_InitDone ( nfa_initials_buckets_NPI_InitDone ),
+      .nfa_finals_buckets_MPLB_Clk ( nfa_finals_buckets_MPLB_Clk ),
+      .nfa_finals_buckets_MPLB_Rst ( nfa_finals_buckets_MPLB_Rst ),
+      .nfa_finals_buckets_M_request ( nfa_finals_buckets_M_request ),
+      .nfa_finals_buckets_M_priority ( nfa_finals_buckets_M_priority ),
+      .nfa_finals_buckets_M_busLock ( nfa_finals_buckets_M_busLock ),
+      .nfa_finals_buckets_M_RNW ( nfa_finals_buckets_M_RNW ),
+      .nfa_finals_buckets_M_BE ( nfa_finals_buckets_M_BE ),
+      .nfa_finals_buckets_M_MSize ( nfa_finals_buckets_M_MSize ),
+      .nfa_finals_buckets_M_size ( nfa_finals_buckets_M_size ),
+      .nfa_finals_buckets_M_type ( nfa_finals_buckets_M_type ),
+      .nfa_finals_buckets_M_TAttribute ( nfa_finals_buckets_M_TAttribute ),
+      .nfa_finals_buckets_M_lockErr ( nfa_finals_buckets_M_lockErr ),
+      .nfa_finals_buckets_M_abort ( nfa_finals_buckets_M_abort ),
+      .nfa_finals_buckets_M_UABus ( nfa_finals_buckets_M_UABus ),
+      .nfa_finals_buckets_M_ABus ( nfa_finals_buckets_M_ABus ),
+      .nfa_finals_buckets_M_wrDBus ( nfa_finals_buckets_M_wrDBus ),
+      .nfa_finals_buckets_M_wrBurst ( nfa_finals_buckets_M_wrBurst ),
+      .nfa_finals_buckets_M_rdBurst ( nfa_finals_buckets_M_rdBurst ),
+      .nfa_finals_buckets_PLB_MAddrAck ( nfa_finals_buckets_PLB_MAddrAck ),
+      .nfa_finals_buckets_PLB_MSSize ( nfa_finals_buckets_PLB_MSSize ),
+      .nfa_finals_buckets_PLB_MRearbitrate ( nfa_finals_buckets_PLB_MRearbitrate ),
+      .nfa_finals_buckets_PLB_MTimeout ( nfa_finals_buckets_PLB_MTimeout ),
+      .nfa_finals_buckets_PLB_MBusy ( nfa_finals_buckets_PLB_MBusy ),
+      .nfa_finals_buckets_PLB_MRdErr ( nfa_finals_buckets_PLB_MRdErr ),
+      .nfa_finals_buckets_PLB_MWrErr ( nfa_finals_buckets_PLB_MWrErr ),
+      .nfa_finals_buckets_PLB_MIRQ ( nfa_finals_buckets_PLB_MIRQ ),
+      .nfa_finals_buckets_PLB_MRdDBus ( nfa_finals_buckets_PLB_MRdDBus ),
+      .nfa_finals_buckets_PLB_MRdWdAddr ( nfa_finals_buckets_PLB_MRdWdAddr ),
+      .nfa_finals_buckets_PLB_MRdDAck ( nfa_finals_buckets_PLB_MRdDAck ),
+      .nfa_finals_buckets_PLB_MRdBTerm ( nfa_finals_buckets_PLB_MRdBTerm ),
+      .nfa_finals_buckets_PLB_MWrDAck ( nfa_finals_buckets_PLB_MWrDAck ),
+      .nfa_finals_buckets_PLB_MWrBTerm ( nfa_finals_buckets_PLB_MWrBTerm ),
+      .nfa_forward_buckets_MPLB_Clk ( nfa_forward_buckets_MPLB_Clk ),
+      .nfa_forward_buckets_MPLB_Rst ( nfa_forward_buckets_MPLB_Rst ),
+      .nfa_forward_buckets_M_request ( nfa_forward_buckets_M_request ),
+      .nfa_forward_buckets_M_priority ( nfa_forward_buckets_M_priority ),
+      .nfa_forward_buckets_M_busLock ( nfa_forward_buckets_M_busLock ),
+      .nfa_forward_buckets_M_RNW ( nfa_forward_buckets_M_RNW ),
+      .nfa_forward_buckets_M_BE ( nfa_forward_buckets_M_BE ),
+      .nfa_forward_buckets_M_MSize ( nfa_forward_buckets_M_MSize ),
+      .nfa_forward_buckets_M_size ( nfa_forward_buckets_M_size ),
+      .nfa_forward_buckets_M_type ( nfa_forward_buckets_M_type ),
+      .nfa_forward_buckets_M_TAttribute ( nfa_forward_buckets_M_TAttribute ),
+      .nfa_forward_buckets_M_lockErr ( nfa_forward_buckets_M_lockErr ),
+      .nfa_forward_buckets_M_abort ( nfa_forward_buckets_M_abort ),
+      .nfa_forward_buckets_M_UABus ( nfa_forward_buckets_M_UABus ),
+      .nfa_forward_buckets_M_ABus ( nfa_forward_buckets_M_ABus ),
+      .nfa_forward_buckets_M_wrDBus ( nfa_forward_buckets_M_wrDBus ),
+      .nfa_forward_buckets_M_wrBurst ( nfa_forward_buckets_M_wrBurst ),
+      .nfa_forward_buckets_M_rdBurst ( nfa_forward_buckets_M_rdBurst ),
+      .nfa_forward_buckets_PLB_MAddrAck ( nfa_forward_buckets_PLB_MAddrAck ),
+      .nfa_forward_buckets_PLB_MSSize ( nfa_forward_buckets_PLB_MSSize ),
+      .nfa_forward_buckets_PLB_MRearbitrate ( nfa_forward_buckets_PLB_MRearbitrate ),
+      .nfa_forward_buckets_PLB_MTimeout ( nfa_forward_buckets_PLB_MTimeout ),
+      .nfa_forward_buckets_PLB_MBusy ( nfa_forward_buckets_PLB_MBusy ),
+      .nfa_forward_buckets_PLB_MRdErr ( nfa_forward_buckets_PLB_MRdErr ),
+      .nfa_forward_buckets_PLB_MWrErr ( nfa_forward_buckets_PLB_MWrErr ),
+      .nfa_forward_buckets_PLB_MIRQ ( nfa_forward_buckets_PLB_MIRQ ),
+      .nfa_forward_buckets_PLB_MRdDBus ( nfa_forward_buckets_PLB_MRdDBus ),
+      .nfa_forward_buckets_PLB_MRdWdAddr ( nfa_forward_buckets_PLB_MRdWdAddr ),
+      .nfa_forward_buckets_PLB_MRdDAck ( nfa_forward_buckets_PLB_MRdDAck ),
+      .nfa_forward_buckets_PLB_MRdBTerm ( nfa_forward_buckets_PLB_MRdBTerm ),
+      .nfa_forward_buckets_PLB_MWrDAck ( nfa_forward_buckets_PLB_MWrDAck ),
+      .nfa_forward_buckets_PLB_MWrBTerm ( nfa_forward_buckets_PLB_MWrBTerm ),
+      .nfa_initials_buckets_MPLB_Clk ( nfa_initials_buckets_MPLB_Clk ),
+      .nfa_initials_buckets_MPLB_Rst ( nfa_initials_buckets_MPLB_Rst ),
+      .nfa_initials_buckets_M_request ( nfa_initials_buckets_M_request ),
+      .nfa_initials_buckets_M_priority ( nfa_initials_buckets_M_priority ),
+      .nfa_initials_buckets_M_busLock ( nfa_initials_buckets_M_busLock ),
+      .nfa_initials_buckets_M_RNW ( nfa_initials_buckets_M_RNW ),
+      .nfa_initials_buckets_M_BE ( nfa_initials_buckets_M_BE ),
+      .nfa_initials_buckets_M_MSize ( nfa_initials_buckets_M_MSize ),
+      .nfa_initials_buckets_M_size ( nfa_initials_buckets_M_size ),
+      .nfa_initials_buckets_M_type ( nfa_initials_buckets_M_type ),
+      .nfa_initials_buckets_M_TAttribute ( nfa_initials_buckets_M_TAttribute ),
+      .nfa_initials_buckets_M_lockErr ( nfa_initials_buckets_M_lockErr ),
+      .nfa_initials_buckets_M_abort ( nfa_initials_buckets_M_abort ),
+      .nfa_initials_buckets_M_UABus ( nfa_initials_buckets_M_UABus ),
+      .nfa_initials_buckets_M_ABus ( nfa_initials_buckets_M_ABus ),
+      .nfa_initials_buckets_M_wrDBus ( nfa_initials_buckets_M_wrDBus ),
+      .nfa_initials_buckets_M_wrBurst ( nfa_initials_buckets_M_wrBurst ),
+      .nfa_initials_buckets_M_rdBurst ( nfa_initials_buckets_M_rdBurst ),
+      .nfa_initials_buckets_PLB_MAddrAck ( nfa_initials_buckets_PLB_MAddrAck ),
+      .nfa_initials_buckets_PLB_MSSize ( nfa_initials_buckets_PLB_MSSize ),
+      .nfa_initials_buckets_PLB_MRearbitrate ( nfa_initials_buckets_PLB_MRearbitrate ),
+      .nfa_initials_buckets_PLB_MTimeout ( nfa_initials_buckets_PLB_MTimeout ),
+      .nfa_initials_buckets_PLB_MBusy ( nfa_initials_buckets_PLB_MBusy ),
+      .nfa_initials_buckets_PLB_MRdErr ( nfa_initials_buckets_PLB_MRdErr ),
+      .nfa_initials_buckets_PLB_MWrErr ( nfa_initials_buckets_PLB_MWrErr ),
+      .nfa_initials_buckets_PLB_MIRQ ( nfa_initials_buckets_PLB_MIRQ ),
+      .nfa_initials_buckets_PLB_MRdDBus ( nfa_initials_buckets_PLB_MRdDBus ),
+      .nfa_initials_buckets_PLB_MRdWdAddr ( nfa_initials_buckets_PLB_MRdWdAddr ),
+      .nfa_initials_buckets_PLB_MRdDAck ( nfa_initials_buckets_PLB_MRdDAck ),
+      .nfa_initials_buckets_PLB_MRdBTerm ( nfa_initials_buckets_PLB_MRdBTerm ),
+      .nfa_initials_buckets_PLB_MWrDAck ( nfa_initials_buckets_PLB_MWrDAck ),
+      .nfa_initials_buckets_PLB_MWrBTerm ( nfa_initials_buckets_PLB_MWrBTerm ),
       .sample_buffer_MPLB_Clk ( sample_buffer_MPLB_Clk ),
       .sample_buffer_MPLB_Rst ( sample_buffer_MPLB_Rst ),
       .sample_buffer_M_request ( sample_buffer_M_request ),

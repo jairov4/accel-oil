@@ -1,0 +1,27 @@
+17:21:34.556 INFO  - Processing command line option -hwspec C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\SDK\SDK_Export\hw\system.xml. 
+17:23:13.716 INFO  - Settings changed on project test_sim1_bsp. Triggering a rebuild... 
+17:23:13.997 INFO  - Refreshed build settings on project test_sim1 
+17:37:49.460 INFO  - Project impl_test_single_hw_platform's source hardware specification located at C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\SDK\SDK_Export\hw\system.xml is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated. 
+17:38:41.255 INFO  - Copied contents of C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\SDK\SDK_Export\hw\system.xml into \impl_test_single_hw_platform\system.xml. 
+17:38:41.255 INFO  - Copied contents of C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\SDK\SDK_Export\hw\system.bit into \impl_test_single_hw_platform\system.bit. 
+17:38:41.255 INFO  - Copied contents of C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\SDK\SDK_Export\hw\system_bd.bmm into \impl_test_single_hw_platform\system_bd.bmm. 
+17:38:41.458 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+17:38:42.976 INFO  - Updating hardware inferred compiler options for test_sim1. 
+17:38:42.976 INFO  - Clearing existing target manager status. 
+17:38:45.337 INFO  - Workspace synchronized with the new hardware specification file. Cleaning dependent projects... 
+17:41:16.489 INFO  - Updating .bit and .bmm files from XPS's export folder. 
+17:41:44.211 INFO  - Copied contents of C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\SDK\SDK_Export\hw\system.bit into \impl_test_single_hw_platform\system.bit. 
+17:41:44.211 INFO  - Copied contents of C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\SDK\SDK_Export\hw\system_bd.bmm into \impl_test_single_hw_platform\system_bd.bmm. 
+17:42:22.068 INFO  - The new hardware specification file contains the same information as the current specification file. No changes were done to the workspace. 
+17:43:01.879 INFO  - The new hardware specification file contains the same information as the current specification file. No changes were done to the workspace. 
+17:47:27.240 INFO  - The new hardware specification file contains the same information as the current specification file. No changes were done to the workspace. 
+17:48:28.335 ERROR - Unexpected error while obtaining referenced H/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/impl_test_single_hw_platform' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+17:48:28.382 ERROR - Unexpected error while obtaining referenced H/W project {} org.eclipse.core.internal.resources.ResourceException: Resource '/impl_test_single_hw_platform' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
+
+17:51:20.303 INFO  - Successfully generated C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\eclipse_workspace\test_sim1\linker.ld. 

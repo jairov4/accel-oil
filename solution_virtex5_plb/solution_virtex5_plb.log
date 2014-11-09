@@ -5,8 +5,270 @@ Copyright (C) 2014 Xilinx Inc. All rights reserved.
 
 ==============================================================
 
-@I [SYN-201] Setting up clock 'default' with a period of 7ns.
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
 @I [SYN-201] Setting up clock 'default' with an uncertainty of 3ns.
 @I [HLS-10] Setting target device to 'xc5vlx50tff1136-3'
-@I [IMPL-8] Exporting the design as a Pcore for EDK.
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-10] Analyzing design file 'oil_plainc_hls/src/bitset.c' ... 
+oil_plainc_hls/src/bitset.c:58:1: warning: control may reach end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.
+@I [HLS-10] Analyzing design file 'oil_plainc_hls/src/nfa.c' ... 
+@I [HLS-10] Analyzing design file 'oil_plainc_hls/src/nfa_file.c' ... 
+@I [HLS-10] Analyzing design file 'oil_plainc_hls/src/oil.c' ... 
+@I [HLS-10] Validating synthesis directives ...
+@I [HLS-10] Starting code transformations ...
+@I [XFORM-501] Unrolling loop 'Loop-1' (oil_plainc_hls/src/bitset.c:53) in function '_bsf32_hw': changing partial unrolling into complete unrolling since the unrolling factor (=32) is no less than the loop trip count (=32).
+@I [XFORM-603] Inlining function 'bitset_first' into 'nfa_accept_sample_multi' (oil_plainc_hls/src/nfa.c:391).
+@I [HLS-10] Checking synthesizability ...
+@I [XFORM-1101] Packing variable 'indices' (oil_plainc_hls/src/nfa.c:515) into a 56-bit variable.
+@I [XFORM-1101] Packing variable 'nfa.initials.buckets' (oil_plainc_hls/src/nfa.c:511) into a 64-bit variable.
+@I [XFORM-1101] Packing variable 'nfa.finals.buckets' (oil_plainc_hls/src/nfa.c:511) into a 64-bit variable.
+@I [XFORM-1101] Packing variable 'next.buckets' (oil_plainc_hls/src/nfa.c:334) into a 64-bit variable.
+@I [XFORM-1101] Packing variable 'current.buckets' (oil_plainc_hls/src/nfa.c:335) into a 64-bit variable.
+@I [XFORM-1101] Packing variable 'tmp.buckets' (oil_plainc_hls/src/nfa.c:336) into a 64-bit variable.
+@I [XFORM-502] Unrolling all loops for pipelining in function '_bsf32_hw' (oil_plainc_hls/src/bitset.c:48).
+@W [XFORM-503] Ignored partial unroll directive for loop 'Loop-1' (oil_plainc_hls/src/bitset.c:53) because its parent loop or function is pipelined.
+@I [XFORM-502] Unrolling all loops for pipelining in function 'bitset_clear' (oil_plainc_hls/src/bitset.c:74).
+@I [XFORM-502] Unrolling all loops for pipelining in function 'bitset_intersect' (oil_plainc_hls/src/bitset.c:164).
+@I [XFORM-502] Unrolling all loops for pipelining in function 'bitset_any' (oil_plainc_hls/src/bitset.c:175).
+@I [XFORM-502] Unrolling all loops for pipelining in function 'bitset_union' (oil_plainc_hls/src/bitset.c:153).
+@I [XFORM-502] Unrolling all loops for pipelining in function 'nfa_accept_sample_multi' (oil_plainc_hls/src/nfa.c:324).
+@W [XFORM-503] Ignored partial unroll directive for loop 'Loop-1' (oil_plainc_hls/src/nfa.c:352) because its parent loop or function is pipelined.
+@W [XFORM-503] Ignored partial unroll directive for loop 'Loop-2.1' (oil_plainc_hls/src/nfa.c:199) because its parent loop or function is pipelined.
+@W [XFORM-503] Ignored partial unroll directive for loop 'Loop-2.2.1' (oil_plainc_hls/src/nfa.c:414) because its parent loop or function is pipelined.
+@W [XFORM-503] Ignored partial unroll directive for loop 'Loop-2.2.2' (oil_plainc_hls/src/nfa.c:475) because its parent loop or function is pipelined.
+@I [XFORM-501] Unrolling loop 'Loop-1' (oil_plainc_hls/src/bitset.c:53) in function '_bsf32_hw' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1' (oil_plainc_hls/src/bitset.c:77) in function 'bitset_clear' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1' (oil_plainc_hls/src/bitset.c:167) in function 'bitset_intersect' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1' (oil_plainc_hls/src/bitset.c:178) in function 'bitset_any' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1' (oil_plainc_hls/src/bitset.c:156) in function 'bitset_union' completely.
+@W [XFORM-503] Cannot unroll loop 'Loop-1' (oil_plainc_hls/src/nfa.c:352) in function 'nfa_accept_sample_multi': cannot completely unroll a loop with a variable trip count.
+@W [XFORM-503] Cannot unroll loop 'Loop-2' (oil_plainc_hls/src/nfa.c:199) in function 'nfa_accept_sample_multi': cannot completely unroll a loop with a variable trip count.
+@W [XFORM-503] Cannot unroll loop 'Loop-2.1' (oil_plainc_hls/src/nfa.c:199) in function 'nfa_accept_sample_multi': cannot completely unroll a loop with a variable trip count.
+@I [XFORM-501] Unrolling loop 'Loop-2.1.1' (oil_plainc_hls/src/bitset.c:199) in function 'nfa_accept_sample_multi' completely.
+@W [XFORM-503] Cannot unroll loop 'Loop-2.2' (oil_plainc_hls/src/nfa.c:410) in function 'nfa_accept_sample_multi' completely: variable loop bound.
+@W [XFORM-503] Cannot unroll loop 'Loop-2.2.1' (oil_plainc_hls/src/nfa.c:414) in function 'nfa_accept_sample_multi': cannot completely unroll a loop with a variable trip count.
+@W [XFORM-503] Cannot unroll loop 'Loop-2.2.2' (oil_plainc_hls/src/nfa.c:475) in function 'nfa_accept_sample_multi': cannot completely unroll a loop with a variable trip count.
+@I [XFORM-101] Partitioning array 'end_string' (oil_plainc_hls/src/nfa.c:346) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'sym_offset' (oil_plainc_hls/src/nfa.c:370) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'j.bit' (oil_plainc_hls/src/nfa.c:372) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'j.bucket_index' (oil_plainc_hls/src/nfa.c:372) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'j.bucket' (oil_plainc_hls/src/nfa.c:372) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'j.end' (oil_plainc_hls/src/nfa.c:372) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'any_state' (oil_plainc_hls/src/nfa.c:374) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'end' (oil_plainc_hls/src/nfa.c:397) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'sym' (oil_plainc_hls/src/nfa.c:401) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'state' (oil_plainc_hls/src/nfa.c:403) in dimension 1 completely.
+@I [XFORM-602] Inlining function 'bitset_clear' into 'bitset_init' automatically.
+@I [XFORM-602] Inlining function 'nfa_get_symbols' into 'nfa_get_sucessors' (oil_plainc_hls/src/nfa.c:97) automatically.
+@I [XFORM-602] Inlining function 'bitset_init' into 'nfa_accept_sample_multi' automatically.
+@I [XFORM-602] Inlining function 'bitset_clear' into 'nfa_accept_sample_multi' automatically.
+@I [XFORM-602] Inlining function 'bsf32' into 'nfa_accept_sample_multi' (oil_plainc_hls/src/bitset.c:206->oil_plainc_hls/src/nfa.c:391) automatically.
+@I [XFORM-602] Inlining function 'bitset_end' into 'nfa_accept_sample_multi' (oil_plainc_hls/src/nfa.c:418) automatically.
+@I [XFORM-602] Inlining function 'bitset_intersect' into 'nfa_accept_sample_multi' automatically.
+@I [XFORM-602] Inlining function 'bitset_any' into 'nfa_accept_sample_multi' automatically.
+@I [XFORM-602] Inlining function 'bitset_element' into 'nfa_accept_sample_multi' (oil_plainc_hls/src/nfa.c:452) automatically.
+@I [XFORM-602] Inlining function 'nfa_get_sucessors' into 'nfa_accept_sample_multi' automatically.
+@I [XFORM-602] Inlining function 'bitset_union' into 'nfa_accept_sample_multi' automatically.
+@I [XFORM-602] Inlining function 'sample_iterator_equals' into 'nfa_accept_samples_generic_hw' (oil_plainc_hls/src/nfa.c:574) automatically.
+@I [XFORM-401] Performing if-conversion on hyperblock from (oil_plainc_hls/src/bitset.c:56:2) to (oil_plainc_hls/src/bitset.c:58:1) in function '_bsf32_hw'... converting 34 basic blocks.
+@I [XFORM-401] Performing if-conversion on hyperblock to (oil_plainc_hls/src/nfa.c:434:7) in function 'nfa_accept_sample_multi'... converting 4 basic blocks.
+@I [HLS-111] Elapsed time: 19.681 seconds; current memory usage: 127 MB.
+@I [HLS-10] Starting hardware synthesis ...
+@I [HLS-10] Synthesizing 'nfa_accept_samples_generic_hw' ...
+@W [SYN-103] Legalizing function name 'nfa_get_initials.1' to 'nfa_get_initials_1'.
+@W [SYN-103] Legalizing function name '_bsf32_hw' to 'p_bsf32_hw'.
+@W [SYN-103] Legalizing function name 'nfa_get_finals.1' to 'nfa_get_finals_1'.
+@W [RTGEN-101] Legalizing port name '_bsf32_hw/bus' to '_bsf32_hw/bus_r'.
+@W [RTGEN-101] Legalizing port name 'nfa_accept_sample_multi/length' to 'nfa_accept_sample_multi/length_r'.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'sample_iterator_get_offset' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SYN-351] The following objects are mapped to a MAC.
+   a  wire read on port 'i_sample'
+   b  'partselect' operation ('indices_stride_load_new', oil_plainc_hls/src/nfa.c:261)
+   c  bus read on port 'indices' (oil_plainc_hls/src/nfa.c:261)
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.36 seconds; current memory usage: 128 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'sample_iterator_get_offset' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.156 seconds; current memory usage: 128 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'sample_iterator_next' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.079 seconds; current memory usage: 128 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'sample_iterator_next' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.141 seconds; current memory usage: 128 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'nfa_get_initials_1' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining function 'nfa_get_initials.1'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 4.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.047 seconds; current memory usage: 128 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'nfa_get_initials_1' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.14 seconds; current memory usage: 128 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'p_bsf32_hw' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining function '_bsf32_hw'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 1.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.11 seconds; current memory usage: 128 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'p_bsf32_hw' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.172 seconds; current memory usage: 128 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'nfa_get_finals_1' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-61] Pipelining function 'nfa_get_finals.1'.
+@I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 4.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.093 seconds; current memory usage: 129 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'nfa_get_finals_1' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.094 seconds; current memory usage: 129 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'nfa_accept_sample_multi' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SYN-351] The following objects are mapped to a MAC.
+   a  wire read on port 'nfa_symbols' (oil_plainc_hls/src/nfa.c:90->oil_plainc_hls/src/nfa.c:97)
+   b  'phi' operation ('state_assign_in', oil_plainc_hls/src/bitset.c:190->oil_plainc_hls/src/nfa.c:452)
+   c  bus read on port 'sample' (oil_plainc_hls/src/nfa.c:463)
+@W [SCHED-65] Unable to satisfy pipeline directive: Function contains subloop(s) not being unrolled.
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 6.97 seconds; current memory usage: 144 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'nfa_accept_sample_multi' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 1 seconds; current memory usage: 144 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Scheduling module 'nfa_accept_samples_generic_hw' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [SCHED-11] Starting scheduling ...
+@I [SCHED-11] Finished scheduling.
+@I [HLS-111] Elapsed time: 0.953 seconds; current memory usage: 144 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Exploring micro-architecture for module 'nfa_accept_samples_generic_hw' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [BIND-100] Starting micro-architecture generation ...
+@I [BIND-101] Performing variable lifetime analysis.
+@I [BIND-101] Exploring resource sharing.
+@I [BIND-101] Binding ...
+@I [BIND-100] Finished micro-architecture generation.
+@I [HLS-111] Elapsed time: 0.328 seconds; current memory usage: 144 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'sample_iterator_get_offset' 
+@I [HLS-10] ----------------------------------------------------------------
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_get_offset/indices_dataout' to 0.
+@I [RTGEN-100] Finished creating RTL model for 'sample_iterator_get_offset'.
+@I [HLS-111] Elapsed time: 0.234 seconds; current memory usage: 144 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'sample_iterator_next' 
+@I [HLS-10] ----------------------------------------------------------------
+@W [RTGEN-101] Setting dangling out port 'sample_iterator_next/indices_dataout' to 0.
+@I [RTGEN-100] Finished creating RTL model for 'sample_iterator_next'.
+@I [HLS-111] Elapsed time: 0.235 seconds; current memory usage: 144 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'nfa_get_initials_1' 
+@I [HLS-10] ----------------------------------------------------------------
+@W [RTGEN-101] Setting dangling out port 'nfa_get_initials_1/nfa_initials_buckets_dataout' to 0.
+@I [RTGEN-100] Finished creating RTL model for 'nfa_get_initials_1'.
+@I [HLS-111] Elapsed time: 0.281 seconds; current memory usage: 144 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'p_bsf32_hw' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-100] Finished creating RTL model for 'p_bsf32_hw'.
+@I [HLS-111] Elapsed time: 0.172 seconds; current memory usage: 144 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'nfa_get_finals_1' 
+@I [HLS-10] ----------------------------------------------------------------
+@W [RTGEN-101] Setting dangling out port 'nfa_get_finals_1/nfa_finals_buckets_dataout' to 0.
+@I [RTGEN-100] Finished creating RTL model for 'nfa_get_finals_1'.
+@I [HLS-111] Elapsed time: 0.219 seconds; current memory usage: 144 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'nfa_accept_sample_multi' 
+@I [HLS-10] ----------------------------------------------------------------
+@W [RTGEN-101] Setting dangling out port 'nfa_accept_sample_multi/nfa_forward_buckets_dataout' to 0.
+@W [RTGEN-101] Setting dangling out port 'nfa_accept_sample_multi/sample_dataout' to 0.
+@I [RTGEN-100] Finished creating RTL model for 'nfa_accept_sample_multi'.
+@I [HLS-111] Elapsed time: 0.75 seconds; current memory usage: 148 MB.
+@I [HLS-10] ----------------------------------------------------------------
+@I [HLS-10] -- Generating RTL for module 'nfa_accept_samples_generic_hw' 
+@I [HLS-10] ----------------------------------------------------------------
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/nfa_initials_buckets' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/nfa_finals_buckets' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/nfa_forward_buckets' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/nfa_backward_buckets' to 'ap_memory'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/nfa_symbols' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/sample_buffer' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/sample_buffer_length' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/sample_length' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/indices' to 'ap_bus'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/i_size' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/begin_index' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/begin_sample' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/end_index' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/end_sample' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/stop_on_first' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on port 'nfa_accept_samples_generic_hw/accept' to 'ap_none'.
+@I [RTGEN-500] Setting interface mode on function 'nfa_accept_samples_generic_hw' to 'ap_ctrl_hs'.
+@W [RTGEN-101] Port 'nfa_accept_samples_generic_hw/i_size' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+@I [RTGEN-100] Finished creating RTL model for 'nfa_accept_samples_generic_hw'.
+@I [HLS-111] Elapsed time: 2.298 seconds; current memory usage: 151 MB.
+@I [RTMG-278] Implementing memory 'nfa_accept_sample_multi_next_buckets_ram' using block RAMs.
+@I [RTMG-278] Implementing memory 'nfa_accept_samples_generic_hw_result_ram' using distributed RAMs.
+@I [RTMG-278] Implementing memory 'nfa_accept_samples_generic_hw_start_indices_ram' using distributed RAMs.
+@I [HLS-10] Finished generating all RTL models.
+@I [WSYSC-301] Generating RTL SystemC for 'nfa_accept_samples_generic_hw'.
+@I [WVHDL-304] Generating RTL VHDL for 'nfa_accept_samples_generic_hw'.
+@I [WVLOG-307] Generating RTL Verilog for 'nfa_accept_samples_generic_hw'.
+@I [HLS-112] Total elapsed time: 35.873 seconds; peak memory usage: 151 MB.
 @I [LIC-101] Checked in feature [VIVADO_HLS]

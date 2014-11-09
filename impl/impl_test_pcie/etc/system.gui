@@ -9,38 +9,40 @@
       <VARIABLE COL_INDEX="1" COL_WIDTH="100" IS_VISIBLE="TRUE" VIEWDISP="Bus Name" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="2" IS_VISIBLE="FALSE" VIEWDISP="Bus Standard" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="3" COL_WIDTH="100" IS_VISIBLE="TRUE" VIEWDISP="IP Type" VIEWTYPE="HEADER"/>
-      <VARIABLE COL_INDEX="4" COL_WIDTH="266" IS_VISIBLE="TRUE" VIEWDISP="IP Version" VIEWTYPE="HEADER"/>
+      <VARIABLE COL_INDEX="4" COL_WIDTH="308" IS_VISIBLE="TRUE" VIEWDISP="IP Version" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="5" IS_VISIBLE="FALSE" VIEWDISP="IP Classification" VIEWTYPE="HEADER"/>
       <VARIABLE COL_INDEX="6" IS_VISIBLE="FALSE" VIEWDISP="Type" VIEWTYPE="HEADER"/>
     </HEADERS>
     <SPLITTERS COLLAPSIBLE="1" HANDLEWIDTH="4" MARKER="255" ORIENTATION="1" RESIZE="1" SIZES="180,450,200" VERSION="0"/>
-    <SET ID="DDR2_SDRAM" IS_EXPANDED="TRUE"/>
-    <SET ID="SRAM" IS_EXPANDED="TRUE"/>
-    <SET ID="PCIe_Bridge" IS_EXPANDED="TRUE"/>
-    <SET ID="xps_central_dma_1" IS_EXPANDED="TRUE"/>
-    <SET ID="mdm_0" IS_EXPANDED="TRUE"/>
-    <SET ID="xps_intc_0" IS_EXPANDED="TRUE"/>
     <STATUS>
-      <SELECTIONS>
-        <VARIABLE ID="lmb_bram"/>
-      </SELECTIONS>
+      <SELECTIONS/>
     </STATUS>
     <SEQUENCES IS_DEF_SEQUENCES="TRUE">
-      <VARIABLE ID="microblaze_0" ROW_INDEX="3"/>
-      <VARIABLE ID="mb_plb" ROW_INDEX="2"/>
+      <VARIABLE ID="microblaze_0" ROW_INDEX="5"/>
+      <VARIABLE ID="mb_plb" ROW_INDEX="4"/>
       <VARIABLE ID="ilmb" ROW_INDEX="1"/>
       <VARIABLE ID="dlmb" ROW_INDEX="0"/>
-      <VARIABLE ID="dlmb_cntlr" ROW_INDEX="5"/>
-      <VARIABLE ID="ilmb_cntlr" ROW_INDEX="6"/>
-      <VARIABLE ID="lmb_bram" ROW_INDEX="4"/>
-      <VARIABLE ID="DDR2_SDRAM" IS_EXPANDED="TRUE" ROW_INDEX="8"/>
-      <VARIABLE ID="SRAM" IS_EXPANDED="TRUE" ROW_INDEX="7"/>
-      <VARIABLE ID="PCIe_Bridge" IS_EXPANDED="TRUE" ROW_INDEX="11"/>
-      <VARIABLE ID="xps_central_dma_1" IS_EXPANDED="TRUE" ROW_INDEX="12"/>
-      <VARIABLE ID="clock_generator_0" ROW_INDEX="13"/>
-      <VARIABLE ID="mdm_0" IS_EXPANDED="TRUE" ROW_INDEX="9"/>
-      <VARIABLE ID="proc_sys_reset_0" ROW_INDEX="14"/>
-      <VARIABLE ID="xps_intc_0" IS_EXPANDED="TRUE" ROW_INDEX="10"/>
+      <VARIABLE ID="dlmb_cntlr" ROW_INDEX="7"/>
+      <VARIABLE ID="ilmb_cntlr" ROW_INDEX="8"/>
+      <VARIABLE ID="lmb_bram" ROW_INDEX="6"/>
+      <VARIABLE ID="DDR2_SDRAM" ROW_INDEX="10"/>
+      <VARIABLE ID="SRAM" ROW_INDEX="9"/>
+      <VARIABLE ID="PCIe_Bridge" ROW_INDEX="21"/>
+      <VARIABLE ID="xps_central_dma_1" ROW_INDEX="22"/>
+      <VARIABLE ID="clock_generator_0" ROW_INDEX="23"/>
+      <VARIABLE ID="mdm_0" ROW_INDEX="13"/>
+      <VARIABLE ID="proc_sys_reset_0" ROW_INDEX="24"/>
+      <VARIABLE ID="xps_intc_0" ROW_INDEX="14"/>
+      <VARIABLE ID="nfa_accept_samples_generic_hw_top_0" ROW_INDEX="15"/>
+      <VARIABLE ID="nfa_accept_samples_generic_hw_top_1" ROW_INDEX="16"/>
+      <VARIABLE ID="nfa_accept_samples_generic_hw_top_2" ROW_INDEX="17"/>
+      <VARIABLE ID="nfa_accept_samples_generic_hw_top_3" ROW_INDEX="18"/>
+      <VARIABLE ID="nfa_accept_samples_generic_hw_top_4" ROW_INDEX="19"/>
+      <VARIABLE ID="ac0_plb" ROW_INDEX="2"/>
+      <VARIABLE ID="ac0_mb_bridge" ROW_INDEX="11"/>
+      <VARIABLE ID="ac1_plb" ROW_INDEX="3"/>
+      <VARIABLE ID="ac1_mb_bridge" ROW_INDEX="12"/>
+      <VARIABLE ID="nfa_accept_samples_generic_hw_top_5" ROW_INDEX="20"/>
     </SEQUENCES>
   </SET>
 

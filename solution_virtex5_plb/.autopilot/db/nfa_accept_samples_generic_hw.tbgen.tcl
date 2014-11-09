@@ -8,8 +8,8 @@ set isOneStateSeq 0
 set C_modelName nfa_accept_samples_generic_hw
 set C_modelType { int 32 }
 set C_modelArgList { 
-	{ nfa_initials_buckets int 32 regular {bus 0}  }
-	{ nfa_finals_buckets int 32 regular {bus 0}  }
+	{ nfa_initials_buckets int 64 regular {bus 0}  }
+	{ nfa_finals_buckets int 64 regular {bus 0}  }
 	{ nfa_forward_buckets int 32 regular {bus 0}  }
 	{ nfa_backward_buckets int 32 unused {array 32130 { } 0 1 }  }
 	{ nfa_symbols int 8 regular {pointer 0}  }
@@ -26,8 +26,8 @@ set C_modelArgList {
 	{ accept uint 1 regular  }
 }
 set C_modelArgMapList {[ 
-	{ "Name" : "nfa_initials_buckets", "interface" : "bus", "bitwidth" : 32,"bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "nfa.initials.buckets","cData": "unsigned int","cArray": [{"low" : 0,"up" : 1,"step" : 1}]}]}]} , 
- 	{ "Name" : "nfa_finals_buckets", "interface" : "bus", "bitwidth" : 32,"bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "nfa.finals.buckets","cData": "unsigned int","cArray": [{"low" : 0,"up" : 1,"step" : 1}]}]}]} , 
+	{ "Name" : "nfa_initials_buckets", "interface" : "bus", "bitwidth" : 64,"bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "nfa.initials.buckets","cData": "unsigned int","cArray": [{"low" : 0,"up" : 0,"step" : 2}]}]},{"low":32,"up":63,"cElement": [{"cName": "nfa.initials.buckets","cData": "unsigned int","cArray": [{"low" : 1,"up" : 1,"step" : 2}]}]}]} , 
+ 	{ "Name" : "nfa_finals_buckets", "interface" : "bus", "bitwidth" : 64,"bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "nfa.finals.buckets","cData": "unsigned int","cArray": [{"low" : 0,"up" : 0,"step" : 2}]}]},{"low":32,"up":63,"cElement": [{"cName": "nfa.finals.buckets","cData": "unsigned int","cArray": [{"low" : 1,"up" : 1,"step" : 2}]}]}]} , 
  	{ "Name" : "nfa_forward_buckets", "interface" : "bus", "bitwidth" : 32,"bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "nfa.forward.buckets","cData": "unsigned int","cArray": [{"low" : 0,"up" : 16064,"step" : 1},{"low" : 0,"up" : 1,"step" : 1}]}]}]} , 
  	{ "Name" : "nfa_backward_buckets", "interface" : "memory", "bitwidth" : 32,"bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "nfa.backward.buckets","cData": "unsigned int","cArray": [{"low" : 0,"up" : 16064,"step" : 1},{"low" : 0,"up" : 1,"step" : 1}]}]}]} , 
  	{ "Name" : "nfa_symbols", "interface" : "wire", "bitwidth" : 8,"bitSlice":[{"low":0,"up":7,"cElement": [{"cName": "nfa.symbols","cData": "unsigned char","cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}]} , 
@@ -58,8 +58,8 @@ set portList {
 	{ nfa_initials_buckets_rsp_empty_n sc_in sc_logic 1 signal 0 } 
 	{ nfa_initials_buckets_rsp_read sc_out sc_logic 1 signal 0 } 
 	{ nfa_initials_buckets_address sc_out sc_lv 32 signal 0 } 
-	{ nfa_initials_buckets_datain sc_in sc_lv 32 signal 0 } 
-	{ nfa_initials_buckets_dataout sc_out sc_lv 32 signal 0 } 
+	{ nfa_initials_buckets_datain sc_in sc_lv 64 signal 0 } 
+	{ nfa_initials_buckets_dataout sc_out sc_lv 64 signal 0 } 
 	{ nfa_initials_buckets_size sc_out sc_lv 32 signal 0 } 
 	{ nfa_finals_buckets_req_din sc_out sc_logic 1 signal 1 } 
 	{ nfa_finals_buckets_req_full_n sc_in sc_logic 1 signal 1 } 
@@ -67,8 +67,8 @@ set portList {
 	{ nfa_finals_buckets_rsp_empty_n sc_in sc_logic 1 signal 1 } 
 	{ nfa_finals_buckets_rsp_read sc_out sc_logic 1 signal 1 } 
 	{ nfa_finals_buckets_address sc_out sc_lv 32 signal 1 } 
-	{ nfa_finals_buckets_datain sc_in sc_lv 32 signal 1 } 
-	{ nfa_finals_buckets_dataout sc_out sc_lv 32 signal 1 } 
+	{ nfa_finals_buckets_datain sc_in sc_lv 64 signal 1 } 
+	{ nfa_finals_buckets_dataout sc_out sc_lv 64 signal 1 } 
 	{ nfa_finals_buckets_size sc_out sc_lv 32 signal 1 } 
 	{ nfa_forward_buckets_req_din sc_out sc_logic 1 signal 2 } 
 	{ nfa_forward_buckets_req_full_n sc_in sc_logic 1 signal 2 } 
@@ -122,8 +122,8 @@ set NewPortList {[
  	{ "name": "nfa_initials_buckets_rsp_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "nfa_initials_buckets", "role": "rsp_empty_n" }} , 
  	{ "name": "nfa_initials_buckets_rsp_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "nfa_initials_buckets", "role": "rsp_read" }} , 
  	{ "name": "nfa_initials_buckets_address", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "nfa_initials_buckets", "role": "address" }} , 
- 	{ "name": "nfa_initials_buckets_datain", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "nfa_initials_buckets", "role": "datain" }} , 
- 	{ "name": "nfa_initials_buckets_dataout", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "nfa_initials_buckets", "role": "dataout" }} , 
+ 	{ "name": "nfa_initials_buckets_datain", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "nfa_initials_buckets", "role": "datain" }} , 
+ 	{ "name": "nfa_initials_buckets_dataout", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "nfa_initials_buckets", "role": "dataout" }} , 
  	{ "name": "nfa_initials_buckets_size", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "nfa_initials_buckets", "role": "size" }} , 
  	{ "name": "nfa_finals_buckets_req_din", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "nfa_finals_buckets", "role": "req_din" }} , 
  	{ "name": "nfa_finals_buckets_req_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "nfa_finals_buckets", "role": "req_full_n" }} , 
@@ -131,8 +131,8 @@ set NewPortList {[
  	{ "name": "nfa_finals_buckets_rsp_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "nfa_finals_buckets", "role": "rsp_empty_n" }} , 
  	{ "name": "nfa_finals_buckets_rsp_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "nfa_finals_buckets", "role": "rsp_read" }} , 
  	{ "name": "nfa_finals_buckets_address", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "nfa_finals_buckets", "role": "address" }} , 
- 	{ "name": "nfa_finals_buckets_datain", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "nfa_finals_buckets", "role": "datain" }} , 
- 	{ "name": "nfa_finals_buckets_dataout", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "nfa_finals_buckets", "role": "dataout" }} , 
+ 	{ "name": "nfa_finals_buckets_datain", "direction": "in", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "nfa_finals_buckets", "role": "datain" }} , 
+ 	{ "name": "nfa_finals_buckets_dataout", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "nfa_finals_buckets", "role": "dataout" }} , 
  	{ "name": "nfa_finals_buckets_size", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "nfa_finals_buckets", "role": "size" }} , 
  	{ "name": "nfa_forward_buckets_req_din", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "nfa_forward_buckets", "role": "req_din" }} , 
  	{ "name": "nfa_forward_buckets_req_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "nfa_forward_buckets", "role": "req_full_n" }} , 
@@ -173,8 +173,8 @@ set NewPortList {[
  	{ "name": "accept", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "accept", "role": "default" }} , 
  	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}
 set Spec2ImplPortList { 
-	nfa_initials_buckets { ap_bus {  { nfa_initials_buckets_req_din fifo_data 1 1 }  { nfa_initials_buckets_req_full_n fifo_status 0 1 }  { nfa_initials_buckets_req_write fifo_update 1 1 }  { nfa_initials_buckets_rsp_empty_n fifo_status 0 1 }  { nfa_initials_buckets_rsp_read fifo_update 1 1 }  { nfa_initials_buckets_address unknown 1 32 }  { nfa_initials_buckets_datain unknown 0 32 }  { nfa_initials_buckets_dataout unknown 1 32 }  { nfa_initials_buckets_size unknown 1 32 } } }
-	nfa_finals_buckets { ap_bus {  { nfa_finals_buckets_req_din fifo_data 1 1 }  { nfa_finals_buckets_req_full_n fifo_status 0 1 }  { nfa_finals_buckets_req_write fifo_update 1 1 }  { nfa_finals_buckets_rsp_empty_n fifo_status 0 1 }  { nfa_finals_buckets_rsp_read fifo_update 1 1 }  { nfa_finals_buckets_address unknown 1 32 }  { nfa_finals_buckets_datain unknown 0 32 }  { nfa_finals_buckets_dataout unknown 1 32 }  { nfa_finals_buckets_size unknown 1 32 } } }
+	nfa_initials_buckets { ap_bus {  { nfa_initials_buckets_req_din fifo_data 1 1 }  { nfa_initials_buckets_req_full_n fifo_status 0 1 }  { nfa_initials_buckets_req_write fifo_update 1 1 }  { nfa_initials_buckets_rsp_empty_n fifo_status 0 1 }  { nfa_initials_buckets_rsp_read fifo_update 1 1 }  { nfa_initials_buckets_address unknown 1 32 }  { nfa_initials_buckets_datain unknown 0 64 }  { nfa_initials_buckets_dataout unknown 1 64 }  { nfa_initials_buckets_size unknown 1 32 } } }
+	nfa_finals_buckets { ap_bus {  { nfa_finals_buckets_req_din fifo_data 1 1 }  { nfa_finals_buckets_req_full_n fifo_status 0 1 }  { nfa_finals_buckets_req_write fifo_update 1 1 }  { nfa_finals_buckets_rsp_empty_n fifo_status 0 1 }  { nfa_finals_buckets_rsp_read fifo_update 1 1 }  { nfa_finals_buckets_address unknown 1 32 }  { nfa_finals_buckets_datain unknown 0 64 }  { nfa_finals_buckets_dataout unknown 1 64 }  { nfa_finals_buckets_size unknown 1 32 } } }
 	nfa_forward_buckets { ap_bus {  { nfa_forward_buckets_req_din fifo_data 1 1 }  { nfa_forward_buckets_req_full_n fifo_status 0 1 }  { nfa_forward_buckets_req_write fifo_update 1 1 }  { nfa_forward_buckets_rsp_empty_n fifo_status 0 1 }  { nfa_forward_buckets_rsp_read fifo_update 1 1 }  { nfa_forward_buckets_address unknown 1 32 }  { nfa_forward_buckets_datain unknown 0 32 }  { nfa_forward_buckets_dataout unknown 1 32 }  { nfa_forward_buckets_size unknown 1 32 } } }
 	nfa_symbols { ap_none {  { nfa_symbols in_data 0 8 } } }
 	sample_buffer { ap_bus {  { sample_buffer_req_din fifo_data 1 1 }  { sample_buffer_req_full_n fifo_status 0 1 }  { sample_buffer_req_write fifo_update 1 1 }  { sample_buffer_rsp_empty_n fifo_status 0 1 }  { sample_buffer_rsp_read fifo_update 1 1 }  { sample_buffer_address unknown 1 32 }  { sample_buffer_datain unknown 0 8 }  { sample_buffer_dataout unknown 1 8 }  { sample_buffer_size unknown 1 32 } } }

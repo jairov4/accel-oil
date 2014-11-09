@@ -1,0 +1,42 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\simulation\behavioral
+Elmb_bram_elaborate
+Z1 w1415544096
+Z2 DPx6 unisim 11 vcomponents 0 22 ^SgSiH]fe0j`VL_8Rhmkj2
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dC:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\simulation\behavioral
+Z6 8elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd
+Z7 Felaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd
+l0
+L10
+V5;FYSLlVGl09oMlCME9@S3
+!s100 <?YSU_jEWCIY>74n0LheD1
+Z8 OL;C;10.1c;51
+31
+!i10b 1
+Z9 !s108 1415546129.932000
+Z10 !s90 -reportprogress|300|-novopt|-93|-work|lmb_bram_elaborate_v1_00_a|elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd|
+Z11 !s107 elaborate/lmb_bram_elaborate_v1_00_a/hdl/vhdl/lmb_bram_elaborate.vhd|
+Z12 o-93 -work lmb_bram_elaborate_v1_00_a
+Z13 tExplicit 1
+Astructure
+R2
+R3
+R4
+Z14 DEx4 work 18 lmb_bram_elaborate 0 22 5;FYSLlVGl09oMlCME9@S3
+l122
+L36
+Z15 VeP1o5G5ialP[:CEA0c`5i1
+Z16 !s100 `nJT46TBMR3O5M3JQRhNM1
+R8
+31
+!i10b 1
+R9
+R10
+R11
+R12
+R13

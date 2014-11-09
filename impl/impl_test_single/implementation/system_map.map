@@ -1,0 +1,224 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Map Application Log File for Design 'system'
+
+Design Information
+------------------
+Command Line   : map -o system_map.ncd -w -pr b -ol high -timing -detail
+system.ngd system.pcf 
+Target Device  : xc5vlx50t
+Target Package : ff1136
+Target Speed   : -2
+Mapper Version : virtex5 -- $Revision: 1.55 $
+Mapped Date    : Sat Nov 08 17:38:31 2014
+
+Mapping design into LUTs...
+Writing file system_map.ngm...
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   lmb_bram/lmb_bram/ramb36_0
+   of frag REGCLKAU connected to power/ground net
+   lmb_bram/lmb_bram/ramb36_0_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   lmb_bram/lmb_bram/ramb36_0
+   of frag REGCLKAL connected to power/ground net
+   lmb_bram/lmb_bram/ramb36_0_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   lmb_bram/lmb_bram/ramb36_0
+   of frag REGCLKBU connected to power/ground net
+   lmb_bram/lmb_bram/ramb36_0_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   lmb_bram/lmb_bram/ramb36_0
+   of frag REGCLKBL connected to power/ground net
+   lmb_bram/lmb_bram/ramb36_0_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   lmb_bram/lmb_bram/ramb36_1
+   of frag REGCLKAU connected to power/ground net
+   lmb_bram/lmb_bram/ramb36_1_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   lmb_bram/lmb_bram/ramb36_1
+   of frag REGCLKAL connected to power/ground net
+   lmb_bram/lmb_bram/ramb36_1_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   lmb_bram/lmb_bram/ramb36_1
+   of frag REGCLKBU connected to power/ground net
+   lmb_bram/lmb_bram/ramb36_1_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   lmb_bram/lmb_bram/ramb36_1
+   of frag REGCLKBL connected to power/ground net
+   lmb_bram/lmb_bram/ramb36_1_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   lmb_bram/lmb_bram/ramb36_2
+   of frag REGCLKAU connected to power/ground net
+   lmb_bram/lmb_bram/ramb36_2_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   lmb_bram/lmb_bram/ramb36_2
+   of frag REGCLKAL connected to power/ground net
+   lmb_bram/lmb_bram/ramb36_2_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   lmb_bram/lmb_bram/ramb36_2
+   of frag REGCLKBU connected to power/ground net
+   lmb_bram/lmb_bram/ramb36_2_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   lmb_bram/lmb_bram/ramb36_2
+   of frag REGCLKBL connected to power/ground net
+   lmb_bram/lmb_bram/ramb36_2_REGCLKBL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   lmb_bram/lmb_bram/ramb36_3
+   of frag REGCLKAU connected to power/ground net
+   lmb_bram/lmb_bram/ramb36_3_REGCLKAU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   lmb_bram/lmb_bram/ramb36_3
+   of frag REGCLKAL connected to power/ground net
+   lmb_bram/lmb_bram/ramb36_3_REGCLKAL_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   lmb_bram/lmb_bram/ramb36_3
+   of frag REGCLKBU connected to power/ground net
+   lmb_bram/lmb_bram/ramb36_3_REGCLKBU_tiesig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   lmb_bram/lmb_bram/ramb36_3
+   of frag REGCLKBL connected to power/ground net
+   lmb_bram/lmb_bram/ramb36_3_REGCLKBL_tiesig
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 23 secs 
+Total CPU  time at the beginning of Placer: 22 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:bc865f2f) REAL time: 25 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:bc865f2f) REAL time: 25 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:64e762a7) REAL time: 25 secs 
+
+Phase 4.37  Local Placement Optimization
+Phase 4.37  Local Placement Optimization (Checksum:64e762a7) REAL time: 25 secs 
+
+Phase 5.33  Local Placement Optimization
+Phase 5.33  Local Placement Optimization (Checksum:64e762a7) REAL time: 37 secs 
+
+Phase 6.32  Local Placement Optimization
+Phase 6.32  Local Placement Optimization (Checksum:64e762a7) REAL time: 37 secs 
+
+Phase 7.2  Initial Clock and IO Placement
+
+Phase 7.2  Initial Clock and IO Placement (Checksum:ceca31fc) REAL time: 39 secs 
+
+Phase 8.36  Local Placement Optimization
+Phase 8.36  Local Placement Optimization (Checksum:ceca31fc) REAL time: 39 secs 
+
+Phase 9.30  Global Clock Region Assignment
+Phase 9.30  Global Clock Region Assignment (Checksum:ceca31fc) REAL time: 39 secs 
+
+Phase 10.3  Local Placement Optimization
+Phase 10.3  Local Placement Optimization (Checksum:ceca31fc) REAL time: 39 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:ceca31fc) REAL time: 39 secs 
+
+Phase 12.8  Global Placement
+............................................................................
+...................................................
+Phase 12.8  Global Placement (Checksum:870c73fe) REAL time: 45 secs 
+
+Phase 13.29  Local Placement Optimization
+Phase 13.29  Local Placement Optimization (Checksum:870c73fe) REAL time: 45 secs 
+
+Phase 14.5  Local Placement Optimization
+Phase 14.5  Local Placement Optimization (Checksum:870c73fe) REAL time: 45 secs 
+
+Phase 15.18  Placement Optimization
+Phase 15.18  Placement Optimization (Checksum:f1d289dc) REAL time: 1 mins 5 secs 
+
+Phase 16.5  Local Placement Optimization
+Phase 16.5  Local Placement Optimization (Checksum:f1d289dc) REAL time: 1 mins 5 secs 
+
+Phase 17.34  Placement Validation
+Phase 17.34  Placement Validation (Checksum:f1d289dc) REAL time: 1 mins 5 secs 
+
+Total REAL time to Placer completion: 1 mins 6 secs 
+Total CPU  time to Placer completion: 1 mins 5 secs 
+Running post-placement packing...
+Writing output files...
+WARNING:PhysDesignRules:367 - The signal <dlmb_LMB_ABus<31>> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <dlmb_LMB_ABus<30>> is incomplete. The
+   signal does not drive any load pins in the design.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   18
+Slice Logic Utilization:
+  Number of Slice Registers:                 2,883 out of  28,800   10%
+    Number used as Flip Flops:               2,867
+    Number used as Latch-thrus:                 16
+  Number of Slice LUTs:                      3,851 out of  28,800   13%
+    Number used as logic:                    3,594 out of  28,800   12%
+      Number using O6 output only:           2,956
+      Number using O5 output only:             251
+      Number using O5 and O6:                  387
+    Number used as Memory:                     239 out of   7,680    3%
+      Number used as Dual Port RAM:            104
+        Number using O6 output only:            20
+        Number using O5 and O6:                 84
+      Number used as Single Port RAM:           53
+        Number using O5 and O6:                 53
+      Number used as Shift Register:            82
+        Number using O6 output only:            81
+        Number using O5 output only:             1
+    Number used as exclusive route-thru:        18
+  Number of route-thrus:                       278
+    Number using O6 output only:               267
+    Number using O5 output only:                 9
+    Number using O5 and O6:                      2
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 1,300 out of   7,200   18%
+  Number of LUT Flip Flop pairs used:        4,416
+    Number with an unused Flip Flop:         1,533 out of   4,416   34%
+    Number with an unused LUT:                 565 out of   4,416   12%
+    Number of fully used LUT-FF pairs:       2,318 out of   4,416   52%
+    Number of unique control sets:             354
+    Number of slice register sites lost
+      to control set restrictions:             669 out of  28,800    2%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                         2 out of     480    1%
+    Number of LOCed IOBs:                        2 out of       2  100%
+    IOB Flip Flops:                              1
+
+Specific Feature Utilization:
+  Number of BlockRAM/FIFO:                       4 out of      60    6%
+    Number using BlockRAM only:                  4
+    Total primitives used:
+      Number of 36k BlockRAM used:               4
+    Total Memory used (KB):                    144 out of   2,160    6%
+  Number of BUFG/BUFGCTRLs:                      2 out of      32    6%
+    Number used as BUFGs:                        2
+  Number of BSCANs:                              1 out of       4   25%
+  Number of DSP48Es:                             3 out of      48    6%
+  Number of PLL_ADVs:                            1 out of       6   16%
+
+Average Fanout of Non-Clock Nets:                3.98
+
+Peak Memory Usage:  672 MB
+Total REAL time to MAP completion:  1 mins 11 secs 
+Total CPU time to MAP completion:   1 mins 10 secs 
+
+Mapping completed.
+See MAP report file "system_map.mrp" for details.

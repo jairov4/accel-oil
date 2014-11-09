@@ -1,0 +1,14 @@
+set -tmpdir C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\synthesis\xst_temp_dir\
+run
+-opt_mode speed
+-netlist_hierarchy as_optimized
+-opt_level 1
+-p xc5vlx50tff1136-2
+-top system_dlmb_wrapper
+-ifmt MIXED
+-ifn system_dlmb_wrapper_xst.prj
+-ofn ../implementation/system_dlmb_wrapper.ngc
+-hierarchy_separator /
+-iobuf NO
+-sd {../implementation}
+-vlgincdir {"C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\pcores\" "C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\solution_virtex5_plb\impl\pcores\" "C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxBFMinterface\pcores\" "C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }

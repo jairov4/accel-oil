@@ -1,1 +1,1 @@
- -p xc5vlx50tff1136-2
+ -p xc5vlx50tff1136-2 -pe microblaze_0 eclipse_workspace/test_sim1/Debug/test_sim1.elf

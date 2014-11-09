@@ -1,10 +1,36 @@
 <AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
 <sourceFile name="">
-<directive functionLabel="" functionName="bitset_element" label="">
+<directive functionLabel="" functionName="_bsf32_hw" label="">
 <pragma name="INLINE">
 <option name="region" positionalBoolean="1" value=""/>
-<option name="recursive" positionalBoolean="1" value=""/>
 </pragma>
+</directive>
+<directive functionLabel="" functionName="_bsf32_hw" label="">
+<pragma name="UNROLL">
+<option name="skip_exit_check" positionalBoolean="1" value=""/>
+<option name="factor" value="32"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="bitset_clear" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitset_union" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitset_intersect" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitset_any" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitset_first" label="">
+<pragma name="UNROLL"/>
+</directive>
+<directive functionLabel="" functionName="bitset_first" label="">
+<pragma name="INLINE"/>
+</directive>
+<directive functionLabel="" functionName="bitset_next" label="">
+<pragma name="UNROLL"/>
 </directive>
 </sourceFile>
 </AutoPilot:ProjectResources>

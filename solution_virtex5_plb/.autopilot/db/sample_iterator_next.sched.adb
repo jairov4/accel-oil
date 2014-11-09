@@ -162,7 +162,7 @@
 						<name>tmp_cast</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>250</lineNumber>
+						<lineNumber>242</lineNumber>
 						<contextFuncName>sample_iterator_next</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -177,7 +177,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_next</second>
 										</first>
-										<second>250</second>
+										<second>242</second>
 									</item>
 								</second>
 							</item>
@@ -203,7 +203,7 @@
 						<name>tmp_s</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>250</lineNumber>
+						<lineNumber>242</lineNumber>
 						<contextFuncName>sample_iterator_next</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -218,7 +218,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_next</second>
 										</first>
-										<second>250</second>
+										<second>242</second>
 									</item>
 								</second>
 							</item>
@@ -244,7 +244,7 @@
 						<name>indices_addr</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>250</lineNumber>
+						<lineNumber>242</lineNumber>
 						<contextFuncName>sample_iterator_next</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -259,7 +259,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_next</second>
 										</first>
-										<second>250</second>
+										<second>242</second>
 									</item>
 								</second>
 							</item>
@@ -286,7 +286,7 @@
 						<name>indices_load_req</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>250</lineNumber>
+						<lineNumber>242</lineNumber>
 						<contextFuncName>sample_iterator_next</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -301,7 +301,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_next</second>
 										</first>
-										<second>250</second>
+										<second>242</second>
 									</item>
 								</second>
 							</item>
@@ -329,7 +329,7 @@
 						<name>indices_addr_read</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>250</lineNumber>
+						<lineNumber>242</lineNumber>
 						<contextFuncName>sample_iterator_next</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -344,7 +344,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_next</second>
 										</first>
-										<second>250</second>
+										<second>242</second>
 									</item>
 								</second>
 							</item>
@@ -372,7 +372,7 @@
 						<name>indices_samples_load_new5</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>250</lineNumber>
+						<lineNumber>242</lineNumber>
 						<contextFuncName>sample_iterator_next</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -387,7 +387,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_next</second>
 										</first>
-										<second>250</second>
+										<second>242</second>
 									</item>
 								</second>
 							</item>
@@ -413,10 +413,10 @@
 					<Obj>
 						<type>0</type>
 						<id>18</id>
-						<name>tmp_6_cast</name>
+						<name>tmp_9_cast</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>250</lineNumber>
+						<lineNumber>242</lineNumber>
 						<contextFuncName>sample_iterator_next</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -431,7 +431,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_next</second>
 										</first>
-										<second>250</second>
+										<second>242</second>
 									</item>
 								</second>
 							</item>
@@ -454,10 +454,10 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>tmp_7</name>
+						<name>tmp_4</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>250</lineNumber>
+						<lineNumber>242</lineNumber>
 						<contextFuncName>sample_iterator_next</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -472,7 +472,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_next</second>
 										</first>
-										<second>250</second>
+										<second>242</second>
 									</item>
 								</second>
 							</item>
@@ -496,10 +496,10 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>tmp_7_cast</name>
+						<name>tmp_10_cast</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>250</lineNumber>
+						<lineNumber>242</lineNumber>
 						<contextFuncName>sample_iterator_next</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -514,7 +514,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_next</second>
 										</first>
-										<second>250</second>
+										<second>242</second>
 									</item>
 								</second>
 							</item>
@@ -537,10 +537,10 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>tmp_8</name>
+						<name>tmp_5</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>250</lineNumber>
+						<lineNumber>242</lineNumber>
 						<contextFuncName>sample_iterator_next</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -555,7 +555,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_next</second>
 										</first>
-										<second>250</second>
+										<second>242</second>
 									</item>
 								</second>
 							</item>
@@ -579,10 +579,10 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>tmp_9</name>
+						<name>tmp_6</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>254</lineNumber>
+						<lineNumber>246</lineNumber>
 						<contextFuncName>sample_iterator_next</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -597,7 +597,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_next</second>
 										</first>
-										<second>254</second>
+										<second>246</second>
 									</item>
 								</second>
 							</item>
@@ -621,10 +621,10 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>tmp_1</name>
+						<name>tmp_7</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>252</lineNumber>
+						<lineNumber>244</lineNumber>
 						<contextFuncName>sample_iterator_next</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -639,7 +639,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_next</second>
 										</first>
-										<second>252</second>
+										<second>244</second>
 									</item>
 								</second>
 							</item>
@@ -666,7 +666,7 @@
 						<name>agg_result_sample_write_assign</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>250</lineNumber>
+						<lineNumber>242</lineNumber>
 						<contextFuncName>sample_iterator_next</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -681,7 +681,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_next</second>
 										</first>
-										<second>250</second>
+										<second>242</second>
 									</item>
 								</second>
 							</item>
@@ -709,7 +709,7 @@
 						<name>agg_result_index_write_assign</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>250</lineNumber>
+						<lineNumber>242</lineNumber>
 						<contextFuncName>sample_iterator_next</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -724,7 +724,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_next</second>
 										</first>
-										<second>250</second>
+										<second>242</second>
 									</item>
 								</second>
 							</item>
@@ -752,7 +752,7 @@
 						<name>mrv</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>257</lineNumber>
+						<lineNumber>249</lineNumber>
 						<contextFuncName>sample_iterator_next</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -767,7 +767,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_next</second>
 										</first>
-										<second>257</second>
+										<second>249</second>
 									</item>
 								</second>
 							</item>
@@ -794,7 +794,7 @@
 						<name>mrv_1</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>257</lineNumber>
+						<lineNumber>249</lineNumber>
 						<contextFuncName>sample_iterator_next</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -809,7 +809,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_next</second>
 										</first>
-										<second>257</second>
+										<second>249</second>
 									</item>
 								</second>
 							</item>
@@ -836,7 +836,7 @@
 						<name></name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>257</lineNumber>
+						<lineNumber>249</lineNumber>
 						<contextFuncName>sample_iterator_next</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -851,7 +851,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_next</second>
 										</first>
-										<second>257</second>
+										<second>249</second>
 									</item>
 								</second>
 							</item>
@@ -1305,8 +1305,8 @@
 				<item_version>0</item_version>
 				<item>29</item>
 			</basic_blocks>
-			<mII>1</mII>
-			<mDepth>4</mDepth>
+			<mII>-1</mII>
+			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
 			<mMinLatency>3</mMinLatency>
@@ -1364,7 +1364,7 @@
 		<item class_id="29" tracking_level="0" version="0">
 			<first>10</first>
 			<second class_id="30" tracking_level="0" version="0">
-				<first>0</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -1507,30 +1507,14 @@
 		</item>
 	</bblk_ent_exit>
 	<regions class_id="34" tracking_level="0" version="0">
-		<count>1</count>
+		<count>0</count>
 		<item_version>0</item_version>
-		<item class_id="35" tracking_level="1" version="0" object_id="_67">
-			<region_name>sample_iterator_next</region_name>
-			<basic_blocks>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>29</item>
-			</basic_blocks>
-			<nodes>
-				<count>0</count>
-				<item_version>0</item_version>
-			</nodes>
-			<anchor_node>-1</anchor_node>
-			<region_type>8</region_type>
-			<interval>1</interval>
-			<pipe_depth>4</pipe_depth>
-		</item>
 	</regions>
-	<dp_fu_nodes class_id="36" tracking_level="0" version="0">
+	<dp_fu_nodes class_id="35" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_fu_nodes>
-	<dp_fu_nodes_expression class_id="37" tracking_level="0" version="0">
+	<dp_fu_nodes_expression class_id="36" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_fu_nodes_expression>
@@ -1546,7 +1530,7 @@
 		<count>0</count>
 		<item_version>0</item_version>
 	</return_ports>
-	<dp_mem_port_nodes class_id="38" tracking_level="0" version="0">
+	<dp_mem_port_nodes class_id="37" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_mem_port_nodes>
@@ -1566,11 +1550,11 @@
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_regname_phi>
-	<dp_port_io_nodes class_id="39" tracking_level="0" version="0">
+	<dp_port_io_nodes class_id="38" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_port_io_nodes>
-	<port2core class_id="40" tracking_level="0" version="0">
+	<port2core class_id="39" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</port2core>

@@ -162,7 +162,7 @@
               <name>tmp_cast</name>
               <fileName>oil_plainc_hls/src/nfa.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>250</lineNumber>
+              <lineNumber>242</lineNumber>
               <contextFuncName>sample_iterator_next</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -177,7 +177,7 @@
                         <first>oil_plainc_hls/src/nfa.c</first>
                         <second>sample_iterator_next</second>
                       </first>
-                      <second>250</second>
+                      <second>242</second>
                     </item>
                   </second>
                 </item>
@@ -203,7 +203,7 @@
               <name>tmp_s</name>
               <fileName>oil_plainc_hls/src/nfa.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>250</lineNumber>
+              <lineNumber>242</lineNumber>
               <contextFuncName>sample_iterator_next</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -218,7 +218,7 @@
                         <first>oil_plainc_hls/src/nfa.c</first>
                         <second>sample_iterator_next</second>
                       </first>
-                      <second>250</second>
+                      <second>242</second>
                     </item>
                   </second>
                 </item>
@@ -244,7 +244,7 @@
               <name>indices_addr</name>
               <fileName>oil_plainc_hls/src/nfa.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>250</lineNumber>
+              <lineNumber>242</lineNumber>
               <contextFuncName>sample_iterator_next</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -259,7 +259,7 @@
                         <first>oil_plainc_hls/src/nfa.c</first>
                         <second>sample_iterator_next</second>
                       </first>
-                      <second>250</second>
+                      <second>242</second>
                     </item>
                   </second>
                 </item>
@@ -286,7 +286,7 @@
               <name>indices_load_req</name>
               <fileName>oil_plainc_hls/src/nfa.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>250</lineNumber>
+              <lineNumber>242</lineNumber>
               <contextFuncName>sample_iterator_next</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -301,7 +301,7 @@
                         <first>oil_plainc_hls/src/nfa.c</first>
                         <second>sample_iterator_next</second>
                       </first>
-                      <second>250</second>
+                      <second>242</second>
                     </item>
                   </second>
                 </item>
@@ -329,7 +329,7 @@
               <name>indices_addr_read</name>
               <fileName>oil_plainc_hls/src/nfa.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>250</lineNumber>
+              <lineNumber>242</lineNumber>
               <contextFuncName>sample_iterator_next</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -344,7 +344,7 @@
                         <first>oil_plainc_hls/src/nfa.c</first>
                         <second>sample_iterator_next</second>
                       </first>
-                      <second>250</second>
+                      <second>242</second>
                     </item>
                   </second>
                 </item>
@@ -372,7 +372,7 @@
               <name>indices_samples_load_new5</name>
               <fileName>oil_plainc_hls/src/nfa.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>250</lineNumber>
+              <lineNumber>242</lineNumber>
               <contextFuncName>sample_iterator_next</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -387,13 +387,13 @@
                         <first>oil_plainc_hls/src/nfa.c</first>
                         <second>sample_iterator_next</second>
                       </first>
-                      <second>250</second>
+                      <second>242</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>indices_samples_load_new5_reg_165</rtlName>
+              <rtlName>indices_samples_load_new5_reg_161</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -413,10 +413,10 @@
             <Obj>
               <type>0</type>
               <id>18</id>
-              <name>tmp_6_cast</name>
+              <name>tmp_9_cast</name>
               <fileName>oil_plainc_hls/src/nfa.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>250</lineNumber>
+              <lineNumber>242</lineNumber>
               <contextFuncName>sample_iterator_next</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -431,13 +431,13 @@
                         <first>oil_plainc_hls/src/nfa.c</first>
                         <second>sample_iterator_next</second>
                       </first>
-                      <second>250</second>
+                      <second>242</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_6_cast_fu_91_p1</rtlName>
+              <rtlName>tmp_9_cast_fu_92_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>17</bitwidth>
@@ -454,10 +454,10 @@
             <Obj>
               <type>0</type>
               <id>19</id>
-              <name>tmp_7</name>
+              <name>tmp_4</name>
               <fileName>oil_plainc_hls/src/nfa.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>250</lineNumber>
+              <lineNumber>242</lineNumber>
               <contextFuncName>sample_iterator_next</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -472,13 +472,13 @@
                         <first>oil_plainc_hls/src/nfa.c</first>
                         <second>sample_iterator_next</second>
                       </first>
-                      <second>250</second>
+                      <second>242</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_7_fu_94_p2</rtlName>
+              <rtlName>tmp_4_fu_95_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>17</bitwidth>
@@ -496,10 +496,10 @@
             <Obj>
               <type>0</type>
               <id>20</id>
-              <name>tmp_7_cast</name>
+              <name>tmp_10_cast</name>
               <fileName>oil_plainc_hls/src/nfa.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>250</lineNumber>
+              <lineNumber>242</lineNumber>
               <contextFuncName>sample_iterator_next</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -514,13 +514,13 @@
                         <first>oil_plainc_hls/src/nfa.c</first>
                         <second>sample_iterator_next</second>
                       </first>
-                      <second>250</second>
+                      <second>242</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_8_fu_104_p1</rtlName>
+              <rtlName>tmp_5_fu_105_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>18</bitwidth>
@@ -537,10 +537,10 @@
             <Obj>
               <type>0</type>
               <id>21</id>
-              <name>tmp_8</name>
+              <name>tmp_5</name>
               <fileName>oil_plainc_hls/src/nfa.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>250</lineNumber>
+              <lineNumber>242</lineNumber>
               <contextFuncName>sample_iterator_next</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -555,13 +555,13 @@
                         <first>oil_plainc_hls/src/nfa.c</first>
                         <second>sample_iterator_next</second>
                       </first>
-                      <second>250</second>
+                      <second>242</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_8_fu_104_p2</rtlName>
+              <rtlName>tmp_5_fu_105_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -579,10 +579,10 @@
             <Obj>
               <type>0</type>
               <id>22</id>
-              <name>tmp_9</name>
+              <name>tmp_6</name>
               <fileName>oil_plainc_hls/src/nfa.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>254</lineNumber>
+              <lineNumber>246</lineNumber>
               <contextFuncName>sample_iterator_next</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -597,13 +597,13 @@
                         <first>oil_plainc_hls/src/nfa.c</first>
                         <second>sample_iterator_next</second>
                       </first>
-                      <second>254</second>
+                      <second>246</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_9_fu_110_p2</rtlName>
+              <rtlName>tmp_6_fu_111_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -621,10 +621,10 @@
             <Obj>
               <type>0</type>
               <id>23</id>
-              <name>tmp_1</name>
+              <name>tmp_7</name>
               <fileName>oil_plainc_hls/src/nfa.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>252</lineNumber>
+              <lineNumber>244</lineNumber>
               <contextFuncName>sample_iterator_next</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -639,13 +639,13 @@
                         <first>oil_plainc_hls/src/nfa.c</first>
                         <second>sample_iterator_next</second>
                       </first>
-                      <second>252</second>
+                      <second>244</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_1_fu_115_p2</rtlName>
+              <rtlName>tmp_7_fu_116_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -666,7 +666,7 @@
               <name>agg_result_sample_write_assign</name>
               <fileName>oil_plainc_hls/src/nfa.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>250</lineNumber>
+              <lineNumber>242</lineNumber>
               <contextFuncName>sample_iterator_next</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -681,13 +681,13 @@
                         <first>oil_plainc_hls/src/nfa.c</first>
                         <second>sample_iterator_next</second>
                       </first>
-                      <second>250</second>
+                      <second>242</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>agg.result.sample</originalName>
-              <rtlName>agg_result_sample_write_assign_fu_120_p3</rtlName>
+              <rtlName>agg_result_sample_write_assign_fu_122_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -709,7 +709,7 @@
               <name>agg_result_index_write_assign</name>
               <fileName>oil_plainc_hls/src/nfa.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>250</lineNumber>
+              <lineNumber>242</lineNumber>
               <contextFuncName>sample_iterator_next</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -724,13 +724,13 @@
                         <first>oil_plainc_hls/src/nfa.c</first>
                         <second>sample_iterator_next</second>
                       </first>
-                      <second>250</second>
+                      <second>242</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>agg.result.index</originalName>
-              <rtlName>agg_result_index_write_assign_fu_128_p3</rtlName>
+              <rtlName>agg_result_index_write_assign_fu_130_p3</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>16</bitwidth>
@@ -752,7 +752,7 @@
               <name>mrv</name>
               <fileName>oil_plainc_hls/src/nfa.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>257</lineNumber>
+              <lineNumber>249</lineNumber>
               <contextFuncName>sample_iterator_next</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -767,7 +767,7 @@
                         <first>oil_plainc_hls/src/nfa.c</first>
                         <second>sample_iterator_next</second>
                       </first>
-                      <second>257</second>
+                      <second>249</second>
                     </item>
                   </second>
                 </item>
@@ -794,7 +794,7 @@
               <name>mrv_1</name>
               <fileName>oil_plainc_hls/src/nfa.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>257</lineNumber>
+              <lineNumber>249</lineNumber>
               <contextFuncName>sample_iterator_next</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -809,7 +809,7 @@
                         <first>oil_plainc_hls/src/nfa.c</first>
                         <second>sample_iterator_next</second>
                       </first>
-                      <second>257</second>
+                      <second>249</second>
                     </item>
                   </second>
                 </item>
@@ -836,7 +836,7 @@
               <name/>
               <fileName>oil_plainc_hls/src/nfa.c</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>257</lineNumber>
+              <lineNumber>249</lineNumber>
               <contextFuncName>sample_iterator_next</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -851,7 +851,7 @@
                         <first>oil_plainc_hls/src/nfa.c</first>
                         <second>sample_iterator_next</second>
                       </first>
-                      <second>257</second>
+                      <second>249</second>
                     </item>
                   </second>
                 </item>
@@ -1305,8 +1305,8 @@
           <item_version>0</item_version>
           <item>29</item>
         </basic_blocks>
-        <mII>1</mII>
-        <mDepth>4</mDepth>
+        <mII>-1</mII>
+        <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
         <mMinLatency>3</mMinLatency>
@@ -1322,96 +1322,96 @@
         <item class_id="26" tracking_level="1" version="0" object_id="_67">
           <id>1</id>
           <operations class_id="27" tracking_level="0" version="0">
-            <count>5</count>
+            <count>4</count>
             <item_version>0</item_version>
             <item class_id="28" tracking_level="1" version="0" object_id="_68">
-              <id>10</id>
-              <stage>1</stage>
-              <latency>1</latency>
-            </item>
-            <item class_id_reference="28" object_id="_69">
               <id>11</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_70">
+            <item class_id_reference="28" object_id="_69">
               <id>13</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_71">
+            <item class_id_reference="28" object_id="_70">
               <id>14</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_72">
+            <item class_id_reference="28" object_id="_71">
               <id>15</id>
               <stage>2</stage>
               <latency>2</latency>
             </item>
           </operations>
         </item>
-        <item class_id_reference="26" object_id="_73">
+        <item class_id_reference="26" object_id="_72">
           <id>2</id>
           <operations>
             <count>1</count>
             <item_version>0</item_version>
-            <item class_id_reference="28" object_id="_74">
+            <item class_id_reference="28" object_id="_73">
               <id>15</id>
               <stage>1</stage>
               <latency>2</latency>
             </item>
           </operations>
         </item>
-        <item class_id_reference="26" object_id="_75">
+        <item class_id_reference="26" object_id="_74">
           <id>3</id>
           <operations>
             <count>2</count>
             <item_version>0</item_version>
-            <item class_id_reference="28" object_id="_76">
+            <item class_id_reference="28" object_id="_75">
               <id>16</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_77">
+            <item class_id_reference="28" object_id="_76">
               <id>17</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
           </operations>
         </item>
-        <item class_id_reference="26" object_id="_78">
+        <item class_id_reference="26" object_id="_77">
           <id>4</id>
           <operations>
-            <count>18</count>
+            <count>19</count>
             <item_version>0</item_version>
-            <item class_id_reference="28" object_id="_79">
+            <item class_id_reference="28" object_id="_78">
               <id>4</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_80">
+            <item class_id_reference="28" object_id="_79">
               <id>5</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_81">
+            <item class_id_reference="28" object_id="_80">
               <id>6</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_82">
+            <item class_id_reference="28" object_id="_81">
               <id>7</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_83">
+            <item class_id_reference="28" object_id="_82">
               <id>8</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
-            <item class_id_reference="28" object_id="_84">
+            <item class_id_reference="28" object_id="_83">
               <id>9</id>
+              <stage>1</stage>
+              <latency>1</latency>
+            </item>
+            <item class_id_reference="28" object_id="_84">
+              <id>10</id>
               <stage>1</stage>
               <latency>1</latency>
             </item>
@@ -1485,7 +1485,7 @@
           <inState>1</inState>
           <outState>2</outState>
           <condition class_id="31" tracking_level="0" version="0">
-            <id>7</id>
+            <id>4</id>
             <sop class_id="32" tracking_level="0" version="0">
               <count>1</count>
               <item_version>0</item_version>
@@ -1500,7 +1500,7 @@
           <inState>2</inState>
           <outState>3</outState>
           <condition>
-            <id>8</id>
+            <id>5</id>
             <sop>
               <count>1</count>
               <item_version>0</item_version>
@@ -1515,7 +1515,7 @@
           <inState>3</inState>
           <outState>4</outState>
           <condition>
-            <id>9</id>
+            <id>6</id>
             <sop>
               <count>1</count>
               <item_version>0</item_version>
@@ -1537,7 +1537,7 @@
         <count>6</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>agg_result_index_write_assign_fu_128_p3 ( Select ) </first>
+          <first>agg_result_index_write_assign_fu_130_p3 ( Select ) </first>
           <second class_id="37" tracking_level="0" version="0">
             <count>5</count>
             <item_version>0</item_version>
@@ -1564,7 +1564,7 @@
           </second>
         </item>
         <item>
-          <first>agg_result_sample_write_assign_fu_120_p3 ( Select ) </first>
+          <first>agg_result_sample_write_assign_fu_122_p3 ( Select ) </first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -1591,30 +1591,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_1_fu_115_p2 ( + ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>16</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>16</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>tmp_7_fu_94_p2 ( + ) </first>
+          <first>tmp_4_fu_95_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1637,7 +1614,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_8_fu_104_p2 ( icmp ) </first>
+          <first>tmp_5_fu_105_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1660,7 +1637,30 @@
           </second>
         </item>
         <item>
-          <first>tmp_9_fu_110_p2 ( + ) </first>
+          <first>tmp_6_fu_111_p2 ( + ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>16</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>16</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>tmp_7_fu_116_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -1696,7 +1696,7 @@
         <item_version>0</item_version>
       </dp_multiplexer_resource>
       <dp_register_resource>
-        <count>7</count>
+        <count>2</count>
         <item_version>0</item_version>
         <item>
           <first>ap_CS_fsm</first>
@@ -1705,7 +1705,7 @@
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>1</second>
+              <second>2</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -1713,107 +1713,12 @@
             </item>
             <item>
               <first>FF</first>
-              <second>1</second>
+              <second>2</second>
             </item>
           </second>
         </item>
         <item>
-          <first>ap_reg_ppiten_pp0_it1</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(Bits)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(Consts)</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>1</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>ap_reg_ppiten_pp0_it2</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(Bits)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(Consts)</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>1</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>ap_reg_ppiten_pp0_it3</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(Bits)</first>
-              <second>1</second>
-            </item>
-            <item>
-              <first>(Consts)</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>1</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>i_index_read_reg_153</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(Bits)</first>
-              <second>16</second>
-            </item>
-            <item>
-              <first>(Consts)</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>16</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>i_sample_read_reg_147</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(Bits)</first>
-              <second>16</second>
-            </item>
-            <item>
-              <first>(Consts)</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>16</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>indices_samples_load_new5_reg_165</first>
+          <first>indices_samples_load_new5_reg_161</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -1840,7 +1745,7 @@
         <count>6</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>agg_result_index_write_assign_fu_128_p3 ( Select ) </first>
+          <first>agg_result_index_write_assign_fu_130_p3 ( Select ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -1848,7 +1753,7 @@
           </second>
         </item>
         <item>
-          <first>agg_result_sample_write_assign_fu_120_p3 ( Select ) </first>
+          <first>agg_result_sample_write_assign_fu_122_p3 ( Select ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -1856,15 +1761,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_1_fu_115_p2 ( + ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>23</item>
-          </second>
-        </item>
-        <item>
-          <first>tmp_7_fu_94_p2 ( + ) </first>
+          <first>tmp_4_fu_95_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -1872,7 +1769,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_8_fu_104_p2 ( icmp ) </first>
+          <first>tmp_5_fu_105_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -1880,11 +1777,19 @@
           </second>
         </item>
         <item>
-          <first>tmp_9_fu_110_p2 ( + ) </first>
+          <first>tmp_6_fu_111_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
             <item>22</item>
+          </second>
+        </item>
+        <item>
+          <first>tmp_7_fu_116_p2 ( + ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>23</item>
           </second>
         </item>
       </dp_expression_map>
@@ -1903,7 +1808,7 @@
       <item class_id="42" tracking_level="0" version="0">
         <first>10</first>
         <second class_id="43" tracking_level="0" version="0">
-          <first>0</first>
+          <first>3</first>
           <second>0</second>
         </second>
       </item>
@@ -2046,38 +1951,14 @@
       </item>
     </bblk_ent_exit>
     <regions class_id="47" tracking_level="0" version="0">
-      <count>1</count>
+      <count>0</count>
       <item_version>0</item_version>
-      <item class_id="48" tracking_level="1" version="0" object_id="_101">
-        <region_name>sample_iterator_next</region_name>
-        <basic_blocks>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>29</item>
-        </basic_blocks>
-        <nodes>
-          <count>0</count>
-          <item_version>0</item_version>
-        </nodes>
-        <anchor_node>-1</anchor_node>
-        <region_type>8</region_type>
-        <interval>1</interval>
-        <pipe_depth>4</pipe_depth>
-      </item>
     </regions>
-    <dp_fu_nodes class_id="49" tracking_level="0" version="0">
+    <dp_fu_nodes class_id="48" tracking_level="0" version="0">
       <count>18</count>
       <item_version>0</item_version>
-      <item class_id="50" tracking_level="0" version="0">
+      <item class_id="49" tracking_level="0" version="0">
         <first>42</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>10</item>
-        </second>
-      </item>
-      <item>
-        <first>48</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2085,7 +1966,7 @@
         </second>
       </item>
       <item>
-        <first>54</first>
+        <first>48</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -2094,11 +1975,19 @@
         </second>
       </item>
       <item>
-        <first>61</first>
+        <first>55</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>16</item>
+        </second>
+      </item>
+      <item>
+        <first>60</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>10</item>
         </second>
       </item>
       <item>
@@ -2134,7 +2023,7 @@
         </second>
       </item>
       <item>
-        <first>91</first>
+        <first>92</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2142,7 +2031,7 @@
         </second>
       </item>
       <item>
-        <first>94</first>
+        <first>95</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2150,7 +2039,7 @@
         </second>
       </item>
       <item>
-        <first>100</first>
+        <first>101</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2158,7 +2047,7 @@
         </second>
       </item>
       <item>
-        <first>104</first>
+        <first>105</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2166,7 +2055,7 @@
         </second>
       </item>
       <item>
-        <first>110</first>
+        <first>111</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2174,7 +2063,7 @@
         </second>
       </item>
       <item>
-        <first>115</first>
+        <first>116</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2182,7 +2071,7 @@
         </second>
       </item>
       <item>
-        <first>120</first>
+        <first>122</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2190,7 +2079,7 @@
         </second>
       </item>
       <item>
-        <first>128</first>
+        <first>130</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2198,7 +2087,7 @@
         </second>
       </item>
       <item>
-        <first>135</first>
+        <first>137</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2206,7 +2095,7 @@
         </second>
       </item>
       <item>
-        <first>141</first>
+        <first>143</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2214,11 +2103,11 @@
         </second>
       </item>
     </dp_fu_nodes>
-    <dp_fu_nodes_expression class_id="52" tracking_level="0" version="0">
+    <dp_fu_nodes_expression class_id="51" tracking_level="0" version="0">
       <count>14</count>
       <item_version>0</item_version>
-      <item class_id="53" tracking_level="0" version="0">
-        <first>agg_result_index_write_assign_fu_128</first>
+      <item class_id="52" tracking_level="0" version="0">
+        <first>agg_result_index_write_assign_fu_130</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2226,7 +2115,7 @@
         </second>
       </item>
       <item>
-        <first>agg_result_sample_write_assign_fu_120</first>
+        <first>agg_result_sample_write_assign_fu_122</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2250,7 +2139,7 @@
         </second>
       </item>
       <item>
-        <first>mrv_1_fu_141</first>
+        <first>mrv_1_fu_143</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2258,7 +2147,7 @@
         </second>
       </item>
       <item>
-        <first>mrv_fu_135</first>
+        <first>mrv_fu_137</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2266,23 +2155,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_1_fu_115</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>23</item>
-        </second>
-      </item>
-      <item>
-        <first>tmp_6_cast_fu_91</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>18</item>
-        </second>
-      </item>
-      <item>
-        <first>tmp_7_cast_fu_100</first>
+        <first>tmp_10_cast_fu_101</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2290,7 +2163,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_7_fu_94</first>
+        <first>tmp_4_fu_95</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2298,7 +2171,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_8_fu_104</first>
+        <first>tmp_5_fu_105</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2306,11 +2179,27 @@
         </second>
       </item>
       <item>
-        <first>tmp_9_fu_110</first>
+        <first>tmp_6_fu_111</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>22</item>
+        </second>
+      </item>
+      <item>
+        <first>tmp_7_fu_116</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>23</item>
+        </second>
+      </item>
+      <item>
+        <first>tmp_9_cast_fu_92</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>18</item>
         </second>
       </item>
       <item>
@@ -2338,7 +2227,7 @@
       <count>4</count>
       <item_version>0</item_version>
       <item>
-        <first>grp_readreq_fu_54</first>
+        <first>grp_readreq_fu_48</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -2347,7 +2236,7 @@
         </second>
       </item>
       <item>
-        <first>i_index_read_read_fu_48</first>
+        <first>i_index_read_read_fu_42</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2355,7 +2244,7 @@
         </second>
       </item>
       <item>
-        <first>i_sample_read_read_fu_42</first>
+        <first>i_sample_read_read_fu_60</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2363,7 +2252,7 @@
         </second>
       </item>
       <item>
-        <first>indices_addr_read_read_fu_61</first>
+        <first>indices_addr_read_read_fu_55</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2391,23 +2280,15 @@
         </second>
       </item>
     </return_ports>
-    <dp_mem_port_nodes class_id="54" tracking_level="0" version="0">
+    <dp_mem_port_nodes class_id="53" tracking_level="0" version="0">
       <count>0</count>
       <item_version>0</item_version>
     </dp_mem_port_nodes>
     <dp_reg_nodes>
-      <count>4</count>
+      <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>147</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>10</item>
-        </second>
-      </item>
-      <item>
-        <first>153</first>
+        <first>149</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2415,7 +2296,7 @@
         </second>
       </item>
       <item>
-        <first>159</first>
+        <first>155</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2423,7 +2304,7 @@
         </second>
       </item>
       <item>
-        <first>165</first>
+        <first>161</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2432,10 +2313,10 @@
       </item>
     </dp_reg_nodes>
     <dp_regname_nodes>
-      <count>4</count>
+      <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>i_index_read_reg_153</first>
+        <first>i_index_read_reg_149</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2443,15 +2324,7 @@
         </second>
       </item>
       <item>
-        <first>i_sample_read_reg_147</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>10</item>
-        </second>
-      </item>
-      <item>
-        <first>indices_addr_reg_159</first>
+        <first>indices_addr_reg_155</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2459,7 +2332,7 @@
         </second>
       </item>
       <item>
-        <first>indices_samples_load_new5_reg_165</first>
+        <first>indices_samples_load_new5_reg_161</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -2475,10 +2348,10 @@
       <count>0</count>
       <item_version>0</item_version>
     </dp_regname_phi>
-    <dp_port_io_nodes class_id="55" tracking_level="0" version="0">
+    <dp_port_io_nodes class_id="54" tracking_level="0" version="0">
       <count>3</count>
       <item_version>0</item_version>
-      <item class_id="56" tracking_level="0" version="0">
+      <item class_id="55" tracking_level="0" version="0">
         <first>i_index</first>
         <second>
           <count>1</count>
@@ -2516,10 +2389,10 @@
         </second>
       </item>
     </dp_port_io_nodes>
-    <port2core class_id="57" tracking_level="0" version="0">
+    <port2core class_id="56" tracking_level="0" version="0">
       <count>1</count>
       <item_version>0</item_version>
-      <item class_id="58" tracking_level="0" version="0">
+      <item class_id="57" tracking_level="0" version="0">
         <first>1</first>
         <second>PLB46M</second>
       </item>

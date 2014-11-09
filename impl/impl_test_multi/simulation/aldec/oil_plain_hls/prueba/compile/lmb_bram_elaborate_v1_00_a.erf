@@ -1,4 +1,0 @@
-WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
-MESSAGE "File: elaborate\lmb_bram_elaborate_v1_00_a\hdl\vhdl\lmb_bram_elaborate.vhd" 
-ERROR COMP96_0001: "Cannot find source file "elaborate\lmb_bram_elaborate_v1_00_a\hdl\vhdl\lmb_bram_elaborate.vhd"."
-FAILURE "Compile failure 1 Errors 0 Warnings  Analysis time :  16.0 [ms]" 

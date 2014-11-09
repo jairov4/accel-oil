@@ -65,9 +65,7 @@ init_bram: $(DOWNLOAD_BIT)
 
 sim: $(DEFAULT_SIM_SCRIPT)
 	cd simulation/behavioral & \
-	system_fuse.cmd
-	cd simulation/behavioral & \
-	start /B $(SIM_CMD) -gui -tclbatch system_setup.tcl
+	start /B $(SIM_CMD) -gui -do $(^F)
 
 simmodel: $(DEFAULT_SIM_SCRIPT)
 
@@ -110,6 +108,10 @@ simclean:
 #################################################################
 
 
+$(MICROBLAZE_0_BOOTLOOP): $(MICROBLAZE_BOOTLOOP)
+	IF NOT EXIST "$(BOOTLOOP_DIR)" @mkdir "$(BOOTLOOP_DIR)"
+	cp -f $(MICROBLAZE_BOOTLOOP) $(MICROBLAZE_0_BOOTLOOP)
+
 #################################################################
 # HARDWARE IMPLEMENTATION FLOW
 #################################################################
@@ -145,6 +147,7 @@ $(SYSTEM_BIT): __xps/$(SYSTEM)_routed $(BITGEN_UT_FILE)
 	cd implementation & bitgen -w -f bitgen.ut $(SYSTEM) & cd ..
 
 $(DOWNLOAD_BIT): $(SYSTEM_BIT) $(BRAMINIT_ELF_IMP_FILES) __xps/bitinit.opt
+	@cp -f implementation/$(SYSTEM)_bd.bmm .
 	@echo "*********************************************"
 	@echo "Initializing BRAM contents of the bitstream"
 	@echo "*********************************************"
@@ -170,6 +173,9 @@ $(SYSTEM_HW_HANDOFF_BIT): $(SYSTEM_BIT)
 	@rm -rf $(SYSTEM_HW_HANDOFF_BIT)
 	@cp -f $(SYSTEM_BIT) $(SDK_EXPORT_DIR)
 
+$(SYSTEM_HW_HANDOFF_BMM): implementation/$(SYSTEM)_bd.bmm
+	@rm -rf $(SYSTEM_HW_HANDOFF_BMM)
+	@cp -f implementation/$(SYSTEM)_bd.bmm $(SDK_EXPORT_DIR)
 
 #################################################################
 # SIMULATION FLOW

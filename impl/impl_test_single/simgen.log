@@ -1,0 +1,287 @@
+
+Release 14.7 - Simulation Model Generator Xilinx EDK 14.7 Build EDK_P.20131013
+ (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: simgen -p xc5vlx50tff1136-2 -lang vhdl -intstyle default -lp
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/ -pe
+microblaze_0 eclipse_workspace/test_sim1/Debug/test_sim1.elf -msg
+__xps/ise/xmsgprops.lst -s mgm -tb -X D:/xlx_lib -m behavioral system.mhs 
+
+MHS file              : \...\impl\impl_test_single\system.mhs
+Language (-lang)      : VHDL 
+Flow (-flow)      : ISE 
+Simulation Model (-m) : Behavioral
+Simulator (-s)        : Mentor Graphics ModelSim (MGM)
+Part (-p) [ family ]  : xc5vlx50tff1136-2 [ virtex5 ]
+External memory simulation (-external_mem_sim) : FALSE 
+
+Output directory (-od):
+C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\
+
+Edklib (-E) : D:\xlx_lib\edk\
+Xlib (-X)   : D:\xlx_lib\
+
+Library Path (-lp):
+C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\solution_virtex5_plb\
+
+
+Simulation Model Generator started ...
+
+Reading MHS file ...
+lp : C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\solution_virtex5_plb\
+
+Reading MPD definitions ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00003fff) dlmb_cntlr	dlmb
+  (0000000000-0x00003fff) ilmb_cntlr	ilmb
+  (0x80000000-0x80000fff) nfa_accept_samples_generic_hw_top_0	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tool is overriding
+   PARAMETER C_DPLB_DWIDTH value to 64 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze
+   _v8_50_c\data\microblaze_v2_1_0.mpd line 204 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tool is overriding
+   PARAMETER C_IPLB_DWIDTH value to 64 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze
+   _v8_50_c\data\microblaze_v2_1_0.mpd line 208 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 7 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1
+   _05_a\data\plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 2 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1
+   _05_a\data\plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 3 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1
+   _05_a\data\plb_v46_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2
+   _00_b\data\lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2
+   _00_b\data\lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x4000 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block
+   _v1_00_a\data\bram_block_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 64 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_
+   a\data\mdm_v2_1_0.mpd line 116 
+INFO:EDK:4130 - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 7 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_
+   a\data\mdm_v2_1_0.mpd line 119 
+INFO:EDK:4130 - IPNAME: nfa_accept_samples_generic_hw_top,
+   INSTANCE:nfa_accept_samples_generic_hw_top_0 - tool is overriding PARAMETER
+   C_SPLB_SLV0_DWIDTH value to 64 -
+   C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\solution_virtex5_plb\imp
+   l\pcores\nfa_accept_samples_generic_hw_top_v1_01_a\data\nfa_accept_samples_ge
+   neric_hw_top_v2_1_0.mpd line 259 
+INFO:EDK:4130 - IPNAME: nfa_accept_samples_generic_hw_top,
+   INSTANCE:nfa_accept_samples_generic_hw_top_0 - tool is overriding PARAMETER
+   C_SPLB_SLV0_NUM_MASTERS value to 7 -
+   C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\solution_virtex5_plb\imp
+   l\pcores\nfa_accept_samples_generic_hw_top_v1_01_a\data\nfa_accept_samples_ge
+   neric_hw_top_v2_1_0.mpd line 260 
+
+Checking platform address map ...
+
+Checking platform configuration ...
+IPNAME: plb_v46, INSTANCE: mb_plb - 7 master(s) : 2 slave(s) 
+IPNAME: lmb_v10, INSTANCE: ilmb - 1 master(s) : 1 slave(s) 
+IPNAME: lmb_v10, INSTANCE: dlmb - 1 master(s) : 1 slave(s) 
+
+Checking port drivers...
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_D_PLB value to 1 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze
+   _v8_50_c\data\microblaze_v2_1_0.mpd line 233 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_I_PLB value to 1 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze
+   _v8_50_c\data\microblaze_v2_1_0.mpd line 236 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_ADDR_TAG_BITS value to 0 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze
+   _v8_50_c\data\microblaze_v2_1_0.mpd line 337 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_DCACHE_ADDR_TAG value to 0 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze
+   _v8_50_c\data\microblaze_v2_1_0.mpd line 367 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_BRK value to 1 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze
+   _v8_50_c\data\microblaze_v2_1_0.mpd line 402 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tcl is overriding
+   PARAMETER C_USE_EXT_NM_BRK value to 1 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze
+   _v8_50_c\data\microblaze_v2_1_0.mpd line 403 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:dlmb_cntlr - tcl is
+   overriding PARAMETER C_MASK value to 0x80000000 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_i
+   f_cntlr_v3_10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+INFO:EDK:4130 - IPNAME: lmb_bram_if_cntlr, INSTANCE:ilmb_cntlr - tcl is
+   overriding PARAMETER C_MASK value to 0x80000000 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_bram_i
+   f_cntlr_v3_10_c\data\lmb_bram_if_cntlr_v2_1_0.mpd line 92 
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+
+Running UPDATE Tcl procedures for OPTION SIMGEN_SYSLEVEL_UPDATE_PROC...
+
+Elaborating instances ...
+IPNAME:bram_block INSTANCE:lmb_bram -
+C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\syste
+m.mhs line 74 - elaborating IP
+IPNAME:clock_generator INSTANCE:clock_generator_0 -
+C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\syste
+m.mhs line 81 - elaborating IP
+ClkGen elaborate status: PASSED
+----------------------------------------
+----------------------------------------
+
+Generating simulation files ...
+
+Writing HDL for elaborated instances ...
+
+Inserting wrapper level ...
+
+Constructing platform-level signal connectivity ...
+WARNING:EDK:504 - (GLOBAL) - atleast 1 toplevel output/input needs to be
+   defined!
+
+Writing HDL ...
+
+Writing BMM ...
+
+Writing memory initialization files ...
+
+Generating Memory Initialization Files ...
+
+Overriding IP level properties ...
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+Address Map for Processor microblaze_0
+  (0000000000-0x00003fff) dlmb_cntlr	dlmb
+  (0000000000-0x00003fff) ilmb_cntlr	ilmb
+  (0x80000000-0x80000fff) nfa_accept_samples_generic_hw_top_0	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tool is overriding
+   PARAMETER C_DPLB_DWIDTH value to 64 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze
+   _v8_50_c\data\microblaze_v2_1_0.mpd line 204 
+INFO:EDK:4130 - IPNAME: microblaze, INSTANCE:microblaze_0 - tool is overriding
+   PARAMETER C_IPLB_DWIDTH value to 64 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\microblaze
+   _v8_50_c\data\microblaze_v2_1_0.mpd line 208 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 7 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1
+   _05_a\data\plb_v46_v2_1_0.mpd line 79 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 2 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1
+   _05_a\data\plb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 3 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\plb_v46_v1
+   _05_a\data\plb_v46_v2_1_0.mpd line 81 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2
+   _00_b\data\lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\lmb_v10_v2
+   _00_b\data\lmb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x4000 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\bram_block
+   _v1_00_a\data\bram_block_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 64 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_
+   a\data\mdm_v2_1_0.mpd line 116 
+INFO:EDK:4130 - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 7 -
+   C:\Programas\Xilinx\14.7\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\mdm_v2_10_
+   a\data\mdm_v2_1_0.mpd line 119 
+INFO:EDK:4130 - IPNAME: nfa_accept_samples_generic_hw_top,
+   INSTANCE:nfa_accept_samples_generic_hw_top_0 - tool is overriding PARAMETER
+   C_SPLB_SLV0_DWIDTH value to 64 -
+   C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\solution_virtex5_plb\imp
+   l\pcores\nfa_accept_samples_generic_hw_top_v1_01_a\data\nfa_accept_samples_ge
+   neric_hw_top_v2_1_0.mpd line 259 
+INFO:EDK:4130 - IPNAME: nfa_accept_samples_generic_hw_top,
+   INSTANCE:nfa_accept_samples_generic_hw_top_0 - tool is overriding PARAMETER
+   C_SPLB_SLV0_NUM_MASTERS value to 7 -
+   C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\solution_virtex5_plb\imp
+   l\pcores\nfa_accept_samples_generic_hw_top_v1_01_a\data\nfa_accept_samples_ge
+   neric_hw_top_v2_1_0.mpd line 260 
+
+Checking platform address map ...
+Running Data2Mem with the following command:
+data2mem -bm "system_sim.bmm"  -bd
+"C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\ecli
+pse_workspace\test_sim1\Debug\test_sim1.elf" tag microblaze_0  -bx
+C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\simul
+ation\behavioral -u   -p xc5vlx50tff1136-2 
+
+Generating simulator compile script ...
+
+Using the following precompiled EDK libraries:
+  D:\xlx_lib\edk\microblaze_v8_50_c\
+  D:\xlx_lib\edk\proc_common_v3_00_a\
+  D:\xlx_lib\edk\plb_v46_v1_05_a\
+  D:\xlx_lib\edk\lmb_v10_v2_00_b\
+  D:\xlx_lib\edk\lmb_bram_if_cntlr_v3_10_c\
+  D:\xlx_lib\edk\clock_generator_v4_03_a\
+  D:\xlx_lib\edk\axi_lite_ipif_v1_01_a\
+  D:\xlx_lib\edk\mdm_v2_10_a\
+  D:\xlx_lib\edk\proc_sys_reset_v3_00_a\
+  D:\xlx_lib\edk\plbv46_slave_single_v1_01_a\
+
+
+Generating simulator helper scripts ...
+Simulation Model Generator done!
+

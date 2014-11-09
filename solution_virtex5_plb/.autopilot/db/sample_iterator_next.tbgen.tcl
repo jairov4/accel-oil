@@ -1,12 +1,10 @@
 set moduleName sample_iterator_next
 set isCombinational 0
 set isDatapathOnly 0
-set isPipelined 1
-set pipeline_type function
+set isPipelined 0
+set pipeline_type none
 set FunctionProtocol ap_ctrl_hs
 set isOneStateSeq 0
-set pipeII 1
-set pipeLatency 3
 set C_modelName sample_iterator_next
 set C_modelType { int 32 }
 set C_modelArgList { 
@@ -20,7 +18,7 @@ set C_modelArgMapList {[
  	{ "Name" : "i_sample", "interface" : "wire", "bitwidth" : 16} , 
  	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 32} ]}
 # RTL Port declarations: 
-set portNum 20
+set portNum 19
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
@@ -37,7 +35,6 @@ set portList {
 	{ indices_datain sc_in sc_lv 56 signal 0 } 
 	{ indices_dataout sc_out sc_lv 56 signal 0 } 
 	{ indices_size sc_out sc_lv 32 signal 0 } 
-	{ ap_ce sc_in sc_logic 1 ce -1 } 
 	{ i_index sc_in sc_lv 16 signal 1 } 
 	{ i_sample sc_in sc_lv 16 signal 2 } 
 	{ ap_return_0 sc_out sc_lv 16 signal -1 } 
@@ -59,7 +56,6 @@ set NewPortList {[
  	{ "name": "indices_datain", "direction": "in", "datatype": "sc_lv", "bitwidth":56, "type": "signal", "bundle":{"name": "indices", "role": "datain" }} , 
  	{ "name": "indices_dataout", "direction": "out", "datatype": "sc_lv", "bitwidth":56, "type": "signal", "bundle":{"name": "indices", "role": "dataout" }} , 
  	{ "name": "indices_size", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "indices", "role": "size" }} , 
- 	{ "name": "ap_ce", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "ce", "bundle":{"name": "ap_ce", "role": "default" }} , 
  	{ "name": "i_index", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "i_index", "role": "default" }} , 
  	{ "name": "i_sample", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "i_sample", "role": "default" }} , 
  	{ "name": "ap_return_0", "direction": "out", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "ap_return_0", "role": "default" }} , 

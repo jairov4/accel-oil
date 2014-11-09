@@ -274,7 +274,7 @@
 						<name>tmp</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>sample_iterator_get_offset</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -289,7 +289,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_get_offset</second>
 										</first>
-										<second>271</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -315,7 +315,7 @@
 						<name>indices_addr</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>sample_iterator_get_offset</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -330,7 +330,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_get_offset</second>
 										</first>
-										<second>271</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -357,7 +357,7 @@
 						<name>indices_load_req</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>sample_iterator_get_offset</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -372,7 +372,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_get_offset</second>
 										</first>
-										<second>271</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -400,7 +400,7 @@
 						<name>indices_addr_read</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>sample_iterator_get_offset</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -415,7 +415,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_get_offset</second>
 										</first>
-										<second>271</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -440,10 +440,10 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>tmp_9</name>
+						<name>tmp_4</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>sample_iterator_get_offset</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -458,7 +458,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_get_offset</second>
 										</first>
-										<second>271</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -484,7 +484,7 @@
 						<name>indices_stride_load_new</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>sample_iterator_get_offset</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -499,7 +499,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_get_offset</second>
 										</first>
-										<second>271</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -528,7 +528,7 @@
 						<name>tmp_cast</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>sample_iterator_get_offset</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -543,7 +543,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_get_offset</second>
 										</first>
-										<second>271</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -566,10 +566,10 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>tmp_1_cast</name>
+						<name>tmp_16_cast</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>sample_iterator_get_offset</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -584,7 +584,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_get_offset</second>
 										</first>
-										<second>271</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -607,10 +607,10 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>tmp_2</name>
+						<name>tmp_s</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>sample_iterator_get_offset</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -625,7 +625,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_get_offset</second>
 										</first>
-										<second>271</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -649,10 +649,10 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>tmp_2_cast</name>
+						<name>tmp_17_cast</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>sample_iterator_get_offset</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -667,7 +667,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_get_offset</second>
 										</first>
-										<second>271</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -693,7 +693,7 @@
 						<name>offset</name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>271</lineNumber>
+						<lineNumber>261</lineNumber>
 						<contextFuncName>sample_iterator_get_offset</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -708,7 +708,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_get_offset</second>
 										</first>
-										<second>271</second>
+										<second>261</second>
 									</item>
 								</second>
 							</item>
@@ -735,7 +735,7 @@
 						<name></name>
 						<fileName>oil_plainc_hls/src/nfa.c</fileName>
 						<fileDirectory>c:/Users/JairoAndres/Documents/Vivado</fileDirectory>
-						<lineNumber>273</lineNumber>
+						<lineNumber>263</lineNumber>
 						<contextFuncName>sample_iterator_get_offset</contextFuncName>
 						<inlineStackInfo>
 							<count>1</count>
@@ -750,7 +750,7 @@
 											<first>oil_plainc_hls/src/nfa.c</first>
 											<second>sample_iterator_get_offset</second>
 										</first>
-										<second>273</second>
+										<second>263</second>
 									</item>
 								</second>
 							</item>
@@ -1043,11 +1043,11 @@
 				<item_version>0</item_version>
 				<item>28</item>
 			</basic_blocks>
-			<mII>1</mII>
-			<mDepth>5</mDepth>
+			<mII>-1</mII>
+			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>4</mMinLatency>
+			<mMinLatency>3</mMinLatency>
 			<mMaxLatency>-1</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
@@ -1102,21 +1102,21 @@
 		<item class_id="29" tracking_level="0" version="0">
 			<first>12</first>
 			<second class_id="30" tracking_level="0" version="0">
-				<first>0</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>13</first>
 			<second>
-				<first>0</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>14</first>
 			<second>
-				<first>0</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -1187,27 +1187,27 @@
 			<first>24</first>
 			<second>
 				<first>3</first>
-				<second>1</second>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>25</first>
 			<second>
-				<first>4</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>26</first>
 			<second>
-				<first>4</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>27</first>
 			<second>
-				<first>4</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -1219,35 +1219,19 @@
 			<first>28</first>
 			<second class_id="33" tracking_level="0" version="0">
 				<first>0</first>
-				<second>4</second>
+				<second>3</second>
 			</second>
 		</item>
 	</bblk_ent_exit>
 	<regions class_id="34" tracking_level="0" version="0">
-		<count>1</count>
+		<count>0</count>
 		<item_version>0</item_version>
-		<item class_id="35" tracking_level="1" version="0" object_id="_51">
-			<region_name>sample_iterator_get_offset</region_name>
-			<basic_blocks>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>28</item>
-			</basic_blocks>
-			<nodes>
-				<count>0</count>
-				<item_version>0</item_version>
-			</nodes>
-			<anchor_node>-1</anchor_node>
-			<region_type>8</region_type>
-			<interval>1</interval>
-			<pipe_depth>5</pipe_depth>
-		</item>
 	</regions>
-	<dp_fu_nodes class_id="36" tracking_level="0" version="0">
+	<dp_fu_nodes class_id="35" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_fu_nodes>
-	<dp_fu_nodes_expression class_id="37" tracking_level="0" version="0">
+	<dp_fu_nodes_expression class_id="36" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_fu_nodes_expression>
@@ -1263,7 +1247,7 @@
 		<count>0</count>
 		<item_version>0</item_version>
 	</return_ports>
-	<dp_mem_port_nodes class_id="38" tracking_level="0" version="0">
+	<dp_mem_port_nodes class_id="37" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_mem_port_nodes>
@@ -1283,11 +1267,11 @@
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_regname_phi>
-	<dp_port_io_nodes class_id="39" tracking_level="0" version="0">
+	<dp_port_io_nodes class_id="38" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_port_io_nodes>
-	<port2core class_id="40" tracking_level="0" version="0">
+	<port2core class_id="39" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</port2core>

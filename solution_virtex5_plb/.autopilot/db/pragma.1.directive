@@ -1,55 +1,5 @@
 <AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
 <sourceFile name="">
-<directive functionLabel="" functionName="nfa_get_initials" label="">
-<pragma name="INLINE">
-<option name="region" positionalBoolean="1" value=""/>
-</pragma>
-</directive>
-<directive functionLabel="" functionName="nfa_get_finals" label="">
-<pragma name="INLINE">
-<option name="region" positionalBoolean="1" value=""/>
-</pragma>
-</directive>
-<directive functionLabel="" functionName="nfa_get_symbols" label="">
-<pragma name="INLINE">
-<option name="region" positionalBoolean="1" value=""/>
-</pragma>
-</directive>
-<directive functionLabel="" functionName="nfa_get_sucessors" label="">
-<pragma name="INLINE">
-<option name="region" positionalBoolean="1" value=""/>
-</pragma>
-</directive>
-<directive functionLabel="" functionName="sample_iterator_begin" label="">
-<pragma name="INLINE">
-<option name="region" positionalBoolean="1" value=""/>
-<option name="recursive" positionalBoolean="1" value=""/>
-</pragma>
-</directive>
-<directive functionLabel="" functionName="sample_iterator_end" label="">
-<pragma name="INLINE">
-<option name="region" positionalBoolean="1" value=""/>
-<option name="recursive" positionalBoolean="1" value=""/>
-</pragma>
-</directive>
-<directive functionLabel="" functionName="sample_iterator_next" label="">
-<pragma name="INLINE">
-<option name="region" positionalBoolean="1" value=""/>
-<option name="recursive" positionalBoolean="1" value=""/>
-</pragma>
-</directive>
-<directive functionLabel="" functionName="sample_iterator_equals" label="">
-<pragma name="INLINE">
-<option name="region" positionalBoolean="1" value=""/>
-<option name="recursive" positionalBoolean="1" value=""/>
-</pragma>
-</directive>
-<directive functionLabel="" functionName="sample_iterator_get_offset" label="">
-<pragma name="INLINE">
-<option name="region" positionalBoolean="1" value=""/>
-<option name="recursive" positionalBoolean="1" value=""/>
-</pragma>
-</directive>
 <directive functionLabel="" functionName="nfa_accept_sample" label="">
 <pragma name="PIPELINE"/>
 </directive>
@@ -84,8 +34,100 @@
 <directive functionLabel="" functionName="nfa_accept_sample" label="">
 <pragma name="INLINE"/>
 </directive>
-<directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
+<directive functionLabel="" functionName="nfa_accept_sample_multi" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="nfa-&gt;initials"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample_multi" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="nfa-&gt;finals"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample_multi" label="">
 <pragma name="PIPELINE"/>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample_multi" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="next"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample_multi" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="current"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample_multi" label="">
+<pragma name="DATA_PACK">
+<option name="variable" positionalBoolean="4" value="tmp"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample_multi" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="end_string"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample_multi" label="">
+<pragma name="UNROLL">
+<option name="factor" value="16"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample_multi" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="0"/>
+<option name="max" value="1000"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample_multi" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="sym_offset"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample_multi" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="j"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample_multi" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="any_state"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample_multi" label="">
+<pragma name="UNROLL">
+<option name="factor" value="16"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample_multi" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="end"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample_multi" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="sym"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample_multi" label="">
+<pragma name="ARRAY_PARTITION">
+<option name="variable" positionalBoolean="4" value="state"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample_multi" label="">
+<pragma name="LOOP_TRIPCOUNT">
+<option name="min" value="0"/>
+<option name="max" value="10"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample_multi" label="">
+<pragma name="UNROLL">
+<option name="factor" value="16"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="nfa_accept_sample_multi" label="">
+<pragma name="UNROLL">
+<option name="factor" value="16"/>
+</pragma>
 </directive>
 <directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
 <pragma name="DATA_PACK">
@@ -278,8 +320,7 @@
 <directive functionLabel="" functionName="nfa_accept_samples_generic_hw" label="">
 <pragma name="LOOP_TRIPCOUNT">
 <option name="min" value="0"/>
-<option name="max" value="65535"/>
-<option name="avg" value="2000"/>
+<option name="max" value="1000"/>
 </pragma>
 </directive>
 </sourceFile>

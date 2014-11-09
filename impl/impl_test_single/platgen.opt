@@ -5,7 +5,7 @@ vhdl
 -intstyle
 default
 -lp
-C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5/
+C:/Users/JairoAndres/Documents/Vivado/oil_plainc_hls/solution_virtex5_plb/
 -msg
 __xps/ise/xmsgprops.lst
 system.mhs
