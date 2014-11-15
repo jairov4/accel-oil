@@ -5592,3 +5592,8 @@ At Local date and time: Sun Nov 09 09:42:42 2014
 cd simulation/behavioral & \
 	start /B C:\Programas\modeltech64_10.1c\win64/vsim -gui -do system_setup.do
 Done!
+Writing filter settings....
+Done writing filter settings to:
+	C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\etc\system.filters
+Done writing Tab View settings to:
+	C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\etc\system.gui

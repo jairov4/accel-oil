@@ -25,3 +25,4 @@
 	at org.eclipse.core.internal.resources.Project.hasNature(Project.java:584)
 
 17:51:20.303 INFO  - Successfully generated C:\Users\JairoAndres\Documents\Vivado\oil_plainc_hls\impl\impl_test_single\eclipse_workspace\test_sim1\linker.ld. 
+07:30:57.506 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
