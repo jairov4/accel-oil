@@ -1,0 +1,1042 @@
+[
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "Protein P3"
+    ],
+    "Tag": "P3"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "6 kDa protein 1"
+    ],
+    "Tag": "6K1"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "Cytoplasmic inclusion protein"
+    ],
+    "Tag": "CI"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "6 kDa protein 2"
+    ],
+    "Tag": "6K2"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "Viral genome-linked protein"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "Nuclear inclusion protein A"
+    ],
+    "Tag": "NIa"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "Nuclear inclusion protein B"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "Capsid protein"
+    ],
+    "Tag": "CP"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "Coat protein"
+    ],
+    "Tag": "CP"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "coat protein"
+    ],
+    "Tag": "CP"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "P1 proteinase"
+    ],
+    "Tag": "P1"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "P1 protein"
+    ],
+    "Tag": "P1"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "HC-Pro protein"
+    ],
+    "Tag": "HC"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "P3 protein"
+    ],
+    "Tag": "P3"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "6K1 protein"
+    ],
+    "Tag": "6K1"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "NIb"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "CP"
+    ],
+    "Tag": "CP"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "Helper component proteinase"
+    ],
+    "Tag": "HC"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "CI protein"
+    ],
+    "Tag": "CI"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "6K2 protein"
+    ],
+    "Tag": "6K2"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "NIb protein"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "NIa-Pro protein"
+    ],
+    "Tag": "NIa"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "CP protein"
+    ],
+    "Tag": "CP"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "P3"
+    ],
+    "Tag": "P3"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "nuclear inclusion B"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "P1"
+    ],
+    "Tag": "P1"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "HC-Pro"
+    ],
+    "Tag": "HC"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "6K1"
+    ],
+    "Tag": "6K1"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "6K2"
+    ],
+    "Tag": "6K2"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "CI"
+    ],
+    "Tag": "CI"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "VPg"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "NIa-Pro"
+    ],
+    "Tag": "NIa"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "NIa"
+    ],
+    "Tag": "NIa"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "VPg protein"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "P1 protease"
+    ],
+    "Tag": "P1"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "NIb replicase"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "helper component protease"
+    ],
+    "Tag": "HC"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "nuclear inclusion b protein"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "nuclear inclusion b"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "nuclear inclusion protein b"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "coat protein; CP"
+    ],
+    "Tag": "CP"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "coat protein CP"
+    ],
+    "Tag": "CP"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "helper component proteinase"
+    ],
+    "Tag": "HC"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "capsid protein"
+    ],
+    "Tag": "CP"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "NIb polymerase"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "Vpg"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "helper component protein"
+    ],
+    "Tag": "HC"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "NIa protein"
+    ],
+    "Tag": "NIa"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "cytoplasmic inclusion protein; CI",
+      "cytoplasmic inclusion protein",
+      "cytoplasmatic inclusion protein",
+      "cytoplasmic inclusion protein CI",
+      "cylindrical inclusion protein (CI)",
+      "cytoplasmic inclusion (CI)",
+      "CI-protein",
+      "cytoplasmic inclusion protein, CI",
+      "CI ((cytoplasmic inclusion) protein",
+      "cylindrical inclusion protein, CI",
+      "cylindrical inclusion protein (CI protein)",
+      "CI-cylindrical inclusion protein",
+      "cylindrical-shaped inclusion body",
+      "cytoplasmatic inclusion body protein",
+      "cylindrical inclusion protein(CI)",
+      "cytoplasmic inclusion (CI) protein",
+      "cytoplasmic inclusion body"
+    ],
+    "Tag": "CI"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "6 kda 1 protein",
+      "6 kDa protein 1, 6k1",
+      "6k1",
+      "6k1 peptide",
+      "6K1 peptide",
+      "6k1 protein"
+    ],
+    "Tag": "6K1"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "6k2",
+      "6k2 peptide",
+      "6K2 peptide",
+      "6k2 protein",
+      "6 kDa protein 2, 6k2"
+    ],
+    "Tag": "6K2"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "CI (cytoplasmic inclusion) protein",
+      "cI protein",
+      "CIP",
+      "cylindrical inclusion body protein",
+      "cylindrical inclusion protein"
+    ],
+    "Tag": "CI"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "capsid",
+      "Coat Protein",
+      "coat protein (CP)",
+      "coat protein gene",
+      "coat protein mature peptide",
+      "coat protein, CP",
+      "coat/capsid protein",
+      "CP, coat protein"
+    ],
+    "Tag": "CP"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "HcPro",
+      "Hc-Pro",
+      "HCpro",
+      "HC-pro",
+      "HCPro",
+      "Hc-Pro (Helper component for aphid transmission, protease)",
+      "HcPro protein",
+      "Hc-Pro protein",
+      "HCpro protein",
+      "HC-pro protein",
+      "HCPro protein",
+      "HC-Protease",
+      "Hc-pro",
+      "HC/Pro",
+      "hc-pro",
+      "HC protein",
+      "HC protease",
+      "HC",
+      "helper component",
+      "helper component (HC)",
+      "helper component protease HC-Pro",
+      "helper component protease, HC-Pro",
+      "helper component protein HC-Pro",
+      "helper component protein protease (HC-Pro)",
+      "helper component proteinase (HC protein)",
+      "helper component proteinase (HC-Pro)",
+      "helper component proteinase HCpro",
+      "helper component proteinase HC-Pro",
+      "helper component proteinase; HC-Pro",
+      "Helper component, protease",
+      "helper component/protease",
+      "Helper component/protease",
+      "helper component-protease",
+      "helper component-proteinase",
+      "helper component-proteinase, HC-Pro",
+      "helper-component protease",
+      "helper-component proteinase"
+    ],
+    "Tag": "HC"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "Nia",
+      "NIa protease",
+      "Nia proteinase",
+      "NIa proteinase",
+      "NIa proteinase domain",
+      "NIa replicase",
+      "NIa-Pr protein",
+      "Nia-Pro",
+      "NIa-pro",
+      "NIa-Pro (Nuclear inclusion protein, protease)",
+      "NIa-Pro protease",
+      "NIa-pro protein",
+      "NIa-Pro Protein",
+      "NIa-protease",
+      "NIa-Protease",
+      "NIa-protease protein",
+      "NIa-protein"
+    ],
+    "Tag": "NIa"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "Nib",
+      "NIB",
+      "NIb (Nuclear inclusion protein, replicase",
+      "Nib 1",
+      "NIb nuclear inclusion protein b",
+      "NIb partial protein",
+      "NIb polymerase protein",
+      "NIb protease",
+      "Nib protein",
+      "NIB protein",
+      "NIB protein (replicase)]",
+      "nib replicase",
+      "Nib replicase",
+      "NIb RNA dependent RNA polymerase",
+      "NIb-pro nuclear inclusion protein b",
+      "NIb-replicase"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "nuclear inclusion",
+      "nuclear inclusion a",
+      "nuclear inclusion A",
+      "nuclear inclusion A (NIa)",
+      "nuclear inclusion a (proteinase)",
+      "nuclear inclusion A protease",
+      "nuclear inclusion a protein"
+    ],
+    "Tag": "NIa"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "nuclear inclusion b (NIb)",
+      "nuclear inclusion b (replicase)",
+      "nuclear inclusion B polymerase",
+      "nuclear inclusion B polymerase; NIb",
+      "nuclear inclusion B protein",
+      "nuclear inclusion b protein (NIb)",
+      "nuclear inclusion b protein NIb",
+      "nuclear inclusion b, polymerase"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "nuclear inclusion body protein b",
+      "nuclear inclusion body protein B",
+      "nuclear inclusion body protein NIb",
+      "nuclear inclusion body protein; Nib",
+      "nuclear inclusion body protein; NIb",
+      "nuclear inclusion body; NIb",
+      "nuclear inclusion protein (NIb)",
+      "nuclear inclusion protein (NIb-pro)",
+      "nuclear inclusion protein B",
+      "nuclear inclusion protein B (NIb)",
+      "nuclear inclusion protein b (RdRp,NIb)",
+      "nuclear inclusion protein B, NIb",
+      "nuclear inclusion protein Ib",
+      "nuclear inclusion protein NIb",
+      "nuclear inclusion protein, NIb",
+      "nuclear protein b",
+      "nuclear protein-b",
+      "nucleic inclusion b"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "p1",
+      "P1 protease protein",
+      "P1 protein (protease)",
+      "P1, putative proteinase",
+      "P1-Pro"
+    ],
+    "Tag": "P1"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "nuclear inclusion II protein",
+      "Nuclear inclusion II protein"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "polymerase; NIb"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "nuclear inclusion body a",
+      "nuclear inclusion protein (NIa-pro)",
+      "nuclear inclusion protein a",
+      "nuclear inclusion protein A",
+      "nuclear inclusion protein a protease (NIa-Pro)",
+      "nuclear inclusion protein A, NIa",
+      "nuclear inclusion protein Ia"
+    ],
+    "Tag": "NIa"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "P3 protien",
+      "protein 3"
+    ],
+    "Tag": "P3"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "nuclear inclusion body b"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "replicase NIB",
+      "putative NIb protein",
+      "RNA dependent RNA polymerase NIb",
+      "RNA polymerase NIb"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "p3"
+    ],
+    "Tag": "P3"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "genome linked viral protein (VPg)"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "VpG"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "protein P1"
+    ],
+    "Tag": "P1"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "protein P3"
+    ],
+    "Tag": "P3"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "protein 6K1"
+    ],
+    "Tag": "6K1"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "protein 6K2"
+    ],
+    "Tag": "6K2"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "proteinase P1"
+    ],
+    "Tag": "P1"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "N1a protein"
+    ],
+    "Tag": "NIa"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "N1b protein"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "virus protein genome-linked",
+      "Virus protein genome-linked (VPg)",
+      "virus protein genome-linked (VPg)"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "viral coat protein"
+    ],
+    "Tag": "CP"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "genome-linked protein VPg"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "viral protein genome-linked (VPg)"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "polymerase NIb"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "virion coat protein CP"
+    ],
+    "Tag": "CP"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "viral protein genome-linked"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "Vpg protein"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "genome linked protein (VPg)"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "small nuclear inclusion proteinase C-terminal proteinase (NIa protein)"
+    ],
+    "Tag": "NIa"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "large nuclear inclusion protein (NIb protein)"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "viral genome-linked protein"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "genome linked protein"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "P3 protease"
+    ],
+    "Tag": "P3"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "VPg protien"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "putative 6K2"
+    ],
+    "Tag": "6K2"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "Genome-linked protein"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "NIa-VPg protein",
+      "NIa-VPg"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "nuclear inclusion protein (NIa-VpG)"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "putative 6K2 peptide"
+    ],
+    "Tag": "6K2"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "NIa-Vpg"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "C1"
+    ],
+    "Tag": "CI"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "C1 protein"
+    ],
+    "Tag": "CI"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "NIa-vpg"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "NIA-VPg"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "genome linked viral protein (NIa-VPg)"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "NIa-Vpg genome-linked protein"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "NIa-Vpg(genome-linked protein"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "viral genome-linked protein, VPg",
+      "genome linked protein VPg"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "nuclear inclusion body protein"
+    ],
+    "Tag": "NIb"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "viral protein genome-linked NIa-VPg"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "genome-linked viral protein"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "genome linked viral protein"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "genome-linked protein"
+    ],
+    "Tag": "VPg"
+  },
+  {
+    "Type": 0,
+    "ExcludeAlreadyTagged": true,
+    "Parameters": [
+      "viral protein genome linked"
+    ],
+    "Tag": "VPg"
+  }
+]

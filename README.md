@@ -6,7 +6,7 @@ Hardware accelerator for OIL algorithm
 Knowledge base
 ==============
 
-HDL generation is broken on Vivado HLS (at least 2014.1). Entities matching "*_async_fifo.vhdl" will be bad wired by missing "if_write_ce".
+HDL generation is broken on Vivado HLS (at least 2014.1). Entities matching `*_async_fifo.vhdl` will be bad wired by missing of `if_write_ce` signal.
 
 For EDK simulation ensure that ModelSIM libraries are compiled. You can use COMPXLIB to compile them, compile all for your devices.
 
