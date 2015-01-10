@@ -5,12 +5,30 @@ namespace sampler
 {
 	public class Workspace
 	{
-		public StringBuilder Buffer { get; set; }
-		public List<SampleSet> SampleSet { get; set; }
+		public IReadOnlyList<SamplingData> Dataset { get { return _dataset; } }
+
+		public int BufferLength { get { return _buffer.Length; } }
+
+		private readonly List<SamplingData> _dataset;
+
+		public string ReadBuffer(int begin, int count)
+		{
+			return _buffer.ToString(begin, count);
+		}
+
+		private readonly StringBuilder _buffer;
+
+		public SamplingData CreateSamplingData(int sampleLength)
+		{
+			var sampleSet = new SamplingData(sampleLength, _buffer);
+			_dataset.Add(sampleSet);
+			return sampleSet;
+		}
+
 		public Workspace()
 		{
-			this.Buffer = new StringBuilder();
-			this.SampleSet = new List<SampleSet>();
+			_buffer = new StringBuilder();
+			_dataset = new List<SamplingData>();
 		}
 	}
 }
