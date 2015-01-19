@@ -15,6 +15,7 @@ The flow was the following:
 3. Use [ProteinTagger] to match and unify protein tag names for annotated segments.
 4. Export tagged dataset (`ExportedData.json`).
 5. Use sampler script to gather final samples into an special data structure to handle the highly repetitive data with efficiency, it uses (`ExportedData.json` and `uniprot-taxonomy-potyviridae.xml`).
+6. Use resulting data structure with oil.
 
 Knowledge base
 ==============
