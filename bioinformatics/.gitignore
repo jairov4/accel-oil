@@ -3,4 +3,7 @@ obj/
 packages/
 *.csproj.user
 *.v12.suo
+*.vcxproj.*
+*.sdf
+*.opensdf
 !NuGet.exe

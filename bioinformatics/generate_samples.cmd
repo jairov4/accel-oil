@@ -1,0 +1,1 @@
+sampler\bin\release\sampler.exe uniprot-taxonomy-potyviridae.xml ExportedData.json {'P1-HC':'5-5','HC-P3':['4-4']} > sampleset.json

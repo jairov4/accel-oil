@@ -97,6 +97,7 @@ namespace sampler
 			var windowLeft = int.Parse(array[0]);
 			var windowRight = int.Parse(array[1]);
 			var acc = workspace.CreateSamplingData(windowLeft + windowRight);
+			acc.Class = cleavageSiteName + "|" + windowString;
 			foreach (var cleavageSite in cleavageSites)
 			{
 				Debug.Assert(cleavageSite.Item1.Accession == cleavageSite.Item2.Accession);
