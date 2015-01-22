@@ -14,13 +14,20 @@
 #include "nfa.h"
 #include <stdlib.h>
 
-// Algoritmo que obtiene un automata NFA que puede reconocer un conjunto de
-// secuencias y rechazar otro.
-void oil(const symbol_t* sample_buffer,
-	const size_t sample_buffer_size,
-	const size_t sample_length,
-	const symbol_t symbols,
-	const index_t* pindices, const size_t ip_size,
-	const index_t* nindices, const size_t in_size,
-	nfa_t* nfa
-	);
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+	// Algoritmo que obtiene un automata NFA que puede reconocer un conjunto de
+	// secuencias y rechazar otro.
+	void oil(const symbol_t* sample_buffer,
+		const size_t sample_buffer_size,
+		const size_t sample_length,
+		const symbol_t symbols,
+		const index_t* pindices, const size_t ip_size,
+		const index_t* nindices, const size_t in_size,
+		nfa_t* nfa
+		);
+#ifdef __cplusplus
+}
+#endif

@@ -8,13 +8,17 @@ Files
 
 `bioinformatics/` is the folder with testing case data. It holds programs and samples which the algorithm will be evaluated against to.
 `bioinformatics/ExportedData.json`, `bioinformatics/FullChangeOrders.json` and `bioinformatics/ExportedData.json` are ProteinTagger files that were used to get sampling data.
+
+`bioinformatics/oil/` contains the PC program using the shared C implementation of OIL, this is reusing the files under `src/`
+`bioinformatics/sampler` contains the program used to preprocess data to feed OIL implementation, it emits JSON formatted sample sets.
+
 The flow was the following:
 
 1. First query [uniprot] for _potyviridae_ sequences.
 2. Export full search result dataset in XML format (`uniprot-taxonomy-potyviridae.xml`).
 3. Use [ProteinTagger] to match and unify protein tag names for annotated segments.
 4. Export tagged dataset (`ExportedData.json`).
-5. Use sampler script to gather final samples into an special data structure to handle the highly repetitive data with efficiency, it uses (`ExportedData.json` and `uniprot-taxonomy-potyviridae.xml`).
+5. Use sampler script `generate_samples.cmd` to gather final samples into an special data structure to handle the highly repetitive data with efficiency, it uses (`ExportedData.json` and `uniprot-taxonomy-potyviridae.xml`).
 6. Use resulting data structure with oil.
 
 Knowledge base
